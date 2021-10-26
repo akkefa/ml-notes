@@ -19,6 +19,11 @@ Contents
 
    notation
 
+.. toctree::
+   :caption: Maths
+   :maxdepth: 1
+
+   linear_algebra
 
 
 Indices and tables
