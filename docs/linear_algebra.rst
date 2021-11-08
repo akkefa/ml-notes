@@ -1,5 +1,5 @@
 """"""""""""""""
-Linear algebra
+Linear Algebra
 """"""""""""""""
 
 Multiplying Matrices and Vectors
@@ -53,3 +53,17 @@ The inverse can be found using:
 * Gaussian elimination
 * LU decomposition
 * Gauss-Jordan elimination
+
+Norm
+=====
+Norm is function which measure the size of vector.
+
+Norm of vector x given by:
+
+.. math::
+
+  \|x\|_{p} = \sqrt{\sum_{i} x_i^p}
+
+*  L1 norm, Where p = 1
+*  L2 norm and euclidean norm, Where p = 2
+*  L-max norm, Where p = infinity
