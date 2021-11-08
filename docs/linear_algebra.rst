@@ -67,3 +67,35 @@ Norm of vector x given by:
 *  L1 norm, Where p = 1
 *  L2 norm and euclidean norm, Where p = 2
 *  L-max norm, Where p = infinity
+
+The Trace Operator
+===================
+The sum of the elements along the main diagonal of a square matrix.
+
+.. math::
+
+  \text{tr}(A) = \sum_{i=1}^n A_{ii}
+
+Satisfies the following properties:
+
+.. math::
+
+  \text{tr}(A) = \text{tr}(A^T)
+
+  \text{tr}(A + B) = \text{tr}(A) + \text{tr}(B)
+
+  \text{tr}(cA) = c\text{tr}(A)
+
+Transpose
+------------
+.. math::
+
+  (A^T)_{ij} = A_{ji}
+
+Satisfies the following properties:
+
+.. math::
+
+    (A+B)^T = A^T + B^T
+    (AB)^T = B^TA^T
+    (A^T)^{-1} = (A^{-1})^T
