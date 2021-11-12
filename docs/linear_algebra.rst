@@ -137,3 +137,11 @@ Example
 
 
 The eigenvalues of a diagonal matrix are the set of its values on the diagonal.
+
+Symmetric matrix
+==================
+A square matrix :math:`A` where :math:`A = A^T`.
+
+Some properties of symmetric matrices are:
+
+* All the eigenvalues of the matrix are real.
