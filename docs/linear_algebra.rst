@@ -1,35 +1,47 @@
-""""""""""""""""
 Linear Algebra
-""""""""""""""""
+===============
 
 Multiplying Matrices and Vectors
 ---------------------------------
 Multiplication of two A x B matrices a third matrix C.
 
 .. math::
+    C = AB
 
-  C = AB
-
-The product operation is deﬁned by
+The product operation is defined by
 
 .. math::
 
-  C_{i,j} = \sum_{k=1} A_{i,k} B_{k,j}
-
+    C_{i,j} = \sum_{k=1} A_{i,k} B_{k,j}
 
 The value at index i,j of result matrix C is given by dot product of ith row of Matrix A with jth column of Matrix
 
+**E.g**
+
+.. math::
+    A = \begin{bmatrix}
+           1 & 2 \\
+           3 & 4
+         \end{bmatrix}
+
+    B = \begin{bmatrix}
+           2 \\
+           6
+         \end{bmatrix}
+
+    C_{1,1} = \sum_{k=1} A_{1,k} B_{k,1} = 1*2 + 2*6 = 14
+
 Hadamard product & element-wise product
-=======================================
+-----------------------------------------
 Element wise of multiplication to generate another matrix of same dimension.
 
 .. math::
 
-    A*B
+    C = A * B
 
 
 Dot product
-=============
+-----------
 The dot product for two vectors to generate scalar value.
 
 .. math::
@@ -37,7 +49,7 @@ The dot product for two vectors to generate scalar value.
   A \cdot B = \sum_{i=1}^n A_i B_i
 
 Identity and Inverse Matrices
-===============================
+------------------------------
 An identity matrix is a matrix that does not change any vector when we multiply that vector by that matrix.
 
 .. math::
@@ -55,7 +67,7 @@ The inverse can be found using:
 * Gauss-Jordan elimination
 
 Norm
-=====
+-----
 Norm is function which measure the size of vector.
 
 Norm of vector x given by:
@@ -69,7 +81,7 @@ Norm of vector x given by:
 *  L-max norm, Where p = infinity
 
 The Trace Operator
-===================
+-------------------
 The sum of the elements along the main diagonal of a square matrix.
 
 .. math::
@@ -87,7 +99,7 @@ Satisfies the following properties:
   \text{tr}(cA) = c\text{tr}(A)
 
 Transpose
-===========
+----------
 .. math::
 
   (A^T)_{ij} = A_{ji}
@@ -102,7 +114,7 @@ Satisfies the following properties:
 
 
 Diagonal matrix
-================
+----------------
 A matrix where :math:`A_{ij} = 0` if :math:`i \neq j`.
 
 Can be written as :math:`\text{diag}(a)` where :math:`a` is a vector of values specifying the diagonal entries.
@@ -139,7 +151,7 @@ Example
 The eigenvalues of a diagonal matrix are the set of its values on the diagonal.
 
 Symmetric matrix
-==================
+-----------------
 A square matrix :math:`A` where :math:`A = A^T`.
 
 Some properties of symmetric matrices are:
@@ -147,7 +159,7 @@ Some properties of symmetric matrices are:
 * All the eigenvalues of the matrix are real.
 
 Unit Vector
-=============
+------------
 A unit vector has unit Euclidean norm.
 
 .. math::
