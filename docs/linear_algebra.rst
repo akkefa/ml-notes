@@ -145,3 +145,11 @@ A square matrix :math:`A` where :math:`A = A^T`.
 Some properties of symmetric matrices are:
 
 * All the eigenvalues of the matrix are real.
+
+Unit Vector
+=============
+A unit vector has unit Euclidean norm.
+
+.. math::
+
+  \|x\| = 1
