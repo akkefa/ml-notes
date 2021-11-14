@@ -193,3 +193,28 @@ A unit vector has unit Euclidean norm.
 .. math::
 
   \|x\| = 1
+
+Orthogonal or Orthonormal Matrix
+---------------------------------
+An orthogonal matrix is a square matrix whose columns and rows are orthonormal vectors.
+
+.. math::
+
+    A^\mathrm{T} A = A A^\mathrm{T} = I
+
+    A^\mathrm{T}=A^{-1}
+
+where AT is the transpose of A and I is the identity matrix. This leads to the equivalent characterization:
+matrix A is orthogonal if its transpose is equal to its inverse.
+
+so orthogonal matrices are of interest because their inverse is very cheap to compute.
+
+
+Orthogonal Vectors
+^^^^^^^^^^^^^^^^^^^^
+Two vector x and y are orthogonal if they are perpendicular to each other.
+
+Orthonormal Vectors
+^^^^^^^^^^^^^^^^^^^^
+Two vector x and y are orthogonal if they are perpendicular to each other and have unit Euclidean norm.
+(x and y are also unit vectors then they are orthonormal.)
