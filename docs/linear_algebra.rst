@@ -226,7 +226,7 @@ so orthogonal matrices are of interest because their inverse is very cheap to co
 
 Orthogonal Vectors
 ^^^^^^^^^^^^^^^^^^^^
-Two vector x and y are orthogonal if they are perpendicular to each other.
+Two vector x and y are orthogonal if they are perpendicular to each other or dot product is equal to zero.
 
 Orthonormal Vectors
 ^^^^^^^^^^^^^^^^^^^^
