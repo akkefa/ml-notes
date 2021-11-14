@@ -39,6 +39,20 @@ Element wise of multiplication to generate another matrix of same dimension.
 
     C = A * B
 
+    \begin{bmatrix}
+    a_{11} & a_{12} & a_{13}\\
+    a_{21} & a_{22} & a_{23}\\
+    a_{31} & a_{32} & a_{33}
+    \end{bmatrix} \circ \begin{bmatrix}
+    b_{11} & b_{12} & b_{13}\\
+    b_{21} & b_{22} & b_{23}\\
+    b_{31} & b_{32} & b_{33}
+    \end{bmatrix} = \begin{bmatrix}
+    a_{11}\, b_{11} & a_{12}\, b_{12} & a_{13}\, b_{13}\\
+    a_{21}\, b_{21} & a_{22}\, b_{22} & a_{23}\, b_{23}\\
+    a_{31}\, b_{31} & a_{32}\, b_{32} & a_{33}\, b_{33}
+    \end{bmatrix}.
+
 
 Dot product
 -----------
@@ -46,7 +60,7 @@ The dot product for two vectors to generate scalar value.
 
 .. math::
 
-  A \cdot B = \sum_{i=1}^n A_i B_i
+    a \cdot b=\sum_{i=1}^n {a}_i{b}_i={a}_1{b}_1+{a}_2{b}_2+\cdots+{a}_n{b}_n
 
 Identity and Inverse Matrices
 ------------------------------

@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ml_math'
-copyright = '2021, Ikram Ali'
+copyright = '2022, Ikram Ali'
 author = 'Ikram Ali'
 __version__ = "0.0.1"
 
