@@ -96,6 +96,19 @@ The p-norm (also called :math:`\ell_p`) of vector x. Let p ≥ 1 be a real numbe
 *  L2 norm and euclidean norm, Where p = 2
 *  L-max norm, Where p = infinity
 
+Frobenius norm
+^^^^^^^^^^^^^^^
+Sometimes we may also wish to measure the size of a matrix. In the context of deep learning,
+the most common way to do this is with the Frobenius norm.
+
+The Frobenius norm is the square root of the sum of the squares of all the elements of a matrix.
+
+.. math::
+
+    \|A\|_F = \sqrt{\sum_{i=1}^m \sum_{j=1}^n A_{ij}^2}
+
+    \|A\|_\text{F} = \sqrt{\sum_{i=1}^m \sum_{j=1}^n |a_{ij}|^2}
+
 The Trace Operator
 -------------------
 The sum of the elements along the main diagonal of a square matrix.
