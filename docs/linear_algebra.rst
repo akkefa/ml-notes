@@ -182,6 +182,14 @@ Symmetric matrix
 -----------------
 A square matrix :math:`A` where :math:`A = A^T`.
 
+.. math::
+
+    \begin{bmatrix}
+    1 & 7 & 3 \\
+    7 & 4 & 5 \\
+    3 & 5 & 0
+    \end{bmatrix} = A^T = A
+
 Some properties of symmetric matrices are:
 
 * All the eigenvalues of the matrix are real.
@@ -192,7 +200,13 @@ A unit vector has unit Euclidean norm.
 
 .. math::
 
-  \|x\| = 1
+    \|x\|_2 := \sqrt{x_1^2 + \cdots + x_n^2} = 1
+
+    \begin{bmatrix}
+    1 \\
+    0 \\
+    0
+    \end{bmatrix} = \sqrt{1^2 + 0^2 + 0^2} = 1
 
 Orthogonal or Orthonormal Matrix
 ---------------------------------
