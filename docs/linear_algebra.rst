@@ -84,11 +84,13 @@ Norm
 -----
 Norm is function which measure the size of vector.
 
-Norm of vector x given by:
+The p-norm (also called :math:`\ell_p`) of vector x. Let p ≥ 1 be a real number.
 
 .. math::
 
-  \|x\|_{p} = \sqrt{\sum_{i} x_i^p}
+    \left\|x\right\|_p := \left( \sum_{i=1}^n \left|x_i\right|^p\right)^{1/p}
+
+    \left\| x \right\| _p = \left( |x_1|^p + |x_2|^p + \dotsb + |x_n|^p \right) ^{1/p}
 
 *  L1 norm, Where p = 1
 *  L2 norm and euclidean norm, Where p = 2
@@ -100,23 +102,23 @@ The sum of the elements along the main diagonal of a square matrix.
 
 .. math::
 
-  \text{tr}(A) = \sum_{i=1}^n A_{ii}
+    \operatorname{tr}(A) = \sum_{i=1}^n a_{ii} = a_{11} + a_{22} + \dots + a_{nn}
 
 Satisfies the following properties:
 
 .. math::
 
-  \text{tr}(A) = \text{tr}(A^T)
+    \text{tr}(A) = \text{tr}(A^T)
 
-  \text{tr}(A + B) = \text{tr}(A) + \text{tr}(B)
+    \text{tr}(A + B) = \text{tr}(A) + \text{tr}(B)
 
-  \text{tr}(cA) = c\text{tr}(A)
+    \text{tr}(cA) = c\text{tr}(A)
 
 Transpose
 ----------
 .. math::
 
-  (A^T)_{ij} = A_{ji}
+    (A^T)_{ij} = A_{ji}
 
 Satisfies the following properties:
 
@@ -145,21 +147,20 @@ Diagonal matrices have the following properties:
 
   \text{det}(\text{diag}(a)) = \prod_i{a_i}
 
-Example
+**Example**
 
 .. math::
 
     \begin{bmatrix}
-    1 & 0 & 0 \\
-    0 & 5 & 0 \\
-    0 & 0 & 9
-    \end{bmatrix}
-
+    1 & 0 & 0\\
+    0 & 4 & 0\\
+    0 & 0 & -3\\
+    0 & 0 & 0\\
+    \end{bmatrix} or
     \begin{bmatrix}
-    1 & 0 & 0 & 0 \\
-    0 & 5 & 0 & 0 \\
-    0 & 0 & 9 & 0
-    \end{bmatrix}
+    1 & 0 & 0 & 0 & 0\\
+    0 & 4 & 0& 0 & 0\\
+    0 & 0 & -3& 0 & 0\end{bmatrix}
 
 
 The eigenvalues of a diagonal matrix are the set of its values on the diagonal.
