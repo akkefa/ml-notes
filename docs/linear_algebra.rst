@@ -64,13 +64,55 @@ The dot product for two vectors to generate scalar value.
 
 Identity and Inverse Matrices
 ------------------------------
+
+Identity Matrix
+^^^^^^^^^^^^^^^^
+
 An identity matrix is a matrix that does not change any vector when we multiply that vector by that matrix.
 
 .. math::
 
-   I
+    I = \begin{bmatrix}
+    1 & 0 & 0 \\\\
+    0 & 1 & 0 \\\\
+    0 & 0 & 1
+    \end{bmatrix}
 
+When 'apply' the identity matrix to a vector the result is this same vector:
+
+.. math::
+
+    I \cdot v = v
+
+    \begin{bmatrix}
+    1 & 0 & 0 \\\\
+    0 & 1 & 0 \\\\
+    0 & 0 & 1
+    \end{bmatrix}
+    \times
+    \begin{bmatrix}
+        x_{1} \\\\
+        x_{2} \\\\
+        x_{3}
+    \end{bmatrix}=
+    \begin{bmatrix}
+        1 \times x_1 + 0 \times x_2 + 0\times x_3 \\\\
+        0 \times x_1 + 1 \times x_2 + 0\times x_3 \\\\
+        0 \times x_1 + 0 \times x_2 + 1\times x_3
+    \end{bmatrix}=
+    \begin{bmatrix}
+        x_{1} \\\\
+        x_{2} \\\\
+        x_{3}
+    \end{bmatrix}
+
+Inverse Matrix
+^^^^^^^^^^^^^^^^
 The inverse of a matrix :math:`A` is written as :math:`A^{-1}`.
+
+.. math::
+
+    {A}^{-1}{A}={I}_n
 
 A matrix :math:`A` is invertible if and only if there exists a matrix :math:`B` such that :math:`AB = BA = I`.
 
