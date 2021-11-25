@@ -122,6 +122,11 @@ The inverse can be found using:
 * LU decomposition
 * Gauss-Jordan elimination
 
+Singular Matrix
+^^^^^^^^^^^^^^^^
+A square matrix that is not invertible is called singular or degenerate. A square matrix is singular if and only
+if its determinant is zero
+
 Norm
 -----
 Norm is function which measure the size of vector.
