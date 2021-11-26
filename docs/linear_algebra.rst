@@ -189,6 +189,41 @@ The Frobenius norm is the square root of the sum of the squares of all the eleme
 
     \|A\|_\text{F} = \sqrt{\sum_{i=1}^m \sum_{j=1}^n |a_{ij}|^2}
 
+
+The squared Euclidean norm
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+The squared L^2 norm is convenient because it removes the square root and we end up with the simple sum of every
+squared values of the vector.
+
+
+The squared Euclidean norm is widely used in machine learning partly because it can be calculated with the vector
+operation :math:`x^Tx`. There can be performance gain due to the optimization
+
+.. math::
+
+    x=\begin{bmatrix}
+        2 \\\\
+        5 \\\\
+        3 \\\\
+        3
+    \end{bmatrix}
+
+    x^T=\begin{bmatrix}
+        2 & 5 & 3 & 3
+    \end{bmatrix}
+
+    x^Tx=\begin{bmatrix}
+        2 & 5 & 3 & 3
+    \end{bmatrix} \times
+    \begin{bmatrix}
+        2 \\\\
+        5 \\\\
+        3 \\\\
+        3
+    \end{bmatrix}\\\\
+    &= 2\times 2 + 5\times 5 + 3\times 3 + 3\times 3= 47
+
+
 The Trace Operator
 -------------------
 The sum of the elements along the main diagonal of a square matrix.
