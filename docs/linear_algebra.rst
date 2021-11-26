@@ -131,6 +131,28 @@ Norm
 -----
 Norm is function which measure the size of vector.
 
+* Norms are non-negative values. If you think of the norms as a length, you easily see why it can't be negative.
+
+* The triangle inequality** :math:`u+v \leq u+v`
+
+**Example**
+
+.. math::
+
+    u=
+    \begin{bmatrix}
+    1 & 6
+    \end{bmatrix}
+
+    v=
+    \begin{bmatrix}
+        4 & 2
+    \end{bmatrix}
+
+    u+v = \sqrt{(1+4)^2+(6+2)^2} = \sqrt{89} \approx 9.43
+
+    u+v = \sqrt{1^2+6^2}+\sqrt{4^2+2^2} = \sqrt{37}+\sqrt{20} \approx 10.55
+
 The p-norm (also called :math:`\ell_p`) of vector x. Let p ≥ 1 be a real number.
 
 .. math::
