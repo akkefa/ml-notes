@@ -64,13 +64,55 @@ The dot product for two vectors to generate scalar value.
 
 Identity and Inverse Matrices
 ------------------------------
+
+Identity Matrix
+^^^^^^^^^^^^^^^^
+
 An identity matrix is a matrix that does not change any vector when we multiply that vector by that matrix.
 
 .. math::
 
-   I
+    I = \begin{bmatrix}
+    1 & 0 & 0 \\\\
+    0 & 1 & 0 \\\\
+    0 & 0 & 1
+    \end{bmatrix}
 
+When 'apply' the identity matrix to a vector the result is this same vector:
+
+.. math::
+
+    I \cdot v = v
+
+    \begin{bmatrix}
+    1 & 0 & 0 \\\\
+    0 & 1 & 0 \\\\
+    0 & 0 & 1
+    \end{bmatrix}
+    \times
+    \begin{bmatrix}
+        x_{1} \\\\
+        x_{2} \\\\
+        x_{3}
+    \end{bmatrix}=
+    \begin{bmatrix}
+        1 \times x_1 + 0 \times x_2 + 0\times x_3 \\\\
+        0 \times x_1 + 1 \times x_2 + 0\times x_3 \\\\
+        0 \times x_1 + 0 \times x_2 + 1\times x_3
+    \end{bmatrix}=
+    \begin{bmatrix}
+        x_{1} \\\\
+        x_{2} \\\\
+        x_{3}
+    \end{bmatrix}
+
+Inverse Matrix
+^^^^^^^^^^^^^^^^
 The inverse of a matrix :math:`A` is written as :math:`A^{-1}`.
+
+.. math::
+
+    {A}^{-1}{A}={I}_n
 
 A matrix :math:`A` is invertible if and only if there exists a matrix :math:`B` such that :math:`AB = BA = I`.
 
@@ -80,9 +122,36 @@ The inverse can be found using:
 * LU decomposition
 * Gauss-Jordan elimination
 
+Singular Matrix
+^^^^^^^^^^^^^^^^
+A square matrix that is not invertible is called singular or degenerate. A square matrix is singular if and only
+if its determinant is zero
+
 Norm
 -----
 Norm is function which measure the size of vector.
+
+* Norms are non-negative values. If you think of the norms as a length, you easily see why it can't be negative.
+
+* The triangle inequality** :math:`u+v \leq u+v`
+
+**Example**
+
+.. math::
+
+    u=
+    \begin{bmatrix}
+    1 & 6
+    \end{bmatrix}
+
+    v=
+    \begin{bmatrix}
+        4 & 2
+    \end{bmatrix}
+
+    u+v = \sqrt{(1+4)^2+(6+2)^2} = \sqrt{89} \approx 9.43
+
+    u+v = \sqrt{1^2+6^2}+\sqrt{4^2+2^2} = \sqrt{37}+\sqrt{20} \approx 10.55
 
 The p-norm (also called :math:`\ell_p`) of vector x. Let p ≥ 1 be a real number.
 
@@ -92,9 +161,20 @@ The p-norm (also called :math:`\ell_p`) of vector x. Let p ≥ 1 be a real numbe
 
     \left\| x \right\| _p = \left( |x_1|^p + |x_2|^p + \dotsb + |x_n|^p \right) ^{1/p}
 
-*  L1 norm, Where p = 1
-*  L2 norm and euclidean norm, Where p = 2
+*  L1 norm, Where p = 1 :math:`\left\| x \right\|_1 = \sum_{i=1}^n |x_i|`
+*  L2 norm and euclidean norm, Where p = 2 :math:`\left\| x \right\|_2 = \sqrt{\sum_{i=1}^n x_i^2}`
 *  L-max norm, Where p = infinity
+
+.. math::
+
+    u=\begin{bmatrix}
+        3 \\\\
+        4
+    \end{bmatrix}
+
+    u =\sqrt{|3|^2+|4|^2}
+    =\sqrt{25}
+    =5
 
 Frobenius norm
 ^^^^^^^^^^^^^^^
@@ -108,6 +188,41 @@ The Frobenius norm is the square root of the sum of the squares of all the eleme
     \|A\|_F = \sqrt{\sum_{i=1}^m \sum_{j=1}^n A_{ij}^2}
 
     \|A\|_\text{F} = \sqrt{\sum_{i=1}^m \sum_{j=1}^n |a_{ij}|^2}
+
+
+The squared Euclidean norm
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+The squared L^2 norm is convenient because it removes the square root and we end up with the simple sum of every
+squared values of the vector.
+
+
+The squared Euclidean norm is widely used in machine learning partly because it can be calculated with the vector
+operation :math:`x^Tx`. There can be performance gain due to the optimization
+
+.. math::
+
+    x=\begin{bmatrix}
+        2 \\\\
+        5 \\\\
+        3 \\\\
+        3
+    \end{bmatrix}
+
+    x^T=\begin{bmatrix}
+        2 & 5 & 3 & 3
+    \end{bmatrix}
+
+    x^Tx=\begin{bmatrix}
+        2 & 5 & 3 & 3
+    \end{bmatrix} \times
+    \begin{bmatrix}
+        2 \\\\
+        5 \\\\
+        3 \\\\
+        3
+    \end{bmatrix}\\\\
+    &= 2\times 2 + 5\times 5 + 3\times 3 + 3\times 3= 47
+
 
 The Trace Operator
 -------------------
@@ -182,6 +297,14 @@ Symmetric matrix
 -----------------
 A square matrix :math:`A` where :math:`A = A^T`.
 
+.. math::
+
+    \begin{bmatrix}
+    1 & 7 & 3 \\
+    7 & 4 & 5 \\
+    3 & 5 & 0
+    \end{bmatrix} = A^T = A
+
 Some properties of symmetric matrices are:
 
 * All the eigenvalues of the matrix are real.
@@ -192,7 +315,13 @@ A unit vector has unit Euclidean norm.
 
 .. math::
 
-  \|x\| = 1
+    \|x\|_2 := \sqrt{x_1^2 + \cdots + x_n^2} = 1
+
+    \begin{bmatrix}
+    1 \\
+    0 \\
+    0
+    \end{bmatrix} = \sqrt{1^2 + 0^2 + 0^2} = 1
 
 Orthogonal or Orthonormal Matrix
 ---------------------------------
@@ -212,7 +341,7 @@ so orthogonal matrices are of interest because their inverse is very cheap to co
 
 Orthogonal Vectors
 ^^^^^^^^^^^^^^^^^^^^
-Two vector x and y are orthogonal if they are perpendicular to each other.
+Two vector x and y are orthogonal if they are perpendicular to each other or dot product is equal to zero.
 
 Orthonormal Vectors
 ^^^^^^^^^^^^^^^^^^^^
