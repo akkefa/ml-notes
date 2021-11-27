@@ -446,3 +446,32 @@ A orthogonal matrix has this property: :math:`A^T A = I`.
 that the norm of the vector :math:`\begin{bmatrix} a & c \end{bmatrix}` is equal to :math:`a^2+c^2` (squared L^2).
 In addtion, we saw that the rows of A have a unit norm because A is orthogonal. This means that :math:`a^2+c^2=1` and
 :math:`b^2+d^2=1`.
+
+**Property 2**
+
+We can show that if :math:`A^TA=I` then :math:`A^T=A^{-1}`
+
+.. math::
+
+
+    (A^TA)A^{-1}={I}A^{-1}
+
+    (A^TA)A^{-1}=A^{-1}
+
+    A^TAA^{-1}=A^{-1}
+
+    A^TI=A^{-1}
+
+    A^T=A^{-1}
+
+
+You can refer to [this question](https://math.stackexchange.com/questions/1936020/why-is-the-inverse-of-an-orthogonal-matrix-equal-to-its-transpose).
+
+Sine and cosine are convenient to create orthogonal matrices. Let's take the following matrix:
+
+.. math::
+
+    A=\begin{bmatrix}
+        cos(50) & -sin(50)\\\\
+        sin(50) & cos(50)
+    \end{bmatrix}
