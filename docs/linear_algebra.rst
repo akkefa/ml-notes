@@ -529,3 +529,64 @@ This means that  𝑣  is a eigenvector of  𝐴  if  𝑣  and  𝐴𝑣  are i
     \end{bmatrix}
 
 which means that v is well an eigenvector of A. Also, the corresponding eigenvalue is lambda=6.
+
+**Another eigenvector of  𝐴  is**
+
+.. math::
+
+    v=\begin{bmatrix}
+        1\\\\
+        -3
+    \end{bmatrix}
+
+    \begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}\begin{bmatrix}
+        1\\\\
+        -3
+    \end{bmatrix} = \begin{bmatrix}
+        2\\\\
+        -6
+    \end{bmatrix}
+
+    2 \times \begin{bmatrix}
+        1\\\\
+        -3
+    \end{bmatrix} =
+    \begin{bmatrix}
+        2\\\\
+        -6
+    \end{bmatrix}
+
+which means that v is an eigenvector of A. Also, the corresponding eigenvalue is lambda=2.
+
+**Rescaled vectors**
+if v is an eigenvector of A, then any rescaled vector sv is also an eigenvector of A. The eigenvalue of the
+rescaled vector is the same.
+
+.. math::
+
+    3v=\begin{bmatrix}
+        3\\\\
+        -9
+    \end{bmatrix}
+
+    \begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}
+    \begin{bmatrix}
+        3\\\\
+        -9
+    \end{bmatrix} =
+    \begin{bmatrix}
+        6\\\\
+        -18
+    \end{bmatrix} = 2 \times
+    \begin{bmatrix}
+        3\\\\
+        -9
+    \end{bmatrix}
+
+We have well A X 3v = lambda v and the eigenvalue is still lambda = 2 .
