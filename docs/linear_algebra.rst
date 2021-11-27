@@ -590,3 +590,93 @@ rescaled vector is the same.
     \end{bmatrix}
 
 We have well A X 3v = lambda v and the eigenvalue is still lambda = 2 .
+
+Concatenating eigenvalues and eigenvectors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Now that we have an idea of what eigenvectors and eigenvalues are we can see how it can be used to decompose a matrix.
+All eigenvectors of a matrix  𝐴  can be concatenated in a matrix with each column corresponding to each eigenvector.
+
+.. math::
+
+    v=\begin{bmatrix}
+        1 & 1\\\\
+        1 & -3
+    \end{bmatrix}
+
+The first column [ 1  1 ] is the eigenvector of  𝐴  with lambda=6 and the second column [ 1 -3 ] with lambda=2.
+
+The vector :math:`\lambda` can be created from all eigenvalues:
+
+.. math::
+
+    \lambda=
+    \begin{bmatrix}
+        6\\\\
+        2
+    \end{bmatrix}
+
+**Then the eigendecomposition is given by**
+
+.. math::
+
+    A=V\cdot diag(\lambda) \cdot V^{-1}
+
+Converting eigenvalues and eigenvectors to a matrix A.
+
+.. math::
+
+    V^{-1}=\begin{bmatrix}
+        0.75 & 0.25\\\\
+        0.25 & -0.25
+    \end{bmatrix}
+
+    &V\cdot diag(\lambda) \cdot V^{-1}\\\\
+    &=
+    \begin{bmatrix}
+        1 & 1\\\\
+        1 & -3
+    \end{bmatrix}
+    \begin{bmatrix}
+        6 & 0\\\\
+        0 & 2
+    \end{bmatrix}
+    \begin{bmatrix}
+        0.75 & 0.25\\\\
+        0.25 & -0.25
+    \end{bmatrix}
+
+    \begin{bmatrix}
+        1 & 1\\\\
+        1 & -3
+    \end{bmatrix}
+    \begin{bmatrix}
+        6 & 0\\\\
+        0 & 2
+    \end{bmatrix} =
+    \begin{bmatrix}
+        6 & 2\\\\
+        6 & -6
+    \end{bmatrix}
+
+    &\begin{bmatrix}
+        6 & 2\\\\
+        6 & -6
+    \end{bmatrix}
+    \begin{bmatrix}
+        0.75 & 0.25\\\\
+        0.25 & -0.25
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        6\times0.75 + (2\times0.25) & 6\times0.25 + (2\times-0.25)\\\\
+        6\times0.75 + (-6\times0.25) & 6\times0.25 + (-6\times-0.25)
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}=
+    A
+
+Real symmetric matrix
+^^^^^^^^^^^^^^^^^^^^^
