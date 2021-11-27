@@ -323,8 +323,47 @@ A unit vector has unit Euclidean norm.
     0
     \end{bmatrix} = \sqrt{1^2 + 0^2 + 0^2} = 1
 
-Orthogonal or Orthonormal Matrix
----------------------------------
+Orthogonal Matrix or Orthonormal Vectors
+-----------------------------------------
+
+Orthogonal Vectors
+^^^^^^^^^^^^^^^^^^^^
+Two vector x and y are orthogonal if they are perpendicular to each other or dot product is equal to zero.
+
+.. math::
+
+    x=\begin{bmatrix}
+        2\\\\
+        2
+    \end{bmatrix}
+
+    y=\begin{bmatrix}
+        2\\\\
+        -2
+    \end{bmatrix}
+
+    x^Ty=
+    \begin{bmatrix}
+        2 & 2
+    \end{bmatrix}
+    \begin{bmatrix}
+        2\\\\
+        -2
+    \end{bmatrix}=
+    \begin{bmatrix}
+        2\times2 + 2\times-2
+    \end{bmatrix}=0
+
+
+Orthonormal Vectors
+^^^^^^^^^^^^^^^^^^^^
+when the norm of orthogonal vectors is the unit norm they are called orthonormal.
+
+Orthonormal Matrix
+^^^^^^^^^^^^^^^^^^^^
+Orthogonal matrices are important because they have interesting properties. A matrix is orthogonal if columns are
+mutually orthogonal and have a unit norm (orthonormal) and rows are mutually orthonormal and have unit norm.
+
 An orthogonal matrix is a square matrix whose columns and rows are orthonormal vectors.
 
 .. math::
@@ -338,12 +377,72 @@ matrix A is orthogonal if its transpose is equal to its inverse.
 
 so orthogonal matrices are of interest because their inverse is very cheap to compute.
 
+**Property 1**
 
-Orthogonal Vectors
-^^^^^^^^^^^^^^^^^^^^
-Two vector x and y are orthogonal if they are perpendicular to each other or dot product is equal to zero.
+A orthogonal matrix has this property: :math:`A^T A = I`.
 
-Orthonormal Vectors
-^^^^^^^^^^^^^^^^^^^^
-Two vector x and y are orthogonal if they are perpendicular to each other and have unit Euclidean norm.
-(x and y are also unit vectors then they are orthonormal.)
+.. math::
+
+    A=\begin{bmatrix}
+    a & b\\\\
+    c & d
+    \end{bmatrix}
+     &
+    A^T=\begin{bmatrix}
+    a & c\\\\
+    b & d
+    \end{bmatrix}
+
+    A^TA=\begin{bmatrix}
+        a & c\\\\
+        b & d
+    \end{bmatrix}
+    \begin{bmatrix}
+        a & b\\\\
+        c & d
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        aa + cc & ab + cd\\\\
+        ab + cd & bb + dd
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        a^2 + c^2 & ab + cd\\\\
+        ab + cd & b^2 + d^2
+    \end{bmatrix}
+
+
+    A^TA=\begin{bmatrix}
+        1 & ab + cd\\\\
+        ab + cd & 1
+    \end{bmatrix}
+
+
+    \begin{bmatrix}
+        a & c
+    \end{bmatrix}
+    \begin{bmatrix}
+        b\\\\
+        d
+    \end{bmatrix}
+    =
+    ab+cd
+
+    \begin{bmatrix}
+        a & c
+    \end{bmatrix}
+    \begin{bmatrix}
+        b\\\\
+        d
+    \end{bmatrix}=0
+
+    A^TA=\begin{bmatrix}
+        1 & 0\\\\
+        0 & 1
+    \end{bmatrix}
+
+
+that the norm of the vector :math:`\begin{bmatrix} a & c \end{bmatrix}` is equal to :math:`a^2+c^2` (squared L^2).
+In addtion, we saw that the rows of A have a unit norm because A is orthogonal. This means that :math:`a^2+c^2=1` and
+:math:`b^2+d^2=1`.
