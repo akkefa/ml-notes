@@ -475,3 +475,57 @@ Sine and cosine are convenient to create orthogonal matrices. Let's take the fol
         cos(50) & -sin(50)\\\\
         sin(50) & cos(50)
     \end{bmatrix}
+
+Eigendecomposition
+------------------
+The eigendecomposition is one form of matrix decomposition. Decomposing a matrix means that we want to find a product
+of matrices that is equal to the initial matrix. In the case of the eigendecomposition, we decompose the initial matrix
+into the product of its eigenvectors and eigenvalues.
+
+Eigenvectors and eigenvalues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Now imagine that the transformation of the initial vector gives us a new vector that has the exact same direction.
+The scale can be different but the direction is the same. Applying the matrix didn't change the direction of the vector.
+This special vector is called an eigenvector of the matrix. We will see that finding the eigenvectors of a matrix can
+be very useful.
+Imagine that the transformation of the initial vector by the matrix gives a new vector with the exact same direction.
+This vector is called an eigenvector of  𝐴 .
+This means that  𝑣  is a eigenvector of  𝐴  if  𝑣  and  𝐴𝑣  are in the same direction or to rephrase it if the vectors
+𝐴𝑣  and  𝑣  are parallel. The output vector is just a scaled version of the input vector. This scalling factor is
+𝜆  which is called the eigenvalue of  𝐴 .
+
+.. math::
+
+    A=\begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}
+
+    v=\begin{bmatrix}
+        1\\\\
+        1
+    \end{bmatrix}
+
+    Av = \lambda v
+
+    \begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}
+    \begin{bmatrix}
+        1\\\\
+        1
+    \end{bmatrix}=\begin{bmatrix}
+        6\\\\
+        6
+    \end{bmatrix}
+
+    6\times \begin{bmatrix}
+        1\\\\
+        1
+    \end{bmatrix} = \begin{bmatrix}
+        6\\\\
+        6
+    \end{bmatrix}
+
+which means that v is well an eigenvector of A. Also, the corresponding eigenvalue is lambda=6.
