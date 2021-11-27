@@ -680,3 +680,71 @@ Converting eigenvalues and eigenvectors to a matrix A.
 
 Real symmetric matrix
 ^^^^^^^^^^^^^^^^^^^^^
+In the case of real symmetric matrices, the eigendecomposition can be expressed as
+
+.. math::
+
+   A = Q\Lambda Q^T
+
+where :math:`Q` is the matrix with eigenvectors as columns and :math:`\Lambda` is :math:`diag(\lambda)`.
+
+.. math::
+
+    A=\begin{bmatrix}
+        6 & 2\\\\
+        2 & 3
+    \end{bmatrix}
+
+This matrix is symmetric because :math:`A=A^T`. Its eigenvectors are:
+
+.. math::
+
+    Q=\begin{bmatrix}
+        0.89442719 & -0.4472136\\\\
+        0.4472136 & 0.89442719
+    \end{bmatrix}
+
+    \Lambda=\begin{bmatrix}
+        7 & 0\\\\
+        0 & 2
+    \end{bmatrix}
+
+
+    Q\Lambda&=\begin{bmatrix}
+        0.89442719 & -0.4472136\\\\
+        0.4472136 & 0.89442719
+    \end{bmatrix}
+    \begin{bmatrix}
+        7 & 0\\\\
+        0 & 2
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        0.89442719 \times 7 & -0.4472136\times 2\\\\
+        0.4472136 \times 7 & 0.89442719\times 2
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        6.26099033 & -0.8944272\\\\
+        3.1304952 & 1.78885438
+    \end{bmatrix}
+
+    Q^T=\begin{bmatrix}
+        0.89442719 & 0.4472136\\\\
+        -0.4472136 & 0.89442719
+    \end{bmatrix}
+
+
+    Q\Lambda Q^T&=\begin{bmatrix}
+        6.26099033 & -0.8944272\\\\
+        3.1304952 & 1.78885438
+    \end{bmatrix}
+    \begin{bmatrix}
+        0.89442719 & 0.4472136\\\\
+        -0.4472136 & 0.89442719
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        6 & 2\\\\
+        2 & 3
+    \end{bmatrix}
