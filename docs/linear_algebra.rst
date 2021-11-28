@@ -230,7 +230,15 @@ The sum of the elements along the main diagonal of a square matrix.
 
 .. math::
 
-    \operatorname{tr}(A) = \sum_{i=1}^n a_{ii} = a_{11} + a_{22} + \dots + a_{nn}
+    \operatorname{Tr}(A) = \sum_{i=1}^n a_{ii} = a_{11} + a_{22} + \dots + a_{nn}
+
+    A=\begin{bmatrix}
+        2 & 9 & 8 \\\\
+        4 & 7 & 1 \\\\
+        8 & 2 & 5
+    \end{bmatrix}
+
+    \mathrm{Tr}(A) = 2 + 7 + 5 = 14
 
 Satisfies the following properties:
 
