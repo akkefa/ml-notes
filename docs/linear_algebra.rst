@@ -323,8 +323,47 @@ A unit vector has unit Euclidean norm.
     0
     \end{bmatrix} = \sqrt{1^2 + 0^2 + 0^2} = 1
 
-Orthogonal or Orthonormal Matrix
----------------------------------
+Orthogonal Matrix or Orthonormal Vectors
+-----------------------------------------
+
+Orthogonal Vectors
+^^^^^^^^^^^^^^^^^^^^
+Two vector x and y are orthogonal if they are perpendicular to each other or dot product is equal to zero.
+
+.. math::
+
+    x=\begin{bmatrix}
+        2\\\\
+        2
+    \end{bmatrix}
+
+    y=\begin{bmatrix}
+        2\\\\
+        -2
+    \end{bmatrix}
+
+    x^Ty=
+    \begin{bmatrix}
+        2 & 2
+    \end{bmatrix}
+    \begin{bmatrix}
+        2\\\\
+        -2
+    \end{bmatrix}=
+    \begin{bmatrix}
+        2\times2 + 2\times-2
+    \end{bmatrix}=0
+
+
+Orthonormal Vectors
+^^^^^^^^^^^^^^^^^^^^
+when the norm of orthogonal vectors is the unit norm they are called orthonormal.
+
+Orthonormal Matrix
+^^^^^^^^^^^^^^^^^^^^
+Orthogonal matrices are important because they have interesting properties. A matrix is orthogonal if columns are
+mutually orthogonal and have a unit norm (orthonormal) and rows are mutually orthonormal and have unit norm.
+
 An orthogonal matrix is a square matrix whose columns and rows are orthonormal vectors.
 
 .. math::
@@ -338,12 +377,374 @@ matrix A is orthogonal if its transpose is equal to its inverse.
 
 so orthogonal matrices are of interest because their inverse is very cheap to compute.
 
+**Property 1**
 
-Orthogonal Vectors
-^^^^^^^^^^^^^^^^^^^^
-Two vector x and y are orthogonal if they are perpendicular to each other or dot product is equal to zero.
+A orthogonal matrix has this property: :math:`A^T A = I`.
 
-Orthonormal Vectors
-^^^^^^^^^^^^^^^^^^^^
-Two vector x and y are orthogonal if they are perpendicular to each other and have unit Euclidean norm.
-(x and y are also unit vectors then they are orthonormal.)
+.. math::
+
+    A=\begin{bmatrix}
+    a & b\\\\
+    c & d
+    \end{bmatrix}
+     &
+    A^T=\begin{bmatrix}
+    a & c\\\\
+    b & d
+    \end{bmatrix}
+
+    A^TA=\begin{bmatrix}
+        a & c\\\\
+        b & d
+    \end{bmatrix}
+    \begin{bmatrix}
+        a & b\\\\
+        c & d
+    \end{bmatrix}
+    =
+    \begin{bmatrix}
+        aa + cc & ab + cd\\\\
+        ab + cd & bb + dd
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        a^2 + c^2 & ab + cd\\\\
+        ab + cd & b^2 + d^2
+    \end{bmatrix}
+
+
+    A^TA=\begin{bmatrix}
+        1 & ab + cd\\\\
+        ab + cd & 1
+    \end{bmatrix}
+
+
+    \begin{bmatrix}
+        a & c
+    \end{bmatrix}
+    \begin{bmatrix}
+        b\\\\
+        d
+    \end{bmatrix}
+    =
+    ab+cd
+
+    \begin{bmatrix}
+        a & c
+    \end{bmatrix}
+    \begin{bmatrix}
+        b\\\\
+        d
+    \end{bmatrix}=0
+
+    A^TA=\begin{bmatrix}
+        1 & 0\\\\
+        0 & 1
+    \end{bmatrix}
+
+
+that the norm of the vector :math:`\begin{bmatrix} a & c \end{bmatrix}` is equal to :math:`a^2+c^2` (squared L^2).
+In addtion, we saw that the rows of A have a unit norm because A is orthogonal. This means that :math:`a^2+c^2=1` and
+:math:`b^2+d^2=1`.
+
+**Property 2**
+
+We can show that if :math:`A^TA=I` then :math:`A^T=A^{-1}`
+
+.. math::
+
+
+    (A^TA)A^{-1}={I}A^{-1}
+
+    (A^TA)A^{-1}=A^{-1}
+
+    A^TAA^{-1}=A^{-1}
+
+    A^TI=A^{-1}
+
+    A^T=A^{-1}
+
+
+You can refer to [this question](https://math.stackexchange.com/questions/1936020/why-is-the-inverse-of-an-orthogonal-matrix-equal-to-its-transpose).
+
+Sine and cosine are convenient to create orthogonal matrices. Let's take the following matrix:
+
+.. math::
+
+    A=\begin{bmatrix}
+        cos(50) & -sin(50)\\\\
+        sin(50) & cos(50)
+    \end{bmatrix}
+
+Eigendecomposition
+------------------
+The eigendecomposition is one form of matrix decomposition (only square matrices). Decomposing a matrix means that we
+want to find a product of matrices that is equal to the initial matrix. In the case of the eigendecomposition, we
+decompose the initial matrix into the product of its eigenvectors and eigenvalues.
+
+Eigenvectors and eigenvalues
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Now imagine that the transformation of the initial vector gives us a new vector that has the exact same direction.
+The scale can be different but the direction is the same. Applying the matrix didn't change the direction of the vector.
+This special vector is called an eigenvector of the matrix. We will see that finding the eigenvectors of a matrix can
+be very useful.
+Imagine that the transformation of the initial vector by the matrix gives a new vector with the exact same direction.
+This vector is called an eigenvector of  𝐴 .
+This means that  𝑣  is a eigenvector of  𝐴  if  𝑣  and  𝐴𝑣  are in the same direction or to rephrase it if the vectors
+𝐴𝑣  and  𝑣  are parallel. The output vector is just a scaled version of the input vector. This scalling factor is
+𝜆  which is called the eigenvalue of  𝐴 .
+
+.. math::
+
+    A=\begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}
+
+    v=\begin{bmatrix}
+        1\\\\
+        1
+    \end{bmatrix}
+
+    Av = \lambda v
+
+    \begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}
+    \begin{bmatrix}
+        1\\\\
+        1
+    \end{bmatrix}=\begin{bmatrix}
+        6\\\\
+        6
+    \end{bmatrix}
+
+    6\times \begin{bmatrix}
+        1\\\\
+        1
+    \end{bmatrix} = \begin{bmatrix}
+        6\\\\
+        6
+    \end{bmatrix}
+
+which means that v is well an eigenvector of A. Also, the corresponding eigenvalue is lambda=6.
+
+**Another eigenvector of  𝐴  is**
+
+.. math::
+
+    v=\begin{bmatrix}
+        1\\\\
+        -3
+    \end{bmatrix}
+
+    \begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}\begin{bmatrix}
+        1\\\\
+        -3
+    \end{bmatrix} = \begin{bmatrix}
+        2\\\\
+        -6
+    \end{bmatrix}
+
+    2 \times \begin{bmatrix}
+        1\\\\
+        -3
+    \end{bmatrix} =
+    \begin{bmatrix}
+        2\\\\
+        -6
+    \end{bmatrix}
+
+which means that v is an eigenvector of A. Also, the corresponding eigenvalue is lambda=2.
+
+**Rescaled vectors**
+if v is an eigenvector of A, then any rescaled vector sv is also an eigenvector of A. The eigenvalue of the
+rescaled vector is the same.
+
+.. math::
+
+    3v=\begin{bmatrix}
+        3\\\\
+        -9
+    \end{bmatrix}
+
+    \begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}
+    \begin{bmatrix}
+        3\\\\
+        -9
+    \end{bmatrix} =
+    \begin{bmatrix}
+        6\\\\
+        -18
+    \end{bmatrix} = 2 \times
+    \begin{bmatrix}
+        3\\\\
+        -9
+    \end{bmatrix}
+
+We have well A X 3v = lambda v and the eigenvalue is still lambda = 2 .
+
+Concatenating eigenvalues and eigenvectors
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Now that we have an idea of what eigenvectors and eigenvalues are we can see how it can be used to decompose a matrix.
+All eigenvectors of a matrix  𝐴  can be concatenated in a matrix with each column corresponding to each eigenvector.
+
+.. math::
+
+    v=\begin{bmatrix}
+        1 & 1\\\\
+        1 & -3
+    \end{bmatrix}
+
+The first column [ 1  1 ] is the eigenvector of  𝐴  with lambda=6 and the second column [ 1 -3 ] with lambda=2.
+
+The vector :math:`\lambda` can be created from all eigenvalues:
+
+.. math::
+
+    \lambda=
+    \begin{bmatrix}
+        6\\\\
+        2
+    \end{bmatrix}
+
+**Then the eigendecomposition is given by**
+
+.. math::
+
+    A=V\cdot diag(\lambda) \cdot V^{-1}
+
+Converting eigenvalues and eigenvectors to a matrix A.
+
+.. math::
+
+    V^{-1}=\begin{bmatrix}
+        0.75 & 0.25\\\\
+        0.25 & -0.25
+    \end{bmatrix}
+
+    &V\cdot diag(\lambda) \cdot V^{-1}\\\\
+    &=
+    \begin{bmatrix}
+        1 & 1\\\\
+        1 & -3
+    \end{bmatrix}
+    \begin{bmatrix}
+        6 & 0\\\\
+        0 & 2
+    \end{bmatrix}
+    \begin{bmatrix}
+        0.75 & 0.25\\\\
+        0.25 & -0.25
+    \end{bmatrix}
+
+    \begin{bmatrix}
+        1 & 1\\\\
+        1 & -3
+    \end{bmatrix}
+    \begin{bmatrix}
+        6 & 0\\\\
+        0 & 2
+    \end{bmatrix} =
+    \begin{bmatrix}
+        6 & 2\\\\
+        6 & -6
+    \end{bmatrix}
+
+    &\begin{bmatrix}
+        6 & 2\\\\
+        6 & -6
+    \end{bmatrix}
+    \begin{bmatrix}
+        0.75 & 0.25\\\\
+        0.25 & -0.25
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        6\times0.75 + (2\times0.25) & 6\times0.25 + (2\times-0.25)\\\\
+        6\times0.75 + (-6\times0.25) & 6\times0.25 + (-6\times-0.25)
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        5 & 1\\\\
+        3 & 3
+    \end{bmatrix}=
+    A
+
+Real symmetric matrix
+^^^^^^^^^^^^^^^^^^^^^
+In the case of real symmetric matrices, the eigendecomposition can be expressed as
+
+.. math::
+
+   A = Q\Lambda Q^T
+
+where :math:`Q` is the matrix with eigenvectors as columns and :math:`\Lambda` is :math:`diag(\lambda)`.
+
+.. math::
+
+    A=\begin{bmatrix}
+        6 & 2\\\\
+        2 & 3
+    \end{bmatrix}
+
+This matrix is symmetric because :math:`A=A^T`. Its eigenvectors are:
+
+.. math::
+
+    Q=\begin{bmatrix}
+        0.89442719 & -0.4472136\\\\
+        0.4472136 & 0.89442719
+    \end{bmatrix}
+
+    \Lambda=\begin{bmatrix}
+        7 & 0\\\\
+        0 & 2
+    \end{bmatrix}
+
+
+    Q\Lambda&=\begin{bmatrix}
+        0.89442719 & -0.4472136\\\\
+        0.4472136 & 0.89442719
+    \end{bmatrix}
+    \begin{bmatrix}
+        7 & 0\\\\
+        0 & 2
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        0.89442719 \times 7 & -0.4472136\times 2\\\\
+        0.4472136 \times 7 & 0.89442719\times 2
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        6.26099033 & -0.8944272\\\\
+        3.1304952 & 1.78885438
+    \end{bmatrix}
+
+    Q^T=\begin{bmatrix}
+        0.89442719 & 0.4472136\\\\
+        -0.4472136 & 0.89442719
+    \end{bmatrix}
+
+
+    Q\Lambda Q^T&=\begin{bmatrix}
+        6.26099033 & -0.8944272\\\\
+        3.1304952 & 1.78885438
+    \end{bmatrix}
+    \begin{bmatrix}
+        0.89442719 & 0.4472136\\\\
+        -0.4472136 & 0.89442719
+    \end{bmatrix}\\\\
+    &=
+    \begin{bmatrix}
+        6 & 2\\\\
+        2 & 3
+    \end{bmatrix}
