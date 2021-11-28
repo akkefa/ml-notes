@@ -748,3 +748,42 @@ This matrix is symmetric because :math:`A=A^T`. Its eigenvectors are:
         6 & 2\\\\
         2 & 3
     \end{bmatrix}
+
+Singular Value Decomposition
+-----------------------------
+The eigendecomposition can be done only for square matrices. The way to go to decompose other types of matrices
+that can't be decomposed with eigendecomposition is to use Singular Value Decomposition (SVD).
+
+SVD decompose 𝐴 into 3 matrices.
+
+:math:`A = U D V^T`
+
+**U,D,V**
+where U is a matrix with eigenvectors as columns and D is a diagonal matrix with eigenvalues on the diagonal and V
+is the transpose of U.
+
+The matrices U,D,V have the following properties:
+
+- U and V are orthogonal matrices U^T=U^{-1} and V^T=V^{-1}
+- D is a diagonal matrix However D is not necessarily square.
+- The columns of U are called the left-singular vectors of A while the columns of V are the right-singular vectors of A.The values along the diagonal of D are the singular values of A.
+
+Intuition
+^^^^^^^^^
+I think that the intuition behind the singular value decomposition needs some explanations about the idea of matrix
+transformation. For that reason, here are several examples showing how the space can be transformed by 2D square
+matrices. Hopefully, this will lead to a better understanding of this statement:  𝐴  is a matrix that can be seen as
+a linear transformation. This transformation can be decomposed in three sub-transformations:
+1. rotation, 2. re-scaling, 3. rotation. These three steps correspond to the three matrices  𝑈 ,  𝐷 , and  𝑉.
+
+SVD and eigendecomposition
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Now that we understand the kind of decomposition done with the SVD, we want to know how the sub-transformations are
+found.
+The matrices  𝑈 ,  𝐷  and  𝑉  can be found by transforming  𝐴  in a square matrix and by computing the eigenvectors of
+this square matrix. The square matrix can be obtain by multiplying the matrix  𝐴  by its transpose in one way
+or the other:
+
+𝑈  corresponds to the eigenvectors of  𝐴𝐴^T
+𝑉  corresponds to the eigenvectors of  𝐴^T𝐴
+𝐷  corresponds to the eigenvalues  𝐴𝐴^T  or  𝐴^T𝐴  which are the same.
