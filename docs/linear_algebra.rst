@@ -478,9 +478,9 @@ Sine and cosine are convenient to create orthogonal matrices. Let's take the fol
 
 Eigendecomposition
 ------------------
-The eigendecomposition is one form of matrix decomposition. Decomposing a matrix means that we want to find a product
-of matrices that is equal to the initial matrix. In the case of the eigendecomposition, we decompose the initial matrix
-into the product of its eigenvectors and eigenvalues.
+The eigendecomposition is one form of matrix decomposition (only square matrices). Decomposing a matrix means that we
+want to find a product of matrices that is equal to the initial matrix. In the case of the eigendecomposition, we
+decompose the initial matrix into the product of its eigenvectors and eigenvalues.
 
 Eigenvectors and eigenvalues
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
