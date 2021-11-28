@@ -787,3 +787,31 @@ or the other:
 𝑈  corresponds to the eigenvectors of  𝐴𝐴^T
 𝑉  corresponds to the eigenvectors of  𝐴^T𝐴
 𝐷  corresponds to the eigenvalues  𝐴𝐴^T  or  𝐴^T𝐴  which are the same.
+
+
+The Moore-Penrose Pseudoinverse
+--------------------------------
+We saw that not all matrices have an inverse because the inverse is used to solve system of equations.
+The Moore-Penrose pseudoinverse is a direct application of the SVD. the inverse of a matrix A can be used to solve the
+equation Ax=b.
+
+.. math::
+
+    A^{-1}Ax=A^{-1}b
+    I_nx=A^{-1}b
+    x=A^{-1}b
+
+But in the case where the set of equations have 0 or many solutions the inverse cannot be found and the equation cannot
+be solved. The pseudoinverse is :math:`A^+` where :math:`A^+` is the pseudoinverse of :math:`A`.
+
+.. math::
+
+    AA^+\approx I_n
+
+    || AA^+-I_n ||
+
+The following formula can be used to find the pseudoinverse:
+
+.. math::
+
+    A^+= VD^+U^T
