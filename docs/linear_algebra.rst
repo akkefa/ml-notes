@@ -823,3 +823,57 @@ The following formula can be used to find the pseudoinverse:
 .. math::
 
     A^+= VD^+U^T
+
+
+Principal Components Analysis (PCA)
+------------------------------------
+The aim of principal components analysis (PCA) is generaly to reduce the number of dimensions of a dataset where
+dimensions are not completely decorelated.
+
+Describing the problem
+^^^^^^^^^^^^^^^^^^^^^^
+The problem can be expressed as finding a function that converts a set of data points from  ℝ𝑛  to  ℝ𝑙 .
+This means that we change the number of dimensions of our dataset. We also need a function that can decode back
+from the transformed dataset to the initial one.
+
+.. image:: _static/linear_algebra/principal-components-analysis-PCA-change-coordinates.png
+
+The first step is to understand the shape of the data.  𝑥(𝑖)  is one data point containing  𝑛  dimensions. Let's have
+𝑚  data points organized as column vectors (one column per point):
+
+:math:`x=\begin{bmatrix} x^{(1)}  x^{(2)}  \cdots  x^{(m)} \end{bmatrix}`
+
+If we deploy the n dimensions of our data points we will have:
+
+.. math::
+    x=\begin{bmatrix}
+        x_1^{(1)} & x_1^{(2)} & \cdots & x_1^{(m)}\\\\
+        x_2^{(1)} & x_2^{(2)} & \cdots & x_2^{(m)}\\\\
+        \cdots & \cdots & \cdots & \cdots\\\\
+        x_n^{(1)} & x_n^{(2)} & \cdots & x_n^{(m)}
+    \end{bmatrix}
+
+We can also write:
+
+.. math::
+
+    x=\begin{bmatrix}
+        x_1\\\\
+        x_2\\\\
+        \cdots\\\\
+        x_n
+    \end{bmatrix}
+
+c will have the shape:
+
+.. math::
+
+    c=\begin{bmatrix}
+        c_1\\\\
+        c_2\\\\
+        \cdots\\\\
+        c_l
+    \end{bmatrix}
+
+Adding some constraints: the decoding function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
