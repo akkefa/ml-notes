@@ -133,7 +133,11 @@ Norm is function which measure the size of vector.
 
 * Norms are non-negative values. If you think of the norms as a length, you easily see why it can't be negative.
 
+* Norms are 0 if and only if the vector is a zero vector
+
 * The triangle inequality** :math:`u+v \leq u+v`
+
+The norm is what is generally used to evaluate the error of a model.
 
 **Example**
 
@@ -877,3 +881,57 @@ c will have the shape:
 
 Adding some constraints: the decoding function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The encoding function f(x) transforms x into c and the decoding function transforms back c into an approximation of
+x. To keep things simple, PCA will respect some constraints:
+
+**Constraint 1**
+
+The decoding function has to be a simple matrix multiplication:
+
+$$g(c)=Dc$$
+
+By applying the matrix D to the dataset from the new coordinates system we should get back to the initial
+coordinate system.
+
+**Constraint 2**
+
+The columns of D must be orthogonal.
+
+**Constraint 3**
+
+The columns of D must have unit norm.
+
+Finding the encoding function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+For now we will consider only **one data point**. Thus we will have the following dimensions for these matrices
+(note that x and c are column vectors)
+
+.. image:: _static/linear_algebra/principal-components-analysis-PCA-encoding-function.png
+
+We want a decoding function which is a simple matrix multiplication. For that reason, we have g(c)=Dc.
+
+We will then find the encoding function from the decoding function. We want to minimize the error between the decoded
+data point and the actual data point.
+
+With our previous notation, this means reducing the distance between
+x and g(c). As an indicator of this distance, we will use the squared L^2 norm.
+
+.. math::
+
+    ||x-g(c)||_2^2
+
+This is what we want to minimize. Let's call :math:`c^*` the optimal c. Mathematically it can be written:
+
+$$
+c^* = \arg\min ||x-g(c)||_2^2
+$$
+
+This means that we want to find the values of the vector c such that :math:`||x-g(c)||_2^2`  is as small as possible.
+
+the squared :math:`L^2` norm can be expressed as:
+
+$$
+||y||_2^2 = y^Ty
+$$
+
+We have named the variable y to avoid confusion with our x. Here :math:`y=x - g(c)`
