@@ -935,3 +935,56 @@ $$
 $$
 
 We have named the variable y to avoid confusion with our x. Here :math:`y=x - g(c)`
+Thus the equation that we want to minimize becomes:
+
+$$
+(x - g(c))^T(x - g(c))
+$$
+
+Since the transpose respects addition we have:
+
+$$
+(x^T - g(c)^T)(x - g(c))
+$$
+
+By the distributive property we can develop:
+
+$$
+x^Tx - x^Tg(c) -  g(c)^Tx + g(c)^Tg(c)
+$$
+
+The commutative property tells us that :math:`x^Ty = y^Tx`. We can use that in the previous equation:
+we have :math:`g(c)^Tx = x^Tg(c)`. So the equation becomes:
+
+$$
+x^Tx -x^Tg(c) -x^Tg(c) + g(c)^Tg(c) = x^Tx -2x^Tg(c) + g(c)^Tg(c)
+$$
+
+The first term :math:`x^Tx` does not depends on c and since we want to minimize the function according to
+c we can just get off this term. We simplify to:
+
+$$
+c^* = c\arg \min -2x^T g(c) + g(c)^T g(c)
+$$
+
+Since :math:`g(c)=Dc`:
+
+$$
+\bs{c}^* = \underset{c}{\arg\min} -2\bs{x}^\text{T}\bs{Dc} + (\bs{Dc})^\text{T}\bs{Dc}
+$$
+
+With $(\bs{Dc})^\text{T}=\bs{c}^\text{T}\bs{D}^\text{T}$ (see [2.2](https://hadrienj.github.io/posts/Deep-Learning-Book-Series-2.2-Multiplying-Matrices-and-Vectors/)), we have:
+
+$$
+\bs{c}^* = \underset{c}{\arg\min} -2\bs{x}^\text{T}\bs{Dc} + \bs{c}^\text{T}\bs{D}^\text{T}\bs{Dc}
+$$
+
+As we saw in [2.6](https://hadrienj.github.io/posts/Deep-Learning-Book-Series-2.6-Special-Kinds-of-Matrices-and-Vectors/), $\bs{D}^\text{T}\bs{D}=\bs{I}_l$ because $\bs{D}$ is orthogonal (actually, it is [semi-orthogonal](https://en.wikipedia.org/wiki/Semi-orthogonal_matrix) if $n \neq l$) and their columns have unit norm. We can replace in the equation:
+
+$$
+\bs{c}^* = \underset{c}{\arg\min} -2\bs{x}^\text{T}\bs{Dc} + \bs{c}^\text{T}\bs{I}_l\bs{c}
+$$
+
+$$
+\bs{c}^* = \underset{c}{\arg\min} -2\bs{x}^\text{T}\bs{Dc} + \bs{c}^\text{T}\bs{c}
+$$
