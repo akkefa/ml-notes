@@ -494,6 +494,11 @@ The eigendecomposition is one form of matrix decomposition (only square matrices
 want to find a product of matrices that is equal to the initial matrix. In the case of the eigendecomposition, we
 decompose the initial matrix into the product of its eigenvectors and eigenvalues.
 
+
+.. math::
+
+    A v = \lambda v
+
 Eigenvectors and eigenvalues
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Now imagine that the transformation of the initial vector gives us a new vector that has the exact same direction.
