@@ -994,3 +994,17 @@ $$
 $$
 c^* = \arg \min -2x^T Dc + c^T c
 $$
+
+Minimizing the function
+^^^^^^^^^^^^^^^^^^^^^^^
+Now the goal is to find the minimum of the function −2𝑥T𝐷𝑐+𝑐T𝑐. One widely used way of doing that is to use the
+gradient descent algorithm. The main idea is that the sign of the derivative of the function at a specific value of  𝑥
+tells you if you need to increase or decrease  𝑥  to reach the minimum. When the slope is near  0 , the minimum
+should have been reached.
+
+Its mathematical notation is  ∇𝑥𝑓(𝑥).
+
+Here we want to minimize through each dimension of c. We are looking for a slope of 0.
+
+
+
