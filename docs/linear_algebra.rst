@@ -165,7 +165,7 @@ The p-norm (also called :math:`\ell_p`) of vector x. Let p ≥ 1 be a real numbe
 
     \left\| x \right\| _p = \left( |x_1|^p + |x_2|^p + \dotsb + |x_n|^p \right) ^{1/p}
 
-*  L1 norm, Where p = 1 :math:`\left\| x \right\|_1 = \sum_{i=1}^n |x_i|`
+*  L1 norm, Where p = 1 :math:`\| x \|_1 = \sum_{i=1}^n |x_i|`
 *  L2 norm and euclidean norm, Where p = 2 :math:`\left\| x \right\|_2 = \sqrt{\sum_{i=1}^n x_i^2}`
 *  L-max norm, Where p = infinity
 
