@@ -133,7 +133,11 @@ Norm is function which measure the size of vector.
 
 * Norms are non-negative values. If you think of the norms as a length, you easily see why it can't be negative.
 
+* Norms are 0 if and only if the vector is a zero vector
+
 * The triangle inequality** :math:`u+v \leq u+v`
+
+The norm is what is generally used to evaluate the error of a model.
 
 **Example**
 
@@ -161,7 +165,7 @@ The p-norm (also called :math:`\ell_p`) of vector x. Let p ≥ 1 be a real numbe
 
     \left\| x \right\| _p = \left( |x_1|^p + |x_2|^p + \dotsb + |x_n|^p \right) ^{1/p}
 
-*  L1 norm, Where p = 1 :math:`\left\| x \right\|_1 = \sum_{i=1}^n |x_i|`
+*  L1 norm, Where p = 1 :math:`\| x \|_1 = \sum_{i=1}^n |x_i|`
 *  L2 norm and euclidean norm, Where p = 2 :math:`\left\| x \right\|_2 = \sqrt{\sum_{i=1}^n x_i^2}`
 *  L-max norm, Where p = infinity
 
@@ -230,7 +234,15 @@ The sum of the elements along the main diagonal of a square matrix.
 
 .. math::
 
-    \operatorname{tr}(A) = \sum_{i=1}^n a_{ii} = a_{11} + a_{22} + \dots + a_{nn}
+    \operatorname{Tr}(A) = \sum_{i=1}^n a_{ii} = a_{11} + a_{22} + \dots + a_{nn}
+
+    A=\begin{bmatrix}
+        2 & 9 & 8 \\\\
+        4 & 7 & 1 \\\\
+        8 & 2 & 5
+    \end{bmatrix}
+
+    \mathrm{Tr}(A) = 2 + 7 + 5 = 14
 
 Satisfies the following properties:
 
@@ -481,6 +493,11 @@ Eigendecomposition
 The eigendecomposition is one form of matrix decomposition (only square matrices). Decomposing a matrix means that we
 want to find a product of matrices that is equal to the initial matrix. In the case of the eigendecomposition, we
 decompose the initial matrix into the product of its eigenvectors and eigenvalues.
+
+
+.. math::
+
+    A v = \lambda v
 
 Eigenvectors and eigenvalues
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -748,3 +765,246 @@ This matrix is symmetric because :math:`A=A^T`. Its eigenvectors are:
         6 & 2\\\\
         2 & 3
     \end{bmatrix}
+
+Singular Value Decomposition
+-----------------------------
+The eigendecomposition can be done only for square matrices. The way to go to decompose other types of matrices
+that can't be decomposed with eigendecomposition is to use Singular Value Decomposition (SVD).
+
+SVD decompose 𝐴 into 3 matrices.
+
+:math:`A = U D V^T`
+
+**U,D,V**
+where U is a matrix with eigenvectors as columns and D is a diagonal matrix with eigenvalues on the diagonal and V
+is the transpose of U.
+
+The matrices U,D,V have the following properties:
+
+- U and V are orthogonal matrices U^T=U^{-1} and V^T=V^{-1}
+- D is a diagonal matrix However D is not necessarily square.
+- The columns of U are called the left-singular vectors of A while the columns of V are the right-singular vectors of A.The values along the diagonal of D are the singular values of A.
+
+Intuition
+^^^^^^^^^
+I think that the intuition behind the singular value decomposition needs some explanations about the idea of matrix
+transformation. For that reason, here are several examples showing how the space can be transformed by 2D square
+matrices. Hopefully, this will lead to a better understanding of this statement:  𝐴  is a matrix that can be seen as
+a linear transformation. This transformation can be decomposed in three sub-transformations:
+1. rotation, 2. re-scaling, 3. rotation. These three steps correspond to the three matrices  𝑈 ,  𝐷 , and  𝑉.
+
+SVD and eigendecomposition
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Now that we understand the kind of decomposition done with the SVD, we want to know how the sub-transformations are
+found.
+The matrices  𝑈 ,  𝐷  and  𝑉  can be found by transforming  𝐴  in a square matrix and by computing the eigenvectors of
+this square matrix. The square matrix can be obtain by multiplying the matrix  𝐴  by its transpose in one way
+or the other:
+
+𝑈  corresponds to the eigenvectors of  𝐴𝐴^T
+𝑉  corresponds to the eigenvectors of  𝐴^T𝐴
+𝐷  corresponds to the eigenvalues  𝐴𝐴^T  or  𝐴^T𝐴  which are the same.
+
+
+The Moore-Penrose Pseudoinverse
+--------------------------------
+We saw that not all matrices have an inverse because the inverse is used to solve system of equations.
+The Moore-Penrose pseudoinverse is a direct application of the SVD. the inverse of a matrix A can be used to solve the
+equation Ax=b.
+
+.. math::
+
+    A^{-1}Ax=A^{-1}b
+    I_nx=A^{-1}b
+    x=A^{-1}b
+
+But in the case where the set of equations have 0 or many solutions the inverse cannot be found and the equation cannot
+be solved. The pseudoinverse is :math:`A^+` where :math:`A^+` is the pseudoinverse of :math:`A`.
+
+.. math::
+
+    AA^+\approx I_n
+
+    || AA^+-I_n ||
+
+The following formula can be used to find the pseudoinverse:
+
+.. math::
+
+    A^+= VD^+U^T
+
+
+Principal Components Analysis (PCA)
+------------------------------------
+The aim of principal components analysis (PCA) is generaly to reduce the number of dimensions of a dataset where
+dimensions are not completely decorelated.
+
+Describing the problem
+^^^^^^^^^^^^^^^^^^^^^^
+The problem can be expressed as finding a function that converts a set of data points from  ℝ𝑛  to  ℝ𝑙 .
+This means that we change the number of dimensions of our dataset. We also need a function that can decode back
+from the transformed dataset to the initial one.
+
+.. image:: _static/linear_algebra/principal-components-analysis-PCA-change-coordinates.png
+
+The first step is to understand the shape of the data.  𝑥(𝑖)  is one data point containing  𝑛  dimensions. Let's have
+𝑚  data points organized as column vectors (one column per point):
+
+:math:`x=\begin{bmatrix} x^{(1)}  x^{(2)}  \cdots  x^{(m)} \end{bmatrix}`
+
+If we deploy the n dimensions of our data points we will have:
+
+.. math::
+    x=\begin{bmatrix}
+        x_1^{(1)} & x_1^{(2)} & \cdots & x_1^{(m)}\\\\
+        x_2^{(1)} & x_2^{(2)} & \cdots & x_2^{(m)}\\\\
+        \cdots & \cdots & \cdots & \cdots\\\\
+        x_n^{(1)} & x_n^{(2)} & \cdots & x_n^{(m)}
+    \end{bmatrix}
+
+We can also write:
+
+.. math::
+
+    x=\begin{bmatrix}
+        x_1\\\\
+        x_2\\\\
+        \cdots\\\\
+        x_n
+    \end{bmatrix}
+
+c will have the shape:
+
+.. math::
+
+    c=\begin{bmatrix}
+        c_1\\\\
+        c_2\\\\
+        \cdots\\\\
+        c_l
+    \end{bmatrix}
+
+Adding some constraints: the decoding function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The encoding function f(x) transforms x into c and the decoding function transforms back c into an approximation of
+x. To keep things simple, PCA will respect some constraints:
+
+**Constraint 1**
+
+The decoding function has to be a simple matrix multiplication:
+
+$$g(c)=Dc$$
+
+By applying the matrix D to the dataset from the new coordinates system we should get back to the initial
+coordinate system.
+
+**Constraint 2**
+
+The columns of D must be orthogonal.
+
+**Constraint 3**
+
+The columns of D must have unit norm.
+
+Finding the encoding function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+For now we will consider only **one data point**. Thus we will have the following dimensions for these matrices
+(note that x and c are column vectors)
+
+.. image:: _static/linear_algebra/principal-components-analysis-PCA-encoding-function.png
+
+We want a decoding function which is a simple matrix multiplication. For that reason, we have g(c)=Dc.
+
+We will then find the encoding function from the decoding function. We want to minimize the error between the decoded
+data point and the actual data point.
+
+With our previous notation, this means reducing the distance between
+x and g(c). As an indicator of this distance, we will use the squared L^2 norm.
+
+.. math::
+
+    ||x-g(c)||_2^2
+
+This is what we want to minimize. Let's call :math:`c^*` the optimal c. Mathematically it can be written:
+
+$$
+c^* = \arg\min ||x-g(c)||_2^2
+$$
+
+This means that we want to find the values of the vector c such that :math:`||x-g(c)||_2^2`  is as small as possible.
+
+the squared :math:`L^2` norm can be expressed as:
+
+$$
+||y||_2^2 = y^Ty
+$$
+
+We have named the variable y to avoid confusion with our x. Here :math:`y=x - g(c)`
+Thus the equation that we want to minimize becomes:
+
+$$
+(x - g(c))^T(x - g(c))
+$$
+
+Since the transpose respects addition we have:
+
+$$
+(x^T - g(c)^T)(x - g(c))
+$$
+
+By the distributive property we can develop:
+
+$$
+x^Tx - x^Tg(c) -  g(c)^Tx + g(c)^Tg(c)
+$$
+
+The commutative property tells us that :math:`x^Ty = y^Tx`. We can use that in the previous equation:
+we have :math:`g(c)^Tx = x^Tg(c)`. So the equation becomes:
+
+$$
+x^Tx -x^Tg(c) -x^Tg(c) + g(c)^Tg(c) = x^Tx -2x^Tg(c) + g(c)^Tg(c)
+$$
+
+The first term :math:`x^Tx` does not depends on c and since we want to minimize the function according to
+c we can just get off this term. We simplify to:
+
+$$
+c^* = \arg \min -2x^T g(c) + g(c)^T g(c)
+$$
+
+Since :math:`g(c)=Dc`:
+
+$$
+c^* = \arg \min -2x^T Dc + (Dc)^T Dc
+$$
+
+With :math:`(Dc)^T = c^T D^T`, we have:
+
+$$
+c^* = \arg \min -2x^T Dc + c^T D^T Dc
+$$
+
+As we knew, :math:`D^T D= I_l` because D is orthogonal. and their columns have unit norm.
+We can replace in the equation:
+
+$$
+c^* = \arg \min -2x^T Dc + c^T I_l c
+$$
+
+$$
+c^* = \arg \min -2x^T Dc + c^T c
+$$
+
+Minimizing the function
+^^^^^^^^^^^^^^^^^^^^^^^
+Now the goal is to find the minimum of the function −2𝑥T𝐷𝑐+𝑐T𝑐. One widely used way of doing that is to use the
+gradient descent algorithm. The main idea is that the sign of the derivative of the function at a specific value of  𝑥
+tells you if you need to increase or decrease  𝑥  to reach the minimum. When the slope is near  0 , the minimum
+should have been reached.
+
+Its mathematical notation is  ∇𝑥𝑓(𝑥).
+
+Here we want to minimize through each dimension of c. We are looking for a slope of 0.
+
+
+

@@ -6,8 +6,8 @@
 .. title::
    Welcome to Machine learning math Explained!
 
-Welcome to ml_math's documentation!
-===================================
+Welcome to Machine learning Mathematics!
+========================================
 Quick definitions and intuitive explanations around machine learning.
 
 """""""""
