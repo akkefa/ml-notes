@@ -24,6 +24,7 @@ Contents
    :maxdepth: 1
 
    linear_algebra
+   probability
 
 
 Indices and tables
