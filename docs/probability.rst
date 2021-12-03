@@ -125,3 +125,28 @@ Such a function would not be very useful.
 For that reason, the y-axis of the probability density function doesn't represent probability values.
 To get the probability, we need to calculate the **area under the curve**. The advantage is that it leads to the
 probabilities according to a certain range (on the x-axis): the area under the curve increases if the range increases.
+
+we have a random variable  x  that can take values between 0 and 1.
+
+.. image:: _static/probability/probability-density-function.png
+    :alt: probability density function
+
+
+We can see that 0 seems to be not possible (probability around 0) and neither 1.
+The pic around 0.3 means that will get a lot of outcomes around this value.
+
+Finding probabilities from probability density function between a certain range of values can be done by calculating
+the **area under the curve** for this range. For example, the probability of drawing a value between 0.5 and 0.6
+corresponds to the following area
+
+.. image:: _static/probability/probability-density-function-area-under-the-curve-1.png
+    :alt: probability density function area under the curve 1
+
+We can easily see that if we increase the range, the probability (the area under the curve) will increase as well.
+For instance, for the range of 0.5-0.7:
+
+.. image:: _static/probability/probability-density-function-area-under-the-curve-2.png
+
+
+We will see in a moment how to calculate the area under the curve and get the probability associated with
+a specific range.
