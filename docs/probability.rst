@@ -104,3 +104,24 @@ This property is fulfilled.
 This means that the sum of the probabilities associated with each possible value is equal to 1.
 In the example of the dice experiment, we can see that there are 6 possible outcomes, each with a probability of
 :math:`\frac{1}{6}` giving a total of :math:`\frac{1}{6} \times 6 = 1`. This property is fulfilled.
+
+Continuous Variable and Probability Density Function
+-----------------------------------------------------
+Some variables are not discrete. They can take an infinite number of values in a certain range.
+But we still need to describe the probability associated with outcomes. The equivalent of the probability mass function
+for continuous variable is called the **probability density function**.
+
+In the case of the probability mass function, we saw that the y-axis gives a probability. For instance, in the plot
+we created with Python, the probability to get a 1 was equal to :math:`\frac{1}{6} \approx 0.16`. It is :math:`\frac{1}{6}`
+because it is one possibility over 6 total possibilities.
+
+However, we can't do this for continuous variables because the total number of possibilities is infinite.
+For instance, if we draw a number between 0 and 1, we have an infinite number of possible outcomes
+(for instance 0.320502304...). In the example above, we had 6 possible outcomes, leading to probabilities around
+:math:`\frac{1}{6}`. Now, we have each probability equal to :math:`\frac{1}{+\infty} \approx 0`.
+Such a function would not be very useful.
+
+
+For that reason, the y-axis of the probability density function doesn't represent probability values.
+To get the probability, we need to calculate the **area under the curve**. The advantage is that it leads to the
+probabilities according to a certain range (on the x-axis): the area under the curve increases if the range increases.
