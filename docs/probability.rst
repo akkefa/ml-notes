@@ -150,3 +150,16 @@ For instance, for the range of 0.5-0.7:
 
 We will see in a moment how to calculate the area under the curve and get the probability associated with
 a specific range.
+
+Area under the curve
+---------------------
+The area under the curve of a function for a specific range of values can be calculated with the **integral** of the
+function. We will see that calculating the integral of a function is the opposite of calculating the derivative.
+This means that if you derive a function f(x) and calculate the integral of the resulting function f'(x)
+you will get back f(x).😮
+
+The derivative at a point of a function gives its **rate of change**.
+What is the link between the function describing the rate of change of another function (the derivative) and
+the area under the curve 🤔?
+
+Let's start with a point on derivative! And then, with the next graphical example, it will be crystal clear. 🔮
