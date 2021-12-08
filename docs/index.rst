@@ -23,6 +23,7 @@ Contents
    :caption: Maths
    :maxdepth: 1
 
+   calculus
    linear_algebra
    probability
 
