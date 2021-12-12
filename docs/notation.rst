@@ -1,5 +1,16 @@
-Notation
-===============
+Mathematical Notation
+======================
+
+Greek Letters
+-------------
+=================================  =========================================================================================
+  Symbol                            Meaning
+=================================  =========================================================================================
+:math:`\alpha`                     Regularization parameter
+:math:`\Delta`                     Distance between two points used to calculate the derivative for instance
+:math:`\lambda`                    Number of events in a Poisson distribution. It can also refer to the eigenvalues
+=================================  =========================================================================================
+
 
 Sets and Graphs
 ----------------
