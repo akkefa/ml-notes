@@ -46,7 +46,7 @@ Mathematically, the difference between the two points on the curve when  Δ𝑥 
 This is the concept of *limit*: this expression is read as “the limit of :math:`f(x + \Delta x) - f(x)` as
 :math:`\Delta x` approaches zero”.
 
-$f(x + \Delta x) - f(x)$ as $\Delta x$ approaches zero”.
+:math:`f(x + \Delta x) - f(x) as \Delta x` approaches zero”.
 
 **Calculating Derivatives**
 
