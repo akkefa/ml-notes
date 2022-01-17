@@ -26,6 +26,7 @@ Contents
    calculus
    linear_algebra
    probability
+   statistics
 
 
 Indices and tables
