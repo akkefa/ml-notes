@@ -1,7 +1,7 @@
 Calculus
 =========
-Calculus is a branch of mathematics that gives tools to study rate of change
-of functions trough two main areas: derivatives and integrals
+Calculus is a branch of mathematics that gives tools to study rate of change of functions trough two main areas:
+derivatives and integrals
 
 Derivatives
 ------------
@@ -78,5 +78,5 @@ You can extract rules from the fact that a function derivative corresponds to it
 **Constant Function**
 
 The rate of change of a function is equal to zero when y does not
-depend on $x$ (when the value of $y$ is the same for any x). For
+depend on x (when the value of y is the same for any x). For
 instance, take the function f(x) = 4.
