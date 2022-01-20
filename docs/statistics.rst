@@ -45,3 +45,19 @@ positive (it is like a distance, measuring how far away the data points are from
     \sigma(x) \geq 0
 
 
+Covariance and Correlation
+---------------------------
+
+.. math::
+
+    cov(x, y) = \frac{1}{n}\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})
+
+
+Correlation
+^^^^^^^^^^^
+The *correlation*, usually refering to the *Pearson’s correlation coefficient*, is a normalized version of the
+covariance. It is scaled between -1 and 1
+
+.. math::
+
+    corr(x, y) = \frac{cov(x, y)}{\sigma_x \sigma_y}
