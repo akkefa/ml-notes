@@ -163,3 +163,20 @@ What is the link between the function describing the rate of change of another f
 the area under the curve 🤔?
 
 Let's start with a point on derivative! And then, with the next graphical example, it will be crystal clear. 🔮
+
+Common Probability Distributions
+---------------------------------
+
+Uniform Distribution
+^^^^^^^^^^^^^^^^^^^^^^
+Uniform distributions describe random experiments where each possible outcome has the same probability of occurring.
+For instance, rolling a die or flipping a coin corresponds to discrete uniform distributions.
+
+Gausian Distribution
+^^^^^^^^^^^^^^^^^^^^^^
+Gaussian distributions, also called *normal distributions* are one of the most important probability density functions.
+They are used to model the distribution of continuous random variables.
+
+.. math::
+
+    f(x) = \frac{1}{\sqrt{2\pi \sigma^2}}e^{-\frac{1}{2\sigma^2}(x - \mu)^2}
