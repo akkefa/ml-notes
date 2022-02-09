@@ -23,3 +23,5 @@ Using the harmonic mean has the effect that a good F1-score requires both a good
 
     F_1 = 2 \cdot \frac{\text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}}
 
+Ranking | Recommendation | Information Retrieval
+-------------------------------------------------
