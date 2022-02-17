@@ -71,7 +71,7 @@ With the *Leibniz notation*, you write:
     \frac{d f(x)}{dx}
 
 Derivatives of Linear And Nonlinear Functions
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You can extract rules from the fact that a function derivative corresponds to its rate of change.
 
