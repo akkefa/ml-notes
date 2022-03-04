@@ -27,6 +27,7 @@ Contents
    :caption: Deep learning
    :maxdepth: 1
 
+   loss_functions
    evaluation_metrics
 
 
