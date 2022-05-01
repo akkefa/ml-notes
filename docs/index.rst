@@ -15,12 +15,12 @@ Contents
    notation
 
 .. toctree::
-   :caption: Maths
-   :maxdepth: 1
+   :caption: Mathematics
+   :maxdepth: 2
 
+   probability
    calculus
    linear_algebra
-   probability
    statistics
 
 .. toctree::
