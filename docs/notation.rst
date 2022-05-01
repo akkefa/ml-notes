@@ -1,5 +1,5 @@
-Mathematical Notation
-======================
+Notation
+========
 
 Greek Letters
 -------------

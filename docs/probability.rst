@@ -1,10 +1,23 @@
+############
 Probability
-============
-Probability theory is a mathematical framework for representing uncertain statements. It provides a means of quantifying
-uncertainty as well as axioms for deriving new uncertain statements.
+############
 
+Study studies randomness and uncertainty studies randomness and uncertainty. How to find the probability
+
+- of getting at least 2 heads in 5 coin flips
+- that a customer will buy milk if they are also buying bread
+
+An **experiment** is any action or process that generates observations.
+The **sample space** of an experiment, denoted S, is the set of all possible outcomes of an experiment.
+
+An **event** is any possible outcome, or combination of outcomes, of an experiment.
+
+The **cardinality** of a sample space or an event, is the number of outcomes it contains. $ | S | $ represents the
+cardinality of the sample space.
+
+*****************
 Random Variables
------------------
+*****************
 The goal of probability is to deal with uncertainty. It gives ways to describe random events.
 A random variable is a variable that can take multiple values depending on the outcome of a random event.
 f the outcomes are finite (for example the 6 possibilities in a die throwing event) the random variable is said
@@ -14,7 +27,7 @@ If the possible outcomes are not finite (for example, drawing a number between  
 number of values), the random variable is said to be **continuous**.
 
 discrete random variable
-^^^^^^^^^^^^^^^^^^^^^^^^
+=========================
 Let's say that the variable  x  is a random variable expressing the result of a dice roll 🎲.
 The variable can take the value 1, 2, 3, 4, 5 or 6. It is a discrete random variable.
 
