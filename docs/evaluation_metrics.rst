@@ -26,16 +26,20 @@ Using the harmonic mean has the effect that a good F1-score requires both a good
 Ranking | Recommendation | Information Retrieval
 -------------------------------------------------
 
+None
 
 
 Language Model
 ---------------
 
-ROUGE (Recall-Oriented Understudy for Gisting Evaluation)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ROUGE
+^^^^^^
+
 ROUGE is actually a set of metrics that are used to evaluate the quality of a text summarization system.
 
-ROUGE-N: Overlap of n-grams[2] between the system and reference summaries.
+ROUGE-N Overlap of n-grams[2] between the system and reference summaries.
+
 ROUGE-1 refers to the overlap of unigram (each word) between the system and reference summaries.
+
 ROUGE-2 refers to the overlap of bigrams between the system and reference summaries.
 
