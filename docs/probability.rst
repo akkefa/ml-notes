@@ -44,10 +44,11 @@ Conditional Probability and Bayes Theorem
 Two events A and B from the ``same sample space S``. Calculate the probability of event A knowing that event B has occurred.
 B is the “conditioning event”. :math:`P(A|B)`
 
-| Conditional Probability is :math:`P(A \mid B)=\frac{P(A \cap B)}{P(B)}, \quad P(B)>0`
-| This leads to the multiplication rule -> :math:`P(A) P(B \mid A) = P(A \cap B) = P(B) P(A \mid B)`
+Conditional Probability is :math:`P(A \mid B)=\frac{P(A \cap B)}{P(B)}, \quad P(B)>0`
 
-**Bayes Theorem** :math:`P(A \mid B) = \frac{P(B \mid A)P(A)} {P(A)}`
+This leads to the multiplication rule  :math:`P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)`
+
+**Bayes Theorem** :math:`P(A \mid B) = \frac{P(B \mid A)P(A)} {P(B)}`
 
 Law of Total Probability
 ------------------------
@@ -55,17 +56,41 @@ Law of Total Probability
 
 :math:`P(B)=P(B \cap A)+P\left(B \cap A^{c}\right)=P(B \mid A) P(A)+P\left(B \mid A^{c}\right) P\left(A^{c}\right)`
 
+Independence and Mutually Exclusive Events
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Two events are ``independent`` if knowing the outcome of one event does not change the probability of the other.
+
+* Flip a two-sided coin repeatedly. Knowing the outcome of one flip does not change the probability of the next.
+
+Two events, A and B, are independent if :math:`P(A|B) = P(A)`, or equivalently :math:`P(B|A) = P(B)`.
+
+``Recall:`` :math:`P(A \mid B)=\frac{P(A \cap B)}{P(B)}`
+
+then, if A and B are independent, we get the multiplication
+rule for independent events:
+
+:math:`P(A \cap B)=P(A) P(B)`
+
 
 
 Random Variables
-========================================
-The goal of probability is to deal with uncertainty. It gives ways to describe random events.
-A random variable is a variable that can take multiple values depending on the outcome of a random event.
-f the outcomes are finite (for example the 6 possibilities in a die throwing event) the random variable is said
-to be **discrete**.
+=================
+A random variable (rv) is a function that maps events (from the sample space S) to the real numbers.
+Random variables can be ``discrete`` or ``continuous``, or sometimes a mixture of the two.
 
-If the possible outcomes are not finite (for example, drawing a number between  0  and  1  can give an infinite
-number of values), the random variable is said to be **continuous**.
+Denote random variables by a capital letter near the end of the alphabet (e.g. X, Y ).
+
+**Big Picture** In statistics, we will model populations using random variables (e.g. mean, variance) of these random
+variables will tell us about the population we are studying.
+
+Probability mass function, pmf
+-------------------------------
+A probability mass function of a discrete rv, X
+
+.. math::
+    p(x)=P(X=x)=P(\text { all } x \in S \mid X(s)=x)
+
 
 discrete random variable
 =========================
