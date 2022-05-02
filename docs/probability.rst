@@ -171,3 +171,9 @@ PMF
 .. math::
 
     P(X=k)=(1-p)^{k-1}p
+
+Expected Value
+^^^^^^^^^^^^^^^
+:math:`E(X) = \sum_{k=1}^{\infty} k P(Y=k) = \sum_{k=1}^{\infty} k (1-p)^{k-1}p = \frac{1} p`
+
+:math:`E(X) = \frac{1} p`
