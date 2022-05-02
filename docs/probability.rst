@@ -122,6 +122,7 @@ Geometric rv
 -------------
 A geometric rv consists of independent Bernoulli trials, each with the same probability of success p, repeated until
 the first success is obtained.
+
 * Each trial is identical, and can result in a success or failure.
 * The probability of success, p, is constant from one trial to the next.
 * The trials are independent, so the outcome on any particular trial does not influence the outcome of any other trial.
