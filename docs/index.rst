@@ -16,7 +16,7 @@ Contents
 
 .. toctree::
    :caption: Mathematics
-   :maxdepth: 2
+   :maxdepth: 3
 
    probability
    calculus
