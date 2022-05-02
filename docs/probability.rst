@@ -18,6 +18,7 @@ Axioms of Probability
 | Axiom 1 : For any event :math:`A, 0 \leq P(A) \leq 1`
 | Axiom 2: :math:`P(S)=1`
 | Axiom 3 : If :math:`A_{n}` mutually exclusive events (intersection of any two is the empty set) then
+
 .. math::
 
     P\left(\bigcup_{i = 1}^k A_n\right) = \sum_{k=1}^{n} P\left(A_{k}\right)
@@ -37,6 +38,9 @@ Combination
 ^^^^^^^^^^^^
 When selecting more than one item without replacement and order does not matter.
 :math:`{C}_{n,r} = \binom nk = {n \choose k, n-k} = \frac{n!}{k!(n-k)!}`
+
+Conditional Probability and Bayes Theorem
+==========================================
 
 
 Random Variables
