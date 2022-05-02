@@ -1,7 +1,7 @@
 ############
 Probability
 ############
-Study studies randomness and uncertainty studies randomness and uncertainty. How to find the probability
+studies randomness and uncertainty. How to find the probability
 
 - of getting at least 2 heads in 5 coin flips
 - that a customer will buy milk if they are also buying bread
