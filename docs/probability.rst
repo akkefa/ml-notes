@@ -1,23 +1,46 @@
 ############
 Probability
 ############
-
 Study studies randomness and uncertainty studies randomness and uncertainty. How to find the probability
 
 - of getting at least 2 heads in 5 coin flips
 - that a customer will buy milk if they are also buying bread
 
-An **experiment** is any action or process that generates observations.
-The **sample space** of an experiment, denoted S, is the set of all possible outcomes of an experiment.
+Terminology
+============
+| **Experiment** is any action or process that generates observations.
+| **Sample space** of an experiment, denoted S, is the set of all possible outcomes of an experiment.
+| **Event** is any possible outcome, or combination of outcomes, of an experiment.
+| **Cardinality** of a sample space or an event, is the number of outcomes it contains. :math:`|S|` represents the cardinality of the sample space.
 
-An **event** is any possible outcome, or combination of outcomes, of an experiment.
+Axioms of Probability
+----------------------
+| Axiom 1 : For any event :math:`A, 0 \leq P(A) \leq 1`
+| Axiom 2: :math:`P(S)=1`
+| Axiom 3 : If :math:`A_{n}` mutually exclusive events (intersection of any two is the empty set) then
+.. math::
 
-The **cardinality** of a sample space or an event, is the number of outcomes it contains. $ | S | $ represents the
-cardinality of the sample space.
+    P\left(\bigcup_{i = 1}^k A_n\right) = \sum_{k=1}^{n} P\left(A_{k}\right)
 
-*****************
+
+Counting: Permutations and Combinations
+-----------------------------------------
+| **With replacement** means the same item can be chosen more than once.
+| **Without replacement** means the same item cannot be selected more than once.
+
+Permutation
+^^^^^^^^^^^^
+When selecting more than one item without replacement and order does matter.
+:math:`{P}_{n,r}  = \frac{n!}{(n-k)!}`
+
+Combination
+^^^^^^^^^^^^
+When selecting more than one item without replacement and order does not matter.
+:math:`{C}_{n,r} = \binom nk = {n \choose k, n-k} = \frac{n!}{k!(n-k)!}`
+
+
 Random Variables
-*****************
+========================================
 The goal of probability is to deal with uncertainty. It gives ways to describe random events.
 A random variable is a variable that can take multiple values depending on the outcome of a random event.
 f the outcomes are finite (for example the 6 possibilities in a die throwing event) the random variable is said
