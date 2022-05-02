@@ -91,11 +91,11 @@ A probability mass function of a discrete rv, X
 .. math::
     p(x)=P(X=x)=P(\text { all } x \in S \mid X(s)=x)
 
+Cumulative distribution function, cdf
+-------------------------------------
+.. math::
 
-discrete random variable
-=========================
-Let's say that the variable  x  is a random variable expressing the result of a dice roll 🎲.
-The variable can take the value 1, 2, 3, 4, 5 or 6. It is a discrete random variable.
+ F(y)=P(X \leq y)=\sum_{x \leq y} P(X=x)
 
 Probability Distributions
 -------------------------
@@ -103,7 +103,17 @@ So a random variable can take multiple values. One very important thing is to kn
 encountered than others. The description of the probability of each possible value that a random variable can take is
 called its probability distribution.
 
-**probability mass function** for a discrete variable and **probability density function** for a continuous variable.
+
+discrete random variable
+=========================
+Discrete random variables can be categorized into different types or classes. Each type/class models many different
+real-world situations.
+
+Bernoulli rv
+-------------
+A Bernoulli random variable is a random variable that is either 0 or 1 with probability :math:`p` or :math:`1-p`
+respectively.
+
 
 Discrete Variable and Probability Mass Function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
