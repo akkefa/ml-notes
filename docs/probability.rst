@@ -104,7 +104,7 @@ encountered than others. The description of the probability of each possible val
 called its probability distribution.
 
 
-discrete random variable
+Discrete Random Variable
 =========================
 Discrete random variables can be categorized into different types or classes. Each type/class models many different
 real-world situations.
@@ -114,6 +114,18 @@ Bernoulli rv
 A Bernoulli random variable is a random variable that is either 0 or 1 with probability :math:`p` or :math:`1-p`
 respectively.
 
+:math:`P(X=1)=p`
+
+:math:`P(X=0)=1-p`
+
+Geometric rv
+-------------
+A geometric rv consists of independent Bernoulli trials, each with the same probability of success p, repeated until
+the first success is obtained.
+* Each trial is identical, and can result in a success or failure.
+* The probability of success, p, is constant from one trial to the next.
+* The trials are independent, so the outcome on any particular trial does not influence the outcome of any other trial.
+* Trials are repeated until the first success.
 
 Discrete Variable and Probability Mass Function
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
