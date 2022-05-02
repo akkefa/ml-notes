@@ -104,6 +104,27 @@ encountered than others. The description of the probability of each possible val
 called its probability distribution.
 
 
+Expected Value (Mean or Average)
+---------------------------------
+The expected value E(X) or :math:`\mu_x` of a random variable is a weighted average of all possible outcomes. In the
+case of a continuum of possible outcomes, the expectation is defined by integration.
+
+.. math::
+
+    E(X)=\sum_{k} k P(X=k)
+
+**E.g**
+5 exams result : 70 +80 + 80 + 90 + 90
+
+:math:`A v g=\frac{70+80+80+90+90}{5} = \frac{1}{5}(70)+\frac{2}{5}(80)+\frac{2}{5}(90) = 82.5`
+
+**E.g**
+Let X represent the outcome of a roll of a fair six-sided die. The possible values for X are 1, 2, 3, 4, 5, and 6, all
+of which are equally likely with a probability of :math:`1/6`
+The Expected Value of X is
+
+:math:`E[X] = 1\cdot\frac16 + 2\cdot\frac16 + 3\cdot\frac16 + 4\cdot\frac16 + 5\cdot\frac16 + 6\cdot\frac16 = (1+2+3+4+5+6) / 6= 3.5`
+
 Discrete Random Variable
 =========================
 Discrete random variables can be categorized into different types or classes. Each type/class models many different
