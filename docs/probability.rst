@@ -139,6 +139,10 @@ respectively.
 
 :math:`P(X=0)=1-p`
 
+Expected Value
+^^^^^^^^^^^^^^^
+:math:`E(X)= 0 * P(x=0) + 1 * P(x=1)= 0 * (1-p) + 1 * (p) = p`
+
 Geometric rv
 -------------
 A geometric rv consists of independent Bernoulli trials, each with the same probability of success p, repeated until
