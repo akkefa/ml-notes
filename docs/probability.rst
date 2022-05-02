@@ -31,16 +31,30 @@ Counting: Permutations and Combinations
 
 Permutation
 ^^^^^^^^^^^^
-When selecting more than one item without replacement and order does matter.
+When selecting more than one item without replacement and ``order does matter``.
 :math:`{P}_{n,r}  = \frac{n!}{(n-k)!}`
 
 Combination
 ^^^^^^^^^^^^
-When selecting more than one item without replacement and order does not matter.
+When selecting more than one item without replacement and ``order does not matter``.
 :math:`{C}_{n,r} = \binom nk = {n \choose k, n-k} = \frac{n!}{k!(n-k)!}`
 
 Conditional Probability and Bayes Theorem
 ==========================================
+Two events A and B from the ``same sample space S``. Calculate the probability of event A knowing that event B has occurred.
+B is the “conditioning event”. :math:`P(A|B)`
+
+| Conditional Probability is :math:`P(A \mid B)=\frac{P(A \cap B)}{P(B)}, \quad P(B)>0`
+| This leads to the multiplication rule -> :math:`P(A) P(B \mid A) = P(A \cap B) = P(B) P(A \mid B)`
+
+**Bayes Theorem** :math:`P(A \mid B) = \frac{P(B \mid A)P(A)} {P(A)}`
+
+Law of Total Probability
+------------------------
+:math:`B=(B \cap A) \cup\left(B \cap A^{c}\right)`
+
+:math:`P(B)=P(B \cap A)+P\left(B \cap A^{c}\right)=P(B \mid A) P(A)+P\left(B \mid A^{c}\right) P\left(A^{c}\right)`
+
 
 
 Random Variables
