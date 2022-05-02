@@ -84,15 +84,15 @@ Denote random variables by a capital letter near the end of the alphabet (e.g. X
 **Big Picture** In statistics, we will model populations using random variables (e.g. mean, variance) of these random
 variables will tell us about the population we are studying.
 
-Probability mass function, pmf
--------------------------------
+Probability mass function (PMF)
+--------------------------------
 A probability mass function of a discrete rv, X
 
 .. math::
     p(x)=P(X=x)=P(\text { all } x \in S \mid X(s)=x)
 
-Cumulative distribution function, cdf
--------------------------------------
+Cumulative distribution function (CDF)
+-----------------------------------------
 .. math::
 
  F(y)=P(X \leq y)=\sum_{x \leq y} P(X=x)
@@ -135,9 +135,10 @@ Bernoulli rv
 A Bernoulli random variable is a random variable that is either 0 or 1 with probability :math:`p` or :math:`1-p`
 respectively.
 
-:math:`P(X=1)=p`
-
-:math:`P(X=0)=1-p`
+PMF
+^^^^
+| :math:`P(X=1)=p`
+| :math:`P(X=0)=1-p`
 
 Expected Value
 ^^^^^^^^^^^^^^^
@@ -148,7 +149,25 @@ Geometric rv
 A geometric rv consists of independent Bernoulli trials, each with the same probability of success p, repeated until
 the first success is obtained.
 
-* Each trial is identical, and can result in a success or failure.
-* The probability of success, p, is constant from one trial to the next.
-* The trials are independent, so the outcome on any particular trial does not influence the outcome of any other trial.
-* Trials are repeated until the first success.
+#. Each trial is identical, and can result in a success or failure.
+#. The probability of success, p, is constant from one trial to the next.
+#. The trials are independent, so the outcome on any particular trial does not influence the outcome of any other trial.
+#. Trials are repeated until the first success.
+
+PMF
+^^^^
+| :math:`S=\{1,01,001,0001,00001,000001,\dots\}`
+| Bernoulli trail success = 1 = :math:`p`
+| Bernoulli trail failure = 0 = :math:`1-p`
+
+
+| :math:`P(X=1)=p`
+| :math:`P(X=2)=(1-p) p`
+| :math:`P(X=3)=(1-p)(1-p)p`
+| :math:`P(X=4)=(1-p)(1-p)(1-p)p`
+| :math:`P(X=5)=(1-p)^{4}p`
+| :math:`P(X=k)=(1-p)^{k-1}p`
+
+.. math::
+
+    P(X=k)=(1-p)^{k-1}p
