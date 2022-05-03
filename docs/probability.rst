@@ -236,7 +236,16 @@ Expected Value
 ^^^^^^^^^^^^^^^
 | :math:`E(X)=\sum_{k} k P(X=k)`
 | :math:`E(X)=\sum_{k=0}^n k {n \choose k}p^{k}(1-p)^{n-k}`
+| :math:`E(X)= n * p`
+
+``Recall:`` Bern(p) has expected value p. x1, x2 ... xn are independent bern p. so
+:math:`sum_{k=1}^n X_n = sum_{k=1}^n E[X_n] = n * p`
 
 
+Variance
+^^^^^^^^
+:math:`V(X)= E(X^2) - E(X)^2 = n * p * (1-p)`
+
+``Recall:`` Bern(p) has variance p * (1-p).
 
 
