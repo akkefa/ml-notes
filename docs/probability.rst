@@ -232,5 +232,11 @@ Binomial Theorem
 ^^^^^^^^^^^^^^^^^
 :math:`\sum_{k=0}^n {n \choose k}p^{k}(1-p)^{n-k} = 1`
 
+Expected Value
+^^^^^^^^^^^^^^^
+| :math:`E(X)=\sum_{k} k P(X=k)`
+| :math:`E(X)=\sum_{k=0}^n k {n \choose k}p^{k}(1-p)^{n-k}`
+
+
 
 
