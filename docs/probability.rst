@@ -125,6 +125,18 @@ The Expected Value of X is
 
 :math:`E[X] = 1\cdot\frac16 + 2\cdot\frac16 + 3\cdot\frac16 + 4\cdot\frac16 + 5\cdot\frac16 + 6\cdot\frac16 = (1+2+3+4+5+6) / 6= 3.5`
 
+
+Variance
+--------
+Measures how far we expect our random variable to be from the mean. Variance of a random variable X =
+:math:`\sigma_x` or V(X).
+
+:math:`V(X) = \operatorname{E}[(X - \operatorname{E}[X])^2] = \operatorname{E}[X^2] - \operatorname{E}[X]^2`
+
+standard deviation
+-------------------
+The standard deviation is the square root of the variance. :math:`\sigma_x = \sqrt{V(X)}`
+
 Discrete Random Variable
 =========================
 Discrete random variables can be categorized into different types or classes. Each type/class models many different
@@ -143,6 +155,13 @@ PMF
 Expected Value
 ^^^^^^^^^^^^^^^
 :math:`E(X)= 0 * P(x=0) + 1 * P(x=1)= 0 * (1-p) + 1 * (p) = p`
+
+Variance
+--------
+``Recall:`` :math:`E(X^2)=\sum_{k} k^2 P(X=k) = 1^2 * p = p`
+
+:math:`V(X) = \operatorname{E}[X^2] - \operatorname{E}[X]^2 = p - p^2 = p(1-p)`
+
 
 Geometric rv
 -------------
@@ -176,4 +195,6 @@ Expected Value
 ^^^^^^^^^^^^^^^
 :math:`E(X) = \sum_{k=1}^{\infty} k P(Y=k) = \sum_{k=1}^{\infty} k (1-p)^{k-1}p = \frac{1} p`
 
-:math:`E(X) = \frac{1} p`
+Variance
+--------
+:math:`V(X) = \operatorname{E}[X^2] - \operatorname{E}[X]^2 = \frac{1-p}{p^{2}}`
