@@ -168,6 +168,8 @@ Geometric rv
 A geometric rv consists of independent Bernoulli trials, each with the same probability of success p, repeated until
 the first success is obtained.
 
+Properties
+^^^^^^^^^^^
 #. Each trial is identical, and can result in a success or failure.
 #. The probability of success, p, is constant from one trial to the next.
 #. The trials are independent, so the outcome on any particular trial does not influence the outcome of any other trial.
@@ -198,3 +200,37 @@ Expected Value
 Variance
 --------
 :math:`V(X) = \operatorname{E}[X^2] - \operatorname{E}[X]^2 = \frac{1-p}{p^{2}}`
+
+Binomial rv
+------------
+A binomial rv is a random variable that is the number of successes in n independent Bernoulli trials,
+each with probability p. The probability of success is p. The probability of failure is 1-p. The number of trials is n.
+
+Properties
+^^^^^^^^^^^
+#. Experiment is n trials (n is fixed in advance)
+#. Trials are identical and result in a success or a failure (i.e. Bernoulli trials) with P(success) = p and P(failure) = 1 - p.
+#. Trials are independent (outcome of one trial does not influence any other)
+
+PMF
+^^^^
+:math:`S = \left\{\left(x_{1}, x_{2}, \ldots, x_{n}\right) \mid x_{i}\right. =\left\{\begin{array}{l} 1 \text { if } \text { success } \\ 0 \text { if failure }\end{array}\right.`
+
+| :math:`P(X=0)=P(\{00 \cdots 0\})=(1-p)^{n}`
+| :math:`P(X=1)=P(\{10 \cdots 0,0100 \ldots,0 \cdots 01\}) = n*p*(1-p)^{n-1}`
+| :math:`P(X=2)=P(\{11 \cdots 0,0110 \ldots,00 \cdots 11\}) = \binom{n}{2}p^2(1-p)^{n-2}`
+
+``Explanation P(X=2):`` Among n number of fixed trials, we have 2 bernoulli trials successes with probability P  and
+rest are failures bernoulli trails with probability (1-p). So, we need to choose 2 from n to get the exact probability
+of success.
+
+:math:`P(X=k) = P({\cdots \cdots }) = \binom{n}{k}p^k(1-p)^{n-k}`
+
+Where k = 1 (success) and n-k = 0 (failure).
+
+Binomial Theorem
+^^^^^^^^^^^^^^^^^
+:math:`\sum_{k=0}^n {n \choose k}p^{k}(1-p)^{n-k} = 1`
+
+
+
