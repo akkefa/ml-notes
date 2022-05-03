@@ -1,4 +1,3 @@
-# ML Notes
+# ML Notes for CS Degree
 
-# Commands
-## cd docs/ && make html
+### cd docs/ && make html
