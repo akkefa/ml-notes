@@ -1,3 +1,4 @@
-# ML Notes for CS Degree
+# ML Notes for CS Degree and Book Reading
 
-### cd docs/ && make html
+### Command to generate html files
+cd docs/ && make html
