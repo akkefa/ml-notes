@@ -16,7 +16,7 @@ Contents
 
 .. toctree::
    :caption: Mathematics
-   :maxdepth: 2
+   :maxdepth: 3
 
    probability
    calculus
@@ -29,6 +29,12 @@ Contents
 
    loss_functions
    evaluation_metrics
+
+.. toctree::
+   :caption: Practice
+   :maxdepth: 1
+
+   practise/probability_solutions.rst
 
 
 Indices and tables
