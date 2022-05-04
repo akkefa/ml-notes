@@ -168,6 +168,9 @@ Geometric rv
 A geometric rv consists of independent Bernoulli trials, each with the same probability of success p, repeated until
 the first success is obtained.
 
+The geometric rv is the distribution of the number of trials needed to get the first success in repeated
+independent Bernoulli trials
+
 Properties
 ^^^^^^^^^^^
 #. Each trial is identical, and can result in a success or failure.
@@ -205,6 +208,10 @@ Binomial rv
 ------------
 A binomial rv is a random variable that is the number of successes in n independent Bernoulli trials,
 each with probability p. The probability of success is p. The probability of failure is 1-p. The number of trials is n.
+
+The binomial distribution is the distribution of the ``number of successes = X`` in a ``fixed number = n`` of
+independent Bernoulli trials.
+
 
 Properties
 ^^^^^^^^^^^
@@ -253,6 +260,9 @@ Negative Binomial rv
 --------------------
 Repeat independent Bernoulli trials until a total of r successes is obtained. The negative binomial random variable X
 counts the number of failures before the rth success.
+
+The negative binomial distribution is the distribution of the ``number of trials = X`` needed to get a ``fixed number
+of successes = r``.
 
 Properties
 ^^^^^^^^^^^
