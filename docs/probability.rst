@@ -165,7 +165,7 @@ Variance
 
 Geometric rv
 -------------
-A geometric rv :math:`X \sim Geo(p)` consists of independent Bernoulli trials, each with the same probability of success p, repeated until
+A geometric rv :math:`X \sim Geom(p)` consists of independent Bernoulli trials, each with the same probability of success p, repeated until
 the first success is obtained.
 
 The geometric rv is the distribution of the number of trials needed to get the first success in repeated
@@ -281,5 +281,22 @@ PMF
 
 :math:`P(X = k) = \binom{k+r-1}{r-1} (1-p)^kp^r`
 
+Expected Value
+^^^^^^^^^^^^^^^
+| :math:`E(X)=\sum_{k} k P(X=k)`
+| :math:`E(X)= \frac{r(1-p)}{p}`
 
+Variance
+^^^^^^^^
+:math:`V(X)= \frac{r(1-p)}{p^2}`
 
+Relationship between Geometric and Negative Binomial rv
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+| :math:`X \sim Geom(p)` = Repeated, independent, identical, Bernoulli trails util first successes.
+| :math:`Y \sim NB(1,p)` = Count the number of failure until first success util first successes. = :math:`\underbrace{}_{Failure} \underbrace{}_{Failure} success`
+
+``Note:`` Y = X - 1. then E(Y) = E(X) - 1 = 1/p - 1 = :math:`\frac{1-p}{p}`
+
+:math:`NB(r,p)` = :math:`\underbrace{}_{Failure} \underbrace{}_{Failure} success \underbrace{}_{Failure} \underbrace{}_{Failure} success \underbrace{}_{Failure} \underbrace{}_{Failure} rth success`
+
+means we have stack geometric rv in a row rth time. that's why we multiply by r in expected value and variance in NB rv.
