@@ -157,7 +157,7 @@ Expected Value
 :math:`E(X)= 0 * P(x=0) + 1 * P(x=1)= 0 * (1-p) + 1 * (p) = p`
 
 Variance
---------
+^^^^^^^^^
 ``Recall:`` :math:`E(X^2)=\sum_{k} k^2 P(X=k) = 1^2 * p = p`
 
 :math:`V(X) = \operatorname{E}[X^2] - \operatorname{E}[X]^2 = p - p^2 = p(1-p)`
@@ -198,7 +198,7 @@ Expected Value
 :math:`E(X) = \sum_{k=1}^{\infty} k P(Y=k) = \sum_{k=1}^{\infty} k (1-p)^{k-1}p = \frac{1} p`
 
 Variance
---------
+^^^^^^^^^
 :math:`V(X) = \operatorname{E}[X^2] - \operatorname{E}[X]^2 = \frac{1-p}{p^{2}}`
 
 Binomial rv
@@ -247,5 +247,17 @@ Variance
 :math:`V(X)= E(X^2) - E(X)^2 = n * p * (1-p)`
 
 ``Recall:`` Bern(p) has variance p * (1-p).
+
+
+Negative Binomial rv
+--------------------
+Repeat independent Bernoulli trials until a total of r successes is obtained. The negative binomial random variable X
+counts the number of failures before the rth success.
+
+Properties
+^^^^^^^^^^^
+#. The number of successes r is fixed in advance.
+#. Trials are identical and result in a success or a failure (Bernoulli trials with P(success) = p and P(failure) = 1-p.
+#. Trials are independent (outcome of one trial does not influence any other)
 
 
