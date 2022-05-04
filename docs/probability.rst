@@ -144,8 +144,8 @@ real-world situations.
 
 Bernoulli rv
 -------------
-A Bernoulli random variable is a random variable that is either 0 or 1 with probability :math:`p` or :math:`1-p`
-respectively.
+A Bernoulli random variable :math:`X \sim Bern(p)` is a random variable that is either 0 or 1 with probability
+:math:`p` or :math:`1-p` respectively.
 
 PMF
 ^^^^
@@ -165,7 +165,7 @@ Variance
 
 Geometric rv
 -------------
-A geometric rv consists of independent Bernoulli trials, each with the same probability of success p, repeated until
+A geometric rv :math:`X \sim Geo(p)` consists of independent Bernoulli trials, each with the same probability of success p, repeated until
 the first success is obtained.
 
 The geometric rv is the distribution of the number of trials needed to get the first success in repeated
@@ -206,8 +206,9 @@ Variance
 
 Binomial rv
 ------------
-A binomial rv is a random variable that is the number of successes in n independent Bernoulli trials,
-each with probability p. The probability of success is p. The probability of failure is 1-p. The number of trials is n.
+A binomial rv :math:`X \sim Bin(n,p)` is a random variable that is the number of successes in n independent
+Bernoulli trials, each with probability p. The probability of success is p. The probability of failure is 1-p.
+The number of trials is n.
 
 The binomial distribution is the distribution of the ``number of successes = X`` in a ``fixed number = n`` of
 independent Bernoulli trials.
@@ -261,13 +262,24 @@ Negative Binomial rv
 Repeat independent Bernoulli trials until a total of r successes is obtained. The negative binomial random variable X
 counts the number of failures before the rth success.
 
-The negative binomial distribution is the distribution of the ``number of trials = X`` needed to get a ``fixed number
-of successes = r``.
+The negative binomial rv :math:`X \sim NB(r,p)` is the distribution of the ``number of trials = X`` needed to get a
+``fixed number of successes = r``.
 
 Properties
 ^^^^^^^^^^^
 #. The number of successes r is fixed in advance.
 #. Trials are identical and result in a success or a failure (Bernoulli trials with P(success) = p and P(failure) = 1-p.
 #. Trials are independent (outcome of one trial does not influence any other)
+
+PMF
+^^^^
+:math:`S = \left\{\left(x_{1}, x_{2}, \ldots, x_{n}\right) \mid x_{i}\right. =\left\{\begin{array}{l} 1 \text { if } \text { success on ith trail } \\ 0 \text { if failure ith trail }\end{array}\right. and \sum_{i=1}  = r`
+
+| :math:`P(y=0)=P(\{11111\})=(p)^{5}`
+| :math:`P(Y=1)=P(\{011111,101111,110111,111011,111101\}) = \binom{5}{4}p^5(1-p)^{5-4}`
+| :math:`P(Y=2) = \binom{6}{4}p^5(1-p)^{5-4}`
+
+:math:`P(X = k) = \binom{k+r-1}{r-1} (1-p)^kp^r`
+
 
 
