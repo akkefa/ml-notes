@@ -39,6 +39,18 @@ Combination
 When selecting more than one item without replacement and ``order does not matter``.
 :math:`{C}_{n,r} = \binom nk = {n \choose k, n-k} = \frac{n!}{k!(n-k)!}`
 
+Sampling Table
+^^^^^^^^^^^^^^
++---------------------+-----------------------------+--+----------------------------+--+
+|                     | Order Matters               |  | Order Doesn’t Matter       |  |
++---------------------+-----------------------------+--+----------------------------+--+
+| With Replacement    | :math:`n^k`                 |  | :math:`{n+k-1 \choose k}`  |  |
++---------------------+-----------------------------+--+----------------------------+--+
+|                     |                             |  |                            |  |
++---------------------+-----------------------------+--+----------------------------+--+
+| Without Replacement | :math:`\frac{n!}{k!(n-k)!}` |  | :math:`\binom nk`          |  |
++---------------------+-----------------------------+--+----------------------------+--+
+
 Conditional Probability and Bayes Theorem
 ==========================================
 Two events A and B from the ``same sample space S``. Calculate the probability of event A knowing that event B has occurred.
@@ -77,9 +89,29 @@ rule for independent events:
 Random Variables
 =================
 A random variable (rv) is a function that maps events (from the sample space S) to the real numbers.
-Random variables can be ``discrete`` or ``continuous``, or sometimes a mixture of the two.
+
+A random variable rv is a real-valued function, whose domain is the entire sample space of an experiment.
+Think of the domain as the set of all possible values that can go into a function. A function takes the domain/input,
+processes it, and renders an output/range. This set of real values obtained from the random variable is called its
+``range``.
+
+Types of Random Variables
+--------------------------
+
+#. Discrete random variables
+#. Continuous random variables
+#. Mixed random variables
 
 Denote random variables by a capital letter near the end of the alphabet (e.g. X, Y ).
+
+**Example:**
+Consider the experiment of tossing two coins. For the experiment, the sample space is
+
+.. math::
+
+    S=\{(\mathrm{H}, \mathrm{H}),(\mathrm{H}, \mathrm{T}),(\mathrm{T}, \mathrm{H}),(\mathrm{T}, \mathrm{T})\}
+
+
 
 **Big Picture** In statistics, we will model populations using random variables (e.g. mean, variance) of these random
 variables will tell us about the population we are studying.
@@ -328,7 +360,7 @@ union of disjoint intervals. X = f(x) is the probability density function of the
 .. note:: :math:`P(X=a)=\int_{a}^{a} f(x) d x=0 \text { for all real numbers } a`
 
 CDF
-^^^^
+----
 The cumulative distribution function (cdf) for a continuous rv X is given by :math:`F(x)=P(X \leq x)=\int_{-\infty}^{x} f(t) d t`
 
 * :math:`0 \leq F(x) \leq 1`
