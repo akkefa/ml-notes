@@ -347,6 +347,13 @@ Continuous Random Variable
 A random variable is continuous if possible values comprise either a single interval on the number line or a
 union of disjoint intervals. X = f(x) is the probability density function of the continues random variable X.
 
+We model a continuous random variable with a curve f(x), called a probability density function (pdf).
+
+.. image:: _static/probability/PDF_intro.jpg
+   :width: 400
+
+.. Attention:: We can't model continuous random variable using discrete rv method.
+
 .. math::
 
     P(a \leq X \leq b)=\int_{a}^{b} f(x) d x
