@@ -35,6 +35,7 @@ Contents
    :maxdepth: 1
 
    practise/probability_solutions.rst
+   practise/R_solutions.rst
 
 
 Indices and tables
