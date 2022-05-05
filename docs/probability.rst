@@ -97,6 +97,15 @@ Cumulative distribution function (CDF)
 
  F(y)=P(X \leq y)=\sum_{x \leq y} P(X=x)
 
+Probability density function (PDF)
+-------------------------------------
+X = f(x) is the probability density function of the continues random variable X.
+
+.. math::
+
+    P(a \leq X \leq b)=\int_{a}^{b} f(x) d x
+
+
 Probability Distributions
 -------------------------
 So a random variable can take multiple values. One very important thing is to know if some values will be more often
@@ -133,7 +142,7 @@ Measures how far we expect our random variable to be from the mean. Variance of 
 
 :math:`V(X) = \operatorname{E}[(X - \operatorname{E}[X])^2] = \operatorname{E}[X^2] - \operatorname{E}[X]^2`
 
-standard deviation
+Standard Deviation
 -------------------
 The standard deviation is the square root of the variance. :math:`\sigma_x = \sqrt{V(X)}`
 
@@ -300,3 +309,28 @@ Relationship between Geometric and Negative Binomial rv
 :math:`NB(r,p)` = :math:`\underbrace{}_{Failure} \underbrace{}_{Failure} success \underbrace{}_{Failure} \underbrace{}_{Failure} success \underbrace{}_{Failure} \underbrace{}_{Failure} rth success`
 
 means we have stack geometric rv in a row rth time. that's why we multiply by r in expected value and variance in NB rv.
+
+Continuous Random Variable
+===========================
+A random variable is continuous if possible values comprise either a single interval on the number line or a
+union of disjoint intervals. X = f(x) is the probability density function of the continues random variable X.
+
+.. math::
+
+    P(a \leq X \leq b)=\int_{a}^{b} f(x) d x
+
+**Properties**
+
+#. The probability density function :math:`f:(-\infty, \infty) \rightarrow[0, \infty) \text{ so } f (x) \geq  0`.
+#. :math:`P(-\infty<X<\infty)=\int_{-\infty}^{\infty} f(x) d x=1=P(S)`
+#. :math:`P(a \leq X \leq b)=\int_{a}^{b} f(x) d x`
+
+.. note:: :math:`P(X=a)=\int_{a}^{a} f(x) d x=0 \text { for all real numbers } a`
+
+CDF
+^^^^
+The cumulative distribution function (cdf) for a continuous rv X is given by :math:`F(x)=P(X \leq x)=\int_{-\infty}^{x} f(t) d t`
+
+* :math:`0 \leq F(x) \leq 1`
+* :math:`\lim _{x \rightarrow-\infty} F(x)=0 \quad and \quad \lim _{x \rightarrow \infty} F(x)=1`
+* f(x) is always increasing.
