@@ -352,6 +352,9 @@ We model a continuous random variable with a curve f(x), called a probability de
 .. image:: _static/probability/PDF_intro.jpg
    :width: 400
 
+* f(x) represents the height of the curve at point x.
+* For continuous random variables probabilities are areas under the curve.
+
 .. Attention:: We can't model continuous random variable using discrete rv method.
 
 .. math::
