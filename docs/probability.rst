@@ -352,6 +352,9 @@ We model a continuous random variable with a curve f(x), called a probability de
 .. image:: _static/probability/PDF_intro.jpg
    :width: 400
 
+.. image:: https://cdn.mathpix.com/snip/images/EhhUI3_AD2OLU1c1khtVJecNQhq_KaTJbQnAQF5oKFk.original.fullsize.png
+   :width: 400
+
 * f(x) represents the height of the curve at point x.
 * For continuous random variables probabilities are areas under the curve.
 
@@ -376,3 +379,33 @@ The cumulative distribution function (cdf) for a continuous rv X is given by :ma
 * :math:`0 \leq F(x) \leq 1`
 * :math:`\lim _{x \rightarrow-\infty} F(x)=0 \quad and \quad \lim _{x \rightarrow \infty} F(x)=1`
 * f(x) is always increasing.
+
+
+Uniform rv
+-----------
+Random variable :math:`X \sim U[a,b]` has the uniform distribution on the interval [a, b] if its density function is
+
+.. math::
+
+    f(x)=\begin{cases}
+    \frac{1}{b - a} & \mathrm{for}\ a \le x \le b, \\[8pt]
+    0 & \mathrm{for}\ x<a\ \mathrm{or}\ x>b
+    \end{cases}
+
+
+CDF
+^^^^
+
+.. math::
+
+    F(x)=P(X \leq x)=\int_{-\infty}^{x} f(t) dt
+
+    = \int_{a}^{x} \frac{1}{b-a} dt
+
+.. math::
+
+    F(x)= \begin{cases}
+      0 & \text{for }x < a \\[8pt]
+      \frac{x-a}{b-a} & \text{for }a \le x \le b \\[8pt]
+      1 & \text{for }x > b
+      \end{cases}
