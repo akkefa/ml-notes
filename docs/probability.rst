@@ -178,8 +178,8 @@ Standard Deviation
 -------------------
 The standard deviation is the square root of the variance. :math:`\sigma_x = \sqrt{V(X)}`
 
-Discrete Random Variable
-=========================
+Discrete Random Variables
+==========================
 Discrete random variables can be categorized into different types or classes. Each type/class models many different
 real-world situations.
 
@@ -342,8 +342,8 @@ Relationship between Geometric and Negative Binomial rv
 
 means we have stack geometric rv in a row rth time. that's why we multiply by r in expected value and variance in NB rv.
 
-Continuous Random Variable
-===========================
+Continuous Random Variables
+============================
 A random variable is continuous if possible values comprise either a single interval on the number line or a
 union of disjoint intervals. X = f(x) is the probability density function of the continues random variable X.
 
@@ -431,7 +431,7 @@ CDF
 
 
 Expected Value and Variance
-----------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. math::
 
