@@ -428,3 +428,23 @@ CDF
       \frac{x-a}{b-a} & \text{for }a \le x \le b \\[8pt]
       1 & \text{for }x > b
       \end{cases}
+
+
+Expected Value and Variance
+----------------------------
+
+.. math::
+
+    f(x)=\begin{cases}
+    \frac{1}{b - a} & \mathrm{for}\ a \le x \le b, \\[8pt]
+    0 & \mathrm{for}\ x<a\ \mathrm{or}\ x>b
+    \end{cases}
+
+.. math::
+
+    \begin{aligned}
+    E(X) &=\int_{a}^{b} x \cdot \frac{1}{b-a} d x=\left.\frac{1}{b-a} \frac{x^{2}}{2}\right|_{a} ^{b}=\frac{b^{2}-a^{2}}{2(b-a)}=\frac{b+a}{2} \\
+    E\left(X^{2}\right) &=\int_{a}^{b} x^{2} \frac{1}{b-a} d x=\left.\frac{1}{b-a} \frac{x^{3}}{3}\right|_{a} ^{b}=\frac{b^{3}-a^{3}}{3(b-a)}=\frac{b^{2}+a b+a^{2}}{3} \\
+    V(X) &=E\left(X^{2}\right)-(E(X))^{2} \\
+    &=\frac{b^{2}+a b+a^{2}}{3}-\left(\frac{b+a}{2}\right)^{2}=\frac{(b-a)^{2}}{12}
+    \end{aligned}
