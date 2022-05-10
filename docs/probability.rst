@@ -486,3 +486,15 @@ Expected Value and Variance
     V(X) &=E\left(X^{2}\right)-(E(X))^{2} \\
     &=\frac{b^{2}+a b+a^{2}}{3}-\left(\frac{b+a}{2}\right)^{2}=\frac{(b-a)^{2}}{12}
     \end{aligned}
+
+
+Exponential rv
+---------------
+The family of exponential distributions provides probability models that are widely used in engineering and science
+disciplines to describe **time-to-event** data.
+
+* Time until birth
+* Time until a light bulb fails
+* Waiting time in a queue
+* Length of service time
+* Time between customer arrivals
