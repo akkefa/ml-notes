@@ -342,6 +342,43 @@ Relationship between Geometric and Negative Binomial rv
 
 means we have stack geometric rv in a row rth time. that's why we multiply by r in expected value and variance in NB rv.
 
+
+Poisson rv
+-----------
+A Poisson rv is a discrete rv that describes the total number of events that happen in a certain time period.
+
+Example
+^^^^^^^^
+#. # of vehicles crossing a bridge in one day
+#. # of gamma rays hitting a satellite per hour
+#. # of cookies sold at a bake sale in one hour
+#. # of customers arriving at a bank in a week
+
+PDF
+^^^^
+A discrete random variable X has Poisson distribution with parameter (:math:`\lambda` > 0) if the
+probability mass function of X is
+
+:math:`P(X=k) = \frac{e^{-\lambda} \lambda^k}{k!}`
+
+**where**
+
+* k is the number of occurrences (:math:`k = 0,1,2\dots`) It could be zero because nothing happened in that time period.
+* e} is (e = 2.71828..)
+
+**All probabilities sum to 1**
+
+:math:`\sum_{k=0}^{\infty} P(X=k)=\sum_{k=0}^{\infty} \frac{\lambda^{k}}{k !} e^{-\lambda}=e^{-\lambda} \sum_{k=0}^{\infty} \frac{\lambda^{k}}{k!} = e^{-\lambda} *  e^{\lambda} = 1`
+
+Expected Value
+^^^^^^^^^^^^^^^
+:math:`E(X)=\sum_{k=0}^{\infty} k P(X=k)=\sum_{k=0}^{\infty} k \frac{\lambda^{k}}{k !} e^{-\lambda}=\lambda \sum_{k=1}^{\infty} \frac{\lambda^{k-1}}{(k-1) !} e^{-\lambda} = \lambda`
+
+:math:`E\left(X^{2}\right)=\sum_{k=0}^{\infty} k^{2} P(X=k)=\sum_{k=0}^{\infty} k^{2} \frac{\lambda^{k}}{k !} e^{-\lambda}=\lambda(\lambda+1)^{e}`
+
+
+
+
 Continuous Random Variables
 ============================
 A random variable is continuous if possible values comprise either a single interval on the number line or a
