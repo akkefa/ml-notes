@@ -376,8 +376,9 @@ Expected Value
 
 :math:`E\left(X^{2}\right)=\sum_{k=0}^{\infty} k^{2} P(X=k)=\sum_{k=0}^{\infty} k^{2} \frac{\lambda^{k}}{k !} e^{-\lambda}=\lambda(\lambda+1)^{e}`
 
-
-
+Variance
+^^^^^^^^^
+:math:`V(X)=E\left(X^{2}\right)-(E(X))^{2}=\lambda(\lambda+1)-\lambda^{2}=\lambda`
 
 Continuous Random Variables
 ============================
