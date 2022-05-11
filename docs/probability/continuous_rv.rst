@@ -136,3 +136,39 @@ Variance
 ^^^^^^^^^
 
 :math:`V(X) = E(X^2) - E(X)^2 = \frac{2}{\lambda^2} - (\frac{1}{\lambda})^2 = \frac{1}{\lambda^2}`
+
+Gaussian( Normal ) rv
+-----------------------
+A continuous random variable X has the normal distribution with parameters :math:`\mu` and :math:`\sigma^2`
+if its density is given by
+
+Notation: :math:`X \sim N(\mu,\sigma^2)`
+
+PDF
+^^^^
+:math:`f(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^{2} / 2 \sigma^{2}} = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}  \text { for }-\infty<x<\infty`
+
+Properties
+^^^^^^^^^^^
+
+#. F(x) is symmetric around :math:`x=\mu`.
+#. f(x) > 0 for all :math:`x` and :math:`\int_{-\infty}^{\infty} f(x) dx = 1`.
+#. :math:`\sigma`  = standard deviation.
+#. :math:`\mu + \sigma` and :math:`\mu - \sigma` are inflection points on f(x).
+
+
+.. image:: https://cdn.mathpix.com/snip/images/o--xnfCkZviqH4cJk2C1JgLXzGQNBTsYYzeUhmB5Iv4.original.fullsize.png
+
+Expected Value and Variance
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:math:`E(X) = \mu`
+
+:math:`V(X) = \sigma^2`
+
+
+Examples
+^^^^^^^^
+
+.. image:: https://cdn.mathpix.com/snip/images/M100tFqZehLppaPveeFdzACzz9R6xJrMPW9x44WWcfU.original.fullsize.png
+
