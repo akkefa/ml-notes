@@ -172,3 +172,28 @@ Examples
 
 .. image:: https://cdn.mathpix.com/snip/images/M100tFqZehLppaPveeFdzACzz9R6xJrMPW9x44WWcfU.original.fullsize.png
 
+
+Standard Normal rv
+--------------------
+The normal distribution with parameter values :math:`\mu` = 0 and :math:`\sigma^2` = 1 is called the standard normal
+distribution. A rv with the standard normal distribution is customarily denoted by :math:`Z \sim N(0, 1)`
+
+PMF
+^^^^
+:math:`f_{Z}(x)=\frac{1}{\sqrt{2 \pi}} e^{-x^{2} / 2} \text { for }-\infty<x<\infty`
+
+CDF
+^^^^
+We use special notation to denote the cdf of the standard normal curve
+
+:math:`F(z)=\Phi(z)=P(Z \leq z)=\int_{-\infty}^{z} \frac{1}{\sqrt{2 \pi}} e^{-x^{2} / 2} d x`
+
+
+Properties
+^^^^^^^^^^^
+
+#. The standard normal density function is symmetric about the y axis.
+#. The standard normal distribution rarely occurs naturally.
+#. Instead, it is a reference distribution from which information about other normal distributions can be obtained via a simple formula.
+#. The cdf of the standard normal, :math:`\Phi(z)` can be found in tables and it can also be computed with a single command in R.
+#. As we’ll see, sums of standard normal random variables play a large role in statistical analysis.
