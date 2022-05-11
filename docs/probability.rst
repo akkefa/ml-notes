@@ -498,3 +498,23 @@ disciplines to describe **time-to-event** data.
 * Waiting time in a queue
 * Length of service time
 * Time between customer arrivals
+
+PDF
+^^^^
+.. math::
+    f(x;\lambda) = \begin{cases}
+    \lambda  e^{ - \lambda x} & x \ge 0, \\
+    0 & x < 0.
+    \end{cases}
+
+
+Expected Value
+^^^^^^^^^^^^^^^
+:math:`E(X) = \int_{0}^{\infty} x f(x) d x = \int_{0}^{\infty} x \lambda  e^{ - \lambda x} d x = \frac{1}{\lambda}`
+
+:math:`E(X^2) = \int_{0}^{\infty} x^2 f(x) d x = \int_{0}^{\infty} x^2 \lambda  e^{ - \lambda x} d x = \frac{2}{\lambda^2}`
+
+Variance
+^^^^^^^^^
+
+:math:`V(X) = E(X^2) - E(X)^2 = \frac{2}{\lambda^2} - (\frac{1}{\lambda})^2 = \frac{1}{\lambda^2}`
