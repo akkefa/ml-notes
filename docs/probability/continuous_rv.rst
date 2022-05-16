@@ -158,6 +158,7 @@ Properties
 
 
 .. image:: https://cdn.mathpix.com/snip/images/o--xnfCkZviqH4cJk2C1JgLXzGQNBTsYYzeUhmB5Iv4.original.fullsize.png
+   :width: 400
 
 Expected Value and Variance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -178,7 +179,7 @@ Standard Normal rv
 The normal distribution with parameter values :math:`\mu` = 0 and :math:`\sigma^2` = 1 is called the standard normal
 distribution. A rv with the standard normal distribution is customarily denoted by :math:`Z \sim N(0, 1)`
 
-PMF
+PDF
 ^^^^
 :math:`f_{Z}(x)=\frac{1}{\sqrt{2 \pi}} e^{-x^{2} / 2} \text { for }-\infty<x<\infty`
 
@@ -197,3 +198,22 @@ Properties
 #. Instead, it is a reference distribution from which information about other normal distributions can be obtained via a simple formula.
 #. The cdf of the standard normal, :math:`\Phi(z)` can be found in tables and it can also be computed with a single command in R.
 #. As we’ll see, sums of standard normal random variables play a large role in statistical analysis.
+
+
+Proposition
+^^^^^^^^^^^^
+:math:`\text { If } X \sim N\left(\mu, \sigma^{2}\right), \text { then } \frac{X-\mu}{\sigma} \sim N(0,1)`
+
+:math:`\frac{X-\mu}{\sigma}` Shifted by :math:`\mu` or (Centered at zero) and scaled by :math:`\frac{1}{\sigma}` that
+will give us variance of 1.
+
+Proving this proposition
+^^^^^^^^^^^^^^^^^^^^^^^^^
+For any continuous random variable. Suppose we have Y rv, with Desnity function :math:`f_{Y}(y)`
+
+| We know :math:`P(y \leqslant a)=\int_{-\infty}^{a} f_{y}(y) d y`
+| What if :math:`P(2y \leqslant a)` =  Can't really use the density function until we isolate y = :math:`P\left(y \leq \frac{a}{2}\right) = \int_{-\infty}^{a / 2} f_{y}(y) d y`
+| This true for all transformation of Y.
+
+With :math:`P\left(\frac{x-\mu}{\sigma} \leq a\right)=P(x \leq a \sigma+\mu)`
+
