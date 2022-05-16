@@ -69,6 +69,7 @@ html_static_path = ['_static']
 #
 html_theme_options = {
     'logo_only': True,
+    'display_version': False,
 }
 html_logo = '_static/maths.jpeg'
 # Add any paths that contain custom static files (such as style sheets) here,
