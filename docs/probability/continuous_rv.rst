@@ -224,4 +224,15 @@ With :math:`P\left(\frac{x-\mu}{\sigma} \leq a\right)=P(x \leq a \sigma+\mu) = \
 
 SO :math:`= \int_{-\infty}^{a} \frac{1}{\sqrt{2 \pi}} e^{-u^{2} / 2} d u`  This is density function for N(0,1).
 
+Examples
+^^^^^^^^^
+If X = N(1, 4), find P(0 < X < 3.2)
+
+|  :math:`P(0 \leq X \leq 3.2)=\int_{0}^{3.2} f_{X}(x) d x`
+|  :math:`=P\left(\frac{0-1}{2} \leqslant \frac{x-1}{2} \leqslant \frac{3.2-1}{2}\right)`
+|  :math:`=P\left(-\frac{1}{2} \leq Z \leq 1.1\right)`
+|  :math:`=P(z \leq 1.1)-P\left(z<-\frac{1}{2}\right)`
+|  :math:`=\Phi(1.1)-\Phi\left(-\frac{1}{2}\right)`
+|  :math:`.558`
+
 
