@@ -215,5 +215,13 @@ For any continuous random variable. Suppose we have Y rv, with Desnity function 
 | What if :math:`P(2y \leqslant a)` =  Can't really use the density function until we isolate y = :math:`P\left(y \leq \frac{a}{2}\right) = \int_{-\infty}^{a / 2} f_{y}(y) d y`
 | This true for all transformation of Y.
 
-With :math:`P\left(\frac{x-\mu}{\sigma} \leq a\right)=P(x \leq a \sigma+\mu)`
+With :math:`P\left(\frac{x-\mu}{\sigma} \leq a\right)=P(x \leq a \sigma+\mu) = \int_{x}^{a \sigma+\mu} \frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^{2} / 2 \sigma^{2}}`
+
+**U subsitution**
+
+| Let :math:`u=\frac{x-\mu}{\sigma}`
+| :math:`d u=\frac{1}{\sigma} d x`
+
+SO :math:`= \int_{-\infty}^{a} \frac{1}{\sqrt{2 \pi}} e^{-u^{2} / 2} d u`  This is density function for N(0,1).
+
 
