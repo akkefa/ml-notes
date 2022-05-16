@@ -82,3 +82,5 @@ html_css_files = [
 
 # The master toctree document.
 master_doc = 'index'
+
+html_title = 'Mathematics for Machine Learning'
