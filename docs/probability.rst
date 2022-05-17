@@ -190,7 +190,15 @@ Variance
 Measures how far we expect our random variable to be from the mean. Variance of a random variable X =
 :math:`\sigma_x` or V(X).
 
+If X is a continuous random variable, the variance is defined by the integral of the probability density function.
+:math:`V(X)=\int_{-\infty}^{\infty} (x - \mu_x)^2 f(x) d x`
+
 :math:`V(X) = \operatorname{E}[(X - \operatorname{E}[X])^2] = \operatorname{E}[X^2] - \operatorname{E}[X]^2`
+
+If is a function
+^^^^^^^^^^^^^^^^^
+
+:math:`V(g(X))= \begin{cases}\sum_{k}(g(k)-E(g(X)))^{2} P(X=k), & X \text { discrete } \\ \int_{-\infty}^{\infty}(g(x)-E(g(X)))^{2} f(x) d x, & X \text { continuc }\end{cases}`
 
 Standard Deviation
 -------------------
