@@ -167,6 +167,24 @@ The Expected Value of X is
 :math:`E[X] = 1\cdot\frac16 + 2\cdot\frac16 + 3\cdot\frac16 + 4\cdot\frac16 + 5\cdot\frac16 + 6\cdot\frac16 = (1+2+3+4+5+6) / 6= 3.5`
 
 
+For continuous random variables, the expected value is defined by the integral of the probability density function.
+:math:`E(X)=\int_{-\infty}^{\infty} x f(x) d x`
+
+If random variables is function
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. math::
+
+    E(g(X))=\left\{\begin{array}{l}
+    \sum_{k} g(k) P(X=k), X  \text { is discrete } \\
+    \int_{-\infty}^{\infty} g(x) f(x) d x, X \text { is continuous. }
+    \end{array}\right.
+
+
+| :math:`E(a X+b)=\sum_{k}(a X+b) P(X=k)`
+| :math:`E(a X+b)= a \sum_{k} k P(X=k)+b \sum_{k} P(X=k)`
+| :math:`E(a X+b)= a E(x) + b * 1 = a E(x) + b`
+
+
 Variance
 --------
 Measures how far we expect our random variable to be from the mean. Variance of a random variable X =
