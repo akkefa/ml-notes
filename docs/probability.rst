@@ -200,6 +200,13 @@ If is a function
 
 :math:`V(g(X))= \begin{cases}\sum_{k}(g(k)-E(g(X)))^{2} P(X=k), & X \text { discrete } \\ \int_{-\infty}^{\infty}(g(x)-E(g(X)))^{2} f(x) d x, & X \text { continuc }\end{cases}`
 
+Find V(a X+b)
+^^^^^^^^^^^^^^
+| :math:`V(a X+b)=E[(a X+b-E(a X+b))^2]`
+| :math:`= E[(a x+ \not{b} -a E(x)- \not{b})^2]`
+| :math:`= E[(a^2 (x - E(x))^2]`
+| :math:`= a^2 E[(x - E(x)^2] = a^2 V(x)`
+
 Standard Deviation
 -------------------
 The standard deviation is the square root of the variance. :math:`\sigma_x = \sqrt{V(X)}`
