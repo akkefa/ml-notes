@@ -207,6 +207,8 @@ Find V(a X+b)
 | :math:`= E[(a^2 (x - E(x))^2]`
 | :math:`= a^2 E[(x - E(x)^2] = a^2 V(x)`
 
+Variance measure the spread the data B shift the data but doest not affect the spread.
+
 Standard Deviation
 -------------------
 The standard deviation is the square root of the variance. :math:`\sigma_x = \sqrt{V(X)}`
