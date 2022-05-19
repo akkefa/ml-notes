@@ -229,6 +229,12 @@ function for X and Y .
 **Important property** X and Y are independent random variables if P(X = x, Y = y) = P(X = x)P(Y = y) for all
 possible values of x and y.
 
+Example
+--------
+An insurance agency services customers who have both a homeowner’s policy and an automobile policy. For each
+type of policy, a deductible amount must be specified. For an automobile policy, the choices are $100 or $250 and for
+the homeowner’s policy, the choices are $0, $100, or $200.
+
 .. image:: https://cdn.mathpix.com/snip/images/hkcqjPju1fkujlSsd8eaXcHp14U2gOUaEGveABxceQ0.original.fullsize.png
 
 
@@ -238,3 +244,6 @@ possible values of x and y.
 | P(x=100) p(y=200) = (.5)(.25) =.125
 
 X and y are not independent.
+
+Covariance and Correlation
+===========================
