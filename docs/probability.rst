@@ -247,6 +247,9 @@ X and y are not independent.
 
 Covariance and Correlation
 ===========================
+
+Covariance
+------------
 The covariance between two rv’s, X and Y, is defined as
 
 :math:`\operatorname{Cov}(X, Y)=E[(X-E(X))(Y-E(Y))] = E[(X- \mu_x))(Y- \mu_y)]`
@@ -263,13 +266,20 @@ The covariance between two rv’s, X and Y, is defined as
 .. sidebar:: Image from Wikipedia
 
     .. image:: https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Covariance_trends.svg/800px-Covariance_trends.svg.png
-       :width: 200px
+       :width: 140px
 
 * If both variables tend to deviate in the same direction (both go above their means or below their means at the same time), then the covariance will be positive.
 * If the opposite is true, the covariance will be negative.
 * If X and Y are not strongly (linearly) related, the covariance will be near 0.
 
-
 Computational formula for Covariance
--------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :math:`\operatorname{Cov}(X, Y)=E[XY] -E[X]E[Y]`
+
+Correlation Coefficient
+------------------------
+The correlation Coefficient of X and Y , denoted by Cor(X, Y ) Represented by the Greek letter ''ρ'' (rho)
+
+:math:`Cor(X, Y) = \rho_{X,Y}= \frac{\operatorname{cov}(X,Y)}{\sigma_X \sigma_Y}`
+
+It represents a “scaled” covariance. The correlation is always between -1 and 1.
