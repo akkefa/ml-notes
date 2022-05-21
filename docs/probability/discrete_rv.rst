@@ -5,13 +5,22 @@ real-world situations.
 
 Bernoulli rv
 -------------
-A Bernoulli random variable :math:`X \sim Bern(p)` is a random variable that is either 0 or 1 with probability
+A Bernoulli RV :math:`X \sim Bern(p)` is a random variable that is either 0 or 1 with probability
 :math:`p` or :math:`1-p` respectively.
 
 PMF
 ^^^^
+
+.. sidebar:: Plotting a Bernoulli RV
+
+    .. image:: https://cdn.mathpix.com/snip/images/2BzUHHIM-lL8kYbKoat1eKP_pvHxblpfmSv6tQ6nU1I.original.fullsize.png
+
+:math:`f_x(x)=P(X=x)=\begin{cases} 1-p,  & \text{ if x = 0 } \\ p, & \text{if x = 1 } \\ 0,  & \text{otherwise} \end{cases}`
+
 | :math:`P(X=1)=p`
 | :math:`P(X=0)=1-p`
+
+:math:`P(X=x)=p^{x}(1-p)^{1-x} \cdot I_{\{0,1\}}(x)`
 
 Expected Value
 ^^^^^^^^^^^^^^^
@@ -41,7 +50,7 @@ Properties
 
 PMF
 ^^^^
-| :math:`S=\{1,01,001,0001,00001,000001,\dots\}`
+| :math:`Sample Space =S=\{1,01,001,0001,00001,000001,\dots\}`
 | Bernoulli trail success = 1 = :math:`p`
 | Bernoulli trail failure = 0 = :math:`1-p`
 
@@ -49,13 +58,15 @@ PMF
 | :math:`P(X=1)=p`
 | :math:`P(X=2)=(1-p) p`
 | :math:`P(X=3)=(1-p)(1-p)p`
-| :math:`P(X=4)=(1-p)(1-p)(1-p)p`
+| :math:`P(X=4)=(1-p)(1-p)(1-p)p` = failure, failure, failure, Success
 | :math:`P(X=5)=(1-p)^{4}p`
-| :math:`P(X=k)=(1-p)^{k-1}p`
+| :math:`P(X=x)=(1-p)^{x-1}p`
 
 .. math::
 
-    P(X=k)=(1-p)^{k-1}p
+    P(X=x)=(1-p)^{x-1}p \quad  for \enspace x = {1,2,3,4,5,\dots}
+    \\
+    P(X=x)=(1-p)^{x-1} \cdot p \cdot I_{\{1,2,3, \ldots\}}(x)
 
 Expected Value
 ^^^^^^^^^^^^^^^
@@ -85,15 +96,17 @@ PMF
 ^^^^
 :math:`S = \left\{\left(x_{1}, x_{2}, \ldots, x_{n}\right) \mid x_{i}\right. =\left\{\begin{array}{l} 1 \text { if } \text { success } \\ 0 \text { if failure }\end{array}\right.`
 
-| :math:`P(X=0)=P(\{00 \cdots 0\})=(1-p)^{n}`
-| :math:`P(X=1)=P(\{10 \cdots 0,0100 \ldots,0 \cdots 01\}) = n*p*(1-p)^{n-1}`
-| :math:`P(X=2)=P(\{11 \cdots 0,0110 \ldots,00 \cdots 11\}) = \binom{n}{2}p^2(1-p)^{n-2}`
+| :math:`f(x)=P(X=0)=P(\{00 \cdots 0\})=(1-p)^{n}`
+| :math:`f(x)=P(X=1)=P(\{10 \cdots 0,0100 \ldots,0 \cdots 01\}) = n*p*(1-p)^{n-1}`
+| :math:`f(x)=P(X=2)=P(\{11 \cdots 0,0110 \ldots,00 \cdots 11\}) = \binom{n}{2}p^2(1-p)^{n-2}`
 
 ``Explanation P(X=2):`` Among n number of fixed trials, we have 2 bernoulli trials successes with probability P  and
 rest are failures bernoulli trails with probability (1-p). So, we need to choose 2 from n to get the exact probability
 of success.
 
-:math:`P(X=k) = P({\cdots \cdots }) = \binom{n}{k}p^k(1-p)^{n-k}`
+.. math::
+
+    f(x)=P(X=x)= \binom{n}{x}p^x(1-p)^{n-x} \cdot I_{\{1,2,3, \ldots\}}(x)
 
 Where k = 1 (success) and n-k = 0 (failure).
 
@@ -165,7 +178,7 @@ means we have stack geometric rv in a row rth time. that's why we multiply by r 
 
 Poisson rv
 -----------
-A Poisson rv is a discrete rv that describes the total number of events that happen in a certain time period.
+A Poisson rv :math:`X \sim Poisson(\lambda)` is a discrete rv that describes the total number of events that happen in a certain time period.
 
 Example
 ^^^^^^^^
@@ -174,17 +187,33 @@ Example
 #. # of cookies sold at a bake sale in one hour
 #. # of customers arriving at a bank in a week
 
-PDF
+PMF
 ^^^^
 A discrete random variable X has Poisson distribution with parameter (:math:`\lambda` > 0) if the
 probability mass function of X is
 
-:math:`P(X=k) = \frac{e^{-\lambda} \lambda^k}{k!}`
+:math:`f(x)=P(X=x)= \begin{cases}\frac{e^{-\lambda} \lambda^{x}}{x !} & , x=0,1,2, \ldots \\ 0 & , \text { otherwise }\end{cases}`
 
+which may also be written as
+
+:math:`f(x)=\frac{e^{-\lambda} \lambda^{x}}{x !} I_{\{0,1,2, \ldots\}}(x)`
 **where**
 
 * k is the number of occurrences (:math:`k = 0,1,2\dots`) It could be zero because nothing happened in that time period.
 * e} is (e = 2.71828..)
+
+While this pmf might appear to be highly structured, it really is the epitome of randomness. Imagine taking a 20 acre plot of land and dividing it into 1 square foot
+sections. (There are 871,200 sections!) Suppose you were able to scatter 5 trillion
+grass seeds on this land in a completely random way that does not favor one section
+over another. One can show that the number of seeds that fall into any one section
+follows a Poisson distribution with some parameter λ. More specifically, one can show
+that the Poisson distribution is a limiting case of the binomial distribution when n
+gets really large and p get really small. “Success” here is the event that any given seed
+falls into one particular section. We then want to count the number of successes in 5
+trillion trials.
+
+In general, the Poisson distribution is often used to describe the distribution of rare
+events in a large population.
 
 **All probabilities sum to 1**
 
