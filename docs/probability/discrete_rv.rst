@@ -5,11 +5,18 @@ real-world situations.
 
 Bernoulli rv
 -------------
-A Bernoulli random variable :math:`X \sim Bern(p)` is a random variable that is either 0 or 1 with probability
+A Bernoulli RV :math:`X \sim Bern(p)` is a random variable that is either 0 or 1 with probability
 :math:`p` or :math:`1-p` respectively.
 
 PMF
 ^^^^
+
+.. sidebar:: Plotting a Bernoulli RV
+
+    .. image:: https://cdn.mathpix.com/snip/images/2BzUHHIM-lL8kYbKoat1eKP_pvHxblpfmSv6tQ6nU1I.original.fullsize.png
+
+:math:`f_x(x)=P(X=x)=\begin{cases} 1-p,  & \text{ if x = 0 } \\ p, & \text{if x = 1 } \\ 0,  & \text{otherwise} \end{cases}`
+
 | :math:`P(X=1)=p`
 | :math:`P(X=0)=1-p`
 
