@@ -96,15 +96,17 @@ PMF
 ^^^^
 :math:`S = \left\{\left(x_{1}, x_{2}, \ldots, x_{n}\right) \mid x_{i}\right. =\left\{\begin{array}{l} 1 \text { if } \text { success } \\ 0 \text { if failure }\end{array}\right.`
 
-| :math:`P(X=0)=P(\{00 \cdots 0\})=(1-p)^{n}`
-| :math:`P(X=1)=P(\{10 \cdots 0,0100 \ldots,0 \cdots 01\}) = n*p*(1-p)^{n-1}`
-| :math:`P(X=2)=P(\{11 \cdots 0,0110 \ldots,00 \cdots 11\}) = \binom{n}{2}p^2(1-p)^{n-2}`
+| :math:`f(x)=P(X=0)=P(\{00 \cdots 0\})=(1-p)^{n}`
+| :math:`f(x)=P(X=1)=P(\{10 \cdots 0,0100 \ldots,0 \cdots 01\}) = n*p*(1-p)^{n-1}`
+| :math:`f(x)=P(X=2)=P(\{11 \cdots 0,0110 \ldots,00 \cdots 11\}) = \binom{n}{2}p^2(1-p)^{n-2}`
 
 ``Explanation P(X=2):`` Among n number of fixed trials, we have 2 bernoulli trials successes with probability P  and
 rest are failures bernoulli trails with probability (1-p). So, we need to choose 2 from n to get the exact probability
 of success.
 
-:math:`P(X=k) = P({\cdots \cdots }) = \binom{n}{k}p^k(1-p)^{n-k}`
+.. math::
+
+    f(x)=P(X=x)= \binom{n}{x}p^x(1-p)^{n-x} \cdot I_{\{1,2,3, \ldots\}}(x)
 
 Where k = 1 (success) and n-k = 0 (failure).
 
