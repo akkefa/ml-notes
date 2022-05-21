@@ -50,7 +50,7 @@ Properties
 
 PMF
 ^^^^
-| :math:`S=\{1,01,001,0001,00001,000001,\dots\}`
+| :math:`Sample Space =S=\{1,01,001,0001,00001,000001,\dots\}`
 | Bernoulli trail success = 1 = :math:`p`
 | Bernoulli trail failure = 0 = :math:`1-p`
 
@@ -58,13 +58,13 @@ PMF
 | :math:`P(X=1)=p`
 | :math:`P(X=2)=(1-p) p`
 | :math:`P(X=3)=(1-p)(1-p)p`
-| :math:`P(X=4)=(1-p)(1-p)(1-p)p`
+| :math:`P(X=4)=(1-p)(1-p)(1-p)p` = failure, failure, failure, Success
 | :math:`P(X=5)=(1-p)^{4}p`
-| :math:`P(X=k)=(1-p)^{k-1}p`
+| :math:`P(X=x)=(1-p)^{x-1}p`
 
 .. math::
 
-    P(X=k)=(1-p)^{k-1}p
+    P(X=x)=(1-p)^{x-1}p \quad  for \enspace x = {1,2,3,4,5,\dots}
 
 Expected Value
 ^^^^^^^^^^^^^^^
