@@ -178,7 +178,7 @@ means we have stack geometric rv in a row rth time. that's why we multiply by r 
 
 Poisson rv
 -----------
-A Poisson rv is a discrete rv that describes the total number of events that happen in a certain time period.
+A Poisson rv :math:`X \sim Poisson(\lambda)` is a discrete rv that describes the total number of events that happen in a certain time period.
 
 Example
 ^^^^^^^^
@@ -187,12 +187,16 @@ Example
 #. # of cookies sold at a bake sale in one hour
 #. # of customers arriving at a bank in a week
 
-PDF
+PMF
 ^^^^
 A discrete random variable X has Poisson distribution with parameter (:math:`\lambda` > 0) if the
 probability mass function of X is
 
-:math:`P(X=k) = \frac{e^{-\lambda} \lambda^k}{k!}`
+:math:`f(x)=P(X=x)= \begin{cases}\frac{e^{-\lambda} \lambda^{x}}{x !} & , x=0,1,2, \ldots \\ 0 & , \text { otherwise }\end{cases}`
+
+which may also be written as
+
+:math:`f(x)=\frac{e^{-\lambda} \lambda^{x}}{x !} I_{\{0,1,2, \ldots\}}(x)`
 
 **where**
 
