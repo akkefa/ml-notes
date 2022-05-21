@@ -197,11 +197,23 @@ probability mass function of X is
 which may also be written as
 
 :math:`f(x)=\frac{e^{-\lambda} \lambda^{x}}{x !} I_{\{0,1,2, \ldots\}}(x)`
-
 **where**
 
 * k is the number of occurrences (:math:`k = 0,1,2\dots`) It could be zero because nothing happened in that time period.
 * e} is (e = 2.71828..)
+
+While this pmf might appear to be highly structured, it really is the epitome of randomness. Imagine taking a 20 acre plot of land and dividing it into 1 square foot
+sections. (There are 871,200 sections!) Suppose you were able to scatter 5 trillion
+grass seeds on this land in a completely random way that does not favor one section
+over another. One can show that the number of seeds that fall into any one section
+follows a Poisson distribution with some parameter λ. More specifically, one can show
+that the Poisson distribution is a limiting case of the binomial distribution when n
+gets really large and p get really small. “Success” here is the event that any given seed
+falls into one particular section. We then want to count the number of successes in 5
+trillion trials.
+
+In general, the Poisson distribution is often used to describe the distribution of rare
+events in a large population.
 
 **All probabilities sum to 1**
 
