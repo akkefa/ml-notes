@@ -197,6 +197,7 @@ probability mass function of X is
 which may also be written as
 
 :math:`f(x)=\frac{e^{-\lambda} \lambda^{x}}{x !} I_{\{0,1,2, \ldots\}}(x)`
+
 **where**
 
 * k is the number of occurrences (:math:`k = 0,1,2\dots`) It could be zero because nothing happened in that time period.
