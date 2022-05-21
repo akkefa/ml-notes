@@ -20,6 +20,8 @@ PMF
 | :math:`P(X=1)=p`
 | :math:`P(X=0)=1-p`
 
+:math:`P(X=x)=p^{x}(1-p)^{1-x} \cdot I_{\{0,1\}}(x)`
+
 Expected Value
 ^^^^^^^^^^^^^^^
 :math:`E(X)= 0 * P(x=0) + 1 * P(x=1)= 0 * (1-p) + 1 * (p) = p`

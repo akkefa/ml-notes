@@ -135,6 +135,13 @@ subscripts to denote the PMF  :math:`f_X(x) and f_Y(y)`
 .. math::
     p(x)=P(X=x)=P(\text { all } x \in S \mid X(s)=x)
 
+Indicator function
+-------------------
+The indicator function of a subset A of a set X is a function.
+
+:math:`\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { if } A \cap X \neq \emptyset \\ 0, & \text { otherwise }\end{cases}`
+
+
 Cumulative distribution function (CDF)
 -----------------------------------------
 .. math::
