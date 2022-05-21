@@ -88,12 +88,20 @@ rule for independent events:
 
 Random Variables
 =================
-A random variable (rv) is a function that maps events (from the sample space S) to the real numbers.
+
+Definition
+-----------
+
+.. sidebar:: Other Definition
+
+    A random variable (rv) is a function that maps events (from the sample space S) to the real numbers.
 
 A random variable rv is a real-valued function, whose domain is the entire sample space of an experiment.
 Think of the domain as the set of all possible values that can go into a function. A function takes the domain/input,
 processes it, and renders an output/range. This set of real values obtained from the random variable is called its
 ``range``.
+
+Denote random variables by a **capital letters** near the end of the alphabet ``(e.g. X, Y ).``
 
 Types of Random Variables
 --------------------------
@@ -101,8 +109,6 @@ Types of Random Variables
 #. Discrete random variables
 #. Continuous random variables
 #. Mixed random variables
-
-Denote random variables by a capital letter near the end of the alphabet (e.g. X, Y ).
 
 **Example:**
 Consider the experiment of tossing two coins. For the experiment, the sample space is
