@@ -124,7 +124,13 @@ variables will tell us about the population we are studying.
 
 Probability mass function (PMF)
 --------------------------------
-A probability mass function of a discrete rv, X
+A probability mass function of a discrete rv, X and denoted by a lowercase f of x. IF we have two RV X and Y then we use
+subscripts to denote the PMF  :math:`f_X(x) and f_Y(y)`
+
+:math:`\text{Random variable}=X= \begin{cases} 1, & \text { if "Heads" } \\ 0, & \text { if "Tails" }  \end{cases} =
+\begin{cases} P(X=1), & \text { if "Heads" } \\ P(X=0), & \text { if "Tails" }  \end{cases}`
+
+:math:`PMF=f(x)=f_x(x)=P(X=x)= \begin{cases}1 / 2, & \text { if } x=0 \\ 1 / 2, & \text { if } x=1 \\ 0, & \text { otherwise }\end{cases}`
 
 .. math::
     p(x)=P(X=x)=P(\text { all } x \in S \mid X(s)=x)
