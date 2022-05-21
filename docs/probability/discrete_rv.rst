@@ -65,6 +65,8 @@ PMF
 .. math::
 
     P(X=x)=(1-p)^{x-1}p \quad  for \enspace x = {1,2,3,4,5,\dots}
+    \\
+    P(X=x)=(1-p)^{x-1} \cdot p \cdot I_{\{1,2,3, \ldots\}}(x)
 
 Expected Value
 ^^^^^^^^^^^^^^^
