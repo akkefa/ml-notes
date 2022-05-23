@@ -70,8 +70,7 @@ Random variable :math:`X \sim U[a,b]` has the uniform distribution on the interv
     f(x)=\begin{cases}
     \frac{1}{b - a} & \mathrm{for}\ a \le x \le b, \\[8pt]
     0 & \mathrm{for}\ x<a\ \mathrm{or}\ x>b
-    \end{cases}
-
+    \end{cases} = \frac{1}{b - a} \cdot I_{(a,b)}(x)
 
 CDF
 ^^^^
