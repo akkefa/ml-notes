@@ -128,7 +128,7 @@ PDF
     f(x;\lambda) = \begin{cases}
     \lambda  e^{ - \lambda x} & x \ge 0, \\
     0 & x < 0.
-    \end{cases}
+    \end{cases} =\lambda e^{-\lambda x} I_{(0, \infty)}(x)
 
 
 Expected Value
