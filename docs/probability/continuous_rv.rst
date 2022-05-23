@@ -28,6 +28,11 @@ We model a continuous random variable with a curve f(x), called a probability de
 
 .. note:: :math:`P(X=a)=\int_{a}^{a} f(x) d x=0 \text { for all real numbers } a`
 
+PDF
+----
+f(x) = Curve under which area represent the probability :math:`P(a \leq X \leq b)=\int_{a}^{b} f(x) d x`
+
+
 CDF
 ----
 The cumulative distribution function (cdf) for a continuous rv X is given by :math:`F(x)=P(X \leq x)=\int_{-\infty}^{x} f(t) d t`
@@ -143,6 +148,10 @@ A continuous random variable X has the normal distribution with parameters :math
 if its density is given by
 
 Notation: :math:`X \sim N(\mu,\sigma^2)`
+
+**Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
+If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one,
+So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
 
 PDF
 ^^^^
