@@ -250,6 +250,14 @@ possible values of x and y.
 
 :math:`f(x,y) = P(X=x \, and \, Y=y) = P(X=x,Y=y)`
 
+Marginal Probabilities
+-----------------------
+.. image:: https://cdn.mathpix.com/snip/images/o-d2bytuq6UKjG3CI4QAAYoNqe6oeWkiyt8T4hO_aYY.original.fullsize.png
+    :width: 500px
+
+.. image:: https://cdn.mathpix.com/snip/images/EGxK3sr8ldSWbOTfQKzCrG79rFd7Rmb3Mg9cnFL4w0M.original.fullsize.png
+    :width: 500px
+
 Example
 --------
 An insurance agency services customers who have both a homeowner’s policy and an automobile policy. For each
@@ -266,10 +274,6 @@ the homeowner’s policy, the choices are $0, $100, or $200.
 
 X and y are not independent.
 
-2nd Example
-^^^^^^^^^^^^
-.. image:: https://cdn.mathpix.com/snip/images/o-d2bytuq6UKjG3CI4QAAYoNqe6oeWkiyt8T4hO_aYY.original.fullsize.png
-    :width: 500px
 
 Covariance and Correlation
 ===========================
