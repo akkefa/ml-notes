@@ -248,6 +248,8 @@ function for X and Y .
 **Important property** X and Y are independent random variables if P(X = x, Y = y) = P(X = x)P(Y = y) for all
 possible values of x and y.
 
+:math:`f(x,y) = P(X=x \, and \, Y=y) = P(X=x,Y=y)`
+
 Example
 --------
 An insurance agency services customers who have both a homeowner’s policy and an automobile policy. For each
@@ -263,6 +265,11 @@ the homeowner’s policy, the choices are $0, $100, or $200.
 | P(x=100) p(y=200) = (.5)(.25) =.125
 
 X and y are not independent.
+
+2nd Example
+^^^^^^^^^^^^
+.. image:: https://cdn.mathpix.com/snip/images/o-d2bytuq6UKjG3CI4QAAYoNqe6oeWkiyt8T4hO_aYY.original.fullsize.png
+    :width: 500px
 
 Covariance and Correlation
 ===========================
