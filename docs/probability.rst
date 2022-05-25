@@ -171,7 +171,7 @@ case of a continuum of possible outcomes, the expectation is defined by integrat
 
 .. math::
 
-    E(X)=\sum_{k} k P(X=k)
+    E(X)=\sum_{x} k P(X=x)
 
 **E.g**
 
