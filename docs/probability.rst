@@ -220,13 +220,19 @@ If random variables is function
 
 Variance
 --------
-Measures how far we expect our random variable to be from the mean. Variance of a random variable X =
-:math:`\sigma_x` or V(X).
+* Measures how far we expect our random variable to be from the mean.
+* Measures of **spread** of a distribution.
+
+Defined as
+^^^^^^^^^^^
+:math:`\sigma^2` or V(X).
+
+:math:`V(X) = E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2`
 
 If X is a continuous random variable, the variance is defined by the integral of the probability density function.
 :math:`V(X)=\int_{-\infty}^{\infty} (x - \mu_x)^2 f(x) d x`
 
-:math:`V(X) = \operatorname{E}[(X - \operatorname{E}[X])^2] = \operatorname{E}[X^2] - \operatorname{E}[X]^2`
+
 
 If is a function
 ^^^^^^^^^^^^^^^^^
