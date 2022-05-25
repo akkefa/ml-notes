@@ -174,16 +174,30 @@ case of a continuum of possible outcomes, the expectation is defined by integrat
     E(X)=\sum_{k} k P(X=k)
 
 **E.g**
+
 5 exams result : 70 +80 + 80 + 90 + 90
 
 :math:`A v g=\frac{70+80+80+90+90}{5} = \frac{1}{5}(70)+\frac{2}{5}(80)+\frac{2}{5}(90) = 82.5`
 
 **E.g**
+
 Let X represent the outcome of a roll of a fair six-sided die. The possible values for X are 1, 2, 3, 4, 5, and 6, all
 of which are equally likely with a probability of :math:`1/6`
 The Expected Value of X is
 
 :math:`E[X] = 1\cdot\frac16 + 2\cdot\frac16 + 3\cdot\frac16 + 4\cdot\frac16 + 5\cdot\frac16 + 6\cdot\frac16 = (1+2+3+4+5+6) / 6= 3.5`
+
+
+**E.g**
+
++---------+------+------+------+
+| x       | 1    | 2    | 3    |
++=========+======+======+======+
+| P(X=x)  | 1/4  | 1/4  | 1/2  |
++---------+------+------+------+
+
+:math:`E[X] =(1)(1 / 4)+(2)(1 / 4)+(3)(1 / 2) = 9/4 = 2.25`
+
 
 
 For continuous random variables, the expected value is defined by the integral of the probability density function.
