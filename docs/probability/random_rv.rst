@@ -172,10 +172,18 @@ If X is a continuous random variable, the variance is defined by the integral of
 
 
 
-If is a function
-^^^^^^^^^^^^^^^^^
+Properties
+^^^^^^^^^^^
+``For Function``
 
 :math:`V(g(X))= \begin{cases}\sum_{k}(g(k)-E(g(X)))^{2} P(X=k), & X \text { discrete } \\ \int_{-\infty}^{\infty}(g(x)-E(g(X)))^{2} f(x) d x, & X \text { continuc }\end{cases}`
+
+``Find Var[aX] = ?``
+
+| Let Y = aX. Then
+| :math:`\mu_y = E[Y] = E[aX] = E[a\mu_x] = aE[\mu_x] = aE[X]`
+
+==> :math:`Var[aX] = Var[Y] = Var[(Y - \mu_y)^2] = a^2 Var[(X - \mu_x)^2] = a^2 V(X)`
 
 Find V(a X+b)
 ^^^^^^^^^^^^^^
