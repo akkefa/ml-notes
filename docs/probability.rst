@@ -157,6 +157,9 @@ The covariance between two rv’s, X and Y, is defined as
 * If the opposite is true, the covariance will be negative.
 * If X and Y are not strongly (linearly) related, the covariance will be near 0.
 
+.. image:: https://cdn.mathpix.com/snip/images/9KZ-5o_ZqiQ0LW25nUj58r_2RU40AbNPD4iqZy3NR9E.original.fullsize.png
+    :width: 400px
+
 Computational formula for Covariance
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 :math:`\operatorname{Cov}(X, Y)=E[XY] -E[X]E[Y]`
