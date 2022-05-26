@@ -153,9 +153,16 @@ Defined as
 
 
 
-
+For continuous rv
+^^^^^^^^^^^^^^^^^^
 If X is a continuous random variable, the variance is defined by the integral of the probability density function.
 :math:`V(X)=\int_{-\infty}^{\infty} (x - \mu_x)^2 f(x) d x`
+
+| :math:`V(X)=\int_{-\infty}^{\infty} (x - \mu_x)^2 f(x) d x`
+| :math:`= \int_{-\infty}^{\infty}\left(x^{2}-2 \mu_{x} x+\mu_{x}^{2}\right) f(x) d x`
+| :math:`= \int_{-\infty}^{\infty}x^{2} f(x) d x - 2 \mu_{x} \int_{-\infty}^{\infty}x f(x) d x + \mu_{x}^{2} \int_{-\infty}^{\infty}f(x) d x`
+
+:math:`V(X) = E(X^2)-E(X)^2`
 
 
 
