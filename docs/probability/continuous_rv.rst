@@ -28,19 +28,6 @@ We model a continuous random variable with a curve f(x), called a probability de
 
 .. note:: :math:`P(X=a)=\int_{a}^{a} f(x) d x=0 \text { for all real numbers } a`
 
-PDF
-----
-f(x) = Curve under which area represent the probability :math:`P(a \leq X \leq b)=\int_{a}^{b} f(x) d x`
-
-
-CDF
-----
-The cumulative distribution function (cdf) for a continuous rv X is given by :math:`F(x)=P(X \leq x)=\int_{-\infty}^{x} f(t) d t`
-
-* :math:`0 \leq F(x) \leq 1`
-* :math:`\lim _{x \rightarrow-\infty} F(x)=0 \quad and \quad \lim _{x \rightarrow \infty} F(x)=1`
-* f(x) is always increasing.
-
 
 Expected Value
 --------------

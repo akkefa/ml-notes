@@ -60,6 +60,14 @@ Cumulative distribution function (CDF)
 
  F(y)=P(X \leq y)=\sum_{x \leq y} P(X=x)
 
+For continuous rv
+^^^^^^^^^^^^^^^^^^
+The cumulative distribution function (cdf) for a continuous rv X is given by :math:`F(x)=P(X \leq x)=\int_{-\infty}^{x} f(t) d t`
+
+* :math:`0 \leq F(x) \leq 1`
+* :math:`\lim _{x \rightarrow-\infty} F(x)=0 \quad and \quad \lim _{x \rightarrow \infty} F(x)=1`
+* f(x) is always increasing.
+
 Probability density function (PDF)
 -------------------------------------
 X = f(x) is the probability density function of the continues random variable X.
@@ -68,6 +76,8 @@ X = f(x) is the probability density function of the continues random variable X.
 
     P(a \leq X \leq b)=\int_{a}^{b} f(x) d x
 
+
+f(x) = Curve under which area represent the probability :math:`P(a \leq X \leq b)=\int_{a}^{b} f(x) d x`
 
 Probability Distributions
 -------------------------
@@ -140,6 +150,9 @@ Defined as
 :math:`\sigma^2` or V(X).
 
 :math:`V(X) = E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2`
+
+
+
 
 If X is a continuous random variable, the variance is defined by the integral of the probability density function.
 :math:`V(X)=\int_{-\infty}^{\infty} (x - \mu_x)^2 f(x) d x`
