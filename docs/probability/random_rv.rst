@@ -151,6 +151,12 @@ Defined as
 
 :math:`V(X) = E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2`
 
+| :math:`V(X) = E[(X - \mu)^2]`
+| :math:`V(X) = E[X^2 - 2\mu X + \mu^2]`
+| :math:`V(X) = E[X^2 - 2\mu E[X] + \mu^2]`
+| :math:`V(X) = E[X^2 - 2\mu^2 + \mu^2]`
+| :math:`V(X) = E[X^2 - \mu^2]`
+| :math:`V(X) = E[X^2] - E[X]^2`
 
 
 For continuous rv
