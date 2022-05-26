@@ -28,15 +28,6 @@ We model a continuous random variable with a curve f(x), called a probability de
 
 .. note:: :math:`P(X=a)=\int_{a}^{a} f(x) d x=0 \text { for all real numbers } a`
 
-
-Expected Value
---------------
-``Recall:`` :math:`E(X)=\sum_{k} k P(X=k)`
-
-then
-
-:math:`E(X)=\int_{-\infty}^{\infty} x f(x) d x`
-
 Uniform rv
 -----------
 Random variable :math:`X \sim U[a,b]` has the uniform distribution on the interval [a, b] if its density function is
