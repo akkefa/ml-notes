@@ -140,6 +140,13 @@ If random variables is function
 | :math:`E(a X+b)= a E(x) + b * 1 = a E(x) + b`
 
 
+Properties
+^^^^^^^^^^^
+Expectation is a linear operator, which means for our purposes it has a couple of nice properties
+
+:math:`E(X+Y)=E(X)+E(Y), E(a X)=a E(X)`
+
+
 Variance
 --------
 * Measures how far we expect our random variable to be from the mean.
