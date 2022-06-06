@@ -1,4 +1,2 @@
 Sphinx
 sphinx_rtd_theme
-seaborn
-torch
