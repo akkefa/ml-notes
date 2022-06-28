@@ -28,34 +28,6 @@ We model a continuous random variable with a curve f(x), called a probability de
 
 .. note:: :math:`P(X=a)=\int_{a}^{a} f(x) d x=0 \text { for all real numbers } a`
 
-CDF
-----
-The cumulative distribution function (cdf) for a continuous rv X is given by :math:`F(x)=P(X \leq x)=\int_{-\infty}^{x} f(t) d t`
-
-* :math:`0 \leq F(x) \leq 1`
-* :math:`\lim _{x \rightarrow-\infty} F(x)=0 \quad and \quad \lim _{x \rightarrow \infty} F(x)=1`
-* f(x) is always increasing.
-
-
-Expected Value
---------------
-``Recall:`` :math:`E(X)=\sum_{k} k P(X=k)`
-
-then
-
-:math:`E(X)=\int_{-\infty}^{\infty} x f(x) d x`
-
-Variance
----------
-``Recall:`` :math:`V(X)=\sum_{k} (k  - \mu_x)^2 P(X=k)`
-
-| :math:`V(X)=\int_{-\infty}^{\infty} (x - \mu_x)^2 f(x) d x`
-| :math:`= \int_{-\infty}^{\infty}\left(x^{2}-2 \mu_{x} x+\mu_{x}^{2}\right) f(x) d x`
-| :math:`= \int_{-\infty}^{\infty}x^{2} f(x) d x - 2 \mu_{x} \int_{-\infty}^{\infty}x f(x) d x + \mu_{x}^{2} \int_{-\infty}^{\infty}f(x) d x`
-
-:math:`V(X) = E(X^2)-E(X)^2`
-
-
 Uniform rv
 -----------
 Random variable :math:`X \sim U[a,b]` has the uniform distribution on the interval [a, b] if its density function is
@@ -65,8 +37,7 @@ Random variable :math:`X \sim U[a,b]` has the uniform distribution on the interv
     f(x)=\begin{cases}
     \frac{1}{b - a} & \mathrm{for}\ a \le x \le b, \\[8pt]
     0 & \mathrm{for}\ x<a\ \mathrm{or}\ x>b
-    \end{cases}
-
+    \end{cases} = \frac{1}{b - a} \cdot I_{(a,b)}(x)
 
 CDF
 ^^^^
@@ -123,7 +94,7 @@ PDF
     f(x;\lambda) = \begin{cases}
     \lambda  e^{ - \lambda x} & x \ge 0, \\
     0 & x < 0.
-    \end{cases}
+    \end{cases} =\lambda e^{-\lambda x} I_{(0, \infty)}(x)
 
 
 Expected Value
@@ -143,6 +114,10 @@ A continuous random variable X has the normal distribution with parameters :math
 if its density is given by
 
 Notation: :math:`X \sim N(\mu,\sigma^2)`
+
+**Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
+If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one,
+So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
 
 PDF
 ^^^^

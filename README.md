@@ -1,4 +1,4 @@
-# ML Notes for CS Degree and Book Reading
+# ML Notes for MS Data Science Degree from University of Colorado Boulder 
 
 ml-notes.akkefa.com
 
