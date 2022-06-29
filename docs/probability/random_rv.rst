@@ -49,6 +49,14 @@ subscripts to denote the PMF  :math:`f_X(x) and f_Y(y)`
 
 Indicator function
 -------------------
+Let A = Set of real numbers
+
+.. math::
+
+    I_{A}(x)= \begin{cases}1, & \text { if } x \in A \\ 0, & \text { if } x \notin A\end{cases}
+
+**Other definition**
+
 The indicator function of a subset A of a set X is a function.
 
 :math:`\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { if } A \cap X \neq \emptyset \\ 0, & \text { otherwise }\end{cases}`
