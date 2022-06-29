@@ -48,7 +48,9 @@ A geometric rv :math:`X \sim Geom(p)` consists of
 Let X = # trials until first success.
 
 The geometric rv is the distribution of the number of trials needed to get the first success in repeated
-independent Bernoulli trials
+independent Bernoulli trials.
+
+.. Attention:: It can also define as number of failures before first success.
 
 Properties
 ^^^^^^^^^^^
