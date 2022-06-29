@@ -39,8 +39,13 @@ Variance
 
 Geometric rv
 -------------
-A geometric rv :math:`X \sim Geom(p)` consists of independent Bernoulli trials, each with the same probability of success p, repeated until
-the first success is obtained.
+A geometric rv :math:`X \sim Geom(p)` consists of
+
+- independent Bernoulli trials,
+- each with the same probability of success p or Failure (1-p),
+- repeated until the first success is obtained.
+
+Let X = # trials until first success.
 
 The geometric rv is the distribution of the number of trials needed to get the first success in repeated
 independent Bernoulli trials
