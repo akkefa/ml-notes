@@ -61,6 +61,9 @@ The indicator function of a subset A of a set X is a function.
 
 :math:`\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { if } A \cap X \neq \emptyset \\ 0, & \text { otherwise }\end{cases}`
 
+**Notation**
+
+:math:`\mathbb{1} _{A}(x)`
 
 Cumulative distribution function (CDF)
 -----------------------------------------
