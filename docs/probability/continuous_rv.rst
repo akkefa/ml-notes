@@ -115,9 +115,8 @@ if its density is given by
 
 Notation: :math:`X \sim N(\mu,\sigma^2)`
 
-**Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
-If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one,
-So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
+- **Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
+- If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one, So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
 
 PDF
 ^^^^
