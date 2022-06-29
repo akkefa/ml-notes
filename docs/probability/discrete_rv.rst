@@ -20,6 +20,10 @@ PMF
 | :math:`P(X=1)=p`
 | :math:`P(X=0)=1-p`
 
+**Using the indicator function notation**
+
+:math:`I_{A}(x)= \begin{cases}1, & \text { if } x \in A \\ 0, & \text { if } x \notin A\end{cases}`
+
 :math:`P(X=x)=p^{x}(1-p)^{1-x} \cdot I_{\{0,1\}}(x)`
 
 Expected Value
