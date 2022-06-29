@@ -34,7 +34,7 @@ Variance
 ^^^^^^^^^
 ``Recall:`` :math:`E(X^2)=\sum_{k} k^2 P(X=k) = 1^2 * p = p`
 
-:math:`V(X) = \operatorname{E}[X^2] - \operatorname{E}[X]^2 = p - p^2 = p(1-p)`
+:math:`V(X) = {E}[X^2] - {E}[X]^2 = p - p^2 = p(1-p)`
 
 
 Geometric rv
