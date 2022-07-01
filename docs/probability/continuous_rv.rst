@@ -79,6 +79,12 @@ Expected Value and Variance
     &=\frac{b^{2}+a b+a^{2}}{3}-\left(\frac{b+a}{2}\right)^{2}=\frac{(b-a)^{2}}{12}
     \end{aligned}
 
+Example
+^^^^^^^^
+For random variable :math:`X \sim U(0,23)`. Find P(2 < X < 18)
+
+:math:`P(2 < X < 18) = (18-2)\cdot \frac 1 {23-0} = \frac {16}{23}`
+
 
 Exponential rv
 ---------------
