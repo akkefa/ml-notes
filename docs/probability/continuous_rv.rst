@@ -32,6 +32,9 @@ Uniform rv
 -----------
 Random variable :math:`X \sim U[a,b]` has the uniform distribution on the interval [a, b] if its density function is
 
+.. image:: https://cdn.mathpix.com/snip/images/C3YIEOiPSsTEyCokT28x7xwBtWiAMEuJgXY7ljXUKpM.original.fullsize.png
+   :width: 600
+
 .. math::
 
     f(x)=\begin{cases}
