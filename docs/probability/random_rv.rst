@@ -159,6 +159,11 @@ Expectation is a linear operator, which means for our purposes it has a couple o
 :math:`E(X+Y)=E(X)+E(Y), E(a X)=a E(X)`
 
 
+Examples
+^^^^^^^^^
+
+:math:`X \sim N(\mu, \sigma^2)= E[X]=\int_{-\infty}^{\infty} x f(x) d x=\int_{-\infty}^{\infty} x \frac{1}{\sqrt{2 \pi \sigma^{2}}} e^{-\frac{1}{2 \sigma^{2}}(x-\mu)^{2}} d x = \mu`
+
 Variance
 --------
 * Measures how far we expect our random variable to be from the mean.
