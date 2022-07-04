@@ -121,6 +121,10 @@ of success.
 
 Where k = 1 (success) and n-k = 0 (failure).
 
+**Suppose n = 4**
+
+:math:`\mathrm{P}(X=3)=\mathrm{P}(\mathrm{SSSF} \text { or } \mathrm{SSFS} \text { or SFSS or FSSS })`
+
 Binomial Theorem
 ^^^^^^^^^^^^^^^^^
 :math:`\sum_{k=0}^n {n \choose k}p^{k}(1-p)^{n-k} = 1`
