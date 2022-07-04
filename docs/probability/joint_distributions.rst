@@ -1,8 +1,8 @@
 Joint Distributions
 ====================
 
-Definition
------------
+Discrete Definition
+--------------------
 Given two discrete random variables, X and Y , p(x, y) = P(X = x, Y = y) is the joint probability mass
 function for X and Y .
 
@@ -10,6 +10,14 @@ function for X and Y .
 possible values of x and y.
 
 :math:`f(x,y) = P(X=x \, and \, Y=y) = P(X=x,Y=y)`
+
+.. image:: https://cdn.mathpix.com/snip/images/a6mE2Yo5ORHTWtZDMnpVzTvJvL69xTELSymliMdALjs.original.fullsize.png
+
+- Sum of all marginal probabilities is equal to 1. ( P(y=0) + P(y=100) = P(y = 200) = 1 )
+- Sum of all joint probabilities is equal to 1.
+
+.. image:: https://cdn.mathpix.com/snip/images/8fycDrKQhcRZcJw-tMLlD0LZ-f-a_atVn0kRFQAo1FA.original.fullsize.png
+
 
 Marginal Probabilities
 -----------------------
