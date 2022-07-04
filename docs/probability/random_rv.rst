@@ -129,11 +129,12 @@ The Expected Value of X is
 | P(X=x)  | 1/4  | 1/4  | 1/2  |
 +---------+------+------+------+
 
-:math:`E[X] =(1)(1 / 4)+(2)(1 / 4)+(3)(1 / 2) = 9/4 = 2.25`
+:math:`E[X] =(1)(1 / 4)+(2)(1 / 4)+(3)(1 / 2) = 9/4 = 2.25 = \sum_{x} x P(X=x)`
 
 For continuous random variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The expected value is defined by the integral of the probability density function.
+
 :math:`E(X)=\int_{-\infty}^{\infty} x f(x) d x`
 
 If random variables is function
