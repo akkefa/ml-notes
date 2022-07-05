@@ -309,4 +309,14 @@ Suppose That,
 Each X_i take value success (P) and failure (1-P). So summing all X_i is equal to sum of all success gives the value of Y.
 Which is binomial distribution.
 
+Let X be a random variable. It’s moment generating function (mgf) is denoted and defined as
+
+.. math::
+
+    M_{X}(t)=E\left[e^{t X}\right]=\int_{-\infty}^{\infty} e^{t x} f_{X}(x) d x
+
+Properties
+^^^^^^^^^^^
+- Moment generating functions also uniquely identify distributions.
+
 
