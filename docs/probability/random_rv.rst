@@ -326,4 +326,29 @@ Bernoulli(𝗉)
 | :math:`=1 \cdot(1-p)+e^{t} \cdot p`
 | :math:`=1-p+p e^{t}`
 
+Binomial(𝗉, 𝗏)
+^^^^^^^^^^^^^^^^
+
+.. math::
+
+    \begin{aligned}
+    M_{x}(t) &=\sum_{x=0}^{n} e^{t x}\left(\begin{array}{l}
+    n \\
+    x
+    \end{array}\right) p^{x}(1-p)^{n-x} \\
+    &=\sum_{x=0}^{n}\left(\begin{array}{l}
+    n \\
+    x
+    \end{array}\right)\left(p e^{t}\right)^{x}(1-p)^{n-x}
+    \end{aligned}
+    $$
+    Binomial Theorem:
+    $$
+    \begin{gathered}
+    (a+b)^{n}=\sum_{k=0}^{n}\left(\begin{array}{l}
+    n \\
+    k
+    \end{array}\right) a^{k} b^{n-k} \\
+    \Rightarrow M_{X}(t)=\left(p e^{t}+1-p\right)^{n}
+    \end{gathered}
 
