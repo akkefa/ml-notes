@@ -248,3 +248,23 @@ drawn, so to speak, is and stays the same: "identically distributed".
 
 Estimators and Sampling Distributions
 --------------------------------------
+:math:`\theta` will denote a generic parameter.
+
+**E.g**
+
+:math:`\theta = \mu , \theta = p , \theta = \lambda , \theta = (\alpha, \beta)`
+
+Estimator
+^^^^^^^^^^
+:math:`\hat{\theta}` = a Random variable,
+
+:math:`\hat{\theta}=\bar{X}`
+
+
+Estimate
+^^^^^^^^^
+:math:`\hat{\theta}` = a observed number
+
+:math:`\hat{\theta}=\bar{x} = 42.5`
+
+
