@@ -319,4 +319,11 @@ Properties
 ^^^^^^^^^^^
 - Moment generating functions also uniquely identify distributions.
 
+Bernoulli(𝗉)
+^^^^^^^^^^^^^^
+| :math:`M_{X}(t)=E\left[e^{t X}\right]=\sum_{x} e^{t x} f_{X}(x)=\sum_{x} e^{t x} P(X=x)`
+| :math:`=e^{t \cdot 0} P(X=0)+e^{t \cdot 1} P(X=1)`
+| :math:`=1 \cdot(1-p)+e^{t} \cdot p`
+| :math:`=1-p+p e^{t}`
+
 
