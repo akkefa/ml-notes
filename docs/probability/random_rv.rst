@@ -294,5 +294,19 @@ Then
 We have shown that, no matter what distribution we
 are working with, if the mean is :math:`\mu` ,:math:`bar{X}` is an unbiased estimator for :math:`\mu`.
 
+Moments Generating Functions
+-----------------------------
+Suppose That,
+
+.. math::
+
+    X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} Bernoulli(p)
+
+    \text { What is the distribution of } Y=\sum_{i=1}^{n} X_{i} ?
+
+    Y=\sum_{i=1}^{n} X_{i} \sim bin(n, p)
+
+Each X_i take value success (P) and failure (1-P). So summing all X_i is equal to sum of all success gives the value of Y.
+Which is binomial distribution.
 
 
