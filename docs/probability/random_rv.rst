@@ -291,7 +291,8 @@ Then
     =\frac{1}{n} \sum_{\mathrm{i}=1}^{\mathrm{n}} \mu=\frac{1}{\mathrm{n}}(\mu+\mu+\cdots+\mu)=\frac{1}{\mathrm{n}} \mathrm{n} \mu=\mu
 
 
-
+We have shown that, no matter what distribution we
+are working with, if the mean is :math:`\mu` ,:math:`bar{X}` is an unbiased estimator for :math:`\mu`.
 
 
 
