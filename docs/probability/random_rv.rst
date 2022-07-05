@@ -221,3 +221,20 @@ Variance measure the spread the data B shift the data but doest not affect the s
 Standard Deviation
 -------------------
 The standard deviation is the square root of the variance. :math:`\sigma_x = \sqrt{V(X)}`
+
+Independent and identically distributed random variables (IID)
+---------------------------------------------------------------
+Random Sample == IID
+
+Random Sample
+^^^^^^^^^^^^^^
+A collection of random variables is independent and identically distributed if each random variable has the same
+probability distribution as the others and all are mutually independent.
+
+Random Sample = :math:`X_1, X_2, X_3, ..., X_n`
+
+**E.g**
+
+A good example is a succession of throws of a fair coin: The coin has no memory, so all the throws are "independent".
+And every throw is 50:50 (heads:tails), so the coin is and stays fair - the distribution from which every throw is
+drawn, so to speak, is and stays the same: "identically distributed".
