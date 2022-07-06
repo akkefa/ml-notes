@@ -351,8 +351,9 @@ Key points
 - sum of n iid exp(rate =\lambda) random variables is Gamma(n, \lambda)
 - sum of m iid bin(n,p) is bin(nm,p)
 - sum of n iid \Gamma(\alpha, \beta) is \Gamma(n \alpha, \beta)
-- sum of n iid $N\left(\mu, \sigma^{2}\right)$ is $N\left(n \mu, n \sigma^{2}\right)$
+- sum of n iid :math:`N\left(\mu, \sigma^{2}\right) is N\left(n \mu, n \sigma^{2}\right)`.
 - sum of $n$ independent normal random variable with :math:`\mathrm{X}_{\mathrm{i}} \sim \mathrm{N}\left(\mu_{\mathrm{i}}, \sigma_{\mathrm{i}}^{2}\right)$ is $\mathrm{N}\left(\sum_{\mathrm{i}=1}^{\mathrm{n}} \mu_{\mathrm{i}}, \sum_{\mathrm{i}=1}^{\mathrm{n}} \sigma_{\mathrm{i}}^{2}\right)`
 
-
+Method of Moments Estimators
+-----------------------------
 
