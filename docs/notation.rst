@@ -52,4 +52,5 @@ Statistics
 :math:`\sigma`                             Standard deviation
 :math:`V(X)`                               Variance of X
 :math:`Cov(X,Y)`                           Covariance of X and Y
+:math:`\bar{X}`                            The sample mean is an average value / mean found in a sample.
 ========================================  =================================================================

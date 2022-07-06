@@ -49,10 +49,21 @@ subscripts to denote the PMF  :math:`f_X(x) and f_Y(y)`
 
 Indicator function
 -------------------
+Let A = Set of real numbers
+
+.. math::
+
+    I_{A}(x)= \begin{cases}1, & \text { if } x \in A \\ 0, & \text { if } x \notin A\end{cases}
+
+**Other definition**
+
 The indicator function of a subset A of a set X is a function.
 
 :math:`\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { if } A \cap X \neq \emptyset \\ 0, & \text { otherwise }\end{cases}`
 
+**Notation**
+
+:math:`\mathbb{1} _{A}(x)`
 
 Cumulative distribution function (CDF)
 -----------------------------------------
@@ -118,11 +129,12 @@ The Expected Value of X is
 | P(X=x)  | 1/4  | 1/4  | 1/2  |
 +---------+------+------+------+
 
-:math:`E[X] =(1)(1 / 4)+(2)(1 / 4)+(3)(1 / 2) = 9/4 = 2.25`
+:math:`E[X] =(1)(1 / 4)+(2)(1 / 4)+(3)(1 / 2) = 9/4 = 2.25 = \sum_{x} x P(X=x)`
 
 For continuous random variables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The expected value is defined by the integral of the probability density function.
+
 :math:`E(X)=\int_{-\infty}^{\infty} x f(x) d x`
 
 If random variables is function
@@ -146,6 +158,11 @@ Expectation is a linear operator, which means for our purposes it has a couple o
 
 :math:`E(X+Y)=E(X)+E(Y), E(a X)=a E(X)`
 
+
+Examples
+^^^^^^^^^
+
+:math:`X \sim N(\mu, \sigma^2)= E[X]=\int_{-\infty}^{\infty} x f(x) d x=\int_{-\infty}^{\infty} x \frac{1}{\sqrt{2 \pi \sigma^{2}}} e^{-\frac{1}{2 \sigma^{2}}(x-\mu)^{2}} d x = \mu`
 
 Variance
 --------
@@ -204,3 +221,139 @@ Variance measure the spread the data B shift the data but doest not affect the s
 Standard Deviation
 -------------------
 The standard deviation is the square root of the variance. :math:`\sigma_x = \sqrt{V(X)}`
+
+Independent and identically distributed random variables (IID)
+---------------------------------------------------------------
+Random Sample == IID
+
+Random Sample
+^^^^^^^^^^^^^^
+A collection of random variables is independent and identically distributed if each random variable has the same
+probability distribution as the others and all are mutually independent.
+
+Random Sample = :math:`X_1, X_2, X_3, ..., X_n`
+
+Suppose that :math:`X_1, X_2, X_3, ..., X_n` is a random sample from the gamma distribution with parameters :math:`alpha`
+and :math:`\beta`.
+
+.. math::
+
+    X_{1},X_{2}, \ldots, X_{n} \stackrel{\mathrm{iid}}{\sim} \Gamma(\alpha, \beta)
+
+**E.g**
+
+A good example is a succession of throws of a fair coin: The coin has no memory, so all the throws are "independent".
+And every throw is 50:50 (heads:tails), so the coin is and stays fair - the distribution from which every throw is
+drawn, so to speak, is and stays the same: "identically distributed".
+
+Estimators and Sampling Distributions
+--------------------------------------
+:math:`\theta` will denote a generic parameter.
+
+**E.g**
+
+:math:`\theta = \mu , \theta = p , \theta = \lambda , \theta = (\alpha, \beta)`
+
+**Estimator**
+
+:math:`\hat{\theta}` = a Random variable,
+
+:math:`\hat{\theta}=\bar{X}`
+
+
+**Estimate**
+
+:math:`\hat{\theta}` = a observed number
+
+:math:`\hat{\theta}=\bar{x} = 42.5`
+
+.. image:: https://cdn.mathpix.com/snip/images/FHayA6rumuEuRTs3FBcp4TSwOAhRTpLl_3HSJXTSovo.original.fullsize.png
+
+- We want our estimator of to be correct “on average.
+- :math:`\bar{X}` is a random variable with its owo distribution and its own mean or expected value.
+
+We would like sample mean :math:`𝖤[\bar{𝖷}] = μ` to be close to the true mean or population mean :math:`μ`.
+
+If this is true, we say that :math:`\bar{𝖷}` is an unbiased estimator of :math:`\mu`.
+
+In general, :math:`\bar{\theta}` is an unbiased estimator of :math:`\theta`. if  :math:`E[\bar{\theta}] = \theta`.
+That's is really good thing.
+
+Let X1, X2, ..., Xn be random sample from any  distribution with mean :math:`\mu`.
+
+That is :math:`E[X_i] = \mu` for i = 1,2,3,..., n.
+Then
+
+.. math::
+    E[\bar{X}]=E\left[\frac{1}{n} \sum_{i=1}^{n} X_{i}\right]
+    =\frac{1}{n} \sum_{i=1}^{n} E\left[X_{i}\right]
+
+    =\frac{1}{n} \sum_{\mathrm{i}=1}^{\mathrm{n}} \mu=\frac{1}{\mathrm{n}}(\mu+\mu+\cdots+\mu)=\frac{1}{\mathrm{n}} \mathrm{n} \mu=\mu
+
+
+We have shown that, no matter what distribution we
+are working with, if the mean is :math:`\mu` ,:math:`bar{X}` is an unbiased estimator for :math:`\mu`.
+
+Moments Generating Functions
+-----------------------------
+Suppose That,
+
+.. math::
+
+    X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} Bernoulli(p)
+
+    \text { What is the distribution of } Y=\sum_{i=1}^{n} X_{i} ?
+
+    Y=\sum_{i=1}^{n} X_{i} \sim bin(n, p)
+
+Each X_i take value success (P) and failure (1-P). So summing all X_i is equal to sum of all success gives the value of Y.
+Which is binomial distribution.
+
+Let X be a random variable. It’s moment generating function (mgf) is denoted and defined as
+
+.. math::
+
+    M_{X}(t)=E\left[e^{t X}\right]=\int_{-\infty}^{\infty} e^{t x} f_{X}(x) d x
+
+Properties
+^^^^^^^^^^^
+- Moment generating functions also uniquely identify distributions.
+
+Bernoulli(𝗉)
+^^^^^^^^^^^^^^
+| :math:`M_{X}(t)=E\left[e^{t X}\right]=\sum_{x} e^{t x} f_{X}(x)=\sum_{x} e^{t x} P(X=x)`
+| :math:`=e^{t \cdot 0} P(X=0)+e^{t \cdot 1} P(X=1)`
+| :math:`=1 \cdot(1-p)+e^{t} \cdot p`
+| :math:`=1-p+p e^{t}`
+
+Binomial(𝗉, 𝗏)
+^^^^^^^^^^^^^^^^
+
+.. image:: https://cdn.mathpix.com/snip/images/oWtMZ14NSybsuE5sEGi3CvmpAtE2dlM-m9S519TTPuU.original.fullsize.png
+
+Some distribution
+^^^^^^^^^^^^^^^^^^
+
+.. image:: https://cdn.mathpix.com/snip/images/oLROi0YuJYc_kDzSYRACNdujNGLM3Qx_TPXKcbVE-qA.original.fullsize.png
+
+
+Some distribution with :math:`X_{1}, X_{2}, \ldots, X_{n} \text { iid }` and :math:`Y=\sum_{i=1}^{n} X_{i}` .
+
+:math:`M_{Y}(t)=\left[M_{X_{1}}(t)\right]^{n}`
+
+We have just seen that the moment generating function of the sum. Is the moment generating function of one of them
+raised to the nth power.
+
+
+Key points
+^^^^^^^^^^^
+- sum of n iid Bernoulli(p) random variables is bin(n, p)
+- sum of n iid exp(rate =\lambda) random variables is Gamma(n, \lambda)
+- sum of m iid bin(n,p) is bin(nm,p)
+- sum of n iid \Gamma(\alpha, \beta) is \Gamma(n \alpha, \beta)
+- sum of n iid :math:`N\left(\mu, \sigma^{2}\right) is N\left(n \mu, n \sigma^{2}\right)`.
+- sum of $n$ independent normal random variable with :math:`\mathrm{X}_{\mathrm{i}} \sim \mathrm{N}\left(\mu_{\mathrm{i}}, \sigma_{\mathrm{i}}^{2}\right)$ is $\mathrm{N}\left(\sum_{\mathrm{i}=1}^{\mathrm{n}} \mu_{\mathrm{i}}, \sum_{\mathrm{i}=1}^{\mathrm{n}} \sigma_{\mathrm{i}}^{2}\right)`
+
+Method of Moments Estimators
+-----------------------------
+

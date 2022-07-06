@@ -20,6 +20,10 @@ PMF
 | :math:`P(X=1)=p`
 | :math:`P(X=0)=1-p`
 
+**Using the indicator function notation**
+
+:math:`I_{A}(x)= \begin{cases}1, & \text { if } x \in A \\ 0, & \text { if } x \notin A\end{cases}`
+
 :math:`P(X=x)=p^{x}(1-p)^{1-x} \cdot I_{\{0,1\}}(x)`
 
 Expected Value
@@ -30,16 +34,23 @@ Variance
 ^^^^^^^^^
 ``Recall:`` :math:`E(X^2)=\sum_{k} k^2 P(X=k) = 1^2 * p = p`
 
-:math:`V(X) = \operatorname{E}[X^2] - \operatorname{E}[X]^2 = p - p^2 = p(1-p)`
+:math:`V(X) = {E}[X^2] - {E}[X]^2 = p - p^2 = p(1-p)`
 
 
 Geometric rv
 -------------
-A geometric rv :math:`X \sim Geom(p)` consists of independent Bernoulli trials, each with the same probability of success p, repeated until
-the first success is obtained.
+A geometric rv :math:`X \sim Geom(p)` consists of
+
+- independent Bernoulli trials,
+- each with the same probability of success p or Failure (1-p),
+- repeated until the first success is obtained.
+
+Let X = # trials until first success.
 
 The geometric rv is the distribution of the number of trials needed to get the first success in repeated
-independent Bernoulli trials
+independent Bernoulli trials.
+
+.. Attention:: It can also define as number of failures before first success.
 
 Properties
 ^^^^^^^^^^^
@@ -109,6 +120,10 @@ of success.
     f(x)=P(X=x)= \binom{n}{x}p^x(1-p)^{n-x} \cdot I_{\{1,2,3, \ldots\}}(x)
 
 Where k = 1 (success) and n-k = 0 (failure).
+
+**Suppose n = 4**
+
+:math:`\mathrm{P}(X=3)=\mathrm{P}(\mathrm{SSSF} \text { or } \mathrm{SSFS} \text { or SFSS or FSSS })`
 
 Binomial Theorem
 ^^^^^^^^^^^^^^^^^

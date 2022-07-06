@@ -32,6 +32,9 @@ Uniform rv
 -----------
 Random variable :math:`X \sim U[a,b]` has the uniform distribution on the interval [a, b] if its density function is
 
+.. image:: https://cdn.mathpix.com/snip/images/C3YIEOiPSsTEyCokT28x7xwBtWiAMEuJgXY7ljXUKpM.original.fullsize.png
+   :width: 600
+
 .. math::
 
     f(x)=\begin{cases}
@@ -76,6 +79,12 @@ Expected Value and Variance
     &=\frac{b^{2}+a b+a^{2}}{3}-\left(\frac{b+a}{2}\right)^{2}=\frac{(b-a)^{2}}{12}
     \end{aligned}
 
+Example
+^^^^^^^^
+For random variable :math:`X \sim U(0,23)`. Find P(2 < X < 18)
+
+:math:`P(2 < X < 18) = (18-2)\cdot \frac 1 {23-0} = \frac {16}{23}`
+
 
 Exponential rv
 ---------------
@@ -115,9 +124,8 @@ if its density is given by
 
 Notation: :math:`X \sim N(\mu,\sigma^2)`
 
-**Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
-If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one,
-So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
+- **Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
+- If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one, So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
 
 PDF
 ^^^^
