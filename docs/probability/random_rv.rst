@@ -329,26 +329,18 @@ Bernoulli(𝗉)
 Binomial(𝗉, 𝗏)
 ^^^^^^^^^^^^^^^^
 
-.. math::
+.. image:: https://cdn.mathpix.com/snip/images/oWtMZ14NSybsuE5sEGi3CvmpAtE2dlM-m9S519TTPuU.original.fullsize.png
 
-    \begin{aligned}
-    M_{x}(t) &=\sum_{x=0}^{n} e^{t x}\left(\begin{array}{l}
-    n \\
-    x
-    \end{array}\right) p^{x}(1-p)^{n-x} \\
-    &=\sum_{x=0}^{n}\left(\begin{array}{l}
-    n \\
-    x
-    \end{array}\right)\left(p e^{t}\right)^{x}(1-p)^{n-x}
-    \end{aligned}
-    $$
-    Binomial Theorem:
-    $$
-    \begin{gathered}
-    (a+b)^{n}=\sum_{k=0}^{n}\left(\begin{array}{l}
-    n \\
-    k
-    \end{array}\right) a^{k} b^{n-k} \\
-    \Rightarrow M_{X}(t)=\left(p e^{t}+1-p\right)^{n}
-    \end{gathered}
+Some distribution
+^^^^^^^^^^^^^^^^^^
+
+.. image:: https://cdn.mathpix.com/snip/images/oLROi0YuJYc_kDzSYRACNdujNGLM3Qx_TPXKcbVE-qA.original.fullsize.png
+
+
+Some distribution with :math:`X_{1}, X_{2}, \ldots, X_{n} \text { iid }` and :math:`Y=\sum_{i=1}^{n} X_{i}` .
+
+:math:`M_{Y}(t)=\left[M_{X_{1}}(t)\right]^{n}`
+
+We have just seen that the moment generating function of the sum. Is the moment generating function of one of them
+raised to the nth power.
 
