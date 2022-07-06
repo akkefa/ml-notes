@@ -344,3 +344,15 @@ Some distribution with :math:`X_{1}, X_{2}, \ldots, X_{n} \text { iid }` and :ma
 We have just seen that the moment generating function of the sum. Is the moment generating function of one of them
 raised to the nth power.
 
+
+Key points
+^^^^^^^^^^^
+- sum of n iid Bernoulli(p) random variables is bin(n, p)
+- sum of n iid exp(rate =\lambda) random variables is Gamma(n, \lambda)
+- sum of m iid bin(n,p) is bin(nm,p)
+- sum of n iid \Gamma(\alpha, \beta) is \Gamma(n \alpha, \beta)
+- sum of n iid $N\left(\mu, \sigma^{2}\right)$ is $N\left(n \mu, n \sigma^{2}\right)$
+- sum of $n$ independent normal random variable with :math:`\mathrm{X}_{\mathrm{i}} \sim \mathrm{N}\left(\mu_{\mathrm{i}}, \sigma_{\mathrm{i}}^{2}\right)$ is $\mathrm{N}\left(\sum_{\mathrm{i}=1}^{\mathrm{n}} \mu_{\mathrm{i}}, \sum_{\mathrm{i}=1}^{\mathrm{n}} \sigma_{\mathrm{i}}^{2}\right)`
+
+
+
