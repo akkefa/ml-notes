@@ -8,6 +8,37 @@ Choose the value in the parameter space that makes the observed data "most likel
 Given data :math:`X_1, X_2 ... X_n`, a random sample (iid) from a distribution with unknown parameter θ, we want to
 find the value of θ in the parameter space that maximizes our probability of observing that data.
 
+--> If :math:`X_1, X_2 ... X_n` are discrete, we can look at
+
+.. math::
+    P\left(X_{1}=x_{1}, X_{2}=x_{2}, \ldots, X_{n}=x_{n}\right)
+
+as a function of θ, and find the θ that maximizes it. This is the joint pmf for :math:`X_1, X_2 ... X_n`.
+
+--> If :math:`X_1, X_2 ... X_n` are continuous is to maximize the **joint pdf** with respect to θ.
+
+The pmf/pdf for any one of is denoted by f(x).
+We will emphasize the dependence of f on a parameter θ by writing it as
+
+.. math::
+    f(x) = f(x; \theta)
+
+    \text{The joint pmf/pdf for all n of them is}
+
+    f\left(x_{1}, x_{2}, \ldots, x_{n} ; \theta\right) = \prod_{i=1}^{n} f\left(x_{i} ; \boldsymbol{\theta}\right)
+
+    f(\vec{x} ; \boldsymbol{\theta})=\prod_{i=1}^{n} f\left(x_{i} ; \boldsymbol{\theta}\right)
+
+- The data (the x’s) are fixed.
+- Think of the x’s as fixed and the joint pdf as a function of θ.
+
+likelihood function
+^^^^^^^^^^^^^^^^^^^^
+Call it a likelihood function and denote it by L(θ).
+
+.. image:: https://cdn.mathpix.com/snip/images/6x2RRobffl10lBr_hRqa04kDpnXBSS9DGIBc7gc-o_4.original.fullsize.png
+
+
 Example
 --------
 Suppose that we flip a biased coin which has the probability of getting “Heads” as either
