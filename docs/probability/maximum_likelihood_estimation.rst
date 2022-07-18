@@ -161,18 +161,15 @@ The parameter space
 
 Solve for μ and σ simultaneously
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-.. math::
+.. image:: https://cdn.mathpix.com/snip/images/vNkeYyOT1UmgFNCA2sgFKAfNXR5IMAPfXh5GmBqIgwc.original.fullsize.png
 
-    \ell\left(\mu, \sigma^{2}\right)=-\frac{\mathrm{n}}{2} \ln \left(2 \pi \sigma^{2}\right)-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}
+.. image:: https://cdn.mathpix.com/snip/images/UMjzkiqAodLdttR_5myNWdEQ-HVAKsYKEJaS1ZH1lkM.original.fullsize.png
 
-    \frac{\partial}{\partial \mu} \ell\left(\mu, \sigma^{2}\right)=-\frac{1}{2 \sigma^{2}} \sum_{i=1}^{n} 2\left(\mathrm{x}_{\mathrm{i}}-\mu\right)(-1)
+.. image:: https://cdn.mathpix.com/snip/images/McLGaebTrvxQ71PE5jIkBWXHiP7uoZpPqKafcSi8K2U.original.fullsize.png
 
-    =\frac{1}{\sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right) \stackrel{\text { set }}{=} 0
+.. image:: https://cdn.mathpix.com/snip/images/YHRDjDtDGA28tUpQZovCDOui_42Fx4plVy2bfjWCTNM.original.fullsize.png
 
-    \sum_{i=1}^{n}\left(x_{i}-\mu\right)=0 \Rightarrow \sum_{i=1}^{n} x_{i}-n \mu=0
-
-    \mu=\sum_{i=1}^{n} x_{i} / n=\bar{x} \Rightarrow \widehat{\mu}=\bar{X}
-
+.. image:: https://cdn.mathpix.com/snip/images/PWANXAiviLgD1ZBLjBdsMxLrThZn7UDX4olqvNkDmY0.original.fullsize.png
 
 
 
