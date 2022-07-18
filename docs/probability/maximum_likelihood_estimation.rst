@@ -101,7 +101,14 @@ It is almost always easier to minimize the log-likelihood function.
 
 | :math:`L(p)=\log\left(\prod_{i=1}^{n} p^{x_{i}}(1-p)^{1-x_{i}} I_{\{0,1\}}\left(x_{i}\right)\right)`
 | :math:`\ell(p)=\sum_{i=1}^{n} x_{i} \ln p+\left(n-\sum_{i=1}^{n} x_{i}\right) \ln (1-p)`
+| I want to maximize it with respect to p, so I'm going to take a derivative with respect to p and set it equal to 0.
+| :math:`\frac{\partial}{\partial p} l(p)=\frac{\sum_{i=1}^{n} x_{i}}{p}-\frac{n-\sum_{i=1}^{n} x_{i}}{1-p} \stackrel{\text { set }}{=} 0`
+| :math:`p(1-p)\left[\frac{\sum_{i=1}^{n} x_{i}}{p}-\frac{n-\sum_{i=1}^{n} x_{i}}{1-p}\right]=p(1-p) \cdot 0`
+| :math:`(1-p) \sum_{i=1}^{n} x_{i}-p\left(n-\sum_{i=1}^{n} x_{i}\right)=0`
 
+.. image:: https://cdn.mathpix.com/snip/images/rkijCeDy35aP_A_nRceFCUJFEL90Igt1L7UhesnYDSs.original.fullsize.png
+
+:math:`p=\frac{\sum_{i=1}^{n} x_{i}}{n}`
 
 
 
