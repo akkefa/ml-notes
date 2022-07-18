@@ -135,3 +135,5 @@ The correlation Coefficient of X and Y , denoted by Cor(X, Y ) Represented by th
 :math:`Cor(X, Y) = \rho_{X,Y}= \frac{\operatorname{cov}(X,Y)}{\sigma_X \sigma_Y}`
 
 It represents a “scaled” covariance. The correlation is always between -1 and 1.
+
+.. include:: probability/maximum_likelihood_estimation.rst
