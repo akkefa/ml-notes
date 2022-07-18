@@ -119,6 +119,31 @@ heads in your sample. This maximum likelihood estimator, at least, in this case,
 .. math::
     \hat{p}=\frac{\sum_{i=1}^{n} X_{i}}{n}=\bar{X}
 
+Exponential distribution
+-------------------------
+| :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} Exp(rate = \lambda)`
+| The pmf for one of them is :math:`f(x ; p)= \lambda e^{-\lambda x} I_{(0, \infty)}(x)`
+| The joint pmf for all of them is
+
+.. math::
+    f(\vec{x} ; \lambda)=\prod_{i=1}^{n} f\left(x_{i} ; \lambda\right) = =\prod_{i=1}^{n} \lambda e^{-\lambda x_{i}} I_{(0, \infty)}\left(x_{i}\right)
+
+    f(\vec{x} ; p)=\lambda^{n} e^{-\lambda \sum_{i=1}^{n} x_{i}} \prod_{i=1}^{n} I_{(0, \infty)}\left(x_{i}\right)
+
+    \text{A likelihood is} = L(\lambda)=\lambda^{n} e^{-\lambda \sum_{i=1}^{n} x_{i}}
+
+    \text{The log-likelihood is} = \ell(\lambda)=n \ln \lambda-\lambda \sum_{i=1}^{n} x_{i}
+
+    \frac{\partial}{\partial \lambda} \ell(\lambda)=\frac{n}{\lambda}-\sum_{i=1}^{n} x_{i} \stackrel{\text { set }}{=} 0
+
+    \lambda=\frac{\mathrm{n}}{\sum_{\mathrm{i}=1}^{\mathrm{n}} \mathrm{x}_{\mathrm{i}}}
+
+Same asvmethod of moments. Biased!
+
+The maximum likelihood estimator for p is :math:`\hat{\lambda}=\frac{n}{\sum_{i=1}^{n} X_{i}}=\frac{1}{\bar{X}}`
+
+
+
 
 
 
