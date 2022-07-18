@@ -142,6 +142,40 @@ Same asvmethod of moments. Biased!
 
 The maximum likelihood estimator for p is :math:`\hat{\lambda}=\frac{n}{\sum_{i=1}^{n} X_{i}}=\frac{1}{\bar{X}}`
 
+Normal distribution (Multiple parameters!)
+-------------------------------------------
+| :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} N(\mu, \sigma^2)`
+| The pdf for one of them is :math:`\mathrm{f}\left(\mathrm{x} ; \mu, \sigma^{2}\right)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} \mathrm{e}^{-\frac{1}{2 \sigma^{2}}(\mathrm{x}-\mu)^{2}}`
+| The joint pdf for all of them is
+| :math:`f(\vec{x} ; \mu, \sigma^{2})=\prod_{i=1}^{n} f\left(x_{i} ; \mu, \sigma^{2}\right) = \left(2 \pi \sigma^{2}\right)^{-\mathrm{n} / 2} \mathrm{e}^{-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}}`
+
+The parameter space
+^^^^^^^^^^^^^^^^^^^^
+:math:`-\infty<\mu<\infty, \quad \sigma^{2}>0`
+
+| A likelihood is :math:`\mathrm{L}\left(\mu, \sigma^{2}\right)=\left(2 \pi \sigma^{2}\right)^{-\mathrm{n} / 2} \mathrm{e}^{-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}}`
+| The log-likelihood is :math:`\ell\left(\mu, \sigma^{2}\right)=-\frac{\mathrm{n}}{2} \ln \left(2 \pi \sigma^{2}\right)-\frac{1}{2 \sigma^{2}} \sum_{i=1}^{n}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}`
+| :math:`\ell\left(\mu, \sigma^{2}\right)=-\frac{\mathrm{n}}{2} \ln \left(2 \pi \sigma^{2}\right)-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}`
+| :math:`\frac{\partial}{\partial \mu} \ell\left(\mu, \sigma^{2}\right) \stackrel{\text { set }}{=} 0`
+| :math:`\frac{\partial}{\partial \sigma^{2}} \ell\left(\mu, \sigma^{2}\right) \stackrel{\text { set }}{=} 0`
+
+Solve for μ and σ simultaneously
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. math::
+
+    \ell\left(\mu, \sigma^{2}\right)=-\frac{\mathrm{n}}{2} \ln \left(2 \pi \sigma^{2}\right)-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}
+
+    \frac{\partial}{\partial \mu} \ell\left(\mu, \sigma^{2}\right)=-\frac{1}{2 \sigma^{2}} \sum_{i=1}^{n} 2\left(\mathrm{x}_{\mathrm{i}}-\mu\right)(-1)
+
+    =\frac{1}{\sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right) \stackrel{\text { set }}{=} 0
+
+    \sum_{i=1}^{n}\left(x_{i}-\mu\right)=0 \Rightarrow \sum_{i=1}^{n} x_{i}-n \mu=0
+
+    \mu=\sum_{i=1}^{n} x_{i} / n=\bar{x} \Rightarrow \widehat{\mu}=\bar{X}
+
+
+
+
 
 
 
