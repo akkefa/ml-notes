@@ -5,6 +5,9 @@ Idea
 -----
 Choose the value in the parameter space that makes the observed data "most likely".
 
+Given data :math:`X_1, X_2 ... X_n`, a random sample (iid) from a distribution with unknown parameter θ, we want to
+find the value of θ in the parameter space that maximizes our probability of observing that data.
+
 Example
 --------
 Suppose that we flip a biased coin which has the probability of getting “Heads” as either
