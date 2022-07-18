@@ -110,6 +110,15 @@ It is almost always easier to minimize the log-likelihood function.
 
 :math:`p=\frac{\sum_{i=1}^{n} x_{i}}{n}`
 
+This is our coin example again. But we have n flips, and we have the Bernoulli's ones and zeros for heads and tails, and
+the value of p is unknown, it's somewhere between 0 and 1. We're no longer restricted to 0.2, 0.3, and 0.8. The maximum
+likelihood estimator, is the sample mean of the ones and zeros. If you add up the ones and zeros, and divide by n,
+you're really computing the proportion of ones in your sample. You're really computing the proportion of times you see
+heads in your sample. This maximum likelihood estimator, at least, in this case, makes a lot of sense.
+
+.. math::
+    \hat{p}=\frac{\sum_{i=1}^{n} X_{i}}{n}=\bar{X}
+
 
 
 
