@@ -136,4 +136,24 @@ The correlation Coefficient of X and Y , denoted by Cor(X, Y ) Represented by th
 
 It represents a “scaled” covariance. The correlation is always between -1 and 1.
 
-.. include:: probability/maximum_likelihood_estimation.rst
+
+Transformations of Distributions
+=================================
+
+Discrete Distributions
+-----------------------
+Suppose that 𝖷 ∼ 𝖻𝗂𝗇(𝗇, 𝗉) What is the distribution of Y = n-X?
+
+:math:`f(x)=P(X=x)= \binom{n}{x}p^x(1-p)^{n-x} \cdot I_{\{1,2,3, \ldots\}}(x)`
+
+**Just do it:**
+
+| :math:`P(Y=y)=P(n-X=y)=P(X=n-y)`
+| :math:`= \binom{n}{n-y}p^x(1-p)^{n-(n-y)} \cdot I_{\{0,1,2,3, \ldots\}}(n-y)`
+| :math:`= \binom{n}{y}p^n-y(1-p)^{y} \cdot I_{\{0,1,2,3, \ldots\}}(y) = 𝖸 ∼ 𝖻𝗂𝗇 (𝗇, 𝟣 − 𝗉)`
+
+
+
+
+
+#.. include:: probability/maximum_likelihood_estimation.rst
