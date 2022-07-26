@@ -146,11 +146,20 @@ If random variables is function
     \int_{-\infty}^{\infty} g(x) f(x) d x, X \text { is continuous. }
     \end{array}\right.
 
-
 | :math:`E(a X+b)=\sum_{k}(a X+b) P(X=k)`
 | :math:`E(a X+b)= a \sum_{k} k P(X=k)+b \sum_{k} P(X=k)`
 | :math:`E(a X+b)= a E(x) + b * 1 = a E(x) + b`
 
+Law of the Unconscious Statistician
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+IF X with pdf :math:`f_x(x)` and g is a function ``Find 𝖤[𝗀(𝖷)]``
+
+Let Y=g(X). The pdf for Y is:
+
+| :math:`f_{Y}(y)=f_{X}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| = \text { So, } E[g(X)]=E[Y]=\int_{-\infty}^{\infty} y \cdot f_{Y}(y) d y`
+| :math:`=\int_{-\infty}^{\infty} y \cdot f_{x}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| d y`
+| :math:`\text { Let } x=g^{-1}(y) \text {. Then } d x=\frac{d}{d y} g^{-1}(y) d y`
+| :math:`E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x`
 
 Properties
 ^^^^^^^^^^^
