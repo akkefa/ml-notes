@@ -153,7 +153,29 @@ Suppose that 𝖷 ∼ 𝖻𝗂𝗇(𝗇, 𝗉) What is the distribution of Y = n
 | :math:`= \binom{n}{y}p^n-y(1-p)^{y} \cdot I_{\{0,1,2,3, \ldots\}}(y) = 𝖸 ∼ 𝖻𝗂𝗇 (𝗇, 𝟣 − 𝗉)`
 
 
+Continuous Distributions
+-------------------------
+
+Invertible functions
+^^^^^^^^^^^^^^^^^^^^^
+In the most general sense, are functions that "reverse" each other. For example, if f takes a to b, then the inverse,
+:math:`f^{-1}` must take b to a.
+a function is invertible only if each input has a unique output. That is, each output is paired with exactly one input.
+That way, when the mapping is reversed, it will still be a function!
+
+.. image:: https://cdn.mathpix.com/snip/images/5XjLATEE1cUABbzPrffVRvF3B267cw-bYb8fpihmp1M.original.fullsize.png
+
+For X discrete or continuous, the cumulative distribution function (cdf) Is denoted by F(x) and is defined by
+
+:math:`F(X)= P(X < x)`
+
+.. image:: https://cdn.mathpix.com/snip/images/0koe85iCdU9TJzUBMxXDNWtyn-Nd7T1yxoG0fY7gr-4.original.fullsize.png
+.. image:: https://cdn.mathpix.com/snip/images/8FRSH7K9xdXqi68kbZcjUX6YQGv3MFsn1wmCvzSJu7E.original.fullsize.png
+.. image::https://cdn.mathpix.com/snip/images/m233QsNgYhRCrsQW6Lr6i5d2mIrMQWxFKwjCYH6yP44.original.fullsize.png
+.. image:: https://cdn.mathpix.com/snip/images/DIljDw1WrQM_rQQ2vR8-kTs4vXwzHJbE94BrRIZRed4.original.fullsize.png
 
 
 
-#.. include:: probability/maximum_likelihood_estimation.rst
+
+
+.. include:: probability/maximum_likelihood_estimation.rst
