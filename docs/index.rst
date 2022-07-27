@@ -28,9 +28,8 @@ Contents
 
 .. toctree::
    :caption: Mathematics
-   :maxdepth: 3
+   :maxdepth: 2
 
-   probability
    calculus
    linear_algebra
    statistics

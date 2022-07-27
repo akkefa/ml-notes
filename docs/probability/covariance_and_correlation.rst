@@ -76,3 +76,8 @@ That way, when the mapping is reversed, it will still be a function!
 For X discrete or continuous, the cumulative distribution function (cdf) Is denoted by F(x) and is defined by
 
 :math:`F(X)= P(X < x)`
+
+.. image:: https://cdn.mathpix.com/snip/images/0koe85iCdU9TJzUBMxXDNWtyn-Nd7T1yxoG0fY7gr-4.original.fullsize.png
+.. image:: https://cdn.mathpix.com/snip/images/8FRSH7K9xdXqi68kbZcjUX6YQGv3MFsn1wmCvzSJu7E.original.fullsize.png
+.. image::https://cdn.mathpix.com/snip/images/m233QsNgYhRCrsQW6Lr6i5d2mIrMQWxFKwjCYH6yP44.original.fullsize.png
+.. image:: https://cdn.mathpix.com/snip/images/DIljDw1WrQM_rQQ2vR8-kTs4vXwzHJbE94BrRIZRed4.original.fullsize.png
