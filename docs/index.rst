@@ -20,6 +20,7 @@ Contents
 
    probability/what_is_probability
    probability/random_variable
+   probability/discrete_random_variables
 
 .. toctree::
    :caption: Mathematics
