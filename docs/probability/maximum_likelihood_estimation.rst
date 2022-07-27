@@ -1,8 +1,12 @@
+.. title::
+   What is Maximum Likelihood Estimation
+
+##############################
 Maximum Likelihood Estimation
-==============================
+##############################
 
 Idea
------
+=====
 Choose the value in the parameter space that makes the observed data "most likely".
 
 Given data :math:`X_1, X_2 ... X_n`, a random sample (iid) from a distribution with unknown parameter θ, we want to
@@ -33,7 +37,7 @@ We will emphasize the dependence of f on a parameter θ by writing it as
 - Think of the x’s as fixed and the joint pdf as a function of θ.
 
 likelihood function
-^^^^^^^^^^^^^^^^^^^^
+====================
 Call it a likelihood function and denote it by L(θ).
 
 .. image:: https://cdn.mathpix.com/snip/images/6x2RRobffl10lBr_hRqa04kDpnXBSS9DGIBc7gc-o_4.original.fullsize.png
@@ -83,7 +87,7 @@ The maximum likelihood estimator for p is:
     \widehat{p}= \begin{cases}0.2 & \text {, if }\left(x_{1}, x_{2}\right)=(0,0) \\ 0.3 & , \text { if }\left(x_{1}, x_{2}\right)=(0,1) \text { or }(1,0) \\ 0.8 & \text {, if }\left(x_{1}, x_{2}\right)=(1,1)\end{cases}
 
 Bernoulli distribution
------------------------
+=======================
 | :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} \text { Bernoulli }(p)`
 | The pmf for one of them is :math:`f(x ; p)= p^{x}(1-p)^{1-x} I_{\{0,1\}}(x)`
 | The joint pmf for all of them is
@@ -96,7 +100,7 @@ Bernoulli distribution
 A likelihood is :math:`L(p)=p^{\sum_{i=1}^{n} x_{i}}(1-p)^{n-\sum_{i=1}^{n} x_{i}}`
 
 log-likelihood
-^^^^^^^^^^^^^^^
+---------------
 It is almost always easier to minimize the log-likelihood function.
 
 | :math:`L(p)=\log\left(\prod_{i=1}^{n} p^{x_{i}}(1-p)^{1-x_{i}} I_{\{0,1\}}\left(x_{i}\right)\right)`
@@ -120,7 +124,7 @@ heads in your sample. This maximum likelihood estimator, at least, in this case,
     \hat{p}=\frac{\sum_{i=1}^{n} X_{i}}{n}=\bar{X}
 
 Exponential distribution
--------------------------
+==========================
 | :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} Exp(rate = \lambda)`
 | The pmf for one of them is :math:`f(x ; p)= \lambda e^{-\lambda x} I_{(0, \infty)}(x)`
 | The joint pmf for all of them is

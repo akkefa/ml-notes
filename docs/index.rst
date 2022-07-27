@@ -24,6 +24,7 @@ Contents
    probability/continuous_random_variables
    probability/joint_distributions
    probability/covariance_and_correlation
+   probability/maximum_likelihood_estimation
 
 .. toctree::
    :caption: Mathematics
