@@ -1,8 +1,12 @@
+.. title::
+   What is Joint Distributions?
+
+####################
 Joint Distributions
-====================
+####################
 
 Discrete Definition
---------------------
+====================
 Given two discrete random variables, X and Y , p(x, y) = P(X = x, Y = y) is the joint probability mass
 function for X and Y .
 
@@ -28,7 +32,7 @@ Marginal Probabilities
     :width: 500px
 
 Example
-^^^^^^^^
+--------
 An insurance agency services customers who have both a homeowner’s policy and an automobile policy. For each
 type of policy, a deductible amount must be specified. For an automobile policy, the choices are $100 or $250 and for
 the homeowner’s policy, the choices are $0, $100, or $200.
@@ -45,12 +49,12 @@ X and y are not independent.
 
 
 Continuous Definition
------------------------
+======================
 Definition: If X and Y are continuous random variables, then f(x, y) is the joint probability density function for X and Y if :math:`P(a \leq X \leq b, c \leq Y \leq d)=\int_{a}^{b} \int_{c}^{d} f(x, y) d x d y` for all possible $a, b, c$, and $d$
 Important property: $X$ and $Y$ are independent random variables if $f(x, y)=f(x) f(y)$ for all possible values of $x$ and $y$.
 
 Example
-^^^^^^^^
+--------
 Example: Suppose a room is lit with two light bulbs. Let :math:`X_{1}` be the lifetime of the first bulb and :math:`X_{2}`
 be the lifetime of the second bulb. Suppose :math:`X_{1} \sim {Exp}\left(\lambda_{1}=1 / 2000\right)` and :math:`X_{2} \sim {Exp}\left(\lambda_{2}=1 / 3000\right)`.
 If we assume the lifetimes of the light bulbs are independent of each other, find the probability that the room is dark after 4000 hours.

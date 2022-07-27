@@ -3,7 +3,7 @@
 
 Welcome to Machine learning Mathematics!
 ========================================
-Quick definitions and intuitive explanations around machine learning.
+Quick definitions and intuitive explanations around machine learning and Deep learning.
 
 """""""""
 Contents
@@ -13,6 +13,18 @@ Contents
    :maxdepth: 1
 
    notation
+
+.. toctree::
+   :caption: Probability
+   :maxdepth: 2
+
+   probability/what_is_probability
+   probability/random_variable
+   probability/discrete_random_variables
+   probability/continuous_random_variables
+   probability/joint_distributions
+   probability/covariance_and_correlation
+   probability/maximum_likelihood_estimation
 
 .. toctree::
    :caption: Mathematics

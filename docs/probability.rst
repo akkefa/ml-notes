@@ -91,7 +91,7 @@ rule for independent events:
 
 .. include:: probability/continuous_rv.rst
 
-.. include:: probability/joint_distributions.rst
+#.. include:: probability/joint_distributions.rst
 
 
 Covariance and Correlation
