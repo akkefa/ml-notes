@@ -16,7 +16,7 @@ Contents
 
 .. toctree::
    :caption: Probability
-   :maxdepth: 2
+   :maxdepth: 1
 
    probability/what_is_probability
    probability/random_variable
