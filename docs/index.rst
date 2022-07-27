@@ -22,6 +22,8 @@ Contents
    probability/random_variable
    probability/discrete_random_variables
    probability/continuous_random_variables
+   probability/joint_distributions
+   probability/covariance_and_correlation
 
 .. toctree::
    :caption: Mathematics
