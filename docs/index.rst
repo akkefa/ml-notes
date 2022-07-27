@@ -19,6 +19,7 @@ Contents
    :maxdepth: 2
 
    probability/what_is_probability
+   probability/random_variable
 
 .. toctree::
    :caption: Mathematics
