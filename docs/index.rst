@@ -1,5 +1,5 @@
 .. title::
-   Welcome to Machine learning math Explained!
+   Greetings and welcome to my machine learning math notes
 
 Welcome to Machine learning Mathematics!
 ========================================
