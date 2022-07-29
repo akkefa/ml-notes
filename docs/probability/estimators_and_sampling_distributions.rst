@@ -78,3 +78,8 @@ Then
 
 We have shown that, no matter what distribution we
 are working with, if the mean is :math:`\mu` , :math:`\bar{X}` is an unbiased estimator for :math:`\mu`.
+
+
+.. attention::
+    We have shown that, no matter what distribution we are working with, if the mean :math:`\mu` is ,
+    :math:`\bar{X}` is an unbiased estimator for :math:`\mu` .
