@@ -60,6 +60,11 @@ Some distribution
 .. image:: https://cdn.mathpix.com/snip/images/oLROi0YuJYc_kDzSYRACNdujNGLM3Qx_TPXKcbVE-qA.original.fullsize.png
 
 
+.. sidebar:: Important feature of MGF
+
+    .. image:: https://cdn.mathpix.com/snip/images/f3Mb34hspoajyrZIEec7kW3zDgidhnOZ16RWqAcS72Y.original.fullsize.png
+
+
 Some distribution with :math:`X_{1}, X_{2}, \ldots, X_{n} \text { iid }` and :math:`Y=\sum_{i=1}^{n} X_{i}` .
 
 :math:`M_{Y}(t)=\left[M_{X_{1}}(t)\right]^{n}`
