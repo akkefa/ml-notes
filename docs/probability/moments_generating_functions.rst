@@ -86,5 +86,31 @@ Key points
 
 .. image:: https://cdn.mathpix.com/snip/images/csHt3NpVjl_KQpz7Tss5DiZ-0bjOP_XlzKrvRDDECVg.original.fullsize.png
 
-Method of Moments Estimators
-=============================
+Method of Moments Estimators(MMEs)
+===================================
+Idea: Equate population and sample moments and solve for the unknown parameters.
+
+| Suppose that :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} \Gamma(\alpha, \beta)`
+| How can we estimate α ?
+| We could estimate the true mean :math:`\alpha / \beta` with the sample mean :math:`\bar{X}` , but we still can’t get at α if we don’t know β.
+
+.. attention::
+    Recall that the “moments” of a distribution are defined as 𝖤[𝖷], 𝖤[𝖷𝟤], 𝖤[𝖷𝟥 ], …
+    These are distribution or “population” moments
+
+- :math:`\mu=E[X]` is a probability weighted average of the values in the population.
+- :math:`\bar{X}` is the average of the values in the sample.
+
+It was natural for us to think about estimating $\mu$ with the average in our sample.
+
+- :math:`\mathrm{E}\left[\mathrm{X}^{2}\right]` is a probability weighted average of the squares of the values in the population.
+
+It is intuitively nice to estimate it with the average of the squared values in the sample:
+
+.. math::
+
+    \frac{1}{n} \sum_{i=1}^{n} X_{i}^{2}
+
+    \text{The kth population moments:}
+
+    \mu_{\mathrm{k}}=\mathrm{E}\left[\mathrm{X}^{\mathrm{k}}\right] \quad \mathrm{k}=1,2,3, \ldots

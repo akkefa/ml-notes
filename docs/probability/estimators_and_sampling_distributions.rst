@@ -5,6 +5,10 @@
 Estimators and Sampling Distributions
 #######################################
 
+.. Note:: What are biased and unbiased estimators?
+   A biased estimator is one that deviates from the true population value. An unbiased estimator is one that does not
+   deviate from the true population parameter.
+
 Random Sample
 ==============
 A collection of random variables is independent and identically distributed if each random variable has the same
