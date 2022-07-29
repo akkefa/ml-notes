@@ -64,6 +64,8 @@ We would like sample mean :math:`𝖤[\bar{𝖷}] = μ` to be close to the true 
 
 That's is really good thing.
 
+Mean
+------
 Let X1, X2, ..., Xn be random sample from any  distribution with mean :math:`\mu`.
 
 That is :math:`E[X_i] = \mu` for i = 1,2,3,..., n.
@@ -83,3 +85,23 @@ are working with, if the mean is :math:`\mu` , :math:`\bar{X}` is an unbiased es
 .. attention::
     We have shown that, no matter what distribution we are working with, if the mean :math:`\mu` is ,
     :math:`\bar{X}` is an unbiased estimator for :math:`\mu` .
+
+Let X1, X2, ..., Xn be random sample from any 𝖾𝗑𝗉(rate = :math:`\lambda`)
+
+Let :math:`\bar{X}=\frac{1}{n} \sum_{i=1}^{n} X_{i}` is the sample mean. We know, for the exponential distribution,
+that :math:`E[X_i]=\frac{1}{\lambda}`.
+
+Then :math:`E[\bar{X}] = \frac{1}{\lambda}`
+
+Variance
+---------
+Let X1, X2, ..., Xn be random sample from any  distribution with mean :math:`\mu` and variance :math:`\sigma^2`.
+
+- We already know that :math:`\bar{X}` is an unbiased estimator for :math:`\mu` .
+- What can we say about the variance of :math:`\bar{X}`?
+
+
+:math:`Var[\bar{X}]=Var\left[\frac{1}{n} \sum_{i=1}^{n} X_{i}\right]= =\frac{1}{n^{2}} Var\left[\sum_{i=1}^{n} X_{i}\right] = =\frac{1}{n^{2}} \sum_{i=1}^{n} Var\left[X_{i}\right]`
+
+:math:`=\frac{1}{n^{2}} \sum_{i=1}^{n} \sigma^{2} = \frac{1}{n^{2}} n \sigma^{2} =\frac{\sigma^{2}}{\mathrm{n}}`
+
