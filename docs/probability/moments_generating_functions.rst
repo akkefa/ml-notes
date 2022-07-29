@@ -114,3 +114,34 @@ It is intuitively nice to estimate it with the average of the squared values in 
     \text{The kth population moments:}
 
     \mu_{\mathrm{k}}=\mathrm{E}\left[\mathrm{X}^{\mathrm{k}}\right] \quad \mathrm{k}=1,2,3, \ldots
+
+    \text{The kth population moments:}
+
+    \mu_{\mathrm{k}}=\mathrm{E}\left[X^{\mathrm{k}}\right] \quad \mathrm{k}=1,2,3, \ldots
+
+    \text{The kth sample moments:}
+
+    M_{k}=\frac{1}{n} \sum_{i=1}^{n} X_{i}^{k} \quad k=1,2,3, \ldots
+
+
+Eg
+---
+
+.. math::
+    X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} \exp (\text { rate }=\lambda)
+
+    \text{First population moment:}
+
+    \mu_{1}=\mu=\mathrm{E}[\mathrm{X}]=\frac{1}{\lambda}
+
+    \text{First sample moment:}
+
+    M_{1}=\frac{1}{n} \sum_{i=1}^{n} X_{i}=\bar{X}
+
+    \text{Equate:} \frac{1}{\lambda}=\bar{x}
+
+    \text{Solve for the unknown parameter...} \lambda=\frac{1}{\bar{x}}
+
+    \text{The MME is } \hat{\lambda}=\frac{1}{\bar{x}}
+
+
