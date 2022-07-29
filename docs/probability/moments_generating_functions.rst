@@ -64,14 +64,11 @@ Some distribution
 
     .. image:: https://cdn.mathpix.com/snip/images/f3Mb34hspoajyrZIEec7kW3zDgidhnOZ16RWqAcS72Y.original.fullsize.png
 
-
-Some distribution with :math:`X_{1}, X_{2}, \ldots, X_{n} \text { iid }` and :math:`Y=\sum_{i=1}^{n} X_{i}` .
-
-:math:`M_{Y}(t)=\left[M_{X_{1}}(t)\right]^{n}`
+| Some distribution with :math:`X_{1}, X_{2}, \ldots, X_{n} \text { iid }` and :math:`Y=\sum_{i=1}^{n} X_{i}` .
+| :math:`M_{Y}(t)=\left[M_{X_{1}}(t)\right]^{n}`
 
 We have just seen that the moment generating function of the sum. Is the moment generating function of one of them
 raised to the nth power.
-
 
 Key points
 ------------
@@ -81,6 +78,13 @@ Key points
 - sum of n iid \Gamma(\alpha, \beta) is \Gamma(n \alpha, \beta)
 - sum of n iid :math:`N\left(\mu, \sigma^{2}\right) is N\left(n \mu, n \sigma^{2}\right)`.
 - sum of $n$ independent normal random variable with :math:`\mathrm{X}_{\mathrm{i}} \sim \mathrm{N}\left(\mu_{\mathrm{i}}, \sigma_{\mathrm{i}}^{2}\right)$ is $\mathrm{N}\left(\sum_{\mathrm{i}=1}^{\mathrm{n}} \mu_{\mathrm{i}}, \sum_{\mathrm{i}=1}^{\mathrm{n}} \sigma_{\mathrm{i}}^{2}\right)`
+
+
+.. image:: https://cdn.mathpix.com/snip/images/RMOVPa5JmcmotyZpHqJltBKGFWCR9TppB3mE-qv5lrE.original.fullsize.png
+
+.. image:: https://cdn.mathpix.com/snip/images/MzckM7PfGQ5KY2kijc-uhpk9fcnSA4wNB7f6ID40Ilg.original.fullsize.png
+
+.. image:: https://cdn.mathpix.com/snip/images/csHt3NpVjl_KQpz7Tss5DiZ-0bjOP_XlzKrvRDDECVg.original.fullsize.png
 
 Method of Moments Estimators
 =============================
