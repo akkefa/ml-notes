@@ -1,5 +1,5 @@
 .. title::
-   Greetings and welcome to my machine learning math notes
+   Greetings and welcome to my machine learning math notes.
 
 Welcome to Machine learning Mathematics!
 ========================================
@@ -25,6 +25,7 @@ Contents
    probability/joint_distributions
    probability/covariance_and_correlation
    probability/estimators_and_sampling_distributions
+   probability/moments_generating_functions
    probability/maximum_likelihood_estimation
 
 .. toctree::
