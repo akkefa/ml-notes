@@ -24,6 +24,7 @@ Contents
    probability/continuous_random_variables
    probability/joint_distributions
    probability/covariance_and_correlation
+   probability/estimators_and_sampling_distributions
    probability/maximum_likelihood_estimation
 
 .. toctree::
