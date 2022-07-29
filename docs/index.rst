@@ -1,5 +1,5 @@
 .. title::
-   Welcome to Machine learning math Explained!
+   Greetings and welcome to my machine learning math notes.
 
 Welcome to Machine learning Mathematics!
 ========================================
@@ -16,7 +16,7 @@ Contents
 
 .. toctree::
    :caption: Probability
-   :maxdepth: 2
+   :maxdepth: 1
 
    probability/what_is_probability
    probability/random_variable
@@ -24,13 +24,14 @@ Contents
    probability/continuous_random_variables
    probability/joint_distributions
    probability/covariance_and_correlation
+   probability/estimators_and_sampling_distributions
+   probability/moments_generating_functions
    probability/maximum_likelihood_estimation
 
 .. toctree::
    :caption: Mathematics
-   :maxdepth: 3
+   :maxdepth: 2
 
-   probability
    calculus
    linear_algebra
    statistics
