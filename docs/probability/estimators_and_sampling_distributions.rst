@@ -58,9 +58,10 @@ Sampling Distributions
 
 We would like sample mean :math:`𝖤[\bar{𝖷}] = μ` to be close to the true mean or population mean :math:`μ`.
 
-If this is true, we say that :math:`\bar{𝖷}` is an unbiased estimator of :math:`\mu`.
+.. Important::
+   - If this is true, we say that :math:`\bar{𝖷}` is an unbiased estimator of :math:`\mu`.
+   - In general, :math:`\bar{\theta}` is an unbiased estimator of :math:`\theta`. if  :math:`E[\bar{\theta}] = \theta`.
 
-In general, :math:`\bar{\theta}` is an unbiased estimator of :math:`\theta`. if  :math:`E[\bar{\theta}] = \theta`.
 That's is really good thing.
 
 Let X1, X2, ..., Xn be random sample from any  distribution with mean :math:`\mu`.
@@ -76,4 +77,4 @@ Then
 
 
 We have shown that, no matter what distribution we
-are working with, if the mean is :math:`\mu` ,:math:`bar{X}` is an unbiased estimator for :math:`\mu`.
+are working with, if the mean is :math:`\mu` , :math:`\bar{X}` is an unbiased estimator for :math:`\mu`.
