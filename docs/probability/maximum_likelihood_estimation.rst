@@ -96,7 +96,7 @@ Bernoulli distribution
     f(\vec{x} ; p) = \prod_{i=1}^{n} f\left(x_{i} ; p\right) = \prod_{i=1}^{n} p^{x_{i}}(1-p)^{1-x_{i}} I_{\{0,1\}}\left(x_{i}\right)
 
 The joint probability mass function we'll get by multiplying the individual ones together, because these guys are IID independent and identically distributed.
-Now, fix the Xs. Those are stuck, fixed, not moving, and think of this as a function of p. The values of p that are allowed, the parameter space for this model, are all values of p between 0 and 1.
+Now, fix the Xs. Those are stuck, fixed, not moving, and :guilabel:`think of this as a function of p`. The values of p that are allowed, the parameter space for this model, are all values of p between 0 and 1.
 
 For example I have p^X_1 times p^X_2 times p^X_3 and that's going to be p to the sum of the Xs, and I've got 1 minus p^1 minus X_1, 1 minus p^1 minus X_2.
 If I add up those exponents, I'm going to get an exponent of n minus the sum of the Xs, and I do have a product of indicators.
@@ -149,26 +149,46 @@ heads in your sample. This maximum likelihood estimator, at least, in this case,
 
 Exponential distribution
 ==========================
-| :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} Exp(rate = \lambda)`
+.. centered::
+    :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} \text { Exponential }(rate =\lambda)`
+
 | The pmf for one of them is :math:`f(x ; p)= \lambda e^{-\lambda x} I_{(0, \infty)}(x)`
 | The joint pmf for all of them is
 
 .. math::
-    f(\vec{x} ; \lambda)=\prod_{i=1}^{n} f\left(x_{i} ; \lambda\right) = =\prod_{i=1}^{n} \lambda e^{-\lambda x_{i}} I_{(0, \infty)}\left(x_{i}\right)
-
+    f(\vec{x} ; \lambda)=\prod_{i=1}^{n} f\left(x_{i} ; \lambda\right) =\prod_{i=1}^{n} \lambda e^{-\lambda x_{i}} I_{(0, \infty)}\left(x_{i}\right) \\
     f(\vec{x} ; p)=\lambda^{n} e^{-\lambda \sum_{i=1}^{n} x_{i}} \prod_{i=1}^{n} I_{(0, \infty)}\left(x_{i}\right)
 
-    \text{A likelihood is} = L(\lambda)=\lambda^{n} e^{-\lambda \sum_{i=1}^{n} x_{i}}
+| The parameter space, the Lambdas that are allowed are everything from 0 to infinity.
+| At this point, I can drop constants of proportionality. Again, I'm going to drop that indicator.
 
+.. math::
+    \text{A likelihood is} = L(\lambda)=\lambda^{n} e^{-\lambda \sum_{i=1}^{n} x_{i}} \\
     \text{The log-likelihood is} = \ell(\lambda)=n \ln \lambda-\lambda \sum_{i=1}^{n} x_{i}
 
-    \frac{\partial}{\partial \lambda} \ell(\lambda)=\frac{n}{\lambda}-\sum_{i=1}^{n} x_{i} \stackrel{\text { set }}{=} 0
+``Our goal is to maximize this as a function of Lambda.``
 
+.. math::
+    \frac{\partial}{\partial \lambda} \ell(\lambda)=\frac{n}{\lambda}-\sum_{i=1}^{n} x_{i} \stackrel{\text { set }}{=} 0 \\
     \lambda=\frac{\mathrm{n}}{\sum_{\mathrm{i}=1}^{\mathrm{n}} \mathrm{x}_{\mathrm{i}}}
 
-Same asvmethod of moments. Biased!
+I want to make everything capital, and throw a hat on it. Here is our first continuous maximum likelihood estimator for
+Theta or Lambda.
 
-The maximum likelihood estimator for p is :math:`\hat{\lambda}=\frac{n}{\sum_{i=1}^{n} X_{i}}=\frac{1}{\bar{X}}`
+The maximum likelihood estimator for :math:`\lambda` is
+
+.. math::
+
+    \hat{\lambda}=\frac{n}{\sum_{i=1}^{n} X_{i}}=\frac{1}{\bar{X}}
+
+.. warning::
+    Same as method of moments. Biased!
+
+This is exactly what we got with method of moments. Because if Lambda is the rate of this distribution, the true
+distribution mean is 1 over Lambda. If you equate that to the sample mean x bar and solve for Lambda, in the method of
+moments case, we got 1 over x bar. We weren't that happy about it because it was a biased estimator.
+I'm trying to convince you that MLEs are everything. But they're not unbiased.
+
 
 Normal distribution (Multiple parameters!)
 -------------------------------------------
