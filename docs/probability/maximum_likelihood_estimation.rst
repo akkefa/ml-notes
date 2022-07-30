@@ -190,6 +190,12 @@ moments case, we got 1 over x bar. We weren't that happy about it because it was
 I'm trying to convince you that MLEs are everything. But they're not unbiased.
 
 
+MLEs for Multiple and Support Parameters
+=========================================
+We're going to to consider two cases in this video.
+- One is when theta is higher dimensional, so theta might be the vector of mu and sigma squared.
+- Yhe other cases when the parameter is in the indicator.
+
 Normal distribution (Multiple parameters!)
 -------------------------------------------
 | :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} N(\mu, \sigma^2)`
