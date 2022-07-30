@@ -122,16 +122,21 @@ It is almost always easier to maximize the log-likelihood function due to proper
     The log function is an increasing function. So the log of the likelihood is going to have different values than the
     likelihood, but because log is increasing, this is not going to mess up the location of the maximum.
 
-| :math:`L(p)=\log\left(\prod_{i=1}^{n} p^{x_{i}}(1-p)^{1-x_{i}} I_{\{0,1\}}\left(x_{i}\right)\right)`
-| :math:`\ell(p)=\sum_{i=1}^{n} x_{i} \ln p+\left(n-\sum_{i=1}^{n} x_{i}\right) \ln (1-p)`
-| I want to maximize it with respect to p, so I'm going to take a derivative with respect to p and set it equal to 0.
-| :math:`\frac{\partial}{\partial p} l(p)=\frac{\sum_{i=1}^{n} x_{i}}{p}-\frac{n-\sum_{i=1}^{n} x_{i}}{1-p} \stackrel{\text { set }}{=} 0`
-| :math:`p(1-p)\left[\frac{\sum_{i=1}^{n} x_{i}}{p}-\frac{n-\sum_{i=1}^{n} x_{i}}{1-p}\right]=p(1-p) \cdot 0`
-| :math:`(1-p) \sum_{i=1}^{n} x_{i}-p\left(n-\sum_{i=1}^{n} x_{i}\right)=0`
+.. math::
+    L(p)=\log\left(\prod_{i=1}^{n} p^{x_{i}}(1-p)^{1-x_{i}} I_{\{0,1\}}\left(x_{i}\right)\right) \\
+    \ell(p)=\sum_{i=1}^{n} x_{i} \ln p+\left(n-\sum_{i=1}^{n} x_{i}\right) \ln (1-p)
+
+``I want to maximize it with respect to p, so I'm going to take a derivative with respect to p and set it equal to 0.``
+
+.. math::
+    \frac{\partial}{\partial p} l(p)=\frac{\sum_{i=1}^{n} x_{i}}{p}-\frac{n-\sum_{i=1}^{n} x_{i}}{1-p} \stackrel{\text { set }}{=} 0 \\
+    p(1-p)\left[\frac{\sum_{i=1}^{n} x_{i}}{p}-\frac{n-\sum_{i=1}^{n} x_{i}}{1-p}\right]=p(1-p) \cdot 0 \\
+    (1-p) \sum_{i=1}^{n} x_{i}-p\left(n-\sum_{i=1}^{n} x_{i}\right)=0
 
 .. image:: https://cdn.mathpix.com/snip/images/rkijCeDy35aP_A_nRceFCUJFEL90Igt1L7UhesnYDSs.original.fullsize.png
 
-:math:`p=\frac{\sum_{i=1}^{n} x_{i}}{n}`
+.. math::
+    p=\frac{\sum_{i=1}^{n} x_{i}}{n}
 
 This is our coin example again. But we have n flips, and we have the Bernoulli's ones and zeros for heads and tails, and
 the value of p is unknown, it's somewhere between 0 and 1. We're no longer restricted to 0.2, 0.3, and 0.8. The maximum
