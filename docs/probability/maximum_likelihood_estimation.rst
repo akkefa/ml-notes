@@ -27,6 +27,9 @@ Joint pmf Due to independence of the variables, we can write the joint pmf as
 
     =p^{x_{1}}(1-p)^{1-x_{1}} \mathrm{I}_{\{0,1\}}\left(\mathrm{x}_{1}\right) \cdot \mathrm{p}^{\mathrm{x}_{2}}(1-p)^{1-\mathrm{x}_{2}} \mathrm{I}_{\{0,1\}}\left(\mathrm{x}_{2}\right)
 
+    \text{if p=0.2 and (0,0)} = 0.2^0 \times (1 - 0.2)^0 \times 0.2^0 \times (1 - 0.2)^0 = 0.64
+    \\ \text{if p=0.8 and (0,1)} = 0.8^0 \times (1 - 0.8)^0 \times 0.8^1 \times (1 - 0.8)^1 = 0.16
+
 **Tabulated values of the joint pmf**
 
 .. image:: https://cdn.mathpix.com/snip/images/njax3wQTyJtFK4ii3YdkkwlqdeJ1iHNU9_CwYsGr21Y.original.fullsize.png
