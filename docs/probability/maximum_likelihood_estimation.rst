@@ -75,7 +75,7 @@ The pmf/pdf for any one of is denoted by ``f(x)``. We will emphasize the depende
 
 Given the joint PDF, the data, the Xs are fixed, and we think of it as a function of theta and we want to find the value of theta that maximizes the joint probability density function or probability mass function.
 
-likelihood function
+Likelihood function
 ====================
 If we think of this as a function of theta, and the x's as fixed, we're going to rename the joint PDF. We're going to call it a likelihood function and write it as a capital L of theta L(θ).
 
@@ -110,7 +110,7 @@ Drop the indicator stuff, so that is a multiplicative constant which is constant
 
     \text{A likelihood is } L(p)=p^{\sum_{i=1}^{n} x_{i}}(1-p)^{n-\sum_{i=1}^{n} x_{i}}
 
-log-likelihood
+Log-likelihood
 ---------------
 It is almost always easier to maximize the log-likelihood function due to properties of Logarithms.
 
