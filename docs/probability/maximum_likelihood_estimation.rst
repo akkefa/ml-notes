@@ -112,7 +112,15 @@ Drop the indicator stuff, so that is a multiplicative constant which is constant
 
 log-likelihood
 ---------------
-It is almost always easier to minimize the log-likelihood function.
+It is almost always easier to maximize the log-likelihood function due to properties of Logarithms.
+
+.. centered::
+    :math:`ln(uv) = ln(u) + ln(v) \text{ and } ln(n)^V = v \times ln(n)`
+
+
+.. important::
+    The log function is an increasing function. So the log of the likelihood is going to have different values than the
+    likelihood, but because log is increasing, this is not going to mess up the location of the maximum.
 
 | :math:`L(p)=\log\left(\prod_{i=1}^{n} p^{x_{i}}(1-p)^{1-x_{i}} I_{\{0,1\}}\left(x_{i}\right)\right)`
 | :math:`\ell(p)=\sum_{i=1}^{n} x_{i} \ln p+\left(n-\sum_{i=1}^{n} x_{i}\right) \ln (1-p)`
