@@ -44,23 +44,22 @@ The maximum likelihood estimator for p is:
     \widehat{p}= \begin{cases}0.2 & \text {, if }\left(x_{1}, x_{2}\right)=(0,0) \\ 0.3 & , \text { if }\left(x_{1}, x_{2}\right)=(0,1) \text { or }(1,0) \\ 0.8 & \text {, if }\left(x_{1}, x_{2}\right)=(1,1)\end{cases}
 
 
-Intro
-======
+Introduction
+=============
 
 Given data :math:`X_1, X_2 ... X_n`, a random sample (iid) from a distribution with unknown parameter θ, we want to
 find the value of θ in the parameter space that maximizes our probability of observing that data.
 
---> If :math:`X_1, X_2 ... X_n` are discrete, we can look at
+.. admonition:: For Discrete...
 
-.. math::
-    P\left(X_{1}=x_{1}, X_{2}=x_{2}, \ldots, X_{n}=x_{n}\right)
+    If :math:`X_1, X_2 ... X_n` are discrete, we can look at :math:`P\left(X_{1}=x_{1}, X_{2}=x_{2}, \ldots, X_{n}=x_{n}\right)`
+    as a function of θ, and find the θ that maximizes it. This is the joint pmf for :math:`X_1, X_2 ... X_n`.
 
-as a function of θ, and find the θ that maximizes it. This is the joint pmf for :math:`X_1, X_2 ... X_n`.
+.. admonition:: For Continuous...
 
---> If :math:`X_1, X_2 ... X_n` are continuous is to maximize the **joint pdf** with respect to θ.
+    If :math:`X_1, X_2 ... X_n` are continuous is to maximize the **joint pdf** with respect to θ.
 
-The pmf/pdf for any one of is denoted by f(x).
-We will emphasize the dependence of f on a parameter θ by writing it as
+The pmf/pdf for any one of is denoted by ``f(x)``. We will emphasize the dependence of f on a parameter θ by writing it as
 
 .. math::
     f(x) = f(x; \theta)
@@ -74,12 +73,16 @@ We will emphasize the dependence of f on a parameter θ by writing it as
 - The data (the x’s) are fixed.
 - Think of the x’s as fixed and the joint pdf as a function of θ.
 
+Given the joint PDF, the data, the Xs are fixed, and we think of it as a function of theta and we want to find the value of theta that maximizes the joint probability density function or probability mass function.
+
 likelihood function
 ====================
-Call it a likelihood function and denote it by L(θ).
+If we think of this as a function of theta, and the x's as fixed, we're going to rename the joint PDF. We're going to call it a likelihood function and write it as a capital L of theta L(θ).
 
 .. image:: https://cdn.mathpix.com/snip/images/6x2RRobffl10lBr_hRqa04kDpnXBSS9DGIBc7gc-o_4.original.fullsize.png
 
+.. attention::
+    Because I can multiply or divide my likelihood by a constant and not change where the maximum occurs, then we can actually define the likelihood to be anything proportional to the joint pdf. So we can throw out multiplicative constants, including multiplicative constants that involve Xs.
 
 Bernoulli distribution
 =======================
