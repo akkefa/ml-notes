@@ -1,5 +1,5 @@
 .. title::
-   What is Maximum Likelihood Estimation
+   What is Maximum Likelihood Estimation?
 
 ##############################
 Maximum Likelihood Estimation
@@ -44,25 +44,15 @@ Call it a likelihood function and denote it by L(θ).
 
 Example
 --------
-Suppose that we flip a biased coin which has the probability of getting “Heads” as either
-0.2, 0.3, or 0.8. Suppose that we flip the coin 20 times and see the results:
+| Suppose that we flip a biased coin which has the probability of getting “Heads” as either 0.2, 0.3, or 0.8. Suppose that we flip the coin 20 times and see the results:
+| **Sample Space: H, H, T, H, H, H, H, T, H, H, H, H, H, T, H, H, H, H, H , H**
+| ``Which of 0.2, 0.3, or 0.8 seems “most likely”?``
 
-H, H, T, H, H, H, H, T, H, H, H, H, H, T, H, H, H, H, H , H
+What if we only flip the coin twice? For i=1,2, let :math:`X_{i}=\begin{cases}1 & \text { if we get "Heads" on the ith flip } \\ 0, & \text { if we get "Tails" on the ith flip }\end{cases}`
 
-Which of 0.2, 0.3, or 0.8 seems “most likely”?
+Let p=P(“Heads” on any one flip) **Then** X1, X2 ∼ Bernoulli(P) iid  **where** 𝗉 ∈ {𝟢 . 𝟤, 𝟢 . 𝟥, 𝟢 . 𝟪}
 
-What if we only flip the coin twice?
-
-Model
-^^^^^^
-For i=1,2, let
-:math:`X_{i}=\begin{cases}1 & \text { if we get "Heads" on the ith flip } \\ 0, & \text { if we get "Tails" on the ith flip }\end{cases}`
-
-Let p=P(“Heads” on any one flip) Then 𝖷𝟣, 𝖷𝟤 ∼ 𝖡𝖾𝗋𝗇𝗈𝗎𝗅𝗅𝗂(𝗉) iid && where 𝗉 ∈ {𝟢 . 𝟤, 𝟢 . 𝟥, 𝟢 . 𝟪}
-
-joint pmf
-^^^^^^^^^^
-Due to independence of the variables, we can write the joint pmf as
+Joint pmf Due to independence of the variables, we can write the joint pmf as
 
 .. math::
     \begin{aligned}
@@ -71,7 +61,6 @@ Due to independence of the variables, we can write the joint pmf as
     \end{aligned}
 
     =p^{x_{1}}(1-p)^{1-x_{1}} \mathrm{I}_{\{0,1\}}\left(\mathrm{x}_{1}\right) \cdot \mathrm{p}^{\mathrm{x}_{2}}(1-p)^{1-\mathrm{x}_{2}} \mathrm{I}_{\{0,1\}}\left(\mathrm{x}_{2}\right)
-
 
 **Tabulated values of the joint pmf**
 
