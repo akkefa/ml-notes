@@ -86,7 +86,9 @@ If we think of this as a function of theta, and the x's as fixed, we're going to
 
 Bernoulli distribution
 =======================
-| :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} \text { Bernoulli }(p)`
+.. centered::
+    :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} \text { Bernoulli }(p)`
+
 | The pmf for one of them is :math:`f(x ; p)= p^{x}(1-p)^{1-x} I_{\{0,1\}}(x)`
 | The joint pmf for all of them is
 
