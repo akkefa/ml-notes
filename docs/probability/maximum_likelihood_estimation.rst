@@ -95,9 +95,20 @@ Bernoulli distribution
 .. math::
     f(\vec{x} ; p) = \prod_{i=1}^{n} f\left(x_{i} ; p\right) = \prod_{i=1}^{n} p^{x_{i}}(1-p)^{1-x_{i}} I_{\{0,1\}}\left(x_{i}\right)
 
+The joint probability mass function we'll get by multiplying the individual ones together, because these guys are IID independent and identically distributed.
+Now, fix the Xs. Those are stuck, fixed, not moving, and think of this as a function of p. The values of p that are allowed, the parameter space for this model, are all values of p between 0 and 1.
+
+For example I have p^X_1 times p^X_2 times p^X_3 and that's going to be p to the sum of the Xs, and I've got 1 minus p^1 minus X_1, 1 minus p^1 minus X_2.
+If I add up those exponents, I'm going to get an exponent of n minus the sum of the Xs, and I do have a product of indicators.
+
+.. math::
     =p^{\sum_{i=1}^{n} x_{i}}(1-p)^{n-\sum_{i=1}^{n} x_{i}} \prod_{i=1}^{n} I_{\{0,1\}}\left(x_{i}\right)
 
-A likelihood is :math:`L(p)=p^{\sum_{i=1}^{n} x_{i}}(1-p)^{n-\sum_{i=1}^{n} x_{i}}`
+Drop the indicator stuff, so that is a multiplicative constant which is constant with respect to p. I think I'm going to drop it. Why not make it simpler?
+
+.. math::
+
+    \text{A likelihood is } L(p)=p^{\sum_{i=1}^{n} x_{i}}(1-p)^{n-\sum_{i=1}^{n} x_{i}}
 
 log-likelihood
 ---------------
