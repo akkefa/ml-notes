@@ -209,19 +209,18 @@ We're going to to consider two cases
 .. math::
     f(\vec{x} ; \mu, \sigma^{2})=\prod_{i=1}^{n} f\left(x_{i} ; \mu, \sigma^{2}\right) = \left(2 \pi \sigma^{2}\right)^{-\mathrm{n} / 2} \mathrm{e}^{-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}}
 
-The parameter space
---------------------
-.. centered::
-    :math:`-\infty<\mu<\infty, \quad \sigma^{2}>0`
+**The parameter space :** :math:`-\infty<\mu<\infty, \quad \sigma^{2}>0`
 
-| A likelihood is :math:`\mathrm{L}\left(\mu, \sigma^{2}\right)=\left(2 \pi \sigma^{2}\right)^{-\mathrm{n} / 2} \mathrm{e}^{-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}}`
-| The log-likelihood is :math:`\ell\left(\mu, \sigma^{2}\right)=-\frac{\mathrm{n}}{2} \ln \left(2 \pi \sigma^{2}\right)-\frac{1}{2 \sigma^{2}} \sum_{i=1}^{n}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}`
-| :math:`\ell\left(\mu, \sigma^{2}\right)=-\frac{\mathrm{n}}{2} \ln \left(2 \pi \sigma^{2}\right)-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}`
-| :math:`\frac{\partial}{\partial \mu} \ell\left(\mu, \sigma^{2}\right) \stackrel{\text { set }}{=} 0`
-| :math:`\frac{\partial}{\partial \sigma^{2}} \ell\left(\mu, \sigma^{2}\right) \stackrel{\text { set }}{=} 0`
+.. math::
+
+    \text{A likelihood is } \mathrm{L}\left(\mu, \sigma^{2}\right)=\left(2 \pi \sigma^{2}\right)^{-\mathrm{n} / 2} \mathrm{e}^{-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}} \\
+    \text{ The log-likelihood is } \ell\left(\mu, \sigma^{2}\right)=-\frac{\mathrm{n}}{2} \ln \left(2 \pi \sigma^{2}\right)-\frac{1}{2 \sigma^{2}} \sum_{i=1}^{n}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2} \\
+    \ell\left(\mu, \sigma^{2}\right)=-\frac{\mathrm{n}}{2} \ln \left(2 \pi \sigma^{2}\right)-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2} \\
+    \frac{\partial}{\partial \mu} \ell\left(\mu, \sigma^{2}\right) \stackrel{\text { set }}{=} 0 \\
+    \frac{\partial}{\partial \sigma^{2}} \ell\left(\mu, \sigma^{2}\right) \stackrel{\text { set }}{=} 0
 
 Solve for μ and σ simultaneously
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+---------------------------------
 .. image:: https://cdn.mathpix.com/snip/images/vNkeYyOT1UmgFNCA2sgFKAfNXR5IMAPfXh5GmBqIgwc.original.fullsize.png
 
 .. image:: https://cdn.mathpix.com/snip/images/UMjzkiqAodLdttR_5myNWdEQ-HVAKsYKEJaS1ZH1lkM.original.fullsize.png
