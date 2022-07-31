@@ -231,6 +231,16 @@ Solve for μ and σ simultaneously
 
 .. image:: https://cdn.mathpix.com/snip/images/PWANXAiviLgD1ZBLjBdsMxLrThZn7UDX4olqvNkDmY0.original.fullsize.png
 
+The Invariance Property
+========================
+
+
+Questions & Answers
+====================
+
+**How do you find the MLE of Bernoulli distribution?**
+
+
 
 
 
