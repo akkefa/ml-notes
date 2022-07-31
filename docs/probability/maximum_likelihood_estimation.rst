@@ -189,23 +189,30 @@ distribution mean is 1 over Lambda. If you equate that to the sample mean x bar 
 moments case, we got 1 over x bar. We weren't that happy about it because it was a biased estimator.
 I'm trying to convince you that MLEs are everything. But they're not unbiased.
 
+Normal distribution
+====================
+.. centered::
+    ``MLEs for Multiple and Support Parameters``
 
-MLEs for Multiple and Support Parameters
-=========================================
-We're going to to consider two cases in this video.
+
+We're going to to consider two cases
+
 - One is when theta is higher dimensional, so theta might be the vector of mu and sigma squared.
-- Yhe other cases when the parameter is in the indicator.
+- Other cases when the parameter is in the indicator.
 
-Normal distribution (Multiple parameters!)
--------------------------------------------
-| :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} N(\mu, \sigma^2)`
+.. centered::
+    :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} N(\mu, \sigma^2)`
+
 | The pdf for one of them is :math:`\mathrm{f}\left(\mathrm{x} ; \mu, \sigma^{2}\right)=\frac{1}{\sqrt{2 \pi \sigma^{2}}} \mathrm{e}^{-\frac{1}{2 \sigma^{2}}(\mathrm{x}-\mu)^{2}}`
 | The joint pdf for all of them is
-| :math:`f(\vec{x} ; \mu, \sigma^{2})=\prod_{i=1}^{n} f\left(x_{i} ; \mu, \sigma^{2}\right) = \left(2 \pi \sigma^{2}\right)^{-\mathrm{n} / 2} \mathrm{e}^{-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}}`
+
+.. math::
+    f(\vec{x} ; \mu, \sigma^{2})=\prod_{i=1}^{n} f\left(x_{i} ; \mu, \sigma^{2}\right) = \left(2 \pi \sigma^{2}\right)^{-\mathrm{n} / 2} \mathrm{e}^{-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}}
 
 The parameter space
-^^^^^^^^^^^^^^^^^^^^
-:math:`-\infty<\mu<\infty, \quad \sigma^{2}>0`
+--------------------
+.. centered::
+    :math:`-\infty<\mu<\infty, \quad \sigma^{2}>0`
 
 | A likelihood is :math:`\mathrm{L}\left(\mu, \sigma^{2}\right)=\left(2 \pi \sigma^{2}\right)^{-\mathrm{n} / 2} \mathrm{e}^{-\frac{1}{2 \sigma^{2}} \sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}}`
 | The log-likelihood is :math:`\ell\left(\mu, \sigma^{2}\right)=-\frac{\mathrm{n}}{2} \ln \left(2 \pi \sigma^{2}\right)-\frac{1}{2 \sigma^{2}} \sum_{i=1}^{n}\left(\mathrm{x}_{\mathrm{i}}-\mu\right)^{2}`
