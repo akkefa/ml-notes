@@ -19,6 +19,14 @@ this**
 #. specify a probabilistic model that has parameters.
 #. Learn the value of those parameters from data.
 
+.. topic:: Estimate the model parameters.
+
+    - Maximum Likelihood Estimation (MLE)
+    - Maximum A Posteriori (MAP).
+
+Both of these schools of thought assume that your data are independent and identically distributed (IID) samples.
+
+
 .. Note:: What are biased and unbiased estimators?
    A biased estimator is one that deviates from the true population value. An unbiased estimator is one that does not
    deviate from the true population parameter.
