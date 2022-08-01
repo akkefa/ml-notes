@@ -265,6 +265,15 @@ The mean squared error of :math:`\hat{\theta}` is denoted and defined by
 .. note::
     If :math:`\hat{\theta}` is an unbiased estimator of :math:`\theta`, its mean squared error is simply the variance of :math:`\theta`
 
+Bias
+-----
+The bias of :math:`\hat{\theta}` is denoted and defined by
+
+.. math::
+    B(\hat{\theta}) = E[\hat{\theta}] - \theta
+
+An unbiased estimator has a bias of zero.
+
 
 
 
