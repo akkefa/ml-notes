@@ -277,7 +277,12 @@ Variance, MSE, and Bias
 
     An unbiased estimator has a bias of zero.
 
-
+.. math::
+    MSE(\widehat{\theta})=E\left[(\widehat{\theta}-\theta)^{2}\right] \\
+    =E\left[(\widehat{\theta}-E[\hat{\theta}]+E[\hat{\theta}]-\theta)^{2}\right] \\
+    =E\left[((\hat{\theta}-E[\hat{\theta}])+B[\hat{\theta}])^{2}\right] \\
+    \\
+    MSE(\hat{\theta})=Var[\hat{\theta}]+(B[\hat{\theta}])^{2}
 
 
 
