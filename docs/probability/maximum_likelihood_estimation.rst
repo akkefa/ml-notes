@@ -136,7 +136,7 @@ It is almost always easier to maximize the log-likelihood function due to proper
 .. image:: https://cdn.mathpix.com/snip/images/rkijCeDy35aP_A_nRceFCUJFEL90Igt1L7UhesnYDSs.original.fullsize.png
 
 .. math::
-    p=\frac{\sum_{i=1}^{n} x_{i}}{n}
+    \hat{p}=\frac{\sum_{i=1}^{n} x_{i}}{n}
 
 This is our coin example again. But we have n flips, and we have the Bernoulli's ones and zeros for heads and tails, and
 the value of p is unknown, it's somewhere between 0 and 1. We're no longer restricted to 0.2, 0.3, and 0.8. The maximum
@@ -146,6 +146,16 @@ heads in your sample. This maximum likelihood estimator, at least, in this case,
 
 .. math::
     \hat{p}=\frac{\sum_{i=1}^{n} X_{i}}{n}=\bar{X}
+
+Q/A
+----
+**Is maximum likelihood estimator Bernoulli unbiased?**
+    the maximum likelihood estimator of is a :guilabel:`biased estimator`.
+    Recall that if :math:`X_i` is a Bernoulli random variable with parameter P, then :math:`E[X_i] = p`.
+
+    .. math::
+        E(\hat{p})=E\left(\frac{1}{n} \sum_{i=1}^{n} X_{i}\right)=\frac{1}{n} \sum_{i=1}^{n} E\left(X_{i}\right)=\frac{1}{n} \sum_{i=1}^{n} p=\frac{1}{n}(n p)=p \\
+
 
 Exponential distribution
 ==========================
