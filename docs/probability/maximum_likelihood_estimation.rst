@@ -245,10 +245,6 @@ The Invariance Property
 ========================
 
 
-Questions & Answers
-====================
-
-**How do you find the MLE of Bernoulli distribution?**
 
 
 
