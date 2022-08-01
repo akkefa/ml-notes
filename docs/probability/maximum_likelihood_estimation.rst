@@ -248,6 +248,22 @@ The Invariance Property
 
 
 
+Evaluation
+===========
+Comparing the quality of different estimators
+
+.. image:: https://cdn.mathpix.com/snip/images/l1hmVbsC3u0wIx-GYZf_d9OeV9ZiODfWQkbw5ULVyc4.original.fullsize.png
+
+Mean Squared Error
+-------------------
+Let :math:`\hat{\theta}` be an estimator of a parameter :math:`\theta`.
+The mean squared error of :math:`\hat{\theta}` is denoted and defined by
+
+.. math::
+    MSE(\hat{\theta}) = E[(\hat{\theta} - \theta)^2]
+
+.. note::
+    If :math:`\hat{\theta}` is an unbiased estimator of :math:`\theta`, its mean squared error is simply the variance of :math:`\theta`
 
 
 
