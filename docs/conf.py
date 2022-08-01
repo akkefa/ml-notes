@@ -17,8 +17,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'ml_notes'
-copyright = '2022, Ikram Ali'
+project = 'ml_notes.akkefa.com'
+copyright = '2022, Ikram Ali - mrikram1989@gmail.com'
 author = 'Ikram Ali'
 __version__ = "0.0.1"
 
