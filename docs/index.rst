@@ -1,5 +1,5 @@
 .. title::
-   Greetings and welcome to my machine learning math notes.
+   Mathematics for Machine learning and Data Science
 
 Welcome to Mathematics for Machine learning
 ============================================
