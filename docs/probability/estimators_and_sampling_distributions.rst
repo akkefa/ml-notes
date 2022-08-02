@@ -5,9 +5,26 @@
 Estimators and Sampling Distributions
 #######################################
 
-.. Note:: What are biased and unbiased estimators?
-   A biased estimator is one that deviates from the true population value. An unbiased estimator is one that does not
-   deviate from the true population parameter.
+We have learned many different distributions for random variables and all of those distributions had parameters:
+the numbers that you provide as input when you define a random variable.
+
+What if we don’t know the values of the parameters.
+What if instead of knowing the random variables, we have a lot of examples of data generated with
+the same underlying distribution? In this chapter we are going to learn formal ways of estimating parameters
+from data.
+
+**These ideas are critical for artificial intelligence. Almost all modern machine learning algorithms work like
+this**
+
+#. specify a probabilistic model that has parameters.
+#. Learn the value of those parameters from data.
+
+.. topic:: Estimate the model parameters.
+
+    - Maximum Likelihood Estimation (MLE)
+    - Maximum A Posteriori (MAP).
+
+Both of these schools of thought assume that your data are independent and identically distributed (IID) samples.
 
 Random Sample
 ==============
@@ -32,6 +49,38 @@ drawn, so to speak, is and stays the same: "identically distributed".
 Independent and identically distributed random variables (IID)
 ---------------------------------------------------------------
 Random Sample == IID
+
+.. Note:: What are biased and unbiased estimators?
+   A biased estimator is one that deviates from the true population value. An unbiased estimator is one that does not
+   deviate from the true population parameter.
+
+Parameters
+===========
+Before we dive into parameter estimation, first let’s revisit the concept of parameters. Given a model, the
+parameters are the numbers that yield the actual distribution.
+
+- In the case of a Bernoulli random variable, the single parameter was the value p.
+- In the case of a Uniform random variable, the parameters are the a and b values that define the min and max value.
+
+we are going to use the notation :math:`\theta` to be a vector of all the parameters.
+
+.. list-table::
+    :align: center
+    :widths: 10 15
+    :header-rows: 1
+
+    * - Distribution
+      - Parameters
+    * - Bernoulli(p)
+      - :math:`\theta = p`
+    * - Poisson(λ)
+      - :math:`\theta = \lambda`
+    * - Uniform(a,b)
+      - :math:`\theta = (a,b)`
+    * - Normal
+      - :math:`\theta = (\mu,\sigma)`
+    * - :math:`Y = mX + b`
+      - :math:`\theta = (m,b)`
 
 
 Sampling Distributions
