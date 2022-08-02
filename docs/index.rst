@@ -1,8 +1,8 @@
 .. title::
    Greetings and welcome to my machine learning math notes.
 
-Welcome to Machine learning Mathematics!
-========================================
+Welcome to Mathematics for Machine learning
+============================================
 Quick definitions and intuitive explanations around machine learning and Deep learning.
 
 """""""""
