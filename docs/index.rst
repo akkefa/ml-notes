@@ -27,6 +27,7 @@ Contents
    probability/estimators_and_sampling_distributions
    probability/moments_generating_functions
    probability/maximum_likelihood_estimation
+   probability/confidence_interval
 
 .. toctree::
    :caption: Mathematics
