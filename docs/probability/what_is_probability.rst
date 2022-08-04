@@ -5,10 +5,13 @@
 What is Probability
 ####################
 
-Probability is studies of randomness and uncertainty. Probability is used to answers these questions:
-
-- of getting at least 2 heads in 5 coin flips
-- that a customer will buy milk if they are also buying bread
+Definition
+===========
+- Probability means **possibility**. It is a branch of mathematics that deals with the occurrence of a random event.
+- Probability is the branch of mathematics concerning numerical descriptions of how likely an event is to occur.
+- Probability is the measure of the likelihood of an event to happen.
+- Probability provides information about the likelihood that something will happen.
+- Probability is studies of randomness and uncertainty.
 
 Terminology
 ============
