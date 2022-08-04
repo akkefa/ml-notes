@@ -23,3 +23,7 @@ to do it again or if someone else did it, they're going to get a different estim
 - Return a confidence interval.
 
 If you did this again, you would not get the same results! Different samples and different confidence intervals.
+
+.. image:: https://cdn.mathpix.com/snip/images/FisnG71KAXfz6WNf4z8lfNR14egqOwTwicHsEP1aHEs.original.fullsize.png
+
+Multiple samples give multiple confidence intervals. ``95% of them will correctly capture μ and 5% miss it.``
