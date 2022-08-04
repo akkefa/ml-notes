@@ -17,3 +17,9 @@ There's no probability, where does the probability come in?
 
 it comes in from random sampling. The fact that if you select a random sample and compute your estimator and if you got
 to do it again or if someone else did it, they're going to get a different estimator based on the :guilabel:`randomness of the sample`.
+
+- Collect your sample.
+- Estimate the parameter.
+- Return a confidence interval.
+
+If you did this again, you would not get the same results! Different samples and different confidence intervals.
