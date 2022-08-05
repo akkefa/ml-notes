@@ -11,7 +11,7 @@ Definition
 - Probability is the measure of the likelihood of an event to happen.
 - **Probability means possibility** and probability is the study of randomness and uncertainty.
 
-Probability theory is widely used in the area of studies such as statistics, finance, gambling artificial intelligence,
+Probability theory is widely used in the area of studies such as statistics, finance, gambling, artificial intelligence,
 machine learning, computer science, game theory, and philosophy.
 
 Applications of probability
@@ -36,22 +36,26 @@ Major Applications of Probability
 
 Probability Terms
 ==================
+Some of the important probability terms are discussed here.
 
-Experiment
------------
-is any action or process that generates observations.
+.. glossary::
+    Experiment or Trial
+        | is any action or process that generates observations Or A series of actions where the outcomes are always uncertain.
+        | E.g. The tossing of a coin, Selecting a card from a deck of cards, throwing a dice, etc.
 
-Sample space
-------------
-of an experiment, denoted S, is the set of all possible outcomes of an experiment.
+    Sample space
+        | of an experiment, denoted :math:`S`, is the set of all possible outcomes of an experiment or trial.
+        | Tossing a coin, Sample Space = {H,T}
+        | Rolling a die, S = {1,2,3,4,5,6}
 
-Event
-------
-is any possible outcome, or combination of outcomes, of an experiment.
+    Event
+        | is any possible outcome, or combination of outcomes, of an experiment.
+        | E.g. Getting a Head while tossing a coin is an event.
 
-Cardinality
-------------
-of a sample space or an event, is the number of outcomes it contains. :math:`|S|` represents the cardinality of the sample space.
+    Cardinality
+        of a sample space or an event, is the number of outcomes it contains. :math:`|S|` represents the cardinality of the sample space.
+        | Tossing a coin, :math:`|S|` = 2
+
 
 Axioms of Probability
 ----------------------
