@@ -229,6 +229,16 @@ Find V(a X+b)
 
 Variance measure the spread the data B shift the data but doest not affect the spread.
 
+Find Var[aX]
+^^^^^^^^^^^^^
+Let Y=aX. Then
+
+.. math::
+    \mu_{Y}=E[Y]=E[a X]=a E[X]=a \mu_{X}  \\
+    Var[aX]=Var[Y]=E\left[\left(Y-\mu_{Y}\right)^{2}\right] \\
+    =a^{2} E\left[\left(X-\mu_{X}\right)^{2}\right] \\
+    =a^2 Var[X]
+
 Standard Deviation
 ===================
 The standard deviation is the square root of the variance. :math:`\sigma_x = \sqrt{V(X)}`
