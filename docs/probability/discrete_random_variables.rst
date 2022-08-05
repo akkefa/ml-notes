@@ -33,7 +33,8 @@ PMF
 
 Expected Value
 ^^^^^^^^^^^^^^^
-:math:`E(X)= 0 * P(x=0) + 1 * P(x=1)= 0 * (1-p) + 1 * (p) = p`
+.. math::
+    E(X)= 0 * P(x=0) + 1 * P(x=1) \\ = 0 * (1-p) + 1 * (p) \\ = p
 
 Variance
 ^^^^^^^^^
