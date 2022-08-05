@@ -239,6 +239,15 @@ Let Y=aX. Then
     =a^{2} E\left[\left(X-\mu_{X}\right)^{2}\right] \\
     =a^2 Var[X]
 
+Find Var[X + Y]
+^^^^^^^^^^^^^^^^
+
+.. math::
+    Var[X+Y]=Var[X]+Var[Y] \\
+
+- We will see that this is true if X and Y are independent.
+- Need concept of “covariance”.
+
 Standard Deviation
 ===================
 The standard deviation is the square root of the variance. :math:`\sigma_x = \sqrt{V(X)}`
