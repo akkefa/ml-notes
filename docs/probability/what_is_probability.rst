@@ -7,11 +7,9 @@ What is Probability
 
 Definition
 ===========
-- Probability means possibility. It is a branch of mathematics that deals with the occurrence of a random event.
-- Probability is the branch of mathematics concerning numerical descriptions of how likely an event is to occur.
+- Probability is the branch of mathematics that deals with the occurrence of a random event.
 - Probability is the measure of the likelihood of an event to happen.
-- Probability provides information about the likelihood that something will happen.
-- Probability is studies of randomness and uncertainty.
+- **Probability means possibility** and studies of randomness and uncertainty.
 
 Terminology
 ============
