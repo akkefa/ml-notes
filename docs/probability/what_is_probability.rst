@@ -1,5 +1,5 @@
 .. title::
-   What is Probability
+   What is Probability?
 
 ####################
 What is Probability
@@ -9,7 +9,21 @@ Definition
 ===========
 - Probability is the branch of mathematics that deals with the occurrence of a random event.
 - Probability is the measure of the likelihood of an event to happen.
-- **Probability means possibility** and studies of randomness and uncertainty.
+- **Probability means possibility** and probability is the study of randomness and uncertainty.
+
+Application of probability
+---------------------------
+Some of the applications of probability are predicting the outcome when you:
+
+- that a customer will buy milk if they are also buying bread.
+- Of getting at least 2 heads in 5 coin flips.
+- Getting 3 and 5 on throwing a die.
+- Choosing a card from the deck.
+- Pulling a green candy from a bag of red candies.
+- Winning a lottery 1 in many millions.
+- # of vehicles crossing a bridge in one day
+- # of gamma rays hitting a satellite per hour
+- # of customers arriving at a bank in a week
 
 Terminology
 ============
