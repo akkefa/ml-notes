@@ -56,6 +56,11 @@ Some of the important probability terms are discussed here.
         | of a sample space or an event, is the number of outcomes it contains. :math:`|S|` represents the cardinality of the sample space.
         | Tossing a coin, :math:`|S|` = 2
 
+    Population
+        Those individuals or objects from which we want to acquire information or draw a conclusion.
+
+    Sample
+        Most of the time, the population is so large, we can only collect data on a subset of it. We will call this our sample.
 
 Axioms of Probability
 ----------------------
