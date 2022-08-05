@@ -17,4 +17,5 @@ h2 {
 strong {
     background-color: #f0f700;
     font-size: 17px;
+    padding:0.1em 0.2em;
 }
