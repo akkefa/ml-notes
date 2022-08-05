@@ -55,6 +55,9 @@ Some of the important probability terms are discussed here.
     Cardinality
         | of a sample space or an event, is the number of outcomes it contains. :math:`|S|` represents the cardinality of the sample space.
         | Tossing a coin, :math:`|S|` = 2
+        | Rolling a die, :math:`|S|` = 6
+        | Flip a coin twice, S = {00,01,11,10} :math:`|S|` = 4
+        | Flip a coin until you get a tail. :math:`S=\{1,01,001,0001, \ldots\}` :math:`|S| = \infty`
 
     Population
         Those individuals or objects from which we want to acquire information or draw a conclusion.
