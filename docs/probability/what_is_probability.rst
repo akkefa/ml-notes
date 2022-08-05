@@ -53,7 +53,7 @@ Some of the important probability terms are discussed here.
         | E.g. Getting a Head while tossing a coin is an event.
 
     Cardinality
-        of a sample space or an event, is the number of outcomes it contains. :math:`|S|` represents the cardinality of the sample space.
+        | of a sample space or an event, is the number of outcomes it contains. :math:`|S|` represents the cardinality of the sample space.
         | Tossing a coin, :math:`|S|` = 2
 
 
