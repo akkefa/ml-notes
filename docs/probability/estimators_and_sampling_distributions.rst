@@ -79,8 +79,8 @@ we are going to use the notation :math:`\theta` to be a vector of all the parame
       - :math:`\theta = (a,b)`
     * - Normal
       - :math:`\theta = (\mu,\sigma)`
-    * - :math:`Y = mX + b`
-      - :math:`\theta = (m,b)`
+    * - :math:`Y = wX + b`
+      - :math:`\theta = (w,b)`
 
 
 Sampling Distributions
