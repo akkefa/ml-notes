@@ -11,22 +11,31 @@ Definition
 - Probability is the measure of the likelihood of an event to happen.
 - **Probability means possibility** and probability is the study of randomness and uncertainty.
 
-Application of probability
+Probability theory is widely used in the area of studies such as statistics, finance, gambling artificial intelligence,
+machine learning, computer science, game theory, and philosophy.
+
+Applications of probability
 ---------------------------
-Some of the applications of probability are predicting the outcome when you:
+Some of the applications of probability are predicting results of the following events:
 
-- that a customer will buy milk if they are also buying bread.
-- Of getting at least 2 heads in 5 coin flips.
-- Getting 3 and 5 on throwing a die.
-- Choosing a card from the deck.
-- Pulling a green candy from a bag of red candies.
-- Winning a lottery 1 in many millions.
-- # of vehicles crossing a bridge in one day
-- # of gamma rays hitting a satellite per hour
-- # of customers arriving at a bank in a week
+#. that a customer will buy milk if they are also buying bread.
+#. Of getting at least 2 heads in 5 coin flips.
+#. Getting 3 and 5 on throwing a die.
+#. Choosing a card from the deck.
+#. Pulling a green candy from a bag of red candies.
+#. Winning a lottery 1 in many millions.
+#. # of vehicles crossing a bridge in one day
+#. # of customers arriving at a bank in a week
 
-Terminology
-============
+Major Applications of Probability
+---------------------------------
+- It is used for risk assessment and modelling in various industries
+- Weather forecasting or prediction of weather changes
+- Probability of a team winning in a sport based on players and strength of team
+- In the share market, chances of getting the hike of share prices
+
+Probability Terms
+==================
 
 Experiment
 -----------
