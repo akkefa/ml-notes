@@ -65,15 +65,22 @@ Some of the important probability terms are discussed here.
     Sample
         Most of the time, the population is so large, we can only collect data on a subset of it. We will call this our sample.
 
+.. admonition:: Interview Question
+
+    | What is the sample space Rolling Two Dice?
+    | The total number of joint outcomes (a,b) is 6 times 6 which is 36.
+
+
 Axioms of Probability
 ----------------------
-| Axiom 1 : For any event :math:`A, 0 \leq P(A) \leq 1`
-| Axiom 2: :math:`P(S)=1`
-| Axiom 3 : If :math:`A_{n}` mutually exclusive events (intersection of any two is the empty set) then
-
-.. math::
-
-    P\left(\bigcup_{i = 1}^k A_n\right) = \sum_{k=1}^{n} P\left(A_{k}\right)
+:Axiom 1:   For any event, 'A' the probability of possible outcomes is either 0 or 1, where 0 is the event which never
+            occurs, and 1 is the event will certainly occur. For any event :math:`A, 0 \leq P(A) \leq 1`.
+:Axiom 2:   The sum of probabilities of all possible outcomes is 1.Probability of the sample space S is :math:`P(S)=1`.
+:Axiom 3:   If :math:`A_{n}` mutually exclusive events (intersection of any two is the empty set) then
+            :math:`P\left(\bigcup_{i = 1}^k A_n\right) = \sum_{k=1}^{n} P\left(A_{k}\right)`
+:Axiom 4:   The complement of any event A is the event that consists of all the outcomes that are not in A.
+:Axiom 5:   If both A and B are independent, then the conditional probability that event B occurs given that event A has already occurred.
+            P ( A and B) = P (A) P (B | A). This is called the General rule of multiplication.
 
 
 Counting: Permutations and Combinations
