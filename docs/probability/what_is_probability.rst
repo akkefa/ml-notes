@@ -136,6 +136,9 @@ Now that we have counted the total of number of possible pizzas, it is easy to s
     | What are the outcomes of flipping a fair coin and simultaneously rolling a fair die?
     | 6 x 2 = 12 outcomes.
 
+Factorial
+----------
+You may have used the factorial for simple arithmetic calculations.
 
 | **With replacement** means the same item can be chosen more than once.
 | **Without replacement** means the same item cannot be selected more than once.
