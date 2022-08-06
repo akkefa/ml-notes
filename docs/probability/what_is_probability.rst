@@ -98,6 +98,21 @@ Despite the trivial name of this topic, be assured that ‘learning to count’ 
     Complement
         :math:`A^c` = A complement. This is a shorthand way of saying when A does not occur. This set is made up of everything not in A.
 
+
+Naive Probability
+------------------
+The probability of an event occurring, if the likelihood of each outcome is equal, is:
+
+.. math::
+    P(\text { Event })=\frac{\text { number of favorable outcomes }}{\text { number of outcomes }}
+
+When we are working with probabilities, our notation will be P(A). In english, this means the **Probability that event A occurred**.
+So, if A is the event of flipping heads in one flip of a fair coin, then P ( A ) = .5
+
+This Naive Definition is a reasonable place to start, because it’s likely how you have calculated probabilities up to
+this point. Of course, this is not always the correct approach for real world probabilities (hence the name ‘naive’).
+
+
 | **With replacement** means the same item can be chosen more than once.
 | **Without replacement** means the same item cannot be selected more than once.
 
