@@ -65,10 +65,20 @@ Some of the important probability terms are discussed here.
     Sample
         Most of the time, the population is so large, we can only collect data on a subset of it. We will call this our sample.
 
+    Sets and Subsets
+        | A set is defined as a group of objects (i.e., sets can be made up of letters, numbers, names, etc.)
+        | A subset is defined as a set within a set. set A is a subset of set B if and only if every element of A is also in B.
+
+    Empty Set
+        The set that contains nothing, denoted :math:`\emptyset`.
+
+    Complement
+        :math:`A^c` = A complement. This is a shorthand way of saying when A does not occur. This set is made up of everything not in A.
+
 .. admonition:: Interview Question
 
-    | What is the sample space of rolling Two Dice?
-    | The total number of joint outcomes (a,b) is 6 times 6 which is 36.
+    | Q: What is the sample space of rolling Two Dice?
+    | Ans: The total number of joint outcomes (a,b) is 6 times 6 which is 36.
 
 
 Axioms of Probability
@@ -86,18 +96,6 @@ Axioms of Probability
 Counting
 =========
 Despite the trivial name of this topic, be assured that learning to count is not as easy as it sounds.
-
-.. glossary::
-    Sets and Subsets
-        | A set is defined as a group of objects (i.e., sets can be made up of letters, numbers, names, etc.)
-        | A subset is defined as a set within a set. set A is a subset of set B if and only if every element of A is also in B.
-
-    Empty Set
-        The set that contains nothing, denoted :math:`\emptyset`.
-
-    Complement
-        :math:`A^c` = A complement. This is a shorthand way of saying when A does not occur. This set is made up of everything not in A.
-
 
 Naive Probability
 ------------------
