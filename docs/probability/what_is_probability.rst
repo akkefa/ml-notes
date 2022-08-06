@@ -40,20 +40,20 @@ Some of the important probability terms are discussed here.
 
 .. glossary::
     Experiment or Trial
-        | is any action or process that generates observations Or A series of actions where the outcomes are always uncertain.
+        | Experiment is any action or process that generates observations Or A series of actions where the outcomes are always uncertain.
         | E.g. The tossing of a coin, Selecting a card from a deck of cards, throwing a dice, etc.
 
     Sample space
-        | of an experiment, denoted :math:`S`, is the set of all possible outcomes of an experiment or trial.
+        | Sample space of an experiment, denoted :math:`S`, is the set of all possible outcomes of an experiment or trial.
         | Tossing a coin, Sample Space = {H,T}
         | Rolling a die, S = {1,2,3,4,5,6}
 
     Event
-        | is any possible outcome, or combination of outcomes, of an experiment.
+        | Event is any possible outcome, or combination of outcomes, of an experiment.
         | E.g. Getting a Head while tossing a coin is an event.
 
     Cardinality
-        | of a sample space or an event, is the number of outcomes it contains. :math:`|S|` represents the cardinality of the sample space.
+        | Cardinality of a sample space or an event, is the number of outcomes it contains. :math:`|S|` represents the cardinality of the sample space.
         | Tossing a coin, :math:`|S|` = 2
         | Rolling a die, :math:`|S|` = 6
         | Flip a coin twice, S = {00,01,11,10} :math:`|S|` = 4
@@ -83,8 +83,21 @@ Axioms of Probability
             P ( A and B) = P (A) P (B | A). This is called the General rule of multiplication.
 
 
-Counting: Permutations and Combinations
-========================================
+Counting
+=========
+Despite the trivial name of this topic, be assured that ‘learning to count’ is not as easy as it sounds.
+
+.. glossary::
+    Sets and Subsets
+        | A set is defined as a group of objects (i.e., sets can be made up of letters, numbers, names, etc.)
+        | A subset is defined as a set within a set. set A is a subset of set B if and only if every element of A is also in B.
+
+    Empty Set
+        The set that contains nothing, denoted :math:`\emptyset`.
+
+    Complement
+        :math:`A^c` = A complement. This is a shorthand way of saying when A does not occur. This set is made up of everything not in A.
+
 | **With replacement** means the same item can be chosen more than once.
 | **Without replacement** means the same item cannot be selected more than once.
 
