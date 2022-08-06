@@ -131,8 +131,8 @@ Now that we have counted the total of number of possible pizzas, it is easy to s
 
 .. admonition:: Interview Question
 
-    | What are the outcomes of flipping a fair coin and simultaneously rolling a fair die?
-    | 6 x 2 = 12 outcomes.
+    | Q: What are the outcomes of flipping a fair coin and simultaneously rolling a fair die?
+    | Ans: 6 x 2 = 12 outcomes.
 
 Factorial
 ----------
