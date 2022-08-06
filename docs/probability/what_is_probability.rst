@@ -85,7 +85,7 @@ Axioms of Probability
 
 Counting
 =========
-Despite the trivial name of this topic, be assured that ‘learning to count’ is not as easy as it sounds.
+Despite the trivial name of this topic, be assured that learning to count is not as easy as it sounds.
 
 .. glossary::
     Sets and Subsets
@@ -106,11 +106,30 @@ The probability of an event occurring, if the likelihood of each outcome is equa
 .. math::
     P(\text { Event })=\frac{\text { number of favorable outcomes }}{\text { number of outcomes }}
 
-When we are working with probabilities, our notation will be P(A). In english, this means the **Probability that event A occurred**.
-So, if A is the event of flipping heads in one flip of a fair coin, then P ( A ) = .5
+When we are working with probabilities, our notation will be P(A). this means the **Probability that event A occurred**.
+So, if A is the event of flipping heads in one flip of a fair coin, then P(A) = .5
 
 This Naive Definition is a reasonable place to start, because it’s likely how you have calculated probabilities up to
-this point. Of course, this is not always the correct approach for real world probabilities (hence the name ‘naive’).
+this point. Of course, this is not always the correct approach for real world probabilities (hence the name ``naive``).
+
+
+Multiplication Rule
+-------------------
+To understand the Multiplication Rule, visualize a process that has multiple steps, where each step has multiple choices.
+For example, say that you are ordering a pizza.
+
+
+    #. Size (small, medium, or large)
+    #. Topping (pepperoni, meatball, sausage, extra cheese)
+    #. Order Type (delivery or pickup)
+
+
+Using the multiplication rule, we can easily count the number of distinct pizzas that you could possibly order.
+Since there are 3 choices for size, 4 choices for toppings, and 2 choices for pickup.
+
+        we simply have 3 ⋅ 4 ⋅ 2 = 24 different pizza options.
+
+Now that we have counted the total of number of possible pizzas, it is easy to solve various probability problems.
 
 
 | **With replacement** means the same item can be chosen more than once.
