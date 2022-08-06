@@ -67,7 +67,7 @@ Some of the important probability terms are discussed here.
 
 .. admonition:: Interview Question
 
-    | What is the sample space Rolling Two Dice?
+    | What is the sample space of rolling Two Dice?
     | The total number of joint outcomes (a,b) is 6 times 6 which is 36.
 
 
