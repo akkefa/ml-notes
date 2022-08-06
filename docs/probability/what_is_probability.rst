@@ -131,6 +131,11 @@ Since there are 3 choices for size, 4 choices for toppings, and 2 choices for pi
 
 Now that we have counted the total of number of possible pizzas, it is easy to solve various probability problems.
 
+.. admonition:: Interview Question
+
+    | What are the outcomes of flipping a fair coin and simultaneously rolling a fair die?
+    | 6 x 2 = 12 outcomes.
+
 
 | **With replacement** means the same item can be chosen more than once.
 | **Without replacement** means the same item cannot be selected more than once.
