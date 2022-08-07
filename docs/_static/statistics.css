@@ -9,3 +9,14 @@
 .wy-side-nav-search > div.version {
     color: #404040;
 }
+
+h2 {
+    border-bottom: 1px solid #aaaaaa;
+}
+
+strong {
+    /*background-color: #f0f700;*/
+    background-color: #f8b101;
+    /*font-size: 17px;*/
+    padding:0.1em 0.2em;
+}

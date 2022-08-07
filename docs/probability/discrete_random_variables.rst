@@ -31,9 +31,10 @@ PMF
 
 :math:`P(X=x)=p^{x}(1-p)^{1-x} \cdot I_{\{0,1\}}(x)`
 
-Expected Value
-^^^^^^^^^^^^^^^
-:math:`E(X)= 0 * P(x=0) + 1 * P(x=1)= 0 * (1-p) + 1 * (p) = p`
+Mean (Expected Value)
+^^^^^^^^^^^^^^^^^^^^^^
+.. math::
+    E(X)= 0 * P(x=0) + 1 * P(x=1) \\ = 0 * (1-p) + 1 * (p) \\ = p
 
 Variance
 ^^^^^^^^^
@@ -84,8 +85,8 @@ PMF
     \\
     P(X=x)=(1-p)^{x-1} \cdot p \cdot I_{\{1,2,3, \ldots\}}(x)
 
-Expected Value
-^^^^^^^^^^^^^^^
+Mean (Expected Value)
+^^^^^^^^^^^^^^^^^^^^^^
 :math:`E(X) = \sum_{k=1}^{\infty} k P(Y=k) = \sum_{k=1}^{\infty} k (1-p)^{k-1}p = \frac{1} p`
 
 Variance
@@ -134,8 +135,8 @@ Binomial Theorem
 ^^^^^^^^^^^^^^^^^
 :math:`\sum_{k=0}^n {n \choose k}p^{k}(1-p)^{n-k} = 1`
 
-Expected Value
-^^^^^^^^^^^^^^^
+Mean (Expected Value)
+^^^^^^^^^^^^^^^^^^^^^^
 | :math:`E(X)=\sum_{k} k P(X=k)`
 | :math:`E(X)=\sum_{k=0}^n k {n \choose k}p^{k}(1-p)^{n-k}`
 | :math:`E(X)= n * p`
@@ -175,8 +176,8 @@ PMF
 
 :math:`P(X = k) = \binom{k+r-1}{r-1} (1-p)^kp^r`
 
-Expected Value
-^^^^^^^^^^^^^^^
+Mean (Expected Value)
+^^^^^^^^^^^^^^^^^^^^^^
 | :math:`E(X)=\sum_{k} k P(X=k)`
 | :math:`E(X)= \frac{r(1-p)}{p}`
 
@@ -240,8 +241,8 @@ events in a large population.
 
 :math:`\sum_{k=0}^{\infty} P(X=k)=\sum_{k=0}^{\infty} \frac{\lambda^{k}}{k !} e^{-\lambda}=e^{-\lambda} \sum_{k=0}^{\infty} \frac{\lambda^{k}}{k!} = e^{-\lambda} *  e^{\lambda} = 1`
 
-Expected Value
-^^^^^^^^^^^^^^^
+Mean (Expected Value)
+^^^^^^^^^^^^^^^^^^^^^^
 :math:`E(X)=\sum_{k=0}^{\infty} k P(X=k)=\sum_{k=0}^{\infty} k \frac{\lambda^{k}}{k !} e^{-\lambda}=\lambda \sum_{k=1}^{\infty} \frac{\lambda^{k-1}}{(k-1) !} e^{-\lambda} = \lambda`
 
 :math:`E\left(X^{2}\right)=\sum_{k=0}^{\infty} k^{2} P(X=k)=\sum_{k=0}^{\infty} k^{2} \frac{\lambda^{k}}{k !} e^{-\lambda}=\lambda(\lambda+1)^{e}`

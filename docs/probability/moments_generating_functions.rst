@@ -5,41 +5,59 @@
 Moments Generating Functions
 #############################
 
-The moments generating functions are the functions that generate the moments of a random variable.
+We are still, believe it or not, trying to estimate things from a larger population based on a sample.
+For example, sample mean, or maybe the sum of the values in the sample etc. Any function of your data is known as a statistic.
+And we're going to use them to estimate other things. And in order to figure out how well we're doing, we're going to **need to know often the distributions of some of these statistics**.
 
 Distributions of sums
 ======================
+A lot of them depend on sums, so we're going to start out by talking about the distribution of sums of random variables.
+
 
 Suppose That,
 
 .. math::
-
-    X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} Bernoulli(p)
-
-    \text { What is the distribution of } Y=\sum_{i=1}^{n} X_{i} ?
-
+    X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} Bernoulli(p) \\
+    \text { What is the distribution of } Y=\sum_{i=1}^{n} X_{i} ? \\
+    \text { Sum of Bernoulli rv is equal to bin(n,p) } \\
     Y=\sum_{i=1}^{n} X_{i} \sim bin(n, p)
 
 Each X_i take value success (P) and failure (1-P). So summing all X_i is equal to sum of all success gives the value of Y.
 Which is binomial distribution.
 
+.. caution:: Not all random variables are so easily interpreted by methods of Distributions of sums. So we need a tool.
+
 Moment generating functions
 ============================
+The moments generating functions are the functions that generate the moments of a random variable. The expected values
+:math:`E(X), E\left(X^{2}\right), E\left(X^{3}\right), \ldots E\left(X^{r}\right)` are called moments.
 
-.. note:: Not all random variables are so easily interpreted. So we need a tool.
+.. hlist::
+    :columns: 2
+
+    - Mean :math:`\mu=E(X)`
+    - Variance :math:`\sigma^{2}=Var(X)=E\left(X^{2}\right)-\mu^{2}`
+
+which are functions of moments. moment-generating functions can sometimes make finding the mean and variance of a random variable simpler.
+
 
 Let X be a random variable. It’s moment generating function (mgf) is denoted and defined as
 
-.. math::
+:Continuous Random Variables: :math:`M_{X}(t)=E\left[e^{t X}\right]=\int_{-\infty}^{\infty} e^{t x} f_{X}(x) d x`
+:Discrete Random Variables: :math:`M_{X}(t)=E\left[e^{t X}\right]=\sum_{x} e^{t x} f_{x}(x)`
 
-    M_{X}(t)=E\left[e^{t X}\right]=\int_{-\infty}^{\infty} e^{t x} f_{X}(x) d x
+where :math:`f_{X}(x)` is the distribution of X.
+
 
 Properties
 -----------
-- Moment generating functions also uniquely identify distributions.
+- Moment generating functions also **uniquely identify distributions**.
 
-Bernoulli(𝗉)
-============
+MGT of Famous Distributions
+============================
+
+Bernoulli(p)
+------------
 .. math::
     M_{X}(t)=E\left[e^{t X}\right]=\sum_{x} e^{t x} f_{X}(x)=\sum_{x} e^{t x} P(X=x)
 
@@ -49,13 +67,23 @@ Bernoulli(𝗉)
 
     =1-p+p e^{t}
 
-Binomial(𝗉, 𝗏)
---------------
+Binomial(n,p)
+-------------
+:math:`X \sim bin(n, p)`
 
-.. image:: https://cdn.mathpix.com/snip/images/oWtMZ14NSybsuE5sEGi3CvmpAtE2dlM-m9S519TTPuU.original.fullsize.png
+.. math::
+    M_{x}(t)=\sum_{x=0}^{n}e^{tx}\binom{n}{x}p^x(1-p)^{n-x} \\
+    M_{x}(t)=\sum_{x=0}^{n}e^{tx}\binom{n}{x}(pe^t)^x(1-p)^{n-x}
 
-Some distribution
-------------------
+:Binomial Theorem:  :math:`(a + b)^n =\sum_{k=0}^{n}\binom{n}{k}a^k b^{n-k}`
+
+.. math::
+    M_{X}(t)=(1-p+p e^{t})^n
+
+Finding Distributions
+=====================
+A moment-generating function uniquely determines the probability distribution of a random variable. if two random
+variables have the same moment-generating function, then they must have the same probability distribution.
 
 .. image:: https://cdn.mathpix.com/snip/images/oLROi0YuJYc_kDzSYRACNdujNGLM3Qx_TPXKcbVE-qA.original.fullsize.png
 
@@ -88,6 +116,10 @@ Key points
 
 Method of Moments Estimators(MMEs)
 ===================================
+It totally makes sense if you're trying to estimate the mean or average out there in the entire population.
+That you should use the sample mean or sample average of the values in the sample, but what about parameters with not
+such an obvious interpretation?
+
 Idea: Equate population and sample moments and solve for the unknown parameters.
 
 | Suppose that :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} \Gamma(\alpha, \beta)`

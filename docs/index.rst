@@ -1,8 +1,8 @@
 .. title::
-   Greetings and welcome to my machine learning math notes.
+   Mathematics for Machine learning and Data Science
 
-Welcome to Machine learning Mathematics!
-========================================
+Welcome to Mathematics for Machine learning
+============================================
 Quick definitions and intuitive explanations around machine learning and Deep learning.
 
 """""""""
@@ -27,6 +27,7 @@ Contents
    probability/estimators_and_sampling_distributions
    probability/moments_generating_functions
    probability/maximum_likelihood_estimation
+   probability/confidence_interval
 
 .. toctree::
    :caption: Mathematics
