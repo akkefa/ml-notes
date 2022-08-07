@@ -125,7 +125,8 @@ For example, say that you are ordering a pizza.
 Using the multiplication rule, we can easily count the number of distinct pizzas that you could possibly order.
 Since there are 3 choices for size, 4 choices for toppings, and 2 choices for pickup.
 
-        we simply have 3 ⋅ 4 ⋅ 2 = 24 different pizza options.
+.. centered::
+    we simply have 3 ⋅ 4 ⋅ 2 = 24 different pizza options.
 
 Now that we have counted the total of number of possible pizzas, it is easy to solve various probability problems.
 
@@ -137,6 +138,30 @@ Now that we have counted the total of number of possible pizzas, it is easy to s
 Factorial
 ----------
 You may have used the factorial for simple arithmetic calculations.
+
+.. math::
+    n! = n \times n-1 \times n-2 \times \ldots \times 1 \\
+    5! = 5 \times 4 \times 3 \times 2 \times1 \\
+    n! = \prod_{i=1}^{n} i
+
+Another use for the factorial function is to count how many ways you can choose things from a collection of things or
+find how many ways things can be arranged.
+
+Example
+^^^^^^^^
+Counting the the number of ways to order the letters A, B, and C. We will define a specific arrangement or order as a permutation.
+You could likely figure this out by just writing out all of the permutations::
+
+{ABC,ACB,BAC,BCA,CAB,CBA}
+
+It’s clear that there are 6 permutations. what if you had to do the same for all 26 letters in the alphabet? if you
+didn’t feel like writing out the 26 letters over and over and over, you could use the factorial for a more elegant
+solution.
+
+the number of permutations when ordering A,B and C is 3!
+
+    3 ⋅ 2 ⋅ 1 = 6
+
 
 | **With replacement** means the same item can be chosen more than once.
 | **Without replacement** means the same item cannot be selected more than once.
