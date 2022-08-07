@@ -5,38 +5,47 @@
 Moments Generating Functions
 #############################
 
-The moments generating functions are the functions that generate the moments of a random variable.
+We are still, believe it or not, trying to estimate things from a larger population based on a sample.
+For example, sample mean, or maybe the sum of the values in the sample etc. Any function of your data is known as a statistic.
+And we're going to use them to estimate other things. And in order to figure out how well we're doing, we're going to **need to know often the distributions of some of these statistics**.
 
 Distributions of sums
 ======================
+A lot of them depend on sums, so we're going to start out by talking about the distribution of sums of random variables.
+
 
 Suppose That,
 
 .. math::
-
-    X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} Bernoulli(p)
-
-    \text { What is the distribution of } Y=\sum_{i=1}^{n} X_{i} ?
-
+    X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} Bernoulli(p) \\
+    \text { What is the distribution of } Y=\sum_{i=1}^{n} X_{i} ? \\
+    \text { Sum of Bernoulli rv is equal to bin(n,p) } \\
     Y=\sum_{i=1}^{n} X_{i} \sim bin(n, p)
 
 Each X_i take value success (P) and failure (1-P). So summing all X_i is equal to sum of all success gives the value of Y.
 Which is binomial distribution.
 
+.. caution:: Not all random variables are so easily interpreted by methods of Distributions of sums. So we need a tool.
+
 Moment generating functions
 ============================
+The moments generating functions are the functions that generate the moments of a random variable.
 
-.. note:: Not all random variables are so easily interpreted. So we need a tool.
+
 
 Let X be a random variable. It’s moment generating function (mgf) is denoted and defined as
 
 .. math::
+    \text{For Continuous Random Variables} \\
+    M_{X}(t)=E\left[e^{t X}\right]=\int_{-\infty}^{\infty} e^{t x} f_{X}(x) d x \\
+    \text{For Discrete Random Variables} \\
+    M_{X}(t)=E\left[e^{t X}\right]=\sum_{x} e^{t x} f_{x}(x) \\
 
-    M_{X}(t)=E\left[e^{t X}\right]=\int_{-\infty}^{\infty} e^{t x} f_{X}(x) d x
+
 
 Properties
 -----------
-- Moment generating functions also uniquely identify distributions.
+- Moment generating functions also **uniquely identify distributions**.
 
 Bernoulli(𝗉)
 ============
