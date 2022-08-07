@@ -162,19 +162,39 @@ the number of permutations when ordering A,B and C is 3!
 
     3 ⋅ 2 ⋅ 1 = 6
 
+Binomial Coefficient
+---------------------
+The binomial coefficient is a mathematical formula that counts the number of ways to choose k items from a collection of n items.
+This is perhaps the most useful counting tool. which in english is pronounced **n choose x** = :math:`\tbinom{n}{k}`.
+
+.. math::
+    \tbinom{n}{k} = \frac{n!}{k!(n-k)!}
+
 
 | **With replacement** means the same item can be chosen more than once.
 | **Without replacement** means the same item cannot be selected more than once.
 
 Permutation
-------------
+^^^^^^^^^^^^
+permutation relates to the act of arranging all the members of a set into some sequence or order or
+**all possible ways of doing something.**
+
 When selecting more than one item without replacement and ``order does matter``.
-:math:`{P}_{n,r}  = \frac{n!}{(n-k)!}`
+
+:math:`{P}_{n,k}  = \frac{n!}{(n-k)!}`
 
 Combination
-------------
+^^^^^^^^^^^^
 When selecting more than one item without replacement and ``order does not matter``.
-:math:`{C}_{n,r} = \binom nk = {n \choose k, n-k} = \frac{n!}{k!(n-k)!}`
+:math:`{C}_{n,k} = \binom nk = {n \choose k, n-k} = \frac{n!}{k!(n-k)!}`
+
+Difference Between Permutation and Combination
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The permutation is the number of ways to arrange the elements of a set.
+The combination is the number of ways to choose k elements from a set of n elements.
+
+    | Arranging people, digits, numbers, alphabets, letters, and colours are examples of permutations.
+    | Selection of menu, food, clothes, subjects, the team are examples of combinations.
 
 Sampling Table
 ---------------
