@@ -31,16 +31,12 @@ Moment generating functions
 ============================
 The moments generating functions are the functions that generate the moments of a random variable.
 
-
-
 Let X be a random variable. It’s moment generating function (mgf) is denoted and defined as
 
-.. math::
-    \text{For Continuous Random Variables} \\
-    M_{X}(t)=E\left[e^{t X}\right]=\int_{-\infty}^{\infty} e^{t x} f_{X}(x) d x \\
-    \text{For Discrete Random Variables} \\
-    M_{X}(t)=E\left[e^{t X}\right]=\sum_{x} e^{t x} f_{x}(x) \\
+:Continuous Random Variables: :math:`M_{X}(t)=E\left[e^{t X}\right]=\int_{-\infty}^{\infty} e^{t x} f_{X}(x) d x`
+:Discrete Random Variables: :math:`M_{X}(t)=E\left[e^{t X}\right]=\sum_{x} e^{t x} f_{x}(x)`
 
+where :math:`f_{X}(x)` is the distribution of X.
 
 
 Properties
