@@ -116,6 +116,10 @@ Key points
 
 Method of Moments Estimators(MMEs)
 ===================================
+It totally makes sense if you're trying to estimate the mean or average out there in the entire population.
+That you should use the sample mean or sample average of the values in the sample, but what about parameters with not
+such an obvious interpretation?
+
 Idea: Equate population and sample moments and solve for the unknown parameters.
 
 | Suppose that :math:`X_{1}, X_{2}, \ldots, X_{n} \stackrel{\text { iid }}{\sim} \Gamma(\alpha, \beta)`
