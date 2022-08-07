@@ -53,8 +53,11 @@ Properties
 -----------
 - Moment generating functions also **uniquely identify distributions**.
 
-Bernoulli(𝗉)
-============
+MGT of Famous Distributions
+============================
+
+Bernoulli(p)
+------------
 .. math::
     M_{X}(t)=E\left[e^{t X}\right]=\sum_{x} e^{t x} f_{X}(x)=\sum_{x} e^{t x} P(X=x)
 
@@ -65,7 +68,7 @@ Bernoulli(𝗉)
     =1-p+p e^{t}
 
 Binomial(n,p)
-==============
+-------------
 :math:`X \sim bin(n, p)`
 
 .. math::
@@ -77,8 +80,10 @@ Binomial(n,p)
 .. math::
     M_{X}(t)=(1-p+p e^{t})^n
 
-Some distribution
-------------------
+Finding Distributions
+=====================
+A moment-generating function uniquely determines the probability distribution of a random variable. if two random
+variables have the same moment-generating function, then they must have the same probability distribution.
 
 .. image:: https://cdn.mathpix.com/snip/images/oLROi0YuJYc_kDzSYRACNdujNGLM3Qx_TPXKcbVE-qA.original.fullsize.png
 
