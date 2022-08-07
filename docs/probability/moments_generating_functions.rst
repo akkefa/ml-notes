@@ -64,10 +64,18 @@ Bernoulli(𝗉)
 
     =1-p+p e^{t}
 
-Binomial(𝗉, 𝗏)
---------------
+Binomial(n,p)
+==============
+:math:`X \sim bin(n, p)`
 
-.. image:: https://cdn.mathpix.com/snip/images/oWtMZ14NSybsuE5sEGi3CvmpAtE2dlM-m9S519TTPuU.original.fullsize.png
+.. math::
+    M_{x}(t)=\sum_{x=0}^{n}e^{tx}\binom{n}{x}p^x(1-p)^{n-x} \\
+    M_{x}(t)=\sum_{x=0}^{n}e^{tx}\binom{n}{x}(pe^t)^x(1-p)^{n-x}
+
+:Binomial Theorem:  :math:`(a + b)^n =\sum_{k=0}^{n}\binom{n}{k}a^k b^{n-k}`
+
+.. math::
+    M_{X}(t)=(1-p+p e^{t})^n
 
 Some distribution
 ------------------
