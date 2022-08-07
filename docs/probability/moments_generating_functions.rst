@@ -29,7 +29,17 @@ Which is binomial distribution.
 
 Moment generating functions
 ============================
-The moments generating functions are the functions that generate the moments of a random variable.
+The moments generating functions are the functions that generate the moments of a random variable. The expected values
+:math:`E(X), E\left(X^{2}\right), E\left(X^{3}\right), \ldots E\left(X^{r}\right)` are called moments.
+
+.. hlist::
+    :columns: 2
+
+    - Mean :math:`\mu=E(X)`
+    - Variance :math:`\sigma^{2}=Var(X)=E\left(X^{2}\right)-\mu^{2}`
+
+which are functions of moments. moment-generating functions can sometimes make finding the mean and variance of a random variable simpler.
+
 
 Let X be a random variable. It’s moment generating function (mgf) is denoted and defined as
 
