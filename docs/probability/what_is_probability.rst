@@ -190,11 +190,17 @@ When selecting more than one item without replacement and ``order does not matte
 
 Difference Between Permutation and Combination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The permutation is the number of ways to arrange the elements of a set.
-The combination is the number of ways to choose k elements from a set of n elements.
+The permutation is the number of ways to arrange the elements of a set (order matters).
+The combination is the number of ways to choose k elements from a set of n elements (order doesn’t matter).
 
     | Arranging people, digits, numbers, alphabets, letters, and colours are examples of permutations.
     | Selection of menu, food, clothes, subjects, the team are examples of combinations.
+
+| Combination: Picking a team of 3 people from a group of 10. .
+| Permutation: Picking a President, VP and Waterboy from a group of 10. .
+
+| Combination: Choosing 3 desserts from a menu of 10. C(10,3) = 120.
+| Permutation: Listing your 3 favorite desserts, in order, from a menu of 10. P(10,3) = 720.
 
 Sampling Table
 ---------------
