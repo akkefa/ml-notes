@@ -176,12 +176,22 @@ This is perhaps the most useful counting tool. which in english is pronounced **
 
 Permutation
 ^^^^^^^^^^^^
-permutation relates to the act of arranging all the members of a set into some sequence or order or
-**all possible ways of doing something.**
+Permutation relates to the act of arranging all the members of a set into some sequence or order.
+
+Any ordered sequence of k objects taken from a set of n distinct objects is called a permutation of size k.
+
+.. math::
+    \textbf{All possible ways of doing something } \\
+    {P}_{n,k}  = \frac{n!}{(n-k)!}
 
 When selecting more than one item without replacement and ``order does matter``.
 
-:math:`{P}_{n,k}  = \frac{n!}{(n-k)!}`
+Example
+^^^^^^^^
+Suppose an organization has 60 members. One person is selected at random to be the president, another
+person is selected as the vice-president, and a third is selected as the treasurer.
+How many ways can this be done? (This would be the cardinality of the sample space.)
+
 
 Combination
 ^^^^^^^^^^^^
