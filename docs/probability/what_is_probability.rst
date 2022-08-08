@@ -175,7 +175,7 @@ This is perhaps the most useful counting tool. which in english is pronounced **
 | **Without replacement** means the same item cannot be selected more than once.
 
 Permutation
-^^^^^^^^^^^^
+-----------
 Permutation relates to the act of arranging all the members of a set into some sequence or order.
 
 Any ordered sequence of k objects taken from a set of n distinct objects is called a permutation of size k.
@@ -188,15 +188,37 @@ When selecting more than one item without replacement and ``order does matter``.
 
 Example
 ^^^^^^^^
-Suppose an organization has 60 members. One person is selected at random to be the president, another
-person is selected as the vice-president, and a third is selected as the treasurer.
-How many ways can this be done? (This would be the cardinality of the sample space.)
+::
+
+    Suppose an organization has 60 members. One person is selected at random to be the president, another
+    person is selected as the vice-president, and a third is selected as the treasurer.
+    How many ways can this be done? (This would be the cardinality of the sample space.)
+
+.. math::
+    P_{3,60} = 60.59.58 = \frac{60!}{57!} = 205,320
 
 
 Combination
-^^^^^^^^^^^^
+-----------
 When selecting more than one item without replacement and ``order does not matter``.
-:math:`{C}_{n,k} = \binom nk = {n \choose k, n-k} = \frac{n!}{k!(n-k)!}`
+
+Given n distinct objects, any unordered subset of size k of the objects is called a combination.
+
+.. math::
+    {C}_{n,k} = \binom nk = {n \choose k, n-k} = \frac{n!}{k!(n-k)!}
+
+Example
+^^^^^^^^
+::
+
+    Suppose we have 60 people and want to choose a 3 person team (order is not important). How many combinations are possible?
+
+.. image:: https://cdn.mathpix.com/snip/images/eEGnRZmiNWJNpTaw6JOAeuiNBuVf5fset3FuRHXZp5c.original.fullsize.png
+    :alt: Combination
+    :align: center
+    :width: 80%
+
+
 
 Difference Between Permutation and Combination
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
