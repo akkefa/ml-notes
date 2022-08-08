@@ -218,6 +218,45 @@ Example
     :align: center
     :width: 80%
 
+::
+
+    Suppose we have the same 60 people, 35 are female and 25 are male. We need to select a committee of 11 people.
+    How many ways can such a committee be formed?
+
+.. math::
+    {C}_{60,11} = \frac{60!}{11!(60-11)!} = |S|
+
+::
+
+    What is the probability that a randomly selected committee will contain at least 5 men and at least 5
+    women? (Assume each committee is equally likely.)
+
+.. math::
+    \textbf{P(at least 5M and at least 5W on committee)}
+
+    \begin{aligned}
+    &=P(5 m+6 w)+p(6 m+5 w) \\
+    &=\frac{\left(\begin{array}{c}
+    25 \\
+    5
+    \end{array}\right)\left(\begin{array}{c}
+    35 \\
+    6
+    \end{array}\right)}{\left(\begin{array}{c}
+    60 \\
+    11
+    \end{array}\right)}+\frac{\left(\begin{array}{c}
+    25 \\
+    6
+    \end{array}\right)\left(\begin{array}{c}
+    35 \\
+    5
+    \end{array}\right)}{\left(\begin{array}{c}
+    60 \\
+    11
+    \end{array}\right)}
+    \end{aligned}
+
 
 
 Difference Between Permutation and Combination
