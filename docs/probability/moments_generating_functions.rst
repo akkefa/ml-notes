@@ -116,6 +116,10 @@ Key points
 
 Method of Moments Estimators(MMEs)
 ===================================
+
+.. centered::
+    Method of moments means you set sample moments equal to population/theoretical moments.
+
 It totally makes sense if you're trying to estimate the mean or average out there in the entire population.
 That you should use the sample mean or sample average of the values in the sample, but what about parameters with not
 such an obvious interpretation?
