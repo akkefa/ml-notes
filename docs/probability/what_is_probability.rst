@@ -40,8 +40,8 @@ Some of the important probability terms are discussed here.
 
 .. glossary::
     Experiment or Trial
-        | Experiment is any action or process that generates observations Or A series of actions where the outcomes are always uncertain.
-        | E.g. The tossing of a coin, Selecting a card from a deck of cards, throwing a dice, etc.
+        | Experiment is any action or process that generates observations or outcomes.
+        | E.g. The tossing of a coin, selecting a card from a deck of cards, throwing a dice etc.
 
     Sample space
         | Sample space of an experiment, denoted :math:`S`, is the set of all possible outcomes of an experiment or trial.
