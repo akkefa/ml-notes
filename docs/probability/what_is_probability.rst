@@ -144,9 +144,11 @@ Factorial
 You may have used the factorial for simple arithmetic calculations.
 
 .. math::
+    \begin{gather}
     n! = n \times n-1 \times n-2 \times \ldots \times 1 \\
     5! = 5 \times 4 \times 3 \times 2 \times1 \\
-    n! = \prod_{i=1}^{n} i
+    \large n! = \prod_{i=1}^{n} i
+    \end{gather}
 
 Another use for the factorial function is to count how many ways you can choose things from a collection of things or
 find how many ways things can be arranged.
@@ -172,7 +174,7 @@ The binomial coefficient is a mathematical formula that counts the number of way
 This is perhaps the most useful counting tool. which in english is pronounced **n choose x** = :math:`\tbinom{n}{k}`.
 
 .. math::
-    \tbinom{n}{k} = \frac{n!}{k!(n-k)!}
+   \large \tbinom{n}{k} = \frac{n!}{k!(n-k)!}
 
 
 | **With replacement** means the same item can be chosen more than once.
@@ -185,8 +187,10 @@ Permutation relates to the act of arranging all the members of a set into some s
 Any ordered sequence of k objects taken from a set of n distinct objects is called a permutation of size k.
 
 .. math::
+    \begin{gather}
     \textbf{All possible ways of doing something } \\
     {P}_{n,k}  = \frac{n!}{(n-k)!}
+    \end{gather}
 
 When selecting more than one item without replacement and ``order does matter``.
 
