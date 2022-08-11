@@ -285,6 +285,28 @@ Variance, MSE, and Bias
     MSE(\hat{\theta})=Var[\hat{\theta}]+(B[\hat{\theta}])^{2}
 
 
+Practise
+^^^^^^^^^^
+
+    Let :math:`X_{1}, X_{2}, \ldots, X_{n}` be a random sample from the Poisson distribution with parameter :math:`\lambda>0`.
+    Let :math:`\hat{\theta}` be the MLE for :math:`\lambda`.
+    What is the mean-squared error of :math:`\widehat{\lambda}` as an estimator of :math:`\lambda` ?
+
+.. math::
+
+    x \sim \text { poisson ( } \lambda \text { ) and MLE of } \lambda=\bar{X}   \\
+    \text{ Proof } \\
+    E(\bar{X}) = E[\sum_{i=1}^{n} X_{i}] = \frac{1}{n} E\left[\sum_{n=1}^{n} x_{i}\right] \\
+    E(\bar{X}) = \frac{n}{n} E\left[X_{i}\right] = \lambda \\
+    \\
+    MSE(\hat{x})=Var(\hat{\lambda})+(Bias(\lambda))^{2} \\
+    = Var(\hat{\lambda})+ 0 \\
+    = Var (\frac{1}{n} \sum_{i=1}^{n} x_{i}) \\
+    = \frac{n}{n^{2}} \times \lambda = \frac{\lambda}{n}
+
+
+
+
 
 MLE Properties
 ================
