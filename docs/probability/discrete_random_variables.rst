@@ -34,7 +34,9 @@ PMF
 Mean (Expected Value)
 ^^^^^^^^^^^^^^^^^^^^^^
 .. math::
+    \begin{gather}
     E(X)= 0 * P(x=0) + 1 * P(x=1) \\ = 0 * (1-p) + 1 * (p) \\ = p
+    \end{gather}
 
 Variance
 ^^^^^^^^^
