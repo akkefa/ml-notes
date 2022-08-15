@@ -1,2 +1,5 @@
-Sphinx
+Sphinx~=5.1
+myst-parser~=0.18
+myst-nb~=0.16
+sphinx-inline-tabs
 sphinx_rtd_theme

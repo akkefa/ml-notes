@@ -1,1 +1,3 @@
+myst-parser~=0.18
+myst-nb~=0.16
 sphinx-inline-tabs
