@@ -368,34 +368,4 @@ torch.combinations(a, with_replacement=True)
    Total number of person = 8 men + 7 women = 15 \
    15 choose 6 = 5005
 
-## Conditional Probability and Bayes Theorem
-
-Two events A and B from the `same sample space S`. Calculate the probability of event A knowing that event B has occurred.
-B is the “conditioning event”. $P(A|B)$
-
-Conditional Probability is $P(A \mid B)=\frac{P(A \cap B)}{P(B)}, \quad P(B)>0$
-
-This leads to the multiplication rule  $P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)$
-
-**Bayes Theorem** $P(A \mid B) = \frac{P(B \mid A)P(A)} {P(B)}$
-
-### Law of Total Probability
-
-$B=(B \cap A) \cup\left(B \cap A^{c}\right)$
-
-$P(B)=P(B \cap A)+P\left(B \cap A^{c}\right)=P(B \mid A) P(A)+P\left(B \mid A^{c}\right) P\left(A^{c}\right)$
-
-### Independence and Mutually Exclusive Events
-
-Two events are `independent` if knowing the outcome of one event does not change the probability of the other.
-
-- Flip a two-sided coin repeatedly. Knowing the outcome of one flip does not change the probability of the next.
-
-Two events, A and B, are independent if $P(A|B) = P(A)$, or equivalently $P(B|A) = P(B)$.
-
-`Recall:` $P(A \mid B)=\frac{P(A \cap B)}{P(B)}$
-
-then, if A and B are independent, we get the multiplication
-rule for independent events:
-
-$P(A \cap B)=P(A) P(B)$
+---
