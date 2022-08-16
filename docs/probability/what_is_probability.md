@@ -168,6 +168,8 @@ the number of permutations when ordering A,B and C is 3!
 
 > 3 ⋅ 2 ⋅ 1 = 6
 
+##### Python Solution
+
 ```{code-cell}
 from math import factorial
 
