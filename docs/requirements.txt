@@ -1,0 +1,2 @@
+myst-nb~=0.16
+sphinx-inline-tabs

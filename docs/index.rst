@@ -12,7 +12,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   notation
+   mathematical_notation.md
 
 .. toctree::
    :caption: Probability
