@@ -78,8 +78,7 @@ Complement
 ```
 
 ```{admonition} Interview Question
-Q: What is the sample space of rolling Two Dice?
-
+Q: What is the sample space of rolling Two Dice?\
 Ans: The total number of joint outcomes (a,b) is 6 times 6 which is 36.
 ```
 
@@ -129,8 +128,7 @@ Since there are 3 choices for size, 4 choices for toppings, and 2 choices for pi
 Now that we have counted the total of number of possible pizzas, it is easy to solve various probability problems.
 
 ```{admonition} Interview Question
-Q: What are the outcomes of flipping a fair coin and simultaneously rolling a fair die?
-
+Q: What are the outcomes of flipping a fair coin and simultaneously rolling a fair die?\
 Ans: 6 x 2 = 12 outcomes.
 ```
 
