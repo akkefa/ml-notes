@@ -4,7 +4,6 @@
 # Random Variables
 
 ## Definition
-
 A random variable rv is a real-valued function, whose domain is the entire sample space of an experiment.
 Think of the domain as the set of all possible values that can go into a function. A function takes the domain/input,
 processes it, and renders an output/range. This set of real values obtained from the random variable is called its
@@ -12,9 +11,12 @@ processes it, and renders an output/range. This set of real values obtained from
 
 A random variable (rv) is a function that maps events (from the sample space S) to the real numbers.
 
-Denote random variables by a **capital letters** near the end of the alphabet `(e.g. X, Y ).`
+The domain of a random variable is a sample space, which is represented as the collection of possible outcomes of a
+random event. For instance, when a coin is tossed, only two possible outcomes are acknowledged such as heads or tails.
 
-### Types of Random Variables
+Random variables Denote by a **capital letters** near the end of the alphabet `(e.g. X, Y ).`
+
+## Types of Random Variables
 
 1. Discrete random variables
 2. Continuous random variables
