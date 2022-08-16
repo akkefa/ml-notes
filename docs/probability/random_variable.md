@@ -4,30 +4,36 @@
 # Random Variables
 
 ## Definition
-A random variable rv is a real-valued function, whose domain is the entire sample space of an experiment.
+- A random variable rv is a real-valued function, whose domain is the entire sample space of an experiment.
 Think of the domain as the set of all possible values that can go into a function. A function takes the domain/input,
 processes it, and renders an output/range. This set of real values obtained from the random variable is called its
 `range`.
 
-A random variable (rv) is a function that maps events (from the sample space S) to the real numbers.
+- A random variable (rv) is a function that maps events (from the sample space S) to the real numbers.
+- It's a function which performs the mapping of the outcomes of a random process to a numeric value.
 
 The domain of a random variable is a sample space, which is represented as the collection of possible outcomes of a
 random event. For instance, when a coin is tossed, only two possible outcomes are acknowledged such as heads or tails.
 
 Random variables Denote by a **capital letters** near the end of the alphabet `(e.g. X, Y ).`
 
+```{note}
+Why is it called a random variable?\
+Because we think of it as a variable that take random value intuitively. Formally they are function.
+```
+
 ## Types of Random Variables
 
-1. Discrete random variables
-2. Continuous random variables
-3. Mixed random variables
+```{glossary}
+Discrete random variable
+    A discrete random variable is a type of random variable that has a countable number of distinct values that can be
+    assigned to it, such as in a coin toss.
 
-**Example:**
-Consider the experiment of tossing two coins. For the experiment, the sample space is
+Continuous random variable
+    A continuous random variable stands for any amount within a specific range or set of points and can reflect an infinite
+    number of potential values, such as the average rainfall in a region.
 
-$$
-S=\{(\mathrm{H}, \mathrm{H}),(\mathrm{H}, \mathrm{T}),(\mathrm{T}, \mathrm{H}),(\mathrm{T}, \mathrm{T})\}
-$$
+```
 
 **Big Picture** In statistics, we will model populations using random variables (e.g. mean, variance) of these random
 variables will tell us about the population we are studying.
