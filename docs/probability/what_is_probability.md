@@ -1,3 +1,9 @@
+---
+file_format: mystnb
+kernelspec:
+  name: python3
+---
+
 ```{title} What is Probability?
 ```
 
@@ -112,7 +118,8 @@ this point. Of course, this is not always the correct approach for real world pr
 
 ### Multiplication Rule
 
-To understand the Multiplication Rule, visualize a process that has multiple steps, where each step has multiple choices.
+To understand the Multiplication Rule, visualize a process that has multiple steps, where each step has multiple
+choices.
 For example, say that you are ordering a pizza.
 
 > 1. Size (small, medium, or large)
@@ -137,7 +144,8 @@ Ans: 6 x 2 = 12 outcomes.
 You may have used the factorial for simple arithmetic calculations.
 
 $$
-\begin{gather} n! = n \times n-1 \times n-2 \times \ldots \times 1 \\ 5! = 5 \times 4 \times 3 \times 2 \times1 \\ \large n! = \prod_{i=1}^{n} i \end{gather}
+\begin{gather} n! = n \times n-1 \times n-2 \times \ldots \times 1 \\ 5! = 5 \times 4 \times 3 \times 2 \times1 \\
+\large n! = \prod_{i=1}^{n} i \end{gather}
 $$
 
 Another use for the factorial function is to count how many ways you can choose things from a collection of things or
@@ -160,9 +168,18 @@ the number of permutations when ordering A,B and C is 3!
 
 > 3 ⋅ 2 ⋅ 1 = 6
 
+```{code-cell}
+from math import factorial
+
+print(factorial(3))
+print(factorial(6))
+
+```
+
 ### Binomial Coefficient
 
-The binomial coefficient is a mathematical formula that counts the number of ways to choose k items from a collection of n items.
+The binomial coefficient is a mathematical formula that counts the number of ways to choose k items from a collection of
+n items.
 This is perhaps the most useful counting tool. which in english is pronounced **n choose x** = $\tbinom{n}{k}$.
 
 $$
