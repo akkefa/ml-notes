@@ -5,7 +5,7 @@
 
 ## Probability and Statistics
 
-```{list-table} List tables can have captions like this one.
+```{list-table}
 :widths: 30 70
 :header-rows: 1
 
@@ -31,7 +31,6 @@
 | $\alpha$  | Regularization parameter                                                         |
 | $\Delta$  | Distance between two points used to calculate the derivative for instance        |
 | $\lambda$ | Number of events in a Poisson distribution. It can also refer to the eigenvalues |
-
 
 ## Sets and Graphs
 
