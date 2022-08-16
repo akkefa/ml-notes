@@ -1,5 +1,4 @@
 Sphinx~=5.1
-myst-nb~=0.16
-sphinx-inline-tabs
+-r docs/requirements.txt
 sphinx_rtd_theme
 sphinx-autobuild
