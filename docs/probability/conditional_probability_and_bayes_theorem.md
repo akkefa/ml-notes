@@ -9,6 +9,12 @@ kernelspec:
 
 # Bayes Theorem
 
+## Definition
+Bayes theorem is also known as the formula for the **probability of causes**. 
+
+Theorem states that the conditional probability of an event, based on the occurrence of another event, is equal to the
+likelihood of the second event given the first event multiplied by the probability of the first event.
+
 Two events A and B from the `same sample space S`. Calculate the probability of event A knowing that event B has occurred.
 B is the “conditioning event”. $P(A|B)$
 
