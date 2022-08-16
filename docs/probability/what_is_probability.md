@@ -355,6 +355,19 @@ torch.combinations(a, with_replacement=True)
 +---------------------+-----------------------------+--+----------------------------+--+
 ```
 
+#### Interview Questions
+
+1. There are 25 students in a class. Find the number of ways in which a committee of 3 students is to be formed?\
+    25 choose 3 = 2300
+
+2. In a meeting between two countries, each country has 12 delegates. All the delegates of one country shake hands with
+    all delegates of the other country. Find the number of handshakes possible?\
+    Total number of handshakes = 12 x 12 = 144
+
+3. How many groups of 6 persons can be formed from 8 men and 7 women?\
+   Total number of person = 8 men + 7 women = 15 \
+   15 choose 6 = 5005
+
 ## Conditional Probability and Bayes Theorem
 
 Two events A and B from the `same sample space S`. Calculate the probability of event A knowing that event B has occurred.
