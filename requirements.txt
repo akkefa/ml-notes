@@ -2,3 +2,4 @@ Sphinx~=5.1
 myst-nb~=0.16
 sphinx-inline-tabs
 sphinx_rtd_theme
+sphinx-autobuild
