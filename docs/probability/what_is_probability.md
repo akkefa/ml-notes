@@ -355,7 +355,7 @@ torch.combinations(a, with_replacement=True)
 +---------------------+-----------------------------+--+----------------------------+--+
 ```
 
-#### Interview Questions
+### Interview Questions
 
 1. There are 25 students in a class. Find the number of ways in which a committee of 3 students is to be formed?\
     25 choose 3 = 2300
