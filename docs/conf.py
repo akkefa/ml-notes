@@ -33,12 +33,17 @@ release = __version__
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'myst_nb',
     'sphinx.ext.autodoc',
     'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',
     'sphinx_inline_tabs',
-    'myst_nb',
+]
+
+myst_enable_extensions = [
+    "dollarmath",
+    "amsmath",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
