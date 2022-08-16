@@ -44,6 +44,7 @@ extensions = [
 myst_enable_extensions = [
     "dollarmath",
     "amsmath",
+    "fieldlist",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
