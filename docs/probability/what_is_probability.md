@@ -319,22 +319,27 @@ print(torch.combinations(a, r=3))
 torch.combinations(a, with_replacement=True)
 ```
 
-#### Difference Between Permutation and Combination
+##### Difference Between Permutation and Combination
 
-The permutation is the number of ways to arrange the elements of a set (order matters).
-The combination is the number of ways to choose k elements from a set of n elements (order doesn’t matter).
+```{list-table} 
+:widths: 50 50
+:header-rows: 1
+:align: "center"
 
-> Arranging people, digits, numbers, alphabets, letters, and colours are examples of permutations.
->
-> Selection of menu, food, clothes, subjects, the team are examples of combinations.
+* - Permutation
+  - Combination
+* - Order matters
+  - Order doesn’t matter
+* - Number of ways to arrange the elements of a set.
+  - Number of ways to choose k elements from a set of n elements.
+* - Arranging people, digits, numbers, alphabets, letters, and colours.
+  - Selection of menu, food, clothes, subjects, the team.
+* - Picking a President, VP and Waterboy from a group of 10. 
+  - Picking a team of 3 people from a group of 10.
+* - Listing your 3 favorite desserts, in order, from a menu of 10. P(10,3) = 720.
+  - Choosing 3 desserts from a menu of 10. C(10,3) = 120.
 
-Combination: Picking a team of 3 people from a group of 10. .
-
-Permutation: Picking a President, VP and Waterboy from a group of 10. .
-
-Combination: Choosing 3 desserts from a menu of 10. C(10,3) = 120.
-
-Permutation: Listing your 3 favorite desserts, in order, from a menu of 10. P(10,3) = 720.
+```
 
 ### Sampling Table
 
