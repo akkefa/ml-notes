@@ -281,6 +281,32 @@ $$
 \end{aligned}
 $$
 
+```
+What is the probability of drawing the ace of spades twice in a row? (Assume that any card drawn on the first draw will
+be put back in the deck before the second draw.)
+```
+$$ 
+P(\text{ace of spades}) \times P(\text{ace of spades}) = \left(\frac{1}{52}\right)^2 =
+\frac{1}{2704} = 0.00037 = 0.037\% 
+$$
+
+```
+You draw a card from a deck of cards. After replacing the drawn card back in the deck and shuffling thoroughly,
+what is the probability of drawing the same card again? 
+```
+$$ P(\text{any card}) = \frac{52}{52} = 1 $$
+$$ P(\text{same card as first draw}) = \frac{1}{52} \approx 0.019 $$
+$$ P(\text{any card})P(\text{same card as first draw}) = (1)(\frac{1}{52}) = \frac{1}{52} \approx 0.019$$
+
+```
+Use $n \choose k$ to calculate the probability of throwing three heads in five coin tosses.
+```
+$$ 
+{n \choose k} = {5 \choose 3} = \frac{5!}{3!(5 - 3)!} = \frac{5!}{(3!)(2!)} = \frac{5 \times 4 \times 3 \times 2
+\times 1}{(3 \times 2 \times 1)(2 \times 1)} = \frac{120}{(6)(2)} = \frac{120}{12} = 10
+$$
+
+
 #### Difference Between Permutation and Combination
 
 The permutation is the number of ways to arrange the elements of a set (order matters).
