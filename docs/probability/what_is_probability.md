@@ -306,6 +306,16 @@ $$
 \times 1}{(3 \times 2 \times 1)(2 \times 1)} = \frac{120}{(6)(2)} = \frac{120}{12} = 10
 $$
 
+##### Torch combinations
+
+```{code-cell}
+import torch
+
+a = torch.tensor([1, 2, 3])
+print(torch.combinations(a))
+print(torch.combinations(a, r=3))
+torch.combinations(a, with_replacement=True)
+```
 
 #### Difference Between Permutation and Combination
 
