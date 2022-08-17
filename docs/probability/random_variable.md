@@ -94,6 +94,19 @@ The cdf of random variable X has the following properties:
 3. If the maximum value of $X$ is $b$, then $F_{X}(b)=1$. 
 4. Also called the distribution function.
 
+### Example
+Suppose X is a discrete random variable. Let the pmf of X be equal to
+
+$$
+f(x)=\frac{5-x}{10}, \quad x=1,2,3,4
+$$
+
+Suppose we want to find the cdf of $X$. The cdf is $F_{X}(t)=P(X \leq t)$.
+- For $t=1, P(X \leq 1)=P(X=1)=f(1)=\frac{5-1}{10}=\frac{4}{10}$.
+- For $t=2, P(X \leq 2)=P(X=1$ or $X=2)=P(X=1)+P(X=2)=\frac{5-1}{10}+\frac{5-2}{10}=\frac{4+3}{10}=\frac{7}{10}$
+- For $t=3, P(X \leq 3)=\frac{5-1}{10}+\frac{5-2}{10}+\frac{5-3}{10}=\frac{4+3+1}{10}=\frac{9}{10}$.
+- For $t=4, P(X \leq 4)=\frac{5-1}{10}+\frac{5-2}{10}+\frac{5-3}{10}+\frac{5-4}{10}=\frac{10}{10}=1$.
+
 ### Indicator function
 
 Let A = Set of real numbers
