@@ -39,22 +39,25 @@ Some of the applications of probability are predicting results of the following 
 - In the share market, chances of getting the hike of share prices
 
 ## Probability Terms
-
+The first thing we do when we start thinking about the probability list a number of things that could possibly happen.\
 Some of the important probability terms are discussed here.
 
 ```{glossary}
+Sample Space
+    (sample-space)=
+    Sample space of an experiment, denoted $S$, is the set of all possible outcomes of an experiment or trial. \
+    Suppose that we toss a die. Six numbers, from 1 to 6, can appear face up, but we do not yet know which one of them
+    will appear. The sample space is S = {1,2,3,4,5,6}.\
+    Tossing a coin, Sample Space = {H,T}.
+
 Experiment or Trial
     Experiment is any action or process that generates observations or outcomes. \
     E.g. The tossing of a coin, selecting a card from a deck of cards, throwing a dice etc.
 
-Outcome
+Outcome or Sample Point
     An outcome is a possible result of an experiment or trial.\
-    E.g. The outcome of tossing a coin is a head or a tail.
-
-Sample space
-    Sample space of an experiment, denoted $S$, is the set of all possible outcomes of an experiment or trial. \
-    Tossing a coin, Sample Space = {H,T} \
-    Rolling a die, S = {1,2,3,4,5,6} \
+    E.g. The outcome of tossing a coin is a head or a tail. \
+    Roll a die, the outcome is a number between 1 and 6. Each of the six numbers is a sample point
 
 Event
     Event is any possible outcome, or combination of outcomes, of an experiment.\
@@ -137,6 +140,11 @@ Now that we have counted the total of number of possible pizzas, it is easy to s
 ```{admonition} Interview Question
 Q: What are the outcomes of flipping a fair coin and simultaneously rolling a fair die?\
 Ans: 6 x 2 = 12 outcomes.
+
+Q: How many possible license plates could be stamped if each license plate were required to have exactly 3 letters
+   and 4 numbers?\
+Ans: 26	x	26	x	26	x	10	x	10	x	10	x	10 = 175,650,000
+
 ```
 
 ### Factorial
@@ -154,7 +162,7 @@ find how many ways things can be arranged.
 #### Example
 
 Counting the the number of ways to order the letters A, B, and C. We will define a specific arrangement or order as a permutation.
-You could likely figure this out by just writing out all of the permutations:
+You could likely figure this out by just **writing out all of the permutations**:
 
 ```
 {ABC,ACB,BAC,BCA,CAB,CBA}
@@ -167,6 +175,18 @@ solution.
 the number of permutations when ordering A,B and C is 3!
 
 > 3 ⋅ 2 ⋅ 1 = 6
+
+Another example, In how many ways can 7 different books be arranged on a shelf?
+
+We could use the Multiplication Principle to solve this problem. We have seven positions that we can fill with seven
+books. There are 7 possible books for the first position, 6 possible books for the second position, five possible books
+for the third position, and so on. The Multiplication Principle tells us therefore that the books can be arranged in:
+
+$$ 7 ⋅ 6 ⋅ 5 ⋅ 4 ⋅ 3 ⋅ 2 ⋅ 1 = 5040 $$
+
+Alternatively, we can use the simple rule for counting permutations. P = 7! = 5040
+
+##### Python Solution
 
 ```{code-cell}
 from math import factorial
@@ -306,23 +326,46 @@ $$
 \times 1}{(3 \times 2 \times 1)(2 \times 1)} = \frac{120}{(6)(2)} = \frac{120}{12} = 10
 $$
 
+```
+Twelve (12) patients are available for use in a research study. Only seven (7) should be assigned to receive the study
+treatment. How many different subsets of seven patients can be selected?
+```
+$$ 
+{n \choose k} = {12 \choose 7} = \frac{12!}{7!(12 - 7)!} = 792
+$$
 
-#### Difference Between Permutation and Combination
+##### Torch combinations
 
-The permutation is the number of ways to arrange the elements of a set (order matters).
-The combination is the number of ways to choose k elements from a set of n elements (order doesn’t matter).
+```{code-cell}
+import torch
 
-> Arranging people, digits, numbers, alphabets, letters, and colours are examples of permutations.
->
-> Selection of menu, food, clothes, subjects, the team are examples of combinations.
+a = torch.tensor([1, 2, 3])
+print(torch.combinations(a))
+print(torch.combinations(a, r=3))
+torch.combinations(a, with_replacement=True)
+```
 
-Combination: Picking a team of 3 people from a group of 10. .
+##### Difference Between Permutation and Combination
 
-Permutation: Picking a President, VP and Waterboy from a group of 10. .
+```{list-table} 
+:widths: 50 50
+:header-rows: 1
+:align: "center"
 
-Combination: Choosing 3 desserts from a menu of 10. C(10,3) = 120.
+* - Permutation
+  - Combination
+* - Order matters
+  - Order doesn’t matter
+* - Number of ways to arrange the elements of a set.
+  - Number of ways to choose k elements from a set of n elements.
+* - Arranging people, digits, numbers, alphabets, letters, and colours.
+  - Selection of menu, food, clothes, subjects, the team.
+* - Picking a President, VP and Waterboy from a group of 10. 
+  - Picking a team of 3 people from a group of 10.
+* - Listing your 3 favorite desserts, in order, from a menu of 10. P(10,3) = 720.
+  - Choosing 3 desserts from a menu of 10. C(10,3) = 120.
 
-Permutation: Listing your 3 favorite desserts, in order, from a menu of 10. P(10,3) = 720.
+```
 
 ### Sampling Table
 
@@ -338,34 +381,14 @@ Permutation: Listing your 3 favorite desserts, in order, from a menu of 10. P(10
 +---------------------+-----------------------------+--+----------------------------+--+
 ```
 
-## Conditional Probability and Bayes Theorem
+### Interview Questions
+- There are 25 students in a class. Find the number of ways in which a committee of 3 students is to be formed?\
+  25 choose 3 2300
 
-Two events A and B from the `same sample space S`. Calculate the probability of event A knowing that event B has occurred.
-B is the “conditioning event”. $P(A|B)$
+- In a meeting between two countries, each country has 12 delegates. All the delegates of one country shake hands with
+  all delegates of the other country. Find the number of handshakes possible?\
+  Total number of handshakes = 12 x 12 = 144
 
-Conditional Probability is $P(A \mid B)=\frac{P(A \cap B)}{P(B)}, \quad P(B)>0$
-
-This leads to the multiplication rule  $P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)$
-
-**Bayes Theorem** $P(A \mid B) = \frac{P(B \mid A)P(A)} {P(B)}$
-
-### Law of Total Probability
-
-$B=(B \cap A) \cup\left(B \cap A^{c}\right)$
-
-$P(B)=P(B \cap A)+P\left(B \cap A^{c}\right)=P(B \mid A) P(A)+P\left(B \mid A^{c}\right) P\left(A^{c}\right)$
-
-### Independence and Mutually Exclusive Events
-
-Two events are `independent` if knowing the outcome of one event does not change the probability of the other.
-
-- Flip a two-sided coin repeatedly. Knowing the outcome of one flip does not change the probability of the next.
-
-Two events, A and B, are independent if $P(A|B) = P(A)$, or equivalently $P(B|A) = P(B)$.
-
-`Recall:` $P(A \mid B)=\frac{P(A \cap B)}{P(B)}$
-
-then, if A and B are independent, we get the multiplication
-rule for independent events:
-
-$P(A \cap B)=P(A) P(B)$
+- How many groups of 6 persons can be formed from 8 men and 7 women?\
+  Total number of person = 8 men + 7 women = 15 \
+  15 choose 6 = 5005
