@@ -4,7 +4,7 @@
 # Random Variables
 
 ## Definition
-- A random variable rv is a real-valued function, whose domain is the entire sample space of an experiment.
+- A random variable rv is a real-valued function, whose domain is the entire [sample space](sample-space) of an experiment.
 Think of the domain as the set of all possible values that can go into a function. A function takes the domain/input,
 processes it, and renders an output/range. This set of real values obtained from the random variable is called its
 `range`.

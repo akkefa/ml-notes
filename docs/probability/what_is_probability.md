@@ -52,6 +52,7 @@ Outcome
     E.g. The outcome of tossing a coin is a head or a tail.
 
 Sample space
+    (sample-space)=
     Sample space of an experiment, denoted $S$, is the set of all possible outcomes of an experiment or trial. \
     Tossing a coin, Sample Space = {H,T} \
     Rolling a die, S = {1,2,3,4,5,6} \
@@ -379,16 +380,13 @@ torch.combinations(a, with_replacement=True)
 ```
 
 ### Interview Questions
+- There are 25 students in a class. Find the number of ways in which a committee of 3 students is to be formed?\
+  25 choose 3 2300
 
-1. There are 25 students in a class. Find the number of ways in which a committee of 3 students is to be formed?\
-    25 choose 3 = 2300
+- In a meeting between two countries, each country has 12 delegates. All the delegates of one country shake hands with
+  all delegates of the other country. Find the number of handshakes possible?\
+  Total number of handshakes = 12 x 12 = 144
 
-2. In a meeting between two countries, each country has 12 delegates. All the delegates of one country shake hands with
-    all delegates of the other country. Find the number of handshakes possible?\
-    Total number of handshakes = 12 x 12 = 144
-
-3. How many groups of 6 persons can be formed from 8 men and 7 women?\
-   Total number of person = 8 men + 7 women = 15 \
-   15 choose 6 = 5005
-
----
+- How many groups of 6 persons can be formed from 8 men and 7 women?\
+  Total number of person = 8 men + 7 women = 15 \
+  15 choose 6 = 5005
