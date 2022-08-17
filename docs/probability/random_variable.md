@@ -272,10 +272,6 @@ $$
 E(X+Y)=E(X)+E(Y)
 $$
 
-### Examples
-
-$X \sim N(\mu, \sigma^2)= E[X]=\int_{-\infty}^{\infty} x f(x) d x=\int_{-\infty}^{\infty} x \frac{1}{\sqrt{2 \pi \sigma^{2}}} e^{-\frac{1}{2 \sigma^{2}}(x-\mu)^{2}} d x = \mu$
-
 ## Variance
 
 - Measures how far we expect our random variable to be from the mean.
