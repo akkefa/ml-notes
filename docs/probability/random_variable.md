@@ -182,12 +182,7 @@ $$
 E(X)=(\$ 3)(0.2)+(-\$ 1)(0.8)=\$-0.20
 $$
 
-What does **in the long run** mean? If you play, are you guaranteed to lose no more than 20 cents?\
-If you play and lose, you are guaranteed to lose $\$ 1$ ! An expected loss of 20 cents means that if you played
-the game over and over and over and over .... again, the average of your $\$ 3$ winnings and your $\$ 1$ losses would
-be a 20 cent loss. "In the long run" means that you can't draw conclusions about one or two plays, but rather thousands
-and thousands of plays.
-
+In the long run you guaranteed to lose no more than 20 cents.
 
 ### For continuous random variables
 
