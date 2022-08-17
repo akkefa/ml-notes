@@ -39,23 +39,24 @@ Some of the applications of probability are predicting results of the following 
 - In the share market, chances of getting the hike of share prices
 
 ## Probability Terms
-
+The first thing we do when we start thinking about the probability list a number of things that could possibly happen.\
 Some of the important probability terms are discussed here.
 
 ```{glossary}
+Sample Space
+    (sample-space)=
+    Sample space of an experiment, denoted $S$, is the set of all possible outcomes of an experiment or trial. \
+    Suppose that we toss a die. Six numbers, from 1 to 6, can appear face up, but we do not yet know which one of them
+    will appear. The sample space is S = {1,2,3,4,5,6}.\
+    Tossing a coin, Sample Space = {H,T}.
+
 Experiment or Trial
     Experiment is any action or process that generates observations or outcomes. \
     E.g. The tossing of a coin, selecting a card from a deck of cards, throwing a dice etc.
 
-Outcome
+Outcome or Sample Point
     An outcome is a possible result of an experiment or trial.\
     E.g. The outcome of tossing a coin is a head or a tail.
-
-Sample space
-    (sample-space)=
-    Sample space of an experiment, denoted $S$, is the set of all possible outcomes of an experiment or trial. \
-    Tossing a coin, Sample Space = {H,T} \
-    Rolling a die, S = {1,2,3,4,5,6} \
 
 Event
     Event is any possible outcome, or combination of outcomes, of an experiment.\
