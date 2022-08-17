@@ -38,10 +38,20 @@ Continuous random variable
 **Big Picture** In statistics, we will model populations using random variables (e.g. mean, variance) of these random
 variables will tell us about the population we are studying.
 
-## Probability mass function (PMF)
+## Probability mass function (P.M.F)
+The probability that a discrete random variable $X$ takes on a particular value $x$ that is $P(X=x)$ is denoted by
 
-A probability mass function of a discrete rv, X and denoted by a lowercase f of x. IF we have two RV X and Y then we use
-subscripts to denote the PMF  $f_X(x) and f_Y(y)$
+$$
+ \text{p.m.f } \large =  f(x) = f_x(x) = f_y(y)
+$$
+
+### Properties
+The probability mass function, $P(X=x)=f(x)$, of a discrete random variable $X$ is a function that satisfies the
+following properties:
+
+- All of the probabilities must be positive. $P(X=x)=f(x)>0$, if $x \in$ the support $S$
+- Sum of all probabilities of same sample space equals to 1.  $\sum_{x \in S} f(x)=1$
+- $P(X \in A)=\sum_{x \in A} f(x)$
 
 $\text{Random variable}=X= \begin{cases} 1, & \text { if "Heads" } \\ 0, & \text { if "Tails" }  \end{cases} =
 \begin{cases} P(X=1), & \text { if "Heads" } \\ P(X=0), & \text { if "Tails" }  \end{cases}$
