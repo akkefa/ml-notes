@@ -123,6 +123,22 @@ $$
 f(x) = Curve under which area represent the probability $P(a \leq X \leq b)=\int_{a}^{b} f(x) d x$
 
 ## Expected Value (Mean or Average)
+The concept was first devised in the 17th century to analyze gambling games and answer questions such as:
+
+- how much do I gain - or lose - on average, if I repeatedly play a given gambling game?
+- how much can I expect to gain - or lose - by making a certain bet?
+
+For example, if you play a game where you gain 2\$ with probability 1/2 and you lose 1\$ with probability 1/2,
+then the expected value of the game is half a dollar
+
+$$
+2$ \times \frac{1}{2} + (-1$) \times \frac{1}{2} = \frac{1}{2} $ = 0.5$
+$$
+
+it means that if you play this game many times, and the number of times each of the two possible outcomes occurs
+is proportional to its probability, then on average you gain 1/2\$ each time you play the game.
+
+### Definition
 The expected value or mean of a random variable is a weighted average of all possible outcomes. In the
 case of a continuum of possible outcomes, the expectation is defined by integration.
 
