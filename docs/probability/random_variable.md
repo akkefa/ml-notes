@@ -225,7 +225,7 @@ $\text { Let } x=g^{-1}(y) \text {. Then } d x=\frac{d}{d y} g^{-1}(y) d y$
 $E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x$
 
 ### Properties
-Expectation is a linear operator, which means for our purposes it has a couple of nice properties
+Expectation is a linear operator, which means for our purposes it has a couple of nice properties.
 
 #### Expected value of a constant
 A perhaps obvious property is that the expected value of a constant is equal to the constant itself.
@@ -243,12 +243,11 @@ E[2] = \sum_{x} k P(X=x) = \sum_{x} 2 P(X=x) \\
 \end{gather}
 $$
 
-
 #### Scalar multiplication of a random variable
 If X is a random variable and a is a constant, then
 
 $$
-E(aX) = aE(X)
+E[aX] = aE[X]
 $$
 
 $E(X+Y)=E(X)+E(Y), E(a X)=a E(X)$
