@@ -62,6 +62,24 @@ $$
 p(x)=P(X=x)=P(\text { all } x \in S \mid X(s)=x)
 $$
 
+```{admonition} Interview Question
+Q: Let $f(x)=c x^{2}$ for $x=1,2,3$. Determine the constant $c$ so that the function $f(x)$ satisfies the
+   conditions of being a probability mass function?
+   
+Answer: Using property no 2
+
+$$
+\begin{aligned}
+\sum_{x=1}^{3} f(x) &=\sum_{x=1}^{3} c x^{2}=c \sum_{x=1}^{3} x^{2} \\
+&=c\left[1^{2}+2^{2}+3^{2}\right]=c[1+4+9] \\
+&=c(14) \stackrel{\text { set }}{=} 1 = c=1/14 \\
+f(x) &=\frac{1}{14} x^{2} \text { for } x=1,2,3
+\end{aligned}
+$$
+
+
+```
+
 ### Indicator function
 
 Let A = Set of real numbers
