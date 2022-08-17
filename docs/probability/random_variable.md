@@ -258,6 +258,13 @@ E[2X] = \sum_{x} 2 k P(X=x) = 2 \sum_{x} k P(X=x) \\
 \end{gather}
 $$
 
+#### Expectation of a product of random variables
+Let X and Y be two random variables. In general, there is no easy rule or formula for computing the expected value of
+their product. However, if X and Y are statistically independent, then
+
+$$
+E[XY] = E[X]E[Y]
+$$
 
 
 $E(X+Y)=E(X)+E(Y), E(a X)=a E(X)$
