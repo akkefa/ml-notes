@@ -56,7 +56,8 @@ Experiment or Trial
 
 Outcome or Sample Point
     An outcome is a possible result of an experiment or trial.\
-    E.g. The outcome of tossing a coin is a head or a tail.
+    E.g. The outcome of tossing a coin is a head or a tail. \
+    Roll a die, the outcome is a number between 1 and 6. Each of the six numbers is a sample point
 
 Event
     Event is any possible outcome, or combination of outcomes, of an experiment.\
