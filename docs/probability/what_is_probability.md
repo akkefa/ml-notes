@@ -137,6 +137,11 @@ Now that we have counted the total of number of possible pizzas, it is easy to s
 ```{admonition} Interview Question
 Q: What are the outcomes of flipping a fair coin and simultaneously rolling a fair die?\
 Ans: 6 x 2 = 12 outcomes.
+
+Q: How many possible license plates could be stamped if each license plate were required to have exactly 3 letters
+   and 4 numbers?\
+Ans: 26	x	26	x	26	x	10	x	10	x	10	x	10 = 175,650,000
+
 ```
 
 ### Factorial
@@ -154,7 +159,7 @@ find how many ways things can be arranged.
 #### Example
 
 Counting the the number of ways to order the letters A, B, and C. We will define a specific arrangement or order as a permutation.
-You could likely figure this out by just writing out all of the permutations:
+You could likely figure this out by just **writing out all of the permutations**:
 
 ```
 {ABC,ACB,BAC,BCA,CAB,CBA}
@@ -167,6 +172,16 @@ solution.
 the number of permutations when ordering A,B and C is 3!
 
 > 3 ⋅ 2 ⋅ 1 = 6
+
+Another example, In how many ways can 7 different books be arranged on a shelf?
+
+We could use the Multiplication Principle to solve this problem. We have seven positions that we can fill with seven
+books. There are 7 possible books for the first position, 6 possible books for the second position, five possible books
+for the third position, and so on. The Multiplication Principle tells us therefore that the books can be arranged in:
+
+$$ 7 ⋅ 6 ⋅ 5 ⋅ 4 ⋅ 3 ⋅ 2 ⋅ 1 = 5040 $$
+
+Alternatively, we can use the simple rule for counting permutations. P = 7! = 5040
 
 ##### Python Solution
 
