@@ -323,6 +323,14 @@ $$
 \times 1}{(3 \times 2 \times 1)(2 \times 1)} = \frac{120}{(6)(2)} = \frac{120}{12} = 10
 $$
 
+```
+Twelve (12) patients are available for use in a research study. Only seven (7) should be assigned to receive the study
+treatment. How many different subsets of seven patients can be selected?
+```
+$$ 
+{n \choose k} = {12 \choose 7} = \frac{12!}{7!(12 - 7)!} = 792
+$$
+
 ##### Torch combinations
 
 ```{code-cell}
