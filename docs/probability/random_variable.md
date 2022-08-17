@@ -266,8 +266,11 @@ $$
 E[XY] = E[X]E[Y]
 $$
 
+#### Expectation of a sum of random variables
 
-$E(X+Y)=E(X)+E(Y), E(a X)=a E(X)$
+$$
+E(X+Y)=E(X)+E(Y)
+$$
 
 ### Examples
 
