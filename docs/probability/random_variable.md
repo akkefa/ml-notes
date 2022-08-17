@@ -122,42 +122,56 @@ $$
 
 f(x) = Curve under which area represent the probability $P(a \leq X \leq b)=\int_{a}^{b} f(x) d x$
 
-### Probability Distributions
-
-So a random variable can take multiple values. One very important thing is to know if some values will be more often
-encountered than others. The description of the probability of each possible value that a random variable can take is
-called its probability distribution.
-
 ## Expected Value (Mean or Average)
-
-The expected value E(X) or $\mu_x$ of a random variable is a weighted average of all possible outcomes. In the
+The expected value or mean of a random variable is a weighted average of all possible outcomes. In the
 case of a continuum of possible outcomes, the expectation is defined by integration.
+
+Denoted by $\mu_x$ or $E(X)$.
 
 $$
 \mu=\mu_x=E(X)=\sum_{x} k P(X=x)
 $$
 
-**E.g**
-
+### Example
 5 exams result : 70 +80 + 80 + 90 + 90
 
-$A v g=\frac{70+80+80+90+90}{5} = \frac{1}{5}(70)+\frac{2}{5}(80)+\frac{2}{5}(90) = 82.5$
+$Avg = \frac{70+80+80+90+90}{5} = \frac{1}{5}(70)+\frac{2}{5}(80)+\frac{2}{5}(90) = 82.5 $
 
-**E.g**
-
+---
 Let X represent the outcome of a roll of a fair six-sided die. The possible values for X are 1, 2, 3, 4, 5, and 6, all
 of which are equally likely with a probability of $1/6$
 The Expected Value of X is
 
 $E[X] = 1\cdot\frac16 + 2\cdot\frac16 + 3\cdot\frac16 + 4\cdot\frac16 + 5\cdot\frac16 + 6\cdot\frac16 = (1+2+3+4+5+6) / 6= 3.5$
 
-**E.g**
+---
 
 | x      | 1   | 2   | 3   |
 | ------ | --- | --- | --- |
 | P(X=x) | 1/4 | 1/4 | 1/2 |
 
 $E[X] =(1)(1 / 4)+(2)(1 / 4)+(3)(1 / 2) = 9/4 = 2.25 = \sum_{x} x P(X=x)$
+
+---
+Imagine a game in which, on any play, a player has a 20% chance of winning $3 and an 80% chance of losing $1. The 
+probability mass function of the random variable , the amount won or lost on a single play is:
+
+$$
+x \quad $3 \quad -$1 \\
+f(x) \quad 0.2 \quad 0.8
+$$
+so the average amount won (actually lost, since it is negative)
+
+$$
+E(X)=(\$ 3)(0.2)+(-\$ 1)(0.8)=\$-0.20
+$$
+
+What does **in the long run** mean? If you play, are you guaranteed to lose no more than 20 cents?\
+If you play and lose, you are guaranteed to lose $\$ 1$ ! An expected loss of 20 cents means that if you played
+the game over and over and over and over .... again, the average of your $\$ 3$ winnings and your $\$ 1$ losses would
+be a 20 cent loss. "In the long run" means that you can't draw conclusions about one or two plays, but rather thousands
+and thousands of plays.
+
 
 ### For continuous random variables
 
