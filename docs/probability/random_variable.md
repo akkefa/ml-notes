@@ -76,8 +76,6 @@ $$
 f(x) &=\frac{1}{14} x^{2} \text { for } x=1,2,3
 \end{aligned}
 $$
-
-
 ```
 
 ### Indicator function
