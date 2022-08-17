@@ -49,9 +49,9 @@ $$
 The probability mass function, $P(X=x)=f(x)$, of a discrete random variable $X$ is a function that satisfies the
 following properties:
 
-- All of the probabilities must be positive. $P(X=x)=f(x)>0$, if $x \in$ the support $S$
-- Sum of all probabilities of same sample space equals to 1.  $\sum_{x \in S} f(x)=1$
-- $P(X \in A)=\sum_{x \in A} f(x)$
+1. All of the probabilities must be positive. $P(X=x)=f(x)>0$, if $x \in$ the support $S$
+2. Sum of all probabilities of same sample space equals to 1.  $\sum_{x \in S} f(x)=1$
+3. $P(X \in A)=\sum_{x \in A} f(x)$
 
 $\text{Random variable}=X= \begin{cases} 1, & \text { if "Heads" } \\ 0, & \text { if "Tails" }  \end{cases} =
 \begin{cases} P(X=1), & \text { if "Heads" } \\ P(X=0), & \text { if "Tails" }  \end{cases}$
@@ -78,6 +78,22 @@ f(x) &=\frac{1}{14} x^{2} \text { for } x=1,2,3
 $$
 ```
 
+## Cumulative distribution function (CDF)
+The cumulative distribution function (CDF or cdf) of the random variable X has the following definition:
+
+$$
+F_X(t) = P(X \leq t) = \sum_{x \leq y} P(X=t) = \int_{-\infty}^{t} f(t)dt
+$$
+
+### Properties
+The cdf of random variable X has the following properties:
+
+1. The cdf, $F_{X}(t)$, ranges from 0 to 1 . This makes sense since $F_{X}(t)$ is a probability.
+2. If $X$ is a discrete random variable whose minimum value is $a$, then $F_{X}(a)=P(X \leq a)=P(X=a)=f_{X}(a)$.
+   If $c$ is less than $a$, then $F_{X}(c)=0$. 
+3. If the maximum value of $X$ is $b$, then $F_{X}(b)=1$. 
+4. Also called the distribution function.
+
 ### Indicator function
 
 Let A = Set of real numbers
@@ -95,20 +111,6 @@ $\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { 
 **Notation**
 
 $\mathbb{1} _{A}(x)$
-
-## Cumulative distribution function (CDF)
-
-$$
-F(y)=P(X \leq y)=\sum_{x \leq y} P(X=x)
-$$
-
-### For continuous rv
-
-The cumulative distribution function (cdf) for a continuous rv X is given by $F(x)=P(X \leq x)=\int_{-\infty}^{x} f(t) d t$
-
-- $0 \leq F(x) \leq 1$
-- $\lim _{x \rightarrow-\infty} F(x)=0 \quad and \quad \lim _{x \rightarrow \infty} F(x)=1$
-- f(x) is always increasing.
 
 ## Probability density function (PDF)
 
