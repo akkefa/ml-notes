@@ -250,6 +250,16 @@ $$
 E[aX] = aE[X]
 $$
 
+$$
+\begin{gather}
+\large \text{Proof}\\
+E[2X] = \sum_{x} 2 k P(X=x) = 2 \sum_{x} k P(X=x) \\
+= 2 E[X]  \\
+\end{gather}
+$$
+
+
+
 $E(X+Y)=E(X)+E(Y), E(a X)=a E(X)$
 
 ### Examples
