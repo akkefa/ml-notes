@@ -298,24 +298,28 @@ $E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x$
 
 - Measures how far we expect our random variable to be from the mean.
 - Measures of **spread** of a distribution.
+- Variance is a measure of dispersion.
 
 ### Defined as
 
 $\sigma^2$ or V(X).
 
-$V(X) = E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2$
+$$
+V(X) = E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2
+$$
 
-$V(X) = E[(X - \mu)^2]$
+$$
+\begin{gather}
+\large \text{Proof} \\
+V(X) = E[(X - \mu)^2] \\
+V(X) = E[X^2 - 2\mu X + \mu^2] \\
+V(X) = E[X^2 - 2\mu E[X] + \mu^2] \\
+V(X) = E[X^2 - 2\mu^2 + \mu^2] \\
+V(X) = E[X^2 - \mu^2] \\
+V(X) = E[X^2] - E[X]^2
+\end{gather}
 
-$V(X) = E[X^2 - 2\mu X + \mu^2]$
-
-$V(X) = E[X^2 - 2\mu E[X] + \mu^2]$
-
-$V(X) = E[X^2 - 2\mu^2 + \mu^2]$
-
-$V(X) = E[X^2 - \mu^2]$
-
-$V(X) = E[X^2] - E[X]^2$
+$$
 
 ### For continuous rv
 
