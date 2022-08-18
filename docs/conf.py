@@ -40,7 +40,6 @@ extensions = [
     'sphinx.ext.napoleon',
     'sphinx_inline_tabs',
     'sphinx_copybutton',
-    'sphinx_togglebutton',
 ]
 
 myst_enable_extensions = [
