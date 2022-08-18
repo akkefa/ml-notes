@@ -42,7 +42,7 @@ Contents
    :caption: Deep learning
    :maxdepth: 1
 
-   loss_functions
+   deep_learning/loss_functions
    evaluation_metrics
 
 .. toctree::
