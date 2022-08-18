@@ -55,9 +55,13 @@ $$
 Var[X] = p(1-p)
 $$
 
-`Recall:` $E(X^2)=\sum_{k} k^2 P(X=k) = 1^2 * p = p$
+#### Proof
+$E(X^2) =\sum_{k} k^2 P(X=k) = 1^2 * p = p$
 
-$V(X) = {E}[X^2] - {E}[X]^2 = p - p^2 = p(1-p)$
+$$
+V(X) &= {E}[X^2] - {E}[X]^2 \\
+&= p - p^2 \\ &= p(1-p)
+$$
 
 ## Geometric rv
 
