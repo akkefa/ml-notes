@@ -1,3 +1,9 @@
+---
+file_format: mystnb
+kernelspec:
+  name: python3
+---
+
 ```{title} What is Random Variable?
 ```
 
@@ -183,6 +189,33 @@ E(X)=(\$ 3)(0.2)+(-\$ 1)(0.8)=\$-0.20
 $$
 
 In the long run you guaranteed to lose no more than 20 cents.
+
+#### Pytorch implementation
+
+```{code-cell}
+import torch
+
+# Create a tensor
+T = torch.Tensor([2.453, 4.432, 0.754, -6.554])
+print("T:", T)
+
+# Compute the mean and standard deviation
+mean = torch.mean(T)
+print("mean:", mean)
+```
+
+```{code-cell}
+data = torch.randn(5,5)
+#display
+print(data)
+
+print("Mean across columns:")
+print(torch.mean(data, dim=0))
+
+# Get average along rows with mean()
+print(torch.mean(data, dim=1))
+```
+
 
 ### Properties
 Expectation is a linear operator, which means for our purposes it has a couple of nice properties.
