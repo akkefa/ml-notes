@@ -435,6 +435,10 @@ $$
 The standard deviation is the square root of the variance. $\sigma_x = \sqrt{V(X)}$
 
 ## Indicator function
+The indicator function of an event is a random variable that takes
+
+- value 1 when the event happens;
+- value 0 when the event does not happen.
 
 Let A = Set of real numbers
 
@@ -442,12 +446,10 @@ $$
 I_{A}(x)= \begin{cases}1, & \text { if } x \in A \\ 0, & \text { if } x \notin A\end{cases}
 $$
 
-**Other definition**
+Other definition
 
 The indicator function of a subset A of a set X is a function.
 
 $\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { if } A \cap X \neq \emptyset \\ 0, & \text { otherwise }\end{cases}$
 
-**Notation**
-
-$\mathbb{1} _{A}(x)$
+Notation= $\mathbb{1} _{A}(x)$
