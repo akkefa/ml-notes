@@ -91,6 +91,8 @@ experiment until we obtain the first success.
 ::::{grid}
 
 :::{grid-item-card}
+Definition 1
+^^^^^^^^^^^^^
 A geometric rv $X \sim Geom(p)$ consists of
 
 - independent Bernoulli trials,
@@ -100,6 +102,8 @@ A geometric rv $X \sim Geom(p)$ consists of
 :::
 
 :::{grid-item-card}
+Definition 2
+^^^^^^^^^^^^^
 The geometric rv is the distribution of the number of trials needed to get the first success in repeated
 independent Bernoulli trials.
 :::
