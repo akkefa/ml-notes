@@ -317,7 +317,7 @@ $$
 \mathrm{E}\left[Y^{2}\right]=\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]=\operatorname{Var}[X]
 $$
 
-#### From these steps we can easily see that
+### From these steps we can easily see that
 
 - variance is always positive because it is the expected value of a squared number.
 - the variance of a constant variable $X$ (i.e., a variable that always takes on the same value) is zero; in this case,
