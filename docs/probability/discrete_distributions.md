@@ -25,6 +25,12 @@ P(X=1)=p \\
 P(X=0)=1-p
 $$
 
+```{image} https://cdn.mathpix.com/snip/images/2BzUHHIM-lL8kYbKoat1eKP_pvHxblpfmSv6tQ6nU1I.original.fullsize.png
+:alt: Bernoulli Distribution
+:width: 600px
+:align: center
+```
+
 **Using the indicator function notation**
 
 $I_{A}(x)= \begin{cases}1, & \text { if } x \in A \\ 0, & \text { if } x \notin A\end{cases}$
