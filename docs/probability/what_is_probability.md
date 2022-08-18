@@ -42,58 +42,56 @@ Some of the applications of probability are predicting results of the following 
 The first thing we do when we start thinking about the probability list a number of things that could possibly happen.\
 Some of the important probability terms are discussed here.
 
-```{glossary}
-Sample Space
-    (sample-space)=
-    Sample space of an experiment, denoted $S$, is the set of all possible outcomes of an experiment or trial. \
-    Suppose that we toss a die. Six numbers, from 1 to 6, can appear face up, but we do not yet know which one of them
-    will appear. The sample space is S = {1,2,3,4,5,6}.\
-    Tossing a coin, Sample Space = {H,T}.
+(sample-space)=
+### Sample Space 
+Sample space of an experiment, denoted $S$, is the set of all possible outcomes of an experiment or trial. \
+Suppose that we toss a die. Six numbers, from 1 to 6, can appear face up, but we do not yet know which one of them
+will appear. The sample space is S = {1,2,3,4,5,6}.\
+Tossing a coin, Sample Space = {H,T}.
 
-Experiment or Trial
-    Experiment is any action or process that generates observations or outcomes. \
-    E.g. The tossing of a coin, selecting a card from a deck of cards, throwing a dice etc.
+### Experiment or Trial
+Experiment is any action or process that generates observations or outcomes. \ 
+E.g. The tossing of a coin, selecting a card from a deck of cards, throwing a dice etc.
 
-Outcome or Sample Point
-    An outcome is a possible result of an experiment or trial.\
-    E.g. The outcome of tossing a coin is a head or a tail. \
-    Roll a die, the outcome is a number between 1 and 6. Each of the six numbers is a sample point
+### Outcome or Sample Point
+An outcome is a possible result of an experiment or trial.\
+E.g. The outcome of tossing a coin is a head or a tail. \
+Roll a die, the outcome is a number between 1 and 6. Each of the six numbers is a sample point
 
-Event
-    Event is any possible outcome, or combination of outcomes, of an experiment.\
-    E.g. Getting a Head while tossing a coin is an event.
+### Event
+Event is any possible outcome, or combination of outcomes, of an experiment.\
+E.g. Getting a Head while tossing a coin is an event.
 
-Cardinality
-    Cardinality of a sample space or an event, is the number of outcomes it contains. $|S|$ represents the cardinality of the sample space. \
-    Tossing a coin, $|S|$ = 2, Rolling a die, $|S|$ = 6 \
-    Flip a coin twice, S = {00,01,11,10} $|S|$ = 4 \
-    Flip a coin until you get a tail.  $S=\{1,01,001,0001, \ldots\}$ $|S| = \infty$
+### Cardinality
+Cardinality of a sample space or an event, is the number of outcomes it contains. $|S|$ represents the cardinality of the sample space. \
+Tossing a coin, $|S|$ = 2, Rolling a die, $|S|$ = 6 \
+Flip a coin twice, S = {00,01,11,10} $|S|$ = 4 \
+Flip a coin until you get a tail.  $S=\{1,01,001,0001, \ldots\}$ $|S| = \infty$
 
-Population
-    Those individuals or objects from which we want to acquire information or draw a conclusion. \
-    E.g. All valves produced by a specific manufacturing plant. \
-    All adult females in the United States. \
-    All smokers
+### Population
+Those individuals or objects from which we want to acquire information or draw a conclusion. \
+E.g. All valves produced by a specific manufacturing plant. \
+All adult females in the United States. \
+All smokers
 
-Sample
-    Most of the time, the population is so large, we can only collect data on a subset of it. We will call this our sample.
+### Sample
+Most of the time, the population is so large, we can only collect data on a subset of it. We will call this our sample.
 
-Sets and Subsets
-    A set is defined as a group of objects (i.e., sets can be made up of letters, numbers, names, etc.). \
-    A subset is defined as a set within a set. set A is a subset of set B if and only if every element of A is also in B.
+### Sets and Subsets
+A set is defined as a group of objects (i.e., sets can be made up of letters, numbers, names, etc.). \
+A subset is defined as a set within a set. set A is a subset of set B if and only if every element of A is also in B.
 
-Empty Set
-    The set that contains nothing, denoted $\emptyset$.
+### Empty Set
+The set that contains nothing, denoted $\emptyset$.
 
-Complement
-    $A^c$ = A complement. This is a shorthand way of saying when A does not occur. This set is made up of everything not in A.
+### Complement
+$A^c$ = A complement. This is a shorthand way of saying when A does not occur. This set is made up of everything not in A.
 
-Parameter
-    (parameter)=
-    Parameters are the unknown values of an entire population, such as the mean and standard deviation.
-    Samples can estimate population parameters but their exact values are usually unknowable.
+(parameter)=
+### Parameter
+Parameters are the unknown values of an entire population, such as the mean and standard deviation.
+Samples can estimate population parameters but their exact values are usually unknowable.
 
-```
 
 ```{admonition} Interview Question
 Q: What is the sample space of rolling Two Dice?\
