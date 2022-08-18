@@ -70,7 +70,10 @@ Cardinality
     Flip a coin until you get a tail.  $S=\{1,01,001,0001, \ldots\}$ $|S| = \infty$
 
 Population
-    Those individuals or objects from which we want to acquire information or draw a conclusion.
+    Those individuals or objects from which we want to acquire information or draw a conclusion. \
+    E.g. All valves produced by a specific manufacturing plant. \
+    All adult females in the United States. \
+    All smokers
 
 Sample
     Most of the time, the population is so large, we can only collect data on a subset of it. We will call this our sample.
@@ -84,6 +87,12 @@ Empty Set
 
 Complement
     $A^c$ = A complement. This is a shorthand way of saying when A does not occur. This set is made up of everything not in A.
+
+Parameter
+    (parameter)=
+    Parameters are the unknown values of an entire population, such as the mean and standard deviation.
+    Samples can estimate population parameters but their exact values are usually unknowable.
+
 ```
 
 ```{admonition} Interview Question

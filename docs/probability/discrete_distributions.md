@@ -118,6 +118,10 @@ Example If we toss a coin until we obtain head, the number of tails before the f
 It can also define as number of failures before first success.
 :::
 
+#### Parameter
+The geometric distribution has one parameter, p = the probability of success for each trial. You denote the 
+distribution as G(p), which indicates a geometric distribution with a success probability of p.
+
 ### Uses
 - Six in a series of die rolls?
 - Person to support a law during a repeated sampling for an interview?
