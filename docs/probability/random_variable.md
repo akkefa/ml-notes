@@ -308,6 +308,25 @@ $$
 V(X) = E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2
 $$
 
+To better understand the definition of variance, we can break up its calculation in several steps:
+
+1. Compute the expected value of $X$, denoted by $\mathrm{E}[X]$.
+2. Construct a new random variable $Y=X-\mathrm{E}[X]$ equal to the deviation of $X$ from its expected value.
+3. Take the square $ Y^{2}=(X-\mathrm{E}[X])^{2} $ which is a measure of distance of $X$ from its expected value (the further $X$ is from $\mathrm{E}[X]$, the larger $\left.Y^{2}\right)$
+4. Finally, compute the expectation of $Y^{2}$ to know the average distance:
+
+$$
+\mathrm{E}\left[Y^{2}\right]=\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]=\operatorname{Var}[X]
+$$
+
+
+#### From these steps we can easily see that
+
+- variance is always positive because it is the expected value of a squared number.
+- the variance of a constant variable $X$ (i.e., a variable that always takes on the same value) is zero; in this case,
+  we have that $X=\mathrm{E}[X], Y^{2}=0$ and $\mathrm{E}\left[Y^{2}\right]=0$
+- the larger the distance $Y^{2}$ is on average, the higher the variance.
+
 $$
 \begin{gather}
 \large \text{Proof} \\
