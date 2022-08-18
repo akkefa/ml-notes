@@ -184,35 +184,6 @@ $$
 
 In the long run you guaranteed to lose no more than 20 cents.
 
-### If random variables is function
-
-$$
-E(g(X))=\left\{\begin{array}{l}
-\sum_{k} g(k) P(X=k), X  \text { is discrete } \\
-\int_{-\infty}^{\infty} g(x) f(x) d x, X \text { is continuous. }
-\end{array}\right.
-$$
-
-$E(a X+b)=\sum_{k}(a X+b) P(X=k)$
-
-$E(a X+b)= a \sum_{k} k P(X=k)+b \sum_{k} P(X=k)$
-
-$E(a X+b)= a E(x) + b * 1 = a E(x) + b$
-
-### Law of the Unconscious Statistician
-
-IF X with pdf $f_x(x)$ and g is a function `Find 𝖤[𝗀(𝖷)]`
-
-Let Y=g(X). The pdf for Y is:
-
-$f_{Y}(y)=f_{X}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| = \text { So, } E[g(X)]=E[Y]=\int_{-\infty}^{\infty} y \cdot f_{Y}(y) d y$
-
-$=\int_{-\infty}^{\infty} y \cdot f_{x}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| d y$
-
-$\text { Let } x=g^{-1}(y) \text {. Then } d x=\frac{d}{d y} g^{-1}(y) d y$
-
-$E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x$
-
 ### Properties
 Expectation is a linear operator, which means for our purposes it has a couple of nice properties.
 
@@ -260,6 +231,35 @@ $$
 $$
 E(X+Y)=E(X)+E(Y)
 $$
+
+#### If random variables is function
+
+$$
+E(g(X))=\left\{\begin{array}{l}
+\sum_{k} g(k) P(X=k), X  \text { is discrete } \\
+\int_{-\infty}^{\infty} g(x) f(x) d x, X \text { is continuous. }
+\end{array}\right.
+$$
+
+$E(a X+b)=\sum_{k}(a X+b) P(X=k)$
+
+$E(a X+b)= a \sum_{k} k P(X=k)+b \sum_{k} P(X=k)$
+
+$E(a X+b)= a E(x) + b * 1 = a E(x) + b$
+
+#### Law of the Unconscious Statistician
+
+IF X with pdf $f_x(x)$ and g is a function `Find 𝖤[𝗀(𝖷)]`
+
+Let Y=g(X). The pdf for Y is:
+
+$f_{Y}(y)=f_{X}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| = \text { So, } E[g(X)]=E[Y]=\int_{-\infty}^{\infty} y \cdot f_{Y}(y) d y$
+
+$=\int_{-\infty}^{\infty} y \cdot f_{x}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| d y$
+
+$\text { Let } x=g^{-1}(y) \text {. Then } d x=\frac{d}{d y} g^{-1}(y) d y$
+
+$E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x$
 
 ## Variance
 
