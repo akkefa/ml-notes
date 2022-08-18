@@ -373,6 +373,26 @@ $$
 \end{aligned}
 $$
 
+#### Multiplication by a constant
+
+Let $a \in \mathbb{R}$ be a constant and let $x$ be a random variable.
+
+$$
+Var[a X]=a^{2} Var[X]
+$$
+
+Thanks to the fact that $E[a X]=a E[X]$ (by linearity of the expected value), we obtain
+
+$$
+\begin{aligned}
+Var[a X] &=E\left[(a X-E[a X])^{2}\right] \\
+&=E\left[(a X-a E[X])^{2}\right] \\
+&=\mathrm{E}\left[a^{2}(X-\mathrm{E}[X])^{2}\right] \\
+&=a^{2} \mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right] \\
+&=a^{2} \operatorname{Var}[X]
+\end{aligned}
+$$
+
 `For Function`
 
 $V(g(X))= \begin{cases}\sum_{k}(g(k)-E(g(X)))^{2} P(X=k), & X \text { discrete } \\ \int_{-\infty}^{\infty}(g(x)-E(g(X)))^{2} f(x) d x, & X \text { continuc }\end{cases}$
