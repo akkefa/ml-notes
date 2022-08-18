@@ -319,7 +319,6 @@ $$
 \mathrm{E}\left[Y^{2}\right]=\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]=\operatorname{Var}[X]
 $$
 
-
 #### From these steps we can easily see that
 
 - variance is always positive because it is the expected value of a squared number.
@@ -354,6 +353,25 @@ $= \int_{-\infty}^{\infty}x^{2} f(x) d x - 2 \mu_{x} \int_{-\infty}^{\infty}x f(
 $V(X) = E(X^2)-E(X)^2$
 
 ### Properties
+
+#### Addition to a constant
+
+Let $a \in \mathbb{R}$ be a constant and let $X$ be a random variable.
+
+$$
+Var[a+X]=Var[X]
+$$
+
+Thanks to the fact that $\mathrm{E}[a+X]=a+\mathrm{E}[X]$ (by linearity of the expected value), we have
+
+$$
+\begin{aligned}
+\operatorname{Var}[a+X] &=\mathrm{E}\left[(a+X-\mathrm{E}[a+X])^{2}\right] \\
+&=\mathrm{E}\left[(a+X-a-\mathrm{E}[X])^{2}\right] \\
+&=\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right] \\
+&=\operatorname{Var}[X]
+\end{aligned}
+$$
 
 `For Function`
 
