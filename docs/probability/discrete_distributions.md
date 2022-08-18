@@ -81,18 +81,32 @@ V(X) &= {E}[X^2] - {E}[X]^2 \\
 &= p - p^2 \\ &= p(1-p)
 $$
 
-## Geometric rv
+## Geometric Distribution
 
+The geometric distribution is the probability distribution of the number of failures we get by repeating a Bernoulli
+experiment until we obtain the first success.
+
+### Geometric Random Variable
+
+::::{grid}
+
+:::{grid-item-card}
 A geometric rv $X \sim Geom(p)$ consists of
 
 - independent Bernoulli trials,
 - each with the same probability of success p or Failure (1-p),
 - repeated until the first success is obtained.
 
-Let X = # trials until first success.
+:::
 
+:::{grid-item-card}
 The geometric rv is the distribution of the number of trials needed to get the first success in repeated
 independent Bernoulli trials.
+:::
+
+::::
+
+Example If we toss a coin until we obtain head, the number of tails before the first head has a geometric distribution.
 
 :::{Attention}
 It can also define as number of failures before first success.
