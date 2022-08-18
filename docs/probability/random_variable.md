@@ -145,7 +145,7 @@ case of a continuum of possible outcomes, the expectation is defined by integrat
 Denoted by $\mu_x$ or $E(X)$.
 
 $$
-\mu=\mu_x=E(X)=\sum_{x} k P(X=x)
+\large \mu=\mu_x=E(X)=\sum_{x} k P(X=x) = \int_{-\infty}^{\infty} x f(x) d x
 $$
 
 ### Example
@@ -183,12 +183,6 @@ E(X)=(\$ 3)(0.2)+(-\$ 1)(0.8)=\$-0.20
 $$
 
 In the long run you guaranteed to lose no more than 20 cents.
-
-### For continuous random variables
-
-The expected value is defined by the integral of the probability density function.
-
-$E(X)=\int_{-\infty}^{\infty} x f(x) d x$
 
 ### If random variables is function
 

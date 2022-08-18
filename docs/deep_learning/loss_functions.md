@@ -26,8 +26,8 @@ On the basis of the Loss value, you can update your model until you get the best
 
 ## Classification
 
-### Cross-Entropy or log loss
-Cross-entropy loss, or log loss, measures the performance of a classification model whose output is a probability
+### Binary Cross-Entropy or log loss
+Binary Cross-entropy loss, or log loss, measures the performance of a classification model whose output is a probability
 value between 0 and 1.
 
 ### Cross-entropy loss
