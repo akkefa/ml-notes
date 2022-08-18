@@ -123,36 +123,23 @@ It can also define as number of failures before first success.
 3. The trials are independent, so the outcome on any particular trial does not influence the outcome of any other trial.
 4. Trials are repeated until the first success.
 
-### PMF
+### P.M.F
 
-$Sample Space =S=\{1,01,001,0001,00001,000001,\dots\}$
+[Sample Space](sample-space) $ S = \{1,01,001,0001,00001,000001,\dots\}$
 
-Bernoulli trail success = 1 = 
+Bernoulli trail success = 1 = P \
+Bernoulli trail failure = 0 = 1 - P
 
-$p$
-
-Bernoulli trail failure = 0 = 
-
-$1-p$
-
-$P(X=1)=p$
-
-$P(X=2)=(1-p) p$
-
-$P(X=3)=(1-p)(1-p)p$
-
-$P(X=4)=(1-p)(1-p)(1-p)p$
-
- = failure, failure, failure, Success
-
-$P(X=5)=(1-p)^{4}p$
-
-$P(X=x)=(1-p)^{x-1}p$
+$P(X=1)=p$ \
+$P(X=2)=(1-p)p$ \
+$P(X=3)=(1-p)(1-p)p$ \
+$P(X=4)=(1-p)(1-p)(1-p)p$ = failure, failure, failure, Success \
+$P(X=5)=(1-p)^{4}p$ \
+$P(X=x)=(1-p)^{x-1}p$ 
 
 $$
-P(X=x)=(1-p)^{x-1}p \quad  for \enspace x = {1,2,3,4,5,\dots}
-\\
-P(X=x)=(1-p)^{x-1} \cdot p \cdot I_{\{1,2,3, \ldots\}}(x)
+P(X=x)&=(1-p)^{x-1}p \quad  for \enspace x = {1,2,3,4,5,\dots} \\
+P(X=x)&=(1-p)^{x-1} \cdot p \cdot I_{\{1,2,3, \ldots\}}(x)
 $$
 
 ### Mean (Expected Value)
