@@ -20,16 +20,27 @@ f_x(x)=P(X=x)=\begin{cases} 1-p,  & \text{ if x = 0 } \\ p, & \text{if x = 1 } \
 $$
 
 #### P.M.F
-$$
-P(X=1)=p \\
-P(X=0)=1-p
-$$
 
+::::{grid}
+
+:::{grid-item}
+$$
+\begin{align}
+\large P(X=1) &=p \\
+\large P(X=0)&=1-p
+\end{align}
+$$
+:::
+
+:::{grid-item}
 ```{image} https://cdn.mathpix.com/snip/images/2BzUHHIM-lL8kYbKoat1eKP_pvHxblpfmSv6tQ6nU1I.original.fullsize.png
 :alt: Bernoulli Distribution
-:width: 600px
+:width: 300px
 :align: center
 ```
+:::
+
+::::
 
 **Using the indicator function notation**
 
