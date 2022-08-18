@@ -82,6 +82,8 @@ V(X) &= {E}[X^2] - {E}[X]^2 \\
 $$
 
 ## Geometric Distribution
+The geometric distribution is a discrete probability distribution that calculates the probability of the first success
+occurring during a specific trial.
 
 The geometric distribution is the probability distribution of the number of failures we get by repeating a Bernoulli
 experiment until we obtain the first success.
@@ -115,6 +117,13 @@ Example If we toss a coin until we obtain head, the number of tails before the f
 :::{Attention}
 It can also define as number of failures before first success.
 :::
+
+### Uses
+- Six in a series of die rolls?
+- Person to support a law during a repeated sampling for an interview?
+- Product to have a defect in a random sample from an assembly line?
+- Successful attempt for a project or task?
+
 
 ### Properties
 
