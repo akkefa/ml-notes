@@ -205,12 +205,29 @@ The binomial distribution is a discrete probability distribution that calculates
 specific number of times in a set number of opportunities.
 
 ### Binomial Random Variable
+
+::::{grid}
+
+:::{grid-item-card}
+Definition 1
+^^^^^^^^^^^^^
 A binomial rv $X \sim Bin(n,p)$ is a random variable that is the number of successes in n independent
 Bernoulli trials, each with probability p. The probability of success is p. The probability of failure is 1-p.
 The number of trials is n.
 
+:::
+
+
+:::{grid-item-card}
+Definition 2
+^^^^^^^^^^^^^
 The binomial distribution is the distribution of the `number of successes = X` in a `fixed number = n` of
 independent Bernoulli trials.
+
+:::
+
+::::
+
 
 #### Parameters
 The binomial distribution has two parameters, n and p.
