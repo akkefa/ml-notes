@@ -212,6 +212,12 @@ The number of trials is n.
 The binomial distribution is the distribution of the `number of successes = X` in a `fixed number = n` of
 independent Bernoulli trials.
 
+#### Parameters
+The binomial distribution has two parameters, n and p.
+
+- n: the number of trials.
+- p: the event or success probability.
+
 ### Uses
 Use the binomial distribution when your outcome is binary. Binary outcomes have only two possible values that are
 mutually exclusive.
