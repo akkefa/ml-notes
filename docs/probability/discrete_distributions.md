@@ -310,7 +310,7 @@ $$
 
 ::::
 
-`Recall:` Bern(p) has expected value p. x1, x2 ... xn are independent bern p. so
+{bdg-info}`RECALL:` Bern(p) has expected value p. x1, x2 ... xn are independent bern p. so
 $sum_{k=1}^n X_n = sum_{k=1}^n E[X_n] = n * p$
 
 ### Variance
