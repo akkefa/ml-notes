@@ -50,12 +50,12 @@ Introduction
 Given data :math:`X_1, X_2 ... X_n`, a random sample (iid) from a distribution with unknown parameter θ, we want to
 find the value of θ in the parameter space that maximizes our probability of observing that data.
 
-.. tab:: For Discrete...
+For Discrete...
 
     If :math:`X_1, X_2 ... X_n` are discrete, we can look at :math:`P\left(X_{1}=x_{1}, X_{2}=x_{2}, \ldots, X_{n}=x_{n}\right)`
     as a function of θ, and find the θ that maximizes it. This is the joint pmf for :math:`X_1, X_2 ... X_n`.
 
-.. tab:: For Continuous...
+For Continuous...
 
     If :math:`X_1, X_2 ... X_n` are continuous is to maximize the **joint pdf** with respect to θ.
 

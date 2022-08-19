@@ -21,7 +21,7 @@ Contents
    probability/what_is_probability
    probability/conditional_probability_and_bayes_theorem
    probability/random_variable
-   probability/discrete_random_variables
+   probability/discrete_distributions
    probability/continuous_random_variables
    probability/joint_distributions
    probability/covariance_and_correlation
@@ -42,7 +42,7 @@ Contents
    :caption: Deep learning
    :maxdepth: 1
 
-   loss_functions
+   deep_learning/loss_functions
    evaluation_metrics
 
 .. toctree::

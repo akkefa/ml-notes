@@ -1,3 +1,9 @@
+---
+file_format: mystnb
+kernelspec:
+  name: python3
+---
+
 ```{title} What is Random Variable?
 ```
 
@@ -122,6 +128,7 @@ $$
 
 f(x) = Curve under which area represent the probability $P(a \leq X \leq b)=\int_{a}^{b} f(x) d x$
 
+(expected-value)=
 ## Expected Value (Mean or Average)
 The concept was first devised in the 17th century to analyze gambling games and answer questions such as:
 
@@ -145,7 +152,7 @@ case of a continuum of possible outcomes, the expectation is defined by integrat
 Denoted by $\mu_x$ or $E(X)$.
 
 $$
-\mu=\mu_x=E(X)=\sum_{x} k P(X=x)
+\large \mu=\mu_x=E(X)=\sum_{x} k P(X=x) = \int_{-\infty}^{\infty} x f(x) d x
 $$
 
 ### Example
@@ -184,40 +191,36 @@ $$
 
 In the long run you guaranteed to lose no more than 20 cents.
 
-### For continuous random variables
+#### Pytorch implementation
 
-The expected value is defined by the integral of the probability density function.
+```{code-cell}
+import torch
 
-$E(X)=\int_{-\infty}^{\infty} x f(x) d x$
+# Create a tensor
+T = torch.Tensor([2.453, 4.432, 0.754, -6.554])
+print("T:", T)
 
-### If random variables is function
+# Compute the mean and standard deviation
+mean = torch.mean(T)
+print("mean:", mean)
+```
 
-$$
-E(g(X))=\left\{\begin{array}{l}
-\sum_{k} g(k) P(X=k), X  \text { is discrete } \\
-\int_{-\infty}^{\infty} g(x) f(x) d x, X \text { is continuous. }
-\end{array}\right.
-$$
+```{code-cell}
+import matplotlib.pyplot as plt
+import seaborn as sns
 
-$E(a X+b)=\sum_{k}(a X+b) P(X=k)$
+sns.set_theme(style="darkgrid")
+data = torch.randn(25)
 
-$E(a X+b)= a \sum_{k} k P(X=k)+b \sum_{k} P(X=k)$
+print(data)
 
-$E(a X+b)= a E(x) + b * 1 = a E(x) + b$
+print("Mean :", torch.mean(data))
 
-### Law of the Unconscious Statistician
+_ =sns.displot(data,kde=True, )
+plt.axvline(torch.mean(data), color='green')
+plt.show()
+```
 
-IF X with pdf $f_x(x)$ and g is a function `Find 𝖤[𝗀(𝖷)]`
-
-Let Y=g(X). The pdf for Y is:
-
-$f_{Y}(y)=f_{X}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| = \text { So, } E[g(X)]=E[Y]=\int_{-\infty}^{\infty} y \cdot f_{Y}(y) d y$
-
-$=\int_{-\infty}^{\infty} y \cdot f_{x}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| d y$
-
-$\text { Let } x=g^{-1}(y) \text {. Then } d x=\frac{d}{d y} g^{-1}(y) d y$
-
-$E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x$
 
 ### Properties
 Expectation is a linear operator, which means for our purposes it has a couple of nice properties.
@@ -267,28 +270,77 @@ $$
 E(X+Y)=E(X)+E(Y)
 $$
 
+#### If random variables is function
+
+$$
+E(g(X))=\left\{\begin{array}{l}
+\sum_{k} g(k) P(X=k), X  \text { is discrete } \\
+\int_{-\infty}^{\infty} g(x) f(x) d x, X \text { is continuous. }
+\end{array}\right.
+$$
+
+$E(a X+b)=\sum_{k}(a X+b) P(X=k)$
+
+$E(a X+b)= a \sum_{k} k P(X=k)+b \sum_{k} P(X=k)$
+
+$E(a X+b)= a E(x) + b * 1 = a E(x) + b$
+
+#### Law of the Unconscious Statistician
+
+IF X with pdf $f_x(x)$ and g is a function `Find 𝖤[𝗀(𝖷)]`
+
+Let Y=g(X). The pdf for Y is:
+
+$f_{Y}(y)=f_{X}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| = \text { So, } E[g(X)]=E[Y]=\int_{-\infty}^{\infty} y \cdot f_{Y}(y) d y$
+
+$=\int_{-\infty}^{\infty} y \cdot f_{x}\left(g^{-1}(y)\right) \cdot\left|\frac{d}{d y} g^{-1}(y)\right| d y$
+
+$\text { Let } x=g^{-1}(y) \text {. Then } d x=\frac{d}{d y} g^{-1}(y) d y$
+
+$E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x$
+
 ## Variance
 
 - Measures how far we expect our random variable to be from the mean.
 - Measures of **spread** of a distribution.
+- Variance is a measure of dispersion.
 
-### Defined as
+Defined as $\sigma^2$ or V(X).
 
-$\sigma^2$ or V(X).
+$$
+V(X) = E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2
+$$
 
-$V(X) = E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2$
+To better understand the definition of variance, we can break up its calculation in several steps:
 
-$V(X) = E[(X - \mu)^2]$
+1. Compute the expected value of $X$, denoted by $\mathrm{E}[X]$.
+2. Construct a new random variable $Y=X-\mathrm{E}[X]$ equal to the deviation of $X$ from its expected value.
+3. Take the square $ Y^{2}=(X-\mathrm{E}[X])^{2} $ which is a measure of distance of $X$ from its expected value (the further $X$ is from $\mathrm{E}[X]$, the larger $\left.Y^{2}\right)$
+4. Finally, compute the expectation of $Y^{2}$ to know the average distance:
 
-$V(X) = E[X^2 - 2\mu X + \mu^2]$
+$$
+\mathrm{E}\left[Y^{2}\right]=\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right]=\operatorname{Var}[X]
+$$
 
-$V(X) = E[X^2 - 2\mu E[X] + \mu^2]$
+### From these steps we can easily see that
 
-$V(X) = E[X^2 - 2\mu^2 + \mu^2]$
+- variance is always positive because it is the expected value of a squared number.
+- the variance of a constant variable $X$ (i.e., a variable that always takes on the same value) is zero; in this case,
+  we have that $X=\mathrm{E}[X], Y^{2}=0$ and $\mathrm{E}\left[Y^{2}\right]=0$
+- the larger the distance $Y^{2}$ is on average, the higher the variance.
 
-$V(X) = E[X^2 - \mu^2]$
+$$
+\begin{gather}
+\large \text{Proof} \\
+V(X) = E[(X - \mu)^2] \\
+V(X) = E[X^2 - 2\mu X + \mu^2] \\
+V(X) = E[X^2 - 2\mu E[X] + \mu^2] \\
+V(X) = E[X^2 - 2\mu^2 + \mu^2] \\
+V(X) = E[X^2 - \mu^2] \\
+V(X) = E[X^2] - E[X]^2
+\end{gather}
 
-$V(X) = E[X^2] - E[X]^2$
+$$
 
 ### For continuous rv
 
@@ -305,17 +357,54 @@ $V(X) = E(X^2)-E(X)^2$
 
 ### Properties
 
-`For Function`
+#### Addition to a constant
 
-$V(g(X))= \begin{cases}\sum_{k}(g(k)-E(g(X)))^{2} P(X=k), & X \text { discrete } \\ \int_{-\infty}^{\infty}(g(x)-E(g(X)))^{2} f(x) d x, & X \text { continuc }\end{cases}$
+Let $a \in \mathbb{R}$ be a constant and let $X$ be a random variable.
+
+$$
+Var[a+X]=Var[X]
+$$
+
+Thanks to the fact that $\mathrm{E}[a+X]=a+\mathrm{E}[X]$ (by linearity of the expected value), we have
+
+$$
+\begin{aligned}
+\operatorname{Var}[a+X] &=\mathrm{E}\left[(a+X-\mathrm{E}[a+X])^{2}\right] \\
+&=\mathrm{E}\left[(a+X-a-\mathrm{E}[X])^{2}\right] \\
+&=\mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right] \\
+&=\operatorname{Var}[X]
+\end{aligned}
+$$
+
+#### Multiplication by a constant
+
+Let $a \in \mathbb{R}$ be a constant and let $x$ be a random variable.
+
+$$
+Var[a X]=a^{2} Var[X]
+$$
+
+Thanks to the fact that $E[a X]=a E[X]$ (by linearity of the expected value), we obtain
+
+$$
+\begin{aligned}
+Var[a X] &=E\left[(a X-E[a X])^{2}\right] \\
+&=E\left[(a X-a E[X])^{2}\right] \\
+&=\mathrm{E}\left[a^{2}(X-\mathrm{E}[X])^{2}\right] \\
+&=a^{2} \mathrm{E}\left[(X-\mathrm{E}[X])^{2}\right] \\
+&=a^{2} \operatorname{Var}[X]
+\end{aligned}
+$$
 
 `Find Var[aX] = ?`
 
-Let Y = aX. Then
-
-$\mu_y = E[Y] = E[aX] = E[a\mu_x] = aE[\mu_x] = aE[X]$
+Let Y = aX. Then, $\mu_y = E[Y] = E[aX] = E[a\mu_x] = aE[\mu_x] = aE[X]$
 
 ==> $Var[aX] = Var[Y] = Var[(Y - \mu_y)^2] = a^2 Var[(X - \mu_x)^2] = a^2 V(X)$
+
+`For Function`
+
+$V(g(X))= \begin{cases}\sum_{k}(g(k)-E(g(X)))^{2} P(X=k), & X \text { discrete } \\ \int_{-\infty}^{\infty}(g(x)-E(g(X)))^{2} f(x) d x, & X \text { continuc }\end{cases}$
 
 #### Find V(a X+b)
 
@@ -351,6 +440,10 @@ $$
 The standard deviation is the square root of the variance. $\sigma_x = \sqrt{V(X)}$
 
 ## Indicator function
+The indicator function of an event is a random variable that takes
+
+- value 1 when the event happens;
+- value 0 when the event does not happen.
 
 Let A = Set of real numbers
 
@@ -358,12 +451,10 @@ $$
 I_{A}(x)= \begin{cases}1, & \text { if } x \in A \\ 0, & \text { if } x \notin A\end{cases}
 $$
 
-**Other definition**
+Other definition
 
 The indicator function of a subset A of a set X is a function.
 
 $\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { if } A \cap X \neq \emptyset \\ 0, & \text { otherwise }\end{cases}$
 
-**Notation**
-
-$\mathbb{1} _{A}(x)$
+Notation= $\mathbb{1} _{A}(x)$

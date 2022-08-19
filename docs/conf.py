@@ -38,14 +38,15 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.viewcode',
     'sphinx.ext.napoleon',
-    'sphinx_inline_tabs',
     'sphinx_copybutton',
+    'sphinx_design',
 ]
 
 myst_enable_extensions = [
     "dollarmath",
     "amsmath",
     "fieldlist",
+    "colon_fence",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
