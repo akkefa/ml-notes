@@ -128,6 +128,7 @@ $$
 
 f(x) = Curve under which area represent the probability $P(a \leq X \leq b)=\int_{a}^{b} f(x) d x$
 
+(expected-value)=
 ## Expected Value (Mean or Average)
 The concept was first devised in the 17th century to analyze gambling games and answer questions such as:
 

@@ -280,12 +280,35 @@ $\mathrm{P}(X=3)=\mathrm{P}(\mathrm{SSSF} \text { or } \mathrm{SSFS} \text { or 
 $\sum_{k=0}^n {n \choose k}p^{k}(1-p)^{n-k} = 1$
 
 ### Mean (Expected Value)
+The [expected value](expected-value) of a binomial random variable X is
 
-$E(X)=\sum_{k} k P(X=k)$
+::::{grid}
 
-$E(X)=\sum_{k=0}^n k {n \choose k}p^{k}(1-p)^{n-k}$
+:::{grid-item}
 
-$E(X)= n * p$
+$$
+E[X] &=\sum_{k} k P(X=k) \\
+&=\sum_{k=0}^n k {n \choose k}p^{k}(1-p)^{n-k} \\ 
+&= n * p
+$$
+
+:::
+
+:::{grid-item-card} 
+Proof
+^^^^^^
+$$
+\begin{array}{ll}
+=\mathrm{E}\left[\sum_{i=1}^{n} Y_{i}\right] \quad \text { (representation as a sum of } n \text { independent Bernoulli r.v.) } \\
+=\sum_{i=1}^{n} \mathrm{E}\left[Y_{i}\right] \quad \text { (linearity of the expected value) } \\
+=\sum_{i=1}^{n} p \quad \quad \text { (expected value of a Bernoulli r.v.) } \\
+=n p
+\end{array}
+$$
+
+:::
+
+::::
 
 `Recall:` Bern(p) has expected value p. x1, x2 ... xn are independent bern p. so
 $sum_{k=1}^n X_n = sum_{k=1}^n E[X_n] = n * p$
