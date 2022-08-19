@@ -209,6 +209,7 @@ print("mean:", mean)
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+sns.set_theme(style="darkgrid")
 data = torch.randn(25)
 
 print(data)
