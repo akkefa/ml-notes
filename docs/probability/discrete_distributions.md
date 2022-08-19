@@ -392,7 +392,7 @@ which is the mean number of occurrences during an observation unit. A rate of oc
 standard observation period. For example, a call center might receive an average of 32 calls per hour.
 
 
-### Example
+### Uses
 
 1. \# of vehicles crossing a bridge in one day
 2. \# of gamma rays hitting a satellite per hour
@@ -404,11 +404,16 @@ standard observation period. For example, a call center might receive an average
 A discrete random variable X has Poisson distribution with parameter ($\lambda$ > 0) if the
 probability mass function of X is
 
-$f(x)=P(X=x)= \begin{cases}\frac{e^{-\lambda} \lambda^{x}}{x !} & , x=0,1,2, \ldots \\ 0 & , \text { otherwise }\end{cases}$
+$$
+f(x)=P(X=x)=
+\begin{cases}\frac{e^{-\lambda} \lambda^{x}}{x !} & , x=0,1,2, \ldots \\ 0 & , \text { otherwise }\end{cases}
+$$
 
 which may also be written as
 
-$f(x)=\frac{e^{-\lambda} \lambda^{x}}{x !} I_{\{0,1,2, \ldots\}}(x)$
+$$
+f(x)=\frac{e^{-\lambda} \lambda^{x}}{x !} I_{\{0,1,2, \ldots\}}(x)
+$$
 
 **where**
 
