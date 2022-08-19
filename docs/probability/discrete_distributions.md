@@ -374,9 +374,16 @@ $NB(r,p)$ = $\underbrace{}_{Failure} \underbrace{}_{Failure} success \underbrace
 
 means we have stack geometric rv in a row rth time. that's why we multiply by r in expected value and variance in NB rv.
 
-## Poisson rv
+## Poisson Distribution
+The Poisson distribution is a discrete probability distribution that describes probabilities for counts of events that
+occur in a specified observation space. It is named after **Siméon Denis Poisson**.
 
-A Poisson rv $X \sim Poisson(\lambda)$ is a discrete rv that describes the total number of events that happen in a certain time period.
+Suppose that an event can occur several times within a given unit of time.
+When the total number of occurrences of the event is unknown, we can think of it as a random variable.
+
+### Poisson Random Variable
+A Poisson rv $X \sim Poisson(\lambda)$ is a discrete rv that describes the total number of events that happen in a
+certain time period.
 
 ### Example
 
