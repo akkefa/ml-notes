@@ -320,11 +320,14 @@ $V(X)= E(X^2) - E(X)^2 = n * p * (1-p)$
 
 `Recall:` Bern(p) has variance p * (1-p).
 
-## Negative Binomial rv
+## Negative Binomial Distribution
+The negative binomial distribution is almost the same as a binomial distribution with one difference
+- Binomial distribution has a fixed number of trials.
 
 Repeat independent Bernoulli trials until a total of r successes is obtained. The negative binomial random variable X
 counts the number of failures before the rth success.
 
+### Negative Binomial Random Variable
 The negative binomial rv $X \sim NB(r,p)$ is the distribution of the `number of trials = X` needed to get a
 `fixed number of successes = r`.
 
