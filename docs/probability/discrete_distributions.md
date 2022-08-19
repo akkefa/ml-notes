@@ -53,18 +53,28 @@ $$
 ### Mean (Expected Value)
 The expected value of a Bernoulli random variable X is
 
+::::{grid}
+
+:::{grid-item}
 $$
 \large E[X]=p
 $$
 
-:::{card} Proof
+:::
+
+:::{grid-item-card}
+Proof
+^^^^^^
 
 $$
 \begin{align}
 \large  \\ E[X] &=\sum_{x} k P(X=x) \\ &= 0 * P(x=0) + 1 * P(x=1) \\ &= 0 * (1-p) + 1 * (p) \\ &= p
 \end{align}
 $$
+
 :::
+
+::::
 
 ### Variance
 The variance of a Bernoulli random variable X is
@@ -137,8 +147,11 @@ distribution as G(p), which indicates a geometric distribution with a success pr
 4. Trials are repeated until the first success.
 
 ### P.M.F
+The [sample space](sample-space) of geometric random variable is
 
-[Sample Space](sample-space) $ S = \{1,01,001,0001,00001,000001,\dots\}$
+$$
+ S = \{1,01,001,0001,00001,000001,\dots\}
+$$
 
 Bernoulli trail success = 1 = P \
 Bernoulli trail failure = 0 = 1 - P
@@ -156,6 +169,7 @@ f(x) =P(X=x)&=(1-p)^{x-1} \cdot p \cdot I_{\{1,2,3, \ldots\}}(x)
 $$
 
 ### Mean (Expected Value)
+The expected value of a geometric random variable X is
 
 $$
 E[X] &= \sum_{k=1}^{\infty} k P(X=k) \\
@@ -164,6 +178,7 @@ E[X] &= \sum_{k=1}^{\infty} k P(X=k) \\
 $$
 
 ### Variance
+The expected value of a geometric random variable X is
 
 $$
 V(X) &= E[X^2] - E[X]^2 \\
