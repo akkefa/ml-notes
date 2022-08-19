@@ -250,14 +250,15 @@ mutually exclusive.
 2. Trials are identical and result in a success or a failure (i.e. Bernoulli trials) with P(success) = p and P(failure) = 1 - p.
 3. Trials are independent (outcome of one trial does not influence any other)
 
-### PMF
+### P.M.F
+The [sample space](sample-space) of binomial random variable is
 
-$S = \left\{\left(x_{1}, x_{2}, \ldots, x_{n}\right) \mid x_{i}\right. =\left\{\begin{array}{l} 1 \text { if } \text { success } \\ 0 \text { if failure }\end{array}\right.$
+$$
+S = \left\{\left(x_{1}, x_{2}, \ldots, x_{n}\right) \mid x_{i}\right. =\left\{\begin{array}{l} 1 \text { if } \text { success } \\ 0 \text { if failure }\end{array}\right.
+$$
 
-$f(x)=P(X=0)=P(\{00 \cdots 0\})=(1-p)^{n}$
-
-$f(x)=P(X=1)=P(\{10 \cdots 0,0100 \ldots,0 \cdots 01\}) = n*p*(1-p)^{n-1}$
-
+$f(x)=P(X=0)=P(\{00 \cdots 0\})=(1-p)^{n}$ \
+$f(x)=P(X=1)=P(\{10 \cdots 0,0100 \ldots,0 \cdots 01\}) = n*p*(1-p)^{n-1}$ \
 $f(x)=P(X=2)=P(\{11 \cdots 0,0110 \ldots,00 \cdots 11\}) = \binom{n}{2}p^2(1-p)^{n-2}$
 
 `Explanation P(X=2):` Among n number of fixed trials, we have 2 bernoulli trials successes with probability P  and
