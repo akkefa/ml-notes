@@ -195,8 +195,7 @@ Answer: Each time we play the lottery, the outcome is a Bernoulli random variabl
         parameter $p=0.01$. Its expected value is
 
 $$
-E[X] &= \frac{1} p \\
-&= \frac{1} {0.01}
+E[X] = \frac{1} p = \frac{1} {0.01} = 100
 $$
 ```
 
