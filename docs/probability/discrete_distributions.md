@@ -200,14 +200,26 @@ $$
 ```
 
 
-## Binomial rv
+## Binomial Distribution
+The binomial distribution is a discrete probability distribution that calculates the probability an event will occur a
+specific number of times in a set number of opportunities.
 
+### Binomial Random Variable
 A binomial rv $X \sim Bin(n,p)$ is a random variable that is the number of successes in n independent
 Bernoulli trials, each with probability p. The probability of success is p. The probability of failure is 1-p.
 The number of trials is n.
 
 The binomial distribution is the distribution of the `number of successes = X` in a `fixed number = n` of
 independent Bernoulli trials.
+
+### Uses
+Use the binomial distribution when your outcome is binary. Binary outcomes have only two possible values that are
+mutually exclusive.
+
+- Six heads when you toss the coin ten times?
+- 12 women in a sample size of 20?
+- Three defective items in a batch of 100?
+- Two flu infections over 20 years?
 
 ### Properties
 
