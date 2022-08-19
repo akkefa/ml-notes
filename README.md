@@ -1,4 +1,4 @@
-# ML Notes for Mathematics for Machine learning and Data Science
+# Mathematics for Machine learning and Data Science
 
 [![Documentation Status][rtd-badge]][rtd-link]
 
