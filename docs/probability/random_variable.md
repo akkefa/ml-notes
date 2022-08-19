@@ -206,15 +206,18 @@ print("mean:", mean)
 ```
 
 ```{code-cell}
-data = torch.randn(5,5)
-#display
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+data = torch.randn(25)
+
 print(data)
 
-print("Mean across columns:")
-print(torch.mean(data, dim=0))
+print("Mean :", torch.mean(data))
 
-# Get average along rows with mean()
-print(torch.mean(data, dim=1))
+_ =sns.displot(data,kde=True, )
+plt.axvline(torch.mean(data), color='green')
+plt.show()
 ```
 
 
