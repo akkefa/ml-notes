@@ -295,8 +295,8 @@ $$
 :::
 
 :::{grid-item-card} 
-Proof
-^^^^^^
+{bdg-success}`Proof`
+^^^^^^^^^^^^^^^^^^^^^^^
 $$
 \begin{array}{ll}
 =\mathrm{E}\left[\sum_{i=1}^{n} Y_{i}\right] \quad \text { (representation as a sum of } n \text { independent Bernoulli r.v.) } \\
@@ -314,6 +314,7 @@ $$
 $sum_{k=1}^n X_n = sum_{k=1}^n E[X_n] = n * p$
 
 ### Variance
+The variance of a binomial random variable X is
 
 $V(X)= E(X^2) - E(X)^2 = n * p * (1-p)$
 
