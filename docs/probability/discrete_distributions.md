@@ -385,6 +385,13 @@ When the total number of occurrences of the event is unknown, we can think of it
 A Poisson rv $X \sim Poisson(\lambda)$ is a discrete rv that describes the total number of events that happen in a
 certain time period.
 
+#### Parameter
+The Poisson distribution is defined by a single parameter, lambda (λ),
+
+which is the mean number of occurrences during an observation unit. A rate of occurrence is simply the mean count per
+standard observation period. For example, a call center might receive an average of 32 calls per hour.
+
+
 ### Example
 
 1. \# of vehicles crossing a bridge in one day
