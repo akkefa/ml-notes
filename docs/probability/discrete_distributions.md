@@ -151,17 +151,40 @@ $P(X=5)=(1-p)^{4}p$ \
 $P(X=x)=(1-p)^{x-1}p$ 
 
 $$
-P(X=x)&=(1-p)^{x-1}p \quad  for \enspace x = {1,2,3,4,5,\dots} \\
-P(X=x)&=(1-p)^{x-1} \cdot p \cdot I_{\{1,2,3, \ldots\}}(x)
+f(x) = P(X=x)&=(1-p)^{x-1}p \quad  for \enspace x = {1,2,3,4,5,\dots} \\
+f(x) =P(X=x)&=(1-p)^{x-1} \cdot p \cdot I_{\{1,2,3, \ldots\}}(x)
 $$
 
 ### Mean (Expected Value)
 
-$E(X) = \sum_{k=1}^{\infty} k P(Y=k) = \sum_{k=1}^{\infty} k (1-p)^{k-1}p = \frac{1} p$
+$$
+E[X] &= \sum_{k=1}^{\infty} k P(X=k) \\
+&= \sum_{k=1}^{\infty} k (1-p)^{k-1}p \\
+&= \frac{1} p
+$$
 
 ### Variance
 
-$V(X) = \operatorname{E}[X^2] - \operatorname{E}[X]^2 = \frac{1-p}{p^{2}}$
+$$
+V(X) &= E[X^2] - E[X]^2 \\
+&= \frac{1-p}{p^{2}}
+$$
+
+
+```{admonition} Interview Question
+Q: On each day we play a lottery in which the probability of winning is $1%$. \
+   What is the expected value of the number of days that will elapse before we win for the first time?
+   
+Answer: Each time we play the lottery, the outcome is a Bernoulli random variable (equal to 1 if we win), with
+        parameter $p=0.01$. Therefore, the number of days before winning is a geometric random variable with
+        parameter $p=0.01$. Its expected value is
+
+$$
+E[X] &= \frac{1} p \\
+&= \frac{1} {0.01}
+$$
+```
+
 
 ## Binomial rv
 
