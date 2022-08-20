@@ -26,7 +26,7 @@ On the basis of the Loss value, you can update your model until you get the best
 
 ## Classification
 
-### Binary Cross-Entropy or Log Loss
+### Cross-Entropy or Log Loss
 Cross entropy loss is used mostly when we have a binary classification problem; that is, where the network outputs
 either 1 or 0.
 
