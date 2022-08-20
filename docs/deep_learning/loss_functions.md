@@ -26,9 +26,42 @@ On the basis of the Loss value, you can update your model until you get the best
 
 ## Classification
 
-### Binary Cross-Entropy or log loss
-Binary Cross-entropy loss, or log loss, measures the performance of a classification model whose output is a probability
-value between 0 and 1.
+### Binary Cross-Entropy or Log Loss
+Cross entropy loss is used mostly when we have a binary classification problem; that is, where the network outputs
+either 1 or 0.
+
+Suppose we are given a training dataset, $\mathbb{D}=\left\{\left(x_{i}, y_{i}\right), \cdots,\left(x_{N}, y_{N}\right)\right\}$ and $y_{i} \in\{0,1\}$. \
+We can then write this in the following form:
+
+$$
+\hat{y}_{i}=f\left(x_{i} ; \theta\right)
+$$
+
+Here, $\theta$ is the parameters of the network (weights and biases). We can express this in terms of a Bernoulli
+distribution, as follows:
+
+$$
+P\left(x_{i} \rightarrow y_{i} \mid \theta\right)=\hat{y}_{i}^{y_{i}}\left(1-\hat{y}_{i}\right)^{1-y_{i}}
+$$
+
+The probability, given the entire dataset, is then as follows:
+
+$$
+P\left(x_{1}, \cdots, x_{N}, y_{1}, \cdots, y_{N}\right)=\prod_{i=1}^{N} P\left(x_{i} \rightarrow y_{i} \mid \theta\right)=\prod_{i=1}^{N} \hat{y}_{i}^{y_{i}}\left(1-\hat{y}_{i}\right)^{1-y_{i}}
+$$
+
+If we take its negative-log likelihood, we get the following:
+
+$$
+-\log P\left(x_{1}, \cdots, x_{N}, y_{1}, \cdots, y_{N}\right)=-\log \prod_{i=1}^{N} \hat{y}_{i}^{y_{i}}\left(1-\hat{y}_{i}\right)^{1-y_{i}}
+$$
+
+So, we have the following:
+
+$$
+L(\hat{y}, y)=-\sum_{i=1}^{N} y_{i} \log \hat{y}_{i}+\left(1-y_{i}\right) \log \left(1-\hat{y}_{i}\right)
+$$
+
 
 ### Cross-entropy loss
 Cross entropy loss is a metric used to measure how well a classification model in machine learning performs.
