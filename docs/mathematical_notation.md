@@ -8,6 +8,7 @@
 ```{list-table}
 :widths: 30 70
 :header-rows: 1
+:align: "center"
 
 * - Symbol
   - Meaning
@@ -24,21 +25,6 @@
 
 ```
 
-## Greek Letters
-
-| Symbol    | Meaning                                                                          |
-|-----------|----------------------------------------------------------------------------------|
-| $\alpha$  | Regularization parameter                                                         |
-| $\Delta$  | Distance between two points used to calculate the derivative for instance        |
-| $\lambda$ | Number of events in a Poisson distribution. It can also refer to the eigenvalues |
-
-## Sets and Graphs
-
-| Symbol                    | Meaning                                                  |
-|---------------------------|----------------------------------------------------------|
-| $\mathbb{R}$              | The set of real numbers                                  |
-| $\mathbb{R}^{n}$          | The set of vectors of real numbers of length $n$         |
-| $\mathbb{R}^{m \times n}$ | The set of matrices of real numbers of size $m \times n$ |
 
 ## Linear Algebra
 
