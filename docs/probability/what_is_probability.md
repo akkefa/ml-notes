@@ -13,7 +13,7 @@ kernelspec:
 
 - Probability is the branch of mathematics that deals with the occurrence of a random event.
 - Probability is the measure of the likelihood of an event to happen.
-- **Probability means possibility** and probability is the study of randomness and uncertainty.
+- Probability means possibility and probability is the study of randomness and uncertainty.
 
 Probability theory is widely used in the area of studies such as statistics, finance, gambling, artificial intelligence,
 machine learning, computer science, game theory, and philosophy.
