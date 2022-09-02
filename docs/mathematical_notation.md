@@ -13,7 +13,7 @@
 * - Symbol
   - Meaning
 * - $\mu$ 
-  - Mean
+  - Mean | Expected Value | Waited Average | First Moment Generating Function
 * - $\sigma$
   - Standard deviation
 * - $V(X)$ 
