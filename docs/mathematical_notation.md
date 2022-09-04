@@ -17,7 +17,7 @@
   - $\sum_{x} k P(X=x)$
   - Mean | Expected Value | Waited Average | First Moment Generating Function
 * - $V(X)$ or $\sigma^2$ 
-  - E[(X - \mu)^2]
+  - $E[(X - \mu)^2]$
   - Variance of X
 * - $\sigma$
   - $\sqrt{V(X)}$
