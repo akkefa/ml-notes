@@ -6,22 +6,28 @@
 ## Probability and Statistics
 
 ```{list-table}
-:widths: 30 70
+:widths: 20 30 50
 :header-rows: 1
 :align: "center"
 
 * - Symbol
+  - Formula
   - Meaning
-* - $\mu$ 
+* - $\mu$
+  - $\sum_{x} k P(X=x)$
   - Mean | Expected Value | Waited Average | First Moment Generating Function
-* - $\sigma$
-  - Standard deviation
-* - $V(X)$ 
+* - $V(X)$ or $\sigma^2$ 
+  - E[(X - \mu)^2]
   - Variance of X
+* - $\sigma$
+  - $\sqrt{V(X)}$
+  - Standard deviation
 * - $Cov(X,Y)$ 
   - Covariance of X and Y
+  - Covariance of X and Y
 * - $\bar{X}$
-  - The sample mean is an average value / mean found in a sample.
+  - The sample 
+  - The sample mean is an average value
 
 ```
 
