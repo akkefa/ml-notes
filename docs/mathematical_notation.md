@@ -6,7 +6,7 @@
 ## Probability and Statistics
 
 ```{list-table}
-:widths: 20 30 50
+:widths: 20 20 60
 :header-rows: 1
 :align: "center"
 
