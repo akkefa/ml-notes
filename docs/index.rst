@@ -31,19 +31,20 @@ Contents
    probability/confidence_interval
 
 .. toctree::
+   :caption: Deep learning
+   :maxdepth: 1
+
+   deep_learning/what_is_deep_learning
+   deep_learning/loss_functions
+   evaluation_metrics
+
+.. toctree::
    :caption: Mathematics
    :maxdepth: 2
 
    calculus
    linear_algebra
    statistics
-
-.. toctree::
-   :caption: Deep learning
-   :maxdepth: 1
-
-   deep_learning/loss_functions
-   evaluation_metrics
 
 .. toctree::
    :caption: Practice
