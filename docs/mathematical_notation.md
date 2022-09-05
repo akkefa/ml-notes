@@ -6,39 +6,31 @@
 ## Probability and Statistics
 
 ```{list-table}
-:widths: 30 70
+:widths: 20 20 60
 :header-rows: 1
+:align: "center"
 
 * - Symbol
+  - Formula
   - Meaning
-* - $\mu$ 
-  - Mean
-* - $\sigma$
-  - Standard deviation
-* - $V(X)$ 
+* - $\mu$
+  - $\sum_{x} k P(X=x)$
+  - Mean | Expected Value | Waited Average | First Moment Generating Function
+* - $V(X)$ or $\sigma^2$ 
+  - $E[(X - \mu)^2]$
   - Variance of X
+* - $\sigma$
+  - $\sqrt{V(X)}$
+  - Standard deviation
 * - $Cov(X,Y)$ 
   - Covariance of X and Y
+  - Covariance of X and Y
 * - $\bar{X}$
-  - The sample mean is an average value / mean found in a sample.
+  - The sample 
+  - The sample mean is an average value
 
 ```
 
-## Greek Letters
-
-| Symbol    | Meaning                                                                          |
-|-----------|----------------------------------------------------------------------------------|
-| $\alpha$  | Regularization parameter                                                         |
-| $\Delta$  | Distance between two points used to calculate the derivative for instance        |
-| $\lambda$ | Number of events in a Poisson distribution. It can also refer to the eigenvalues |
-
-## Sets and Graphs
-
-| Symbol                    | Meaning                                                  |
-|---------------------------|----------------------------------------------------------|
-| $\mathbb{R}$              | The set of real numbers                                  |
-| $\mathbb{R}^{n}$          | The set of vectors of real numbers of length $n$         |
-| $\mathbb{R}^{m \times n}$ | The set of matrices of real numbers of size $m \times n$ |
 
 ## Linear Algebra
 
