@@ -54,3 +54,14 @@ feature value
 $$
 \sigma\left(\sum_{i=0}^m x_i w_i\right)=\sigma\left(\mathbf{x}^{\top} \mathbf{w}\right)=\hat{y}
 $$
+
+## Perceptron Learning Algorithm
+
+Let $\mathcal{D}=\left(\left\langle\mathbf{x}^{[1]}, y^{[1]}\right\rangle,\left\langle\mathbf{x}^{[2]}, y^{[2]}\right\rangle, \ldots,\left\langle\mathbf{x}^{[n]}, y^{[n]}\right\rangle\right) \in\left(\mathbb{R}^m \times\{0,1\}\right)^n$
+
+1. Initialize $\mathbf{w}:=0^m \quad$ (assume notation where weight incl. bias)
+2. For every training epoch:
+   * For every $\left\langle\mathbf{x}^{[i]}, y^{[i]}\right\rangle \in \mathcal{D}$ :
+     1. $\hat{y}^{[i]}:=\sigma\left(\mathbf{x}^{[i] \top} \mathbf{w}\right)$
+     2. err $:=\left(y^{[i]}-\hat{y}^{[i]}\right)$
+     3. $\mathbf{w}:=\mathbf{w}+e r r \times \mathbf{x}^{[i]}$
