@@ -35,6 +35,7 @@ Contents
    :maxdepth: 1
 
    deep_learning/what_is_deep_learning
+   deep_learning/perceptron
    deep_learning/loss_functions
    evaluation_metrics
 
