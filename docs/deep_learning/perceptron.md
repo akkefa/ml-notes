@@ -43,3 +43,14 @@ kernelspec:
 **Special cases:**
 - In perceptron: activation function = threshold function
 - In linear regression: activation $=$ net input $=$ output
+
+$$
+\sigma\left(\sum_{i=1}^m x_i w_i+b\right)=\sigma\left(\mathbf{x}^T \mathbf{w}+b\right)=\hat{y}
+$$
+
+Often more convenient notation: define bias unit as $w_0$ and prepend a 1 to each input vector as an additional
+feature value
+
+$$
+\sigma\left(\sum_{i=0}^m x_i w_i\right)=\sigma\left(\mathbf{x}^{\top} \mathbf{w}\right)=\hat{y}
+$$
