@@ -26,10 +26,20 @@ kernelspec:
 :alt: Combination
 :width: 80%
 ```
-### Computational Model of a Biological Neuron
+## Computational Model of a Biological Neuron
 
 ```{image} https://cdn.mathpix.com/snip/images/9ibylJ3Je2tLOmvEiYz1R4LT9LPxFiUNpzgee_EpgDE.original.fullsize.png
 :align: center
 :alt: Combination
 :width: 80%
 ```
+
+### Terminology
+
+- Net input $=$ weighted inputs, $z$
+- Activations = activation function(net input); $a=\sigma(z)$
+- Label output $=$ threshold(activations of last layer); $\hat{y}=f(a)$
+
+**Special cases:**
+- In perceptron: activation function = threshold function
+- In linear regression: activation $=$ net input $=$ output
