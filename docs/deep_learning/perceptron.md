@@ -65,3 +65,35 @@ Let $\mathcal{D}=\left(\left\langle\mathbf{x}^{[1]}, y^{[1]}\right\rangle,\left\
      1. $\hat{y}^{[i]}:=\sigma\left(\mathbf{x}^{[i] \top} \mathbf{w}\right)$
      2. err $:=\left(y^{[i]}-\hat{y}^{[i]}\right)$
      3. $\mathbf{w}:=\mathbf{w}+e r r \times \mathbf{x}^{[i]}$
+
+### Vectorization in Python
+
+Running Computations is a Big Part of Deep Learning!
+
+```{code-cell}
+import torch
+
+def forloop(x, w):
+    z = 0.
+    for i in range(len(x)):
+        z += x[i] * w[i]
+    return z
+
+
+def listcomprehension(x, w):
+    return sum(x_i*w_i for x_i, w_i in zip(x, w))
+
+
+def vectorized(x, w):
+    return x.dot(w)
+
+
+x, w = torch.rand(1000), torch.rand(1000)
+
+%timeit -r 10 -n 10 forloop(x, w)
+
+%timeit -r 10 -n 10 listcomprehension(x, w)
+
+%timeit -r 10 -n 10 vectorized(x, w)
+
+```
