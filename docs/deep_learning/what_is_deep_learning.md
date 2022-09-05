@@ -7,7 +7,7 @@ kernelspec:
 ```{title} What are Machine Learning And Deep Learning?
 ```
 
-# What is Machine Learning
+# What is Deep Learning
 
 ::::{grid}
 
