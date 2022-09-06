@@ -32,33 +32,20 @@ kernelspec:
 
 ::::
 ## Differences between Deep Learning and Machine Learning
-| Machine Learning | Deep Learning |
-|:---:|:---:|
-| uses algorithms to parse data, learn from that data, and make informed decisions based on what it has learned. | structures algorithms in layers to create an “artificial neural network” that can learn and make intelligent decisions on its own. |
-| needs a human to identify and hand-code the applied features based on the data type. | tries to learn features extraction and representation as well. |
-| tend to parse data in parts, then combined those into a result (e.g. first number plate localization and then recognition). | Deep learning systems look at an entire problem and generate the final result in one go (e.g. outputs the coordinates and the class of object together). |
-| requires relatively less data and training time | requires a lot more data and training time |
 
-## History (Need)
-- Automatic, data-driven decisions were needed rather than hardcoded rules-based.
-- Problems could not be solved by explicit instructions.
+### Machine Learning
 
-```python
-# limitations of traditional programming
+- uses algorithms to parse data, learn from that data, and make informed decisions based on what it has learned.
+- needs a human to identify and hand-code the applied features based on the data type. | tries to learn features extraction and representation as well.
+- tend to parse data in parts, then combined those into a result (e.g. first number plate localization and then recognition).
+- requires relatively less data and training time
 
-def detect_edges(img):
-    ...
-    return ...
+### Deep learning
 
-def detect_eyes(img):
-    return 'i have no idea how'
-    
-def detect_mouth(img):
-    return 'there are no rules that can be programmed!'
-
-def detect_face(img):
-    return detect_eyes(img) and detect_mouth(img)
-```
+- structures algorithms in layers to create an “artificial neural network” that can learn and make intelligent decisions on its own.
+- tries to learn features extraction and representation as well.
+- Deep learning systems look at an entire problem and generate the final result in one go (e.g. outputs the coordinates and the class of object together).
+- requires a lot more data and training time
 
 ## Applications Of Machine Learning/Deep Learning
 
