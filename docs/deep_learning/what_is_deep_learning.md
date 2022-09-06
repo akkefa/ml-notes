@@ -31,6 +31,13 @@ kernelspec:
 :::
 
 ::::
+## Differences between Deep Learning and Machine Learning
+| Machine Learning | Deep Learning |
+|:---:|:---:|
+| uses algorithms to parse data, learn from that data, and make informed decisions based on what it has learned. | structures algorithms in layers to create an “artificial neural network” that can learn and make intelligent decisions on its own. |
+| needs a human to identify and hand-code the applied features based on the data type. | tries to learn features extraction and representation as well. |
+| tend to parse data in parts, then combined those into a result (e.g. first number plate localization and then recognition). | Deep learning systems look at an entire problem and generate the final result in one go (e.g. outputs the coordinates and the class of object together). |
+| requires relatively less data and training time | requires a lot more data and training time |
 
 ## History (Need)
 - Automatic, data-driven decisions were needed rather than hardcoded rules-based.
@@ -84,7 +91,7 @@ def detect_face(img):
 - connect them in a network to create an artificial brain(let)
 
 ## Perceptron
-- Simplest artificial neuron that takes binary inputs and generates a binary output based on their weighted sum reaching a threshold
+- Simplest artificial neuron that takes binary inputs and based on their weighted sum reaching a threshold, generates a binary output.
 
 ### History of the Perceptron
 - Invented in 1957 by Frank Rosenblatt to binary classify an input data.
