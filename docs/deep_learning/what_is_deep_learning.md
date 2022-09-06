@@ -13,7 +13,7 @@ kernelspec:
 
 ```{image} https://cdn.mathpix.com/snip/images/-flldE9zXeGeZMZPCPRRA2FahzzEOh7kZ8QyUOyvDkE.original.fullsize.png
 :align: center
-:alt: Combination
+:alt: What is machine learning and deep learning
 :width: 80%
 ```
 
@@ -91,6 +91,8 @@ following explicit instructions, by using algorithms and statistical models to d
 :alt: Combination
 :width: 80%
 ```
+
+**Supervised learning is function approximation**
 
 ## Artificial neurons
 - Takes in multiple inputs and learns what should be the appropriate output
