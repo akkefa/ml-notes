@@ -11,3 +11,10 @@
 - [x] Deep learning
 
 ml-notes.akkefa.com
+
+
+#### Development
+
+```bash
+sphinx-autobuild docs docs/_build/html
+```
