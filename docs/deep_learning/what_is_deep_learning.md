@@ -8,6 +8,9 @@ kernelspec:
 ```
 
 # What is Deep Learning
+- Deep Learning: a type of machine learning based on artificial neural networks in which multiple layers of processing are used to extract progressively higher level features from data.
+
+- Machine Learning: development of computer systems that can learn to more accurately predict the outcomes without following explicit instructions, by using algorithms and statistical models to draw inferences from patterns in data.
 
 ::::{grid}
 
@@ -29,8 +32,26 @@ kernelspec:
 
 ::::
 
-## History
+## History (Need)
+- Automatic, data-driven decisions were needed rather than hardcoded rules-based.
+- Problems could not be solved by explicit instructions.
 
+```python
+# limitations of traditional programming
+
+def detect_edges(img):
+    ...
+    return ...
+
+def detect_eyes(img):
+    return 'i have no idea how'
+    
+def detect_mouth(img):
+    return 'there are no rules that can be programmed!'
+
+def detect_face(img):
+    return detect_eyes(img) and detect_mouth(img)
+```
 
 ## Applications Of Machine Learning/Deep Learning
 
@@ -51,7 +72,16 @@ kernelspec:
 ```
 
 ## Artificial neurons
+- Takes in multiple inputs and learns what should be the appropriate output
+- Essentially a 
+- Acts like a logic gate but the operation performed adjusts according to the data
 
+```{image} https://miro.medium.com/max/1400/1*hkYlTODpjJgo32DoCOWN5w.png
+:align: center
+:alt: Combination
+:width: 60%
+```
+- connect them in a network to create an artificial brain(let)
 
 ## Perceptron
 
