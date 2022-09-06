@@ -72,11 +72,13 @@ following explicit instructions, by using algorithms and statistical models to d
 :width: 80%
 ```
 
-**Supervised learning is function approximation**
+## Perceptron
+Simplest artificial neuron that takes binary inputs and based on their weighted sum reaching a threshold,
+generates a binary output.
 
-## Artificial neurons
+### Artificial neurons
 - Takes in multiple inputs and learns what should be the appropriate output
-- Essentially a mathmatical function where the weights multiplied with the inputs are learnable
+- Essentially a mathematical function where the weights multiplied with the inputs are learnable
 - Acts like a logic gate but the operation performed adjusts according to the data
 
 ```{image} https://miro.medium.com/max/1400/1*hkYlTODpjJgo32DoCOWN5w.png
@@ -85,9 +87,6 @@ following explicit instructions, by using algorithms and statistical models to d
 :width: 60%
 ```
 - connect them in a network to create an artificial brain(let)
-
-## Perceptron
-- Simplest artificial neuron that takes binary inputs and based on their weighted sum reaching a threshold, generates a binary output.
 
 ### History of the Perceptron
 - Invented in 1957 by Frank Rosenblatt to binary classify an input data.
