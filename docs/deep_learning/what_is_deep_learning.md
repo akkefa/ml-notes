@@ -73,7 +73,7 @@ def detect_face(img):
 
 ## Artificial neurons
 - Takes in multiple inputs and learns what should be the appropriate output
-- Essentially a 
+- Essentially a mathmatical function where the weights multiplied with the inputs are learnable
 - Acts like a logic gate but the operation performed adjusts according to the data
 
 ```{image} https://miro.medium.com/max/1400/1*hkYlTODpjJgo32DoCOWN5w.png
@@ -84,8 +84,11 @@ def detect_face(img):
 - connect them in a network to create an artificial brain(let)
 
 ## Perceptron
+- Simplest artificial neuron that takes binary inputs and generates a binary output based on their weighted sum reaching a threshold
 
 ### History of the Perceptron
+- Invented in 1957 by Frank Rosenblatt to binary classify an input data.
+- An attempt to replicate the process and ability of human nervous system.
 
 #### A Biological Neuron
 
