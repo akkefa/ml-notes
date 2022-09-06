@@ -58,16 +58,16 @@ following explicit instructions, by using algorithms and statistical models to d
 :::
 
 ::::
-## Differences between Deep Learning and Machine Learning
+### Differences between Deep Learning and Machine Learning
 
-### Machine Learning
+#### Machine Learning
 
 - uses algorithms to parse data, learn from that data, and make informed decisions based on what it has learned.
 - needs a human to identify and hand-code the applied features based on the data type. | tries to learn features extraction and representation as well.
 - tend to parse data in parts, then combined those into a result (e.g. first number plate localization and then recognition).
 - requires relatively less data and training time
 
-### Deep learning
+#### Deep learning
 
 - structures algorithms in layers to create an “artificial neural network” that can learn and make intelligent decisions on its own.
 - tries to learn features extraction and representation as well.
