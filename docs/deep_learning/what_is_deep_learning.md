@@ -8,9 +8,36 @@ kernelspec:
 ```
 
 # What is Deep Learning
-- Deep Learning: a type of machine learning based on artificial neural networks in which multiple layers of processing are used to extract progressively higher level features from data.
 
-- Machine Learning: development of computer systems that can learn to more accurately predict the outcomes without following explicit instructions, by using algorithms and statistical models to draw inferences from patterns in data.
+
+
+```{image} https://cdn.mathpix.com/snip/images/-flldE9zXeGeZMZPCPRRA2FahzzEOh7kZ8QyUOyvDkE.original.fullsize.png
+:align: center
+:alt: Combination
+:width: 80%
+```
+
+## Overview
+
+::::{grid}
+
+:::{grid-item-card}
+Deep Learning
+^^^^^^^^^^^^^^
+a type of machine learning based on artificial neural networks in which multiple layers of processing
+are used to extract progressively higher level features from data.
+
+:::
+
+:::{grid-item-card} 
+Machine Learning
+^^^^^^^^^^^^^^^^^
+development of computer systems that can learn to more accurately predict the outcomes without
+following explicit instructions, by using algorithms and statistical models to draw inferences from patterns in data.
+
+:::
+::::
+
 
 ::::{grid}
 
