@@ -38,26 +38,6 @@ following explicit instructions, by using algorithms and statistical models to d
 :::
 ::::
 
-
-::::{grid}
-
-:::{grid-item}
-```{image} https://cdn.mathpix.com/snip/images/Bcw3p_wTPu6dtL-dVytNfaSmufBnTKa__MUGRvnsS1c.original.fullsize.png
-:align: center
-:alt: Combination
-:width: 80%
-```
-:::
-
-:::{grid-item}
-```{image} https://cdn.mathpix.com/snip/images/-WX-VpRp_6ugoW5pS4ncPJDJz7148Jyp_HcHXfZNjv4.original.fullsize.png
-:align: center
-:alt: Combination
-:width: 80%
-```
-:::
-
-::::
 ### Differences between Deep Learning and Machine Learning
 
 #### Machine Learning
