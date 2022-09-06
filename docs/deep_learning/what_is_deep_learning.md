@@ -115,7 +115,7 @@ generates a binary output.
 :width: 80%
 ```
 
-#### Terminology
+### Terminology
 
 - Net input $=$ weighted inputs, $z$
 - Activations = activation function(net input); $a=\sigma(z)$
