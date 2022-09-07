@@ -94,4 +94,6 @@ if torch.cuda.is_available():
 
 ```
 
+## Broadcasting
+Making Vector and Matrix computations more convenient
 
