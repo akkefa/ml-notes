@@ -73,6 +73,9 @@ following explicit instructions, by using algorithms and statistical models to d
 ```
 
 ## Perceptron
+
+### Definition
+
 Simplest artificial neuron that takes binary inputs and based on their weighted sum reaching a threshold,
 generates a binary output.
 
