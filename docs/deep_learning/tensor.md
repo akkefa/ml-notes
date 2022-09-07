@@ -71,5 +71,27 @@ $$
 :width: 80%
 ```
 
+```{code-cell}
+import torch
+
+t = torch.tensor([ [1, 2, 3, 4,], [6, 7, 8, 9] ])
+
+print(t)
+print(t.shape)
+print(t.ndim)
+print(t.dtype)
+```
+
+## Data onto the GPU
+
+```{code-cell}
+print(torch.cuda.is_available())
+print(torch.backends.mps.is_available())
+
+if torch.cuda.is_available():
+  t = t.to(torch.device('cuda:0'))
+  print(t)
+
+```
 
 
