@@ -9,28 +9,50 @@ kernelspec:
 
 # What is Deep Learning
 
+
+
+```{image} https://cdn.mathpix.com/snip/images/-flldE9zXeGeZMZPCPRRA2FahzzEOh7kZ8QyUOyvDkE.original.fullsize.png
+:align: center
+:alt: What is machine learning and deep learning
+:width: 80%
+```
+
+## Overview
+
 ::::{grid}
 
-:::{grid-item}
-```{image} https://cdn.mathpix.com/snip/images/Bcw3p_wTPu6dtL-dVytNfaSmufBnTKa__MUGRvnsS1c.original.fullsize.png
-:align: center
-:alt: Combination
-:width: 80%
-```
+:::{grid-item-card}
+Deep Learning
+^^^^^^^^^^^^^^
+a type of machine learning based on artificial neural networks in which multiple layers of processing
+are used to extract progressively higher level features from data.
+
 :::
 
-:::{grid-item}
-```{image} https://cdn.mathpix.com/snip/images/-WX-VpRp_6ugoW5pS4ncPJDJz7148Jyp_HcHXfZNjv4.original.fullsize.png
-:align: center
-:alt: Combination
-:width: 80%
-```
-:::
+:::{grid-item-card} 
+Machine Learning
+^^^^^^^^^^^^^^^^^
+development of computer systems that can learn to more accurately predict the outcomes without
+following explicit instructions, by using algorithms and statistical models to draw inferences from patterns in data.
 
+:::
 ::::
 
-## History
+### Differences between Deep Learning and Machine Learning
 
+#### Machine Learning
+
+- uses algorithms to parse data, learn from that data, and make informed decisions based on what it has learned.
+- needs a human to identify and hand-code the applied features based on the data type. | tries to learn features extraction and representation as well.
+- tend to parse data in parts, then combined those into a result (e.g. first number plate localization and then recognition).
+- requires relatively less data and training time
+
+#### Deep learning
+
+- structures algorithms in layers to create an “artificial neural network” that can learn and make intelligent decisions on its own.
+- tries to learn features extraction and representation as well.
+- Deep learning systems look at an entire problem and generate the final result in one go (e.g. outputs the coordinates and the class of object together).
+- requires a lot more data and training time
 
 ## Applications Of Machine Learning/Deep Learning
 
@@ -50,12 +72,28 @@ kernelspec:
 :width: 80%
 ```
 
-## Artificial neurons
-
-
 ## Perceptron
 
+### Definition
+
+Simplest artificial neuron that takes binary inputs and based on their weighted sum reaching a threshold,
+generates a binary output.
+
+### Artificial neurons
+- Takes in multiple inputs and learns what should be the appropriate output
+- Essentially a mathematical function where the weights multiplied with the inputs are learnable
+- Acts like a logic gate but the operation performed adjusts according to the data
+
+```{image} https://miro.medium.com/max/1400/1*hkYlTODpjJgo32DoCOWN5w.png
+:align: center
+:alt: Combination
+:width: 60%
+```
+- connect them in a network to create an artificial brain(let)
+
 ### History of the Perceptron
+- Invented in 1957 by Frank Rosenblatt to binary classify an input data.
+- An attempt to replicate the process and ability of human nervous system.
 
 #### A Biological Neuron
 
@@ -80,7 +118,7 @@ kernelspec:
 :width: 80%
 ```
 
-#### Terminology
+### Terminology
 
 - Net input $=$ weighted inputs, $z$
 - Activations = activation function(net input); $a=\sigma(z)$
@@ -144,9 +182,66 @@ x, w = torch.rand(1000), torch.rand(1000)
 
 ```
 
+### Perceptron Pytorch Implementation
+
+#### Label data
+
+```{code-cell}
+import torch
+import matplotlib.pyplot as plt
+
+c1_mean , c2_mean = -0.5 , 0.5
+
+c1 = torch.distributions.uniform.Uniform(c1_mean-1,c1_mean+1).sample((200,2))
+c2 = torch.distributions.uniform.Uniform(c2_mean-1,c2_mean+1).sample((200,2))
+features = torch.cat([c1,c2], axis=0)
+
+labels = torch.cat([torch.zeros((200,1)), torch.ones((200,1))], axis = 0)
+data = torch.cat([features, labels],axis=1)
+
+X, y = data[:, :2], data[:, 2]
+y = y.to(torch.int)
+
+print('X.shape:', X.shape)
+print('y.shape:', y.shape)
+
+
+X_train, X_test = X[:300], X[100:]
+y_train, y_test = y[:300], y[100:]
+
+# Normalize (mean zero, unit variance)
+mu, sigma = X_train.mean(axis=0), X_train.std(axis=0)
+X_train = (X_train - mu) / sigma
+X_test = (X_test - mu) / sigma
+
+plt.scatter(X_train[y_train==0, 0], X_train[y_train==0, 1], label='class 0', marker='o')
+plt.scatter(X_train[y_train==1, 0], X_train[y_train==1, 1], label='class 1', marker='s')
+plt.title('Training set')
+plt.xlabel('feature 1')
+plt.ylabel('feature 2')
+plt.xlim([-3, 3])
+plt.ylim([-3, 3])
+plt.legend()
+plt.show()
+
+
+plt.scatter(X_test[y_test==0, 0], X_test[y_test==0, 1], label='class 0', marker='o')
+plt.scatter(X_test[y_test==1, 0], X_test[y_test==1, 1], label='class 1', marker='s')
+plt.title('Test set')
+plt.xlabel('feature 1')
+plt.ylabel('feature 2')
+plt.xlim([-3, 3])
+plt.ylim([-3, 3])
+plt.legend()
+plt.show()
+
+```
+
+
+#### Train and evaluate
+
 ```python
 import torch
-
 device = torch.device("cuda:0" if torch.cuda.is_available() else "mps")
 
 class Perceptron:
@@ -156,10 +251,8 @@ class Perceptron:
                                    dtype=torch.float32, device=device)
         self.bias = torch.zeros(1, dtype=torch.float32, device=device)
         
-        # placeholder vectors so they don't
-        # need to be recreated each time
-        self.ones = torch.ones(1)
-        self.zeros = torch.zeros(1)
+        self.ones = torch.ones((1, 1), device=device)
+        self.zeros = torch.zeros((1, 1), device=device)
 
     def forward(self, x):
         linear = torch.mm(x, self.weights) + self.bias
@@ -175,7 +268,6 @@ class Perceptron:
         for e in range(epochs):
             
             for i in range(y.shape[0]):
-                # use view because backward expects a matrix (i.e., 2D tensor)
                 errors = self.backward(x[i].reshape(1, self.num_features), y[i]).reshape(-1)
                 self.weights += (errors * x[i]).reshape(self.num_features, 1)
                 self.bias += errors
@@ -185,7 +277,25 @@ class Perceptron:
         accuracy = torch.sum(predictions == y).float() / y.shape[0]
         return accuracy
 
-```
 
+
+ppn = Perceptron(num_features=2)
+
+X_train_tensor = torch.tensor(X_train, dtype=torch.float32, device=device)
+y_train_tensor = torch.tensor(y_train, dtype=torch.float32, device=device)
+
+ppn.train(X_train_tensor, y_train_tensor, epochs=5)
+
+print('Model parameters:')
+print('Weights: %s' % ppn.weights)
+print('Bias: %s' % ppn.bias)
+
+X_test_tensor = torch.tensor(X_test, dtype=torch.float32, device=device)
+y_test_tensor = torch.tensor(y_test, dtype=torch.float32, device=device)
+
+test_acc = ppn.evaluate(X_test_tensor, y_test_tensor)
+print('Test set accuracy: %.2f%%' % (test_acc*100))
+
+```
 
 
