@@ -65,7 +65,11 @@ $$
 ::::
 
 
+```{image} https://cdn.mathpix.com/snip/images/t9O1Rt9T21I9shWUbtG1sH6YiMeK5eufyU4wEYy-RqY.original.fullsize.png
+:align: center
+:alt: Tensors
+:width: 80%
+```
 
-## Scalars
-(rank-0 tensor)
+
 
