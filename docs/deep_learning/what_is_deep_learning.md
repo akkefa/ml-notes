@@ -182,9 +182,66 @@ x, w = torch.rand(1000), torch.rand(1000)
 
 ```
 
+### Perceptron Pytorch Implementation
+
+#### Label data
+
+```{code-cell}
+import torch
+import matplotlib.pyplot as plt
+
+c1_mean , c2_mean = -0.5 , 0.5
+
+c1 = torch.distributions.uniform.Uniform(c1_mean-1,c1_mean+1).sample((200,2))
+c2 = torch.distributions.uniform.Uniform(c2_mean-1,c2_mean+1).sample((200,2))
+features = torch.cat([c1,c2], axis=0)
+
+labels = torch.cat([torch.zeros((200,1)), torch.ones((200,1))], axis = 0)
+data = torch.cat([features, labels],axis=1)
+
+X, y = data[:, :2], data[:, 2]
+y = y.to(torch.int)
+
+print('X.shape:', X.shape)
+print('y.shape:', y.shape)
+
+
+X_train, X_test = X[:300], X[100:]
+y_train, y_test = y[:300], y[100:]
+
+# Normalize (mean zero, unit variance)
+mu, sigma = X_train.mean(axis=0), X_train.std(axis=0)
+X_train = (X_train - mu) / sigma
+X_test = (X_test - mu) / sigma
+
+plt.scatter(X_train[y_train==0, 0], X_train[y_train==0, 1], label='class 0', marker='o')
+plt.scatter(X_train[y_train==1, 0], X_train[y_train==1, 1], label='class 1', marker='s')
+plt.title('Training set')
+plt.xlabel('feature 1')
+plt.ylabel('feature 2')
+plt.xlim([-3, 3])
+plt.ylim([-3, 3])
+plt.legend()
+plt.show()
+
+
+plt.scatter(X_test[y_test==0, 0], X_test[y_test==0, 1], label='class 0', marker='o')
+plt.scatter(X_test[y_test==1, 0], X_test[y_test==1, 1], label='class 1', marker='s')
+plt.title('Test set')
+plt.xlabel('feature 1')
+plt.ylabel('feature 2')
+plt.xlim([-3, 3])
+plt.ylim([-3, 3])
+plt.legend()
+plt.show()
+
+```
+
+
+#### Train and evaluate
+
 ```python
 import torch
-
 device = torch.device("cuda:0" if torch.cuda.is_available() else "mps")
 
 class Perceptron:
@@ -194,10 +251,8 @@ class Perceptron:
                                    dtype=torch.float32, device=device)
         self.bias = torch.zeros(1, dtype=torch.float32, device=device)
         
-        # placeholder vectors so they don't
-        # need to be recreated each time
-        self.ones = torch.ones(1)
-        self.zeros = torch.zeros(1)
+        self.ones = torch.ones((1, 1), device=device)
+        self.zeros = torch.zeros((1, 1), device=device)
 
     def forward(self, x):
         linear = torch.mm(x, self.weights) + self.bias
@@ -213,7 +268,6 @@ class Perceptron:
         for e in range(epochs):
             
             for i in range(y.shape[0]):
-                # use view because backward expects a matrix (i.e., 2D tensor)
                 errors = self.backward(x[i].reshape(1, self.num_features), y[i]).reshape(-1)
                 self.weights += (errors * x[i]).reshape(self.num_features, 1)
                 self.bias += errors
@@ -223,7 +277,25 @@ class Perceptron:
         accuracy = torch.sum(predictions == y).float() / y.shape[0]
         return accuracy
 
-```
 
+
+ppn = Perceptron(num_features=2)
+
+X_train_tensor = torch.tensor(X_train, dtype=torch.float32, device=device)
+y_train_tensor = torch.tensor(y_train, dtype=torch.float32, device=device)
+
+ppn.train(X_train_tensor, y_train_tensor, epochs=5)
+
+print('Model parameters:')
+print('Weights: %s' % ppn.weights)
+print('Bias: %s' % ppn.bias)
+
+X_test_tensor = torch.tensor(X_test, dtype=torch.float32, device=device)
+y_test_tensor = torch.tensor(y_test, dtype=torch.float32, device=device)
+
+test_acc = ppn.evaluate(X_test_tensor, y_test_tensor)
+print('Test set accuracy: %.2f%%' % (test_acc*100))
+
+```
 
 
