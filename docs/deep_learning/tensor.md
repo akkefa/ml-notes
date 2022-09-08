@@ -156,3 +156,30 @@ print( t + torch.tensor([1, 2, 3]))
 ```
 
 ## Notational Linear Algebra
+
+```{image} https://cdn.mathpix.com/snip/images/uz7XVD0AAapA9c41yQePC4SMLcNkW-4989rlg80oKTA.original.fullsize.png
+:align: center
+:alt: Tensors
+:width: 80%
+```
+
+```{code-cell}
+
+X = torch.arange(50, dtype=torch.float).view(10, 5)
+
+print(X)
+
+fc = torch.nn.Linear(in_features=5, out_features=3)
+
+print(fc.weight)
+
+print(fc.bias)
+
+print(f"X dim: {X.size()}")
+print(f"Weights dim: {fc.weight.size()}")
+print(f"bias dim: {fc.bias.size()}")
+
+A = fc(X)
+
+print(f"A dim: {A.size()}")
+```
