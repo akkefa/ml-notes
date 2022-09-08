@@ -102,3 +102,57 @@ if torch.cuda.is_available():
 ## Broadcasting
 Making Vector and Matrix computations more convenient
 
+### Computing the Output From Multiple Training Examples at Once
+
+- The perceptron algorithm is typically considered an "online" algorithm (i.e., it updates the weights after each training example)
+- However, during prediction (e.g., test set evaluation), we could pass all data points at once (so that we can get rid of the "forloop")
+
+- Two opportunities for parallelism:
+  1. computing the dot product in parallel
+  2. computing multiple dot products at once
+
+```{code-cell}
+import torch
+
+X = torch.arange(6).view(2, 3)
+
+print(X)
+
+w = torch.tensor([1, 2, 3])
+
+print(w)
+
+print(X.matmul(w))
+
+w = w.view(-1, 1)
+
+print(X.matmul(w))
+
+```
+
+```{image} https://cdn.mathpix.com/snip/images/5eUYAGDulkXuDNzneDFAkZsn7H23MAwqJqLwXXkatBg.original.fullsize.png
+:align: center
+:alt: Tensors
+:width: 80%
+```
+
+```{image} https://cdn.mathpix.com/snip/images/M_6h0q8LI4T7d-kxO2-PNNh4SDyItzmInpU2rISv4zw.original.fullsize.png
+:align: center
+:alt: Tensors
+:width: 80%
+```
+
+This (general) feature is called "broadcasting"
+
+```{code-cell}
+print(torch.tensor([1, 2, 3]) + 1)
+
+t = torch.tensor([[4, 5, 6], [7, 8, 9]])
+
+print(t)
+
+print( t + torch.tensor([1, 2, 3]))
+
+```
+
+## Notational Linear Algebra
