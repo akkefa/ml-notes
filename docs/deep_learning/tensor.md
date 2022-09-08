@@ -64,8 +64,13 @@ $$
 
 ::::
 
-
 ```{image} https://cdn.mathpix.com/snip/images/t9O1Rt9T21I9shWUbtG1sH6YiMeK5eufyU4wEYy-RqY.original.fullsize.png
+:align: center
+:alt: Tensors
+:width: 80%
+```
+
+```{image} https://cdn.mathpix.com/snip/images/u2lbBxLj26_4sob7u8kYhUpS6viFBG-5F44VPTaohfo.original.fullsize.png
 :align: center
 :alt: Tensors
 :width: 80%
