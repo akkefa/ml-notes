@@ -7,4 +7,4 @@ kernelspec:
 ```{title} What is hypothesis testing?
 ```
 
-# hypothesis testing
+# Hypothesis Testing
