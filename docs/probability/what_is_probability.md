@@ -52,7 +52,7 @@ Tossing a coin, Sample Space = {H,T}.
 ```{image} https://cdn.mathpix.com/snip/images/NIgpfDh_vIIrB4C6KWs6SlZbyH4xSHzIPYolo_FcY-U.original.fullsize.png
 :align: center
 :alt: Sample space
-:width: 80%
+:width: 60%
 ```
 
 ### Experiment or Trial
