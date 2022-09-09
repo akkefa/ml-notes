@@ -29,6 +29,7 @@ Contents
    probability/moments_generating_functions
    probability/maximum_likelihood_estimation
    probability/confidence_interval
+   probability/hypothesis_testing
 
 .. toctree::
    :caption: Deep learning
