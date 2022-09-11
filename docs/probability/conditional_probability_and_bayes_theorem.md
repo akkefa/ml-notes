@@ -72,7 +72,11 @@ A = Spam
 
 B = Contains the word ‘offer’
 
-
+```{image} https://miro.medium.com/max/1400/1*xb7S8ou_KqeNCeUMbhyUzQ.png
+:align: center
+:alt: Sample space
+:width: 80%
+```
 
 P( contains offer|spam) = 0.8 (given in the question)
 
