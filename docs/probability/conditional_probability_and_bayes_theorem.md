@@ -38,7 +38,7 @@ If 30% of the received e-mails are considered as a scam, and I will receive a ne
 which contains ‘offer’, what is the probability that it is spam?
 ```
 
-I received 100 e-mails. The percentage of spam in the whole e-mail is 30%.
+I received 100 e-mails.
 
 - I have 30 spam e-mails
 - 70 desired e-mails.
@@ -72,11 +72,9 @@ A = Spam
 
 B = Contains the word ‘offer’
 
-```{image} https://miro.medium.com/max/1400/1*xb7S8ou_KqeNCeUMbhyUzQ.png
-:align: center
-:alt: Sample space
-:width: 80%
-```
+$$
+P(\text { spam } \mid \text { contains offer })=\frac{P(\text { contains offer } \mid \text { spam }) * P(\text { spam })}{P(\text { contains offer })}
+$$
 
 P( contains offer|spam) = 0.8 (given in the question)
 
@@ -87,17 +85,12 @@ desired e-mails. Such that;
 
 P(contains offer) = 0.3*0.8 + 0.7*0.1 = 0.31
 
-
-```{image} https://miro.medium.com/max/844/1*bhVsECb2A7EH8NdU8eGfwg.png
-:align: center
-:alt: Sample space
-:width: 80%
-```
+$$
+P(\text { spam } \mid \text { contains offer })=\frac{0.8 * 0.3}{0.31}=0.774
+$$
 
 As it is seen in both ways the results are the same. In the first part, I solved the same question with a simple chart
 and for the second part, I solved the same question with Bayes’ theorem.
-
-
 
 ## Law of Total Probability
 
