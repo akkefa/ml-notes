@@ -10,13 +10,22 @@ kernelspec:
 # Random Variables
 
 ## Definition
-- A random variable rv is a real-valued function, whose domain is the entire [sample space](sample-space) of an experiment.
+
+::::{grid}
+
+:::{grid-item-card}
+A random variable rv is a real-valued function, whose domain is the entire [sample space](sample-space) of an experiment.
 Think of the domain as the set of all possible values that can go into a function. A function takes the domain/input,
 processes it, and renders an output/range. This set of real values obtained from the random variable is called its
 `range`.
+:::
 
-- A random variable (rv) is a function that maps events (from the sample space S) to the real numbers.
-- It's a function which performs the mapping of the outcomes of a random process to a numeric value.
+:::{grid-item-card}
+A random variable (rv) is a function that maps events (from the sample space S) to the real numbers. It's a function
+which performs the mapping of the outcomes of a random process to a numeric value.
+:::
+
+::::
 
 The domain of a random variable is a sample space, which is represented as the collection of possible outcomes of a
 random event. For instance, when a coin is tossed, only two possible outcomes are acknowledged such as heads or tails.
