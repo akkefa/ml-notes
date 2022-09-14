@@ -49,6 +49,12 @@ Suppose that we toss a die. Six numbers, from 1 to 6, can appear face up, but we
 will appear. The sample space is S = {1,2,3,4,5,6}.\
 Tossing a coin, Sample Space = {H,T}.
 
+```{image} https://cdn.mathpix.com/snip/images/NIgpfDh_vIIrB4C6KWs6SlZbyH4xSHzIPYolo_FcY-U.original.fullsize.png
+:align: center
+:alt: Sample space
+:width: 60%
+```
+
 ### Experiment or Trial
 Experiment is any action or process that generates observations or outcomes. \ 
 E.g. The tossing of a coin, selecting a card from a deck of cards, throwing a dice etc.

@@ -10,13 +10,22 @@ kernelspec:
 # Random Variables
 
 ## Definition
-- A random variable rv is a real-valued function, whose domain is the entire [sample space](sample-space) of an experiment.
+
+::::{grid}
+
+:::{grid-item-card}
+A random variable rv is a real-valued function, whose domain is the entire [sample space](sample-space) of an experiment.
 Think of the domain as the set of all possible values that can go into a function. A function takes the domain/input,
 processes it, and renders an output/range. This set of real values obtained from the random variable is called its
 `range`.
+:::
 
-- A random variable (rv) is a function that maps events (from the sample space S) to the real numbers.
-- It's a function which performs the mapping of the outcomes of a random process to a numeric value.
+:::{grid-item-card}
+A random variable (rv) is a function that maps events (from the sample space S) to the real numbers. It's a function
+which performs the mapping of the outcomes of a random process to a numeric value.
+:::
+
+::::
 
 The domain of a random variable is a sample space, which is represented as the collection of possible outcomes of a
 random event. For instance, when a coin is tossed, only two possible outcomes are acknowledged such as heads or tails.
@@ -34,6 +43,14 @@ The probability distribution for a random variable describes how the probabiliti
 values of the random variable.
 
 ## Types of Random Variables
+
+
+
+```{image} https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/random-variable-types-1642495625.png
+:align: center
+:alt: Types of Random Variables
+:width: 50%
+```
 
 ```{glossary}
 Discrete random variable
@@ -132,8 +149,8 @@ f(x) = Curve under which area represent the probability $P(a \leq X \leq b)=\int
 ## Expected Value (Mean or Average)
 The concept was first devised in the 17th century to analyze gambling games and answer questions such as:
 
-- how much do I gain - or lose - on average, if I repeatedly play a given gambling game?
-- how much can I expect to gain - or lose - by making a certain bet?
+- How much do I gain - or lose - on average, if I repeatedly play a given gambling game?
+- How much can I expect to gain - or lose - by making a certain bet?
 
 For example, if you play a game where you gain 2\$ with probability 1/2 and you lose 1\$ with probability 1/2,
 then the expected value of the game is half a dollar
