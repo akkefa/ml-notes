@@ -44,6 +44,14 @@ values of the random variable.
 
 ## Types of Random Variables
 
+
+
+```{image} https://d138zd1ktt9iqe.cloudfront.net/media/seo_landing_files/random-variable-types-1642495625.png
+:align: center
+:alt: Types of Random Variables
+:width: 50%
+```
+
 ```{glossary}
 Discrete random variable
     A discrete random variable is a type of random variable that has a countable number of distinct values that can be
