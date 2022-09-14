@@ -1,7 +1,9 @@
 ```{title} Continuous Random Variables and Continuous Probability Distributions
 ```
 
-# Continuous Random Variables
+# Continuous Distributions
+
+## Definition
 
 A random variable is continuous if possible values comprise either a single interval on the number line or a
 union of disjoint intervals. X = f(x) is the probability density function of the continues random variable X.
@@ -27,7 +29,7 @@ $$
 P(a \leq X \leq b)=\int_{a}^{b} f(x) d x
 $$
 
-**Properties**
+### Properties
 
 1. The probability density function $f:(-\infty, \infty) \rightarrow[0, \infty) \text{ so } f (x) \geq  0$.
 2. $P(-\infty<X<\infty)=\int_{-\infty}^{\infty} f(x) d x=1=P(S)$
