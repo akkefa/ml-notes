@@ -149,8 +149,8 @@ f(x) = Curve under which area represent the probability $P(a \leq X \leq b)=\int
 ## Expected Value (Mean or Average)
 The concept was first devised in the 17th century to analyze gambling games and answer questions such as:
 
-- how much do I gain - or lose - on average, if I repeatedly play a given gambling game?
-- how much can I expect to gain - or lose - by making a certain bet?
+- How much do I gain - or lose - on average, if I repeatedly play a given gambling game?
+- How much can I expect to gain - or lose - by making a certain bet?
 
 For example, if you play a game where you gain 2\$ with probability 1/2 and you lose 1\$ with probability 1/2,
 then the expected value of the game is half a dollar
