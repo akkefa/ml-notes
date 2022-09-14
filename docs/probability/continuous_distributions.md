@@ -121,7 +121,12 @@ $E(X^2) = \int_{0}^{\infty} x^2 f(x) d x = \int_{0}^{\infty} x^2 \lambda  e^{ - 
 
 $V(X) = E(X^2) - E(X)^2 = \frac{2}{\lambda^2} - (\frac{1}{\lambda})^2 = \frac{1}{\lambda^2}$
 
-## Gaussian( Normal ) rv
+## Normal (Gaussian) Distribution
+The normal distribution is a continuous probability distribution that plays a central role in probability theory
+and statistics.
+
+It is often called **Gaussian distribution**, in honor of Carl Friedrich Gauss (1777-1855), an eminent German
+mathematician who gave important contributions towards a better understanding of the normal distribution.
 
 A continuous random variable X has the normal distribution with parameters $\mu$ and $\sigma^2$
 if its density is given by
