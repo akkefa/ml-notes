@@ -128,6 +128,7 @@ and statistics.
 It is often called **Gaussian distribution**, in honor of Carl Friedrich Gauss (1777-1855), an eminent German
 mathematician who gave important contributions towards a better understanding of the normal distribution.
 
+### Definition
 A continuous random variable X has the normal distribution with parameters $\mu$ and $\sigma^2$
 if its density is given by
 
@@ -135,6 +136,13 @@ Notation: $X \sim N(\mu,\sigma^2)$
 
 - **Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
 - If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one, So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
+
+### Why is it so important
+The normal distribution is extremely important because:
+
+- many real-world phenomena involve random quantities that are approximately normal
+- it plays a crucial role in the Central Limit Theorem, one of the fundamental results in statistics;
+- its great analytical tractability makes it very popular in statistical modelling.
 
 ### PDF
 
