@@ -10,10 +10,10 @@
 - [x] Probability
 - [x] Deep learning
 
-ml-notes.akkefa.com
+[ml-notes.akkefa.com](ml-notes.akkefa.com)
 
 
-#### Development
+#### Docs build
 
 ```bash
 sphinx-autobuild docs docs/_build/html
