@@ -197,12 +197,6 @@ The normal distribution is extremely important because:
 
 $f(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^{2} / 2 \sigma^{2}} = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}  \text { for }-\infty<x<\infty$
 
-### Properties
-
-1. F(x) is symmetric around $x=\mu$.
-2. f(x) > 0 for all $x$ and $\int_{-\infty}^{\infty} f(x) dx = 1$.
-3. $\sigma$  = standard deviation.
-4. $\mu + \sigma$ and $\mu - \sigma$ are inflection points on f(x).
 
 ```{image} https://cdn.mathpix.com/snip/images/o--xnfCkZviqH4cJk2C1JgLXzGQNBTsYYzeUhmB5Iv4.original.fullsize.png
 :width: 400
