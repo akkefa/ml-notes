@@ -18,6 +18,11 @@ We model a continuous random variable with a curve f(x), called a probability de
 :width: 400
 ```
 
+### Applications
+- In the study of the ecology of a lake, a rv X could be the depth measurements at randomly chosen locations.
+- In a study of a chemical reaction, Y could be the concentration level of a particular chemical in solution.
+- In a study of customer service, W could be the time a customer waits for service.
+
 - f(x) represents the height of the curve at point x.
 - For continuous random variables probabilities are areas under the curve.
 
