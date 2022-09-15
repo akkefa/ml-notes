@@ -175,7 +175,7 @@ The reasons are:
 2. We only need to use the mean and standard deviation to explain the entire distribution.
 :::
 
-1. F(x) is symmetric around $x=\mu$ as a consequence, deviations from the mean having the same magnitude.
+1. f(x) is symmetric around $x=\mu$ as a consequence, deviations from the mean having the same magnitude.
 2. f(x) > 0 for all $x$ and $\int_{-\infty}^{\infty} f(x) dx = 1$.
 3. $\sigma$  = standard deviation.
 4. $\mu + \sigma$ and $\mu - \sigma$ are inflection points on f(x).
@@ -208,8 +208,20 @@ samples then the mean of the samples will end up being very close to normality.
 
 :::
 
-
 ### PDF
+If we plot the normal distribution density function, it’s curve has the following characteristics:
+
+```{image} https://miro.medium.com/max/872/1*aDfLhLY1zMVcK4Ax8nTROg.png
+:align: center
+:alt: Normal distribution
+:width: 60%
+```
+
+
+- Mean is the center of the curve. This is the highest point of the curve as most of the points are at the mean.
+- There is an equal number of points on each side of the curve. The center of the curve has the most number of points.
+- The total area under the curve is the total probability of all of the values that the variable can take.
+- The total curve area is therefore 100%
 
 $$ 
 f(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^{2} / 2 \sigma^{2}} = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}  \text { for }-\infty<x<\infty
