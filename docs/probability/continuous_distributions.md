@@ -178,7 +178,6 @@ plt.axvline(torch.mean(sample[0]), color='red', label='mean')
 plt.show()
 ```
 
-
 ### Properties
 
 - Mean and median are equal; both are located at the center of the distribution.
