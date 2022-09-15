@@ -139,7 +139,7 @@ and statistics.
 It is often called **Gaussian distribution**, in honor of Carl Friedrich Gauss (1777-1855), an eminent German
 mathematician who gave important contributions towards a better understanding of the normal distribution.
 
-### Definition
+### Normal Random Variable
 A continuous random variable $X \sim N(\mu,\sigma^2)$ has the normal distribution with parameters $\mu$ and $\sigma^2$
 if its density is given by
 
@@ -149,11 +149,19 @@ $$
 
 $$
 
+A normal distribution is a distribution that is solely dependent on two parameters of the data set: 
+mean and the standard deviation of the sample.
+
 ```{image} https://www.statology.org/wp-content/uploads/2018/10/normal_dist.png
 :align: center
 :alt: Normal distribution
 :width: 80%
 ```
+:::{attention}
+This characteristic of the distribution makes it extremely simple for statisticians and hence any variable that
+exhibits normal distribution is feasible to be forecasted with higher accuracy. Essentially, it can help in simplying
+the model.
+:::
 
 #### Parameters
 
@@ -162,6 +170,12 @@ $$
   So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
 
 ### Properties
+
+:::{admonition} Normal distribution is simple to explain: Why?
+The reasons are:
+1. The mean, mode, and median of the distribution are equal.
+2. We only need to use the mean and standard deviation to explain the entire distribution.
+:::
 
 1. F(x) is symmetric around $x=\mu$ as a consequence, deviations from the mean having the same magnitude.
 2. f(x) > 0 for all $x$ and $\int_{-\infty}^{\infty} f(x) dx = 1$.
@@ -175,6 +189,17 @@ The normal distribution is extremely important because:
 - many real-world phenomena involve random quantities that are approximately normal
 - it plays a crucial role in the Central Limit Theorem, one of the fundamental results in statistics;
 - its great analytical tractability makes it very popular in statistical modelling.
+
+The following variables are close to normally distributed variables:
+
+1. Height of a population
+2. Blood pressure of adult human
+3. Position of a particle that experiences diffusion
+4. Measurement errors
+5. Residuals in regression
+6. Shoe size of a population
+7. Amount of time it takes for employees to reach home
+8. A large number of educational measures
 
 ### PDF
 
