@@ -211,12 +211,11 @@ samples then the mean of the samples will end up being very close to normality.
 ### PDF
 If we plot the normal distribution density function, it’s curve has the following characteristics:
 
-```{image} https://miro.medium.com/max/984/1*sAKVrdijYYykipxIG7yIHQ.png
+```{image} https://miro.medium.com/max/1400/0*8ZymFK4ust4AgKyc.png
 :align: center
 :alt: Normal distribution
 :width: 60%
 ```
-The bell-shaped curve above has 100 mean and 1 standard deviation
 
 - Mean is the center of the curve. This is the highest point of the curve as most of the points are at the mean.
 - There is an equal number of points on each side of the curve. The center of the curve has the most number of points.
