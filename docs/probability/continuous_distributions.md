@@ -1,3 +1,9 @@
+---
+file_format: mystnb
+kernelspec:
+  name: python3
+---
+
 ```{title} Continuous Random Variables and Continuous Probability Distributions
 ```
 
@@ -154,6 +160,24 @@ $$
 - **Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
 - If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one,
   So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
+
+#### Plot
+
+```{code-cell}
+import torch
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_theme(style="darkgrid")
+sample = torch.normal(mean = 2, std = 4, size=(1,1000))
+
+print("Mean :", torch.mean(sample[0]))
+
+sns.displot(sample[0], kde=True, label='samples')
+plt.axvline(torch.mean(sample[0]), color='green')
+plt.show()
+```
+
 
 ### Properties
 
