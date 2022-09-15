@@ -143,8 +143,21 @@ $$
 
 $$
 
+```{image} https://www.statology.org/wp-content/uploads/2018/10/normal_dist.png
+:align: center
+:alt: Normal distribution
+:width: 80%
+```
+
+#### Parameters
+
 - **Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
-- If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one, So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
+- If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one,
+  So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
+
+### Properties
+
+- 
 
 ### Why is it so important
 The normal distribution is extremely important because:
