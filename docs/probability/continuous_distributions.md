@@ -161,22 +161,6 @@ $$
 - If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one,
   So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
 
-#### Plot
-
-```{code-cell}
-import torch
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-sns.set_theme(style="darkgrid")
-sample = torch.normal(mean = 8, std = 16, size=(1,1000))
-
-sns.displot(sample[0], kde=True, stat = 'density',)
-plt.axvline(torch.mean(sample[0]), color='red', label='mean')
-
-plt.show()
-```
-
 ### Properties
 
 1. F(x) is symmetric around $x=\mu$ as a consequence, deviations from the mean having the same magnitude.
@@ -194,11 +178,28 @@ The normal distribution is extremely important because:
 
 ### PDF
 
-$f(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^{2} / 2 \sigma^{2}} = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}  \text { for }-\infty<x<\infty$
-
+$$ 
+f(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^{2} / 2 \sigma^{2}} = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}  \text { for }-\infty<x<\infty
+$$
 
 ```{image} https://cdn.mathpix.com/snip/images/o--xnfCkZviqH4cJk2C1JgLXzGQNBTsYYzeUhmB5Iv4.original.fullsize.png
-:width: 400
+:align: center
+:alt: Normal distribution
+:width: 80%
+```
+
+```{code-cell}
+import torch
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+sns.set_theme(style="darkgrid")
+sample = torch.normal(mean = 8, std = 16, size=(1,1000))
+
+sns.displot(sample[0], kde=True, stat = 'density',)
+plt.axvline(torch.mean(sample[0]), color='red', label='mean')
+
+plt.show()
 ```
 
 ### Expected Value and Variance
