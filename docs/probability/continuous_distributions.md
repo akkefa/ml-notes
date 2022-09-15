@@ -157,7 +157,9 @@ $$
 
 ### Properties
 
-- 
+- Mean and median are equal; both are located at the center of the distribution.
+- f(x) is symmetric around the mean  as a consequence, deviations from the mean having the same magnitude.
+- f(x) > 0.
 
 ### Why is it so important
 The normal distribution is extremely important because:
