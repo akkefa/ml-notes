@@ -177,9 +177,8 @@ The reasons are:
 
 1. f(x) is symmetric around $x=\mu$ as a consequence, deviations from the mean having the same magnitude.
 2. f(x) > 0 for all $x$ and $\int_{-\infty}^{\infty} f(x) dx = 1$.
-3. $\sigma$  = standard deviation.
-4. $\mu + \sigma$ and $\mu - \sigma$ are inflection points on f(x).
-5. Mean and median are equal; both are located at the center of the distribution.
+3. $\mu + \sigma$ and $\mu - \sigma$ are inflection points on f(x).
+4. Mean and median are equal; both are located at the center of the distribution.
 
 ### Why is it so important
 The normal distribution is extremely important because:
