@@ -301,6 +301,19 @@ plt.show()
 
 ```
 
+#### 2. Box Plot
+The Box Plot is another visualization technique that can be used for detecting non-normal samples.
+
+The box plot is a graphical representation of the distribution of a variable.  It is a graphical representation of
+the five-number summary of a variable.  The five-number summary is the minimum, first quartile, median, third quartile,
+and maximum of a variable.
+
+#### 3. QQ Plot
+QQ Plot stands for Quantile vs Quantile Plot, which is exactly what it does: plotting theoretical quantiles against the
+actual quantiles of our variable.
+
+The QQ Plot allows us to see deviation of a normal distribution much better than in a Histogram or Box Plot.
+
 ## Standard Normal rv
 
 The normal distribution with parameter values $\mu$ = 0 and $\sigma^2$ = 1 is called the standard normal
