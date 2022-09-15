@@ -133,8 +133,6 @@ $E(X^2) = \int_{0}^{\infty} x^2 f(x) d x = \int_{0}^{\infty} x^2 \lambda  e^{ - 
 $V(X) = E(X^2) - E(X)^2 = \frac{2}{\lambda^2} - (\frac{1}{\lambda})^2 = \frac{1}{\lambda^2}$
 
 ## Normal (Gaussian) Distribution
-The normal distribution is a continuous probability distribution that plays a central role in probability theory
-and statistics.
 
 It is often called **Gaussian distribution**, in honor of Carl Friedrich Gauss (1777-1855), an eminent German
 mathematician who gave important contributions towards a better understanding of the normal distribution.
@@ -200,6 +198,16 @@ The following variables are close to normally distributed variables:
 6. Shoe size of a population
 7. Amount of time it takes for employees to reach home
 8. A large number of educational measures
+
+#### But how are so many variables approximately normally distributed?
+Let's consider that the height of a population is a random variable. We can take a sample of heights,
+plot its distribution and calculate the sample mean. When we repeat this experiment whilst we increase the number of
+samples then the mean of the samples will end up being very close to normality.
+
+:::{centered} This is known as the Central Limit Theorem.
+
+:::
+
 
 ### PDF
 
