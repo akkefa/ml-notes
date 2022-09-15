@@ -208,11 +208,6 @@ $E(X) = \mu$
 
 $V(X) = \sigma^2$
 
-### Examples
-
-```{image} https://cdn.mathpix.com/snip/images/M100tFqZehLppaPveeFdzACzz9R6xJrMPW9x44WWcfU.original.fullsize.png
-```
-
 ## Standard Normal rv
 
 The normal distribution with parameter values $\mu$ = 0 and $\sigma^2$ = 1 is called the standard normal
