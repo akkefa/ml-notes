@@ -282,6 +282,25 @@ It is not wise to assume that the variable follows a normal distribution without
 A variable can follow Poisson, Student-t, or Binomial distribution as an instance and falsely assuming that a
 variable follows normal distribution can lead to inaccurate results.
 
+### Identify the Normal RV?
+Many methods exist for testing whether a variable has a normal distribution
+
+#### 1. Histogram
+The histogram is a data visualization that shows the distribution of a variable.  It is a bar graph that shows the
+frequency of each value in the variable.  The histogram is a graphical representation of the distribution of a variable.
+
+```{code-cell}
+sample = torch.normal(mean = 8, std = 16, size=(1,1000))
+sample2 = torch.distributions.uniform.Uniform(2,3).sample([1,1000])
+
+sns.displot(sample[0], kde=True,).set(title='Normal Distribution')
+plt.axvline(torch.mean(sample[0]), color='red', label='mean')
+
+sns.displot(sample2[0], kde=True,).set(title='Uniform Distribution')
+plt.show()
+
+```
+
 ## Standard Normal rv
 
 The normal distribution with parameter values $\mu$ = 0 and $\sigma^2$ = 1 is called the standard normal
