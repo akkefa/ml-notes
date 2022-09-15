@@ -211,20 +211,38 @@ samples then the mean of the samples will end up being very close to normality.
 ### PDF
 If we plot the normal distribution density function, it’s curve has the following characteristics:
 
-```{image} https://miro.medium.com/max/872/1*aDfLhLY1zMVcK4Ax8nTROg.png
+```{image} https://miro.medium.com/max/984/1*sAKVrdijYYykipxIG7yIHQ.png
 :align: center
 :alt: Normal distribution
 :width: 60%
 ```
-
+The bell-shaped curve above has 100 mean and 1 standard deviation
 
 - Mean is the center of the curve. This is the highest point of the curve as most of the points are at the mean.
 - There is an equal number of points on each side of the curve. The center of the curve has the most number of points.
 - The total area under the curve is the total probability of all of the values that the variable can take.
 - The total curve area is therefore 100%
 
+```{image} https://miro.medium.com/max/872/1*aDfLhLY1zMVcK4Ax8nTROg.png
+:align: center
+:alt: Normal distribution
+:width: 60%
+```
+
+- Approximately 68.2% of all of the points are within the range -1 to 1 standard deviation.
+- About 95.5% of all of the points are within the range -2 to 2 standard deviations.
+- About 99.7% of all of the points are within the range -3 to 3 standard deviations.
+
+
+This allows us to easily estimate how volatile a variable is and given a confidence level,
+what its likely value is going to be.
+As an instance, in the grey bell-shaped curve above, there is a 68.2% chance that the value of the variable will be
+within 101–99.
+
+#### Normal Probability Distribution Function
+
 $$ 
-f(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^{2} / 2 \sigma^{2}} = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}  \text { for }-\infty<x<\infty
+\large f(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^{2} / 2 \sigma^{2}} = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2}  \text { for }-\infty<x<\infty
 $$
 
 ```{image} https://cdn.mathpix.com/snip/images/o--xnfCkZviqH4cJk2C1JgLXzGQNBTsYYzeUhmB5Iv4.original.fullsize.png
@@ -252,6 +270,17 @@ plt.show()
 $E(X) = \mu$
 
 $V(X) = \sigma^2$
+
+### Problems With Normality
+Assuming normality has its own flaws. As an instance, we cannot assume that the stock price follows normal distribution
+as the price cannot be negative. Therefore the stock price potentially follows a log of the normal distribution to
+ensure it is never below zero.
+
+We know that the daily returns can be negative, therefore the returns can at times follow a normal distribution.
+It is not wise to assume that the variable follows a normal distribution without any analysis.
+
+A variable can follow Poisson, Student-t, or Binomial distribution as an instance and falsely assuming that a
+variable follows normal distribution can lead to inaccurate results.
 
 ## Standard Normal rv
 
