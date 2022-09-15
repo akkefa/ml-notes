@@ -255,6 +255,8 @@ $$
 import torch
 import matplotlib.pyplot as plt
 import seaborn as sns
+from scipy.stats import norm
+
 
 sns.set_theme(style="darkgrid")
 sample = torch.normal(mean = 8, std = 16, size=(1,1000))
@@ -262,6 +264,99 @@ sample = torch.normal(mean = 8, std = 16, size=(1,1000))
 sns.displot(sample[0], kde=True, stat = 'density',)
 plt.axvline(torch.mean(sample[0]), color='red', label='mean')
 
+plt.show()
+```
+
+**norm.pdf** returns a PDF value. The following is the PDF value when 𝑥=1, 𝜇=0, 𝜎=1.
+
+We graph a PDF of the normal distribution using scipy, numpy and matplotlib. We use the domain of −4<𝑥<4,
+the range of 0<𝑓(𝑥)<0.45, the default values 𝜇=0 and 𝜎=1. plot(x-values,y-values) produces the graph.
+
+```{code-cell}
+print(norm.pdf(x=1.0, loc=0, scale=1))
+
+x = torch.arange(-4,4,0.001)
+fig, ax = plt.subplots()
+
+ax.set_title('N(0,$1^2$)')
+ax.set_xlabel('x')
+ax.set_ylabel('f(x)')
+ax.plot(x, norm.pdf(x))
+ax.set_ylim(0,0.45)
+plt.show()
+
+```
+
+A normal curve is smooth bell-shaped. It is symmetrical about the 𝑥=𝜇 and has a maximum point at 𝑥=𝜇.
+
+#### Normal distribution PDF with different standard deviations
+Let’s plot the probability distribution functions of a normal distribution where the mean has different standard
+deviations.
+
+scipy.norm.pdf has keywords, loc and scale. The location (loc) keyword specifies the mean and the scale (scale)
+keyword specifies the standard deviation.
+
+```{code-cell}
+fig, ax = plt.subplots()
+x = torch.arange(-4,4,0.001)
+
+stdvs = [1.0, 2.0, 3.0, 4.0]
+for s in stdvs:
+    ax.plot(x, norm.pdf(x,scale=s), label='stdv=%.1f' % s)
+    
+ax.set_xlabel('x')
+ax.set_ylabel('pdf(x)')
+ax.set_title('Normal Distribution')
+ax.legend(loc='best', frameon=True)
+ax.set_ylim(0,0.45)
+ax.grid(True)
+
+```
+
+#### Normal distribution PDF with different means
+Let’s plot the probability distribution functions of a normal distribution where the mean has different values.
+
+```{code-cell}
+fig, ax = plt.subplots()
+x = torch.linspace(-10,10,100)
+
+means = [0.0, 1.0, 2.0, 5.0]
+for mean in means:
+    ax.plot(x, norm.pdf(x,loc=mean), label='mean=%.1f' % mean)
+    
+ax.set_xlabel('x')
+ax.set_ylabel('pdf(x)')
+ax.set_title('Normal Distribution')
+ax.legend(loc='best', frameon=True)
+ax.set_ylim(0,0.45)
+ax.grid(True)
+
+```
+
+The mean of the distribution determines the location of the center of the graph. As you can see in the above graph,
+the shape of the graph does not change by changing the mean, but the graph is translated horizontally.
+
+#### A cumulative normal distribution function
+The cumulative distribution function of a random variable X, evaluated at x, is the probability that X will take a 
+value less than or equal to x. Since the normal distribution is a continuous distribution, the shaded area of the 
+curve represents the probability that X is less or equal than x.
+
+```{code-cell}
+fig, ax = plt.subplots()
+# for distribution curve
+x= torch.arange(-4,4,0.001)
+
+ax.plot(x, norm.pdf(x))
+ax.set_title("Cumulative normal distribution")
+ax.set_xlabel('x')
+ax.set_ylabel('pdf(x)')
+ax.grid(True)
+# for fill_between
+px=torch.arange(-4,1,0.01)
+ax.set_ylim(0,0.5)
+ax.fill_between(px,norm.pdf(px),alpha=0.5, color='g')
+# for text
+ax.text(-1,0.1,"cdf(x)", fontsize=20)
 plt.show()
 ```
 
