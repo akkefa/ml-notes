@@ -134,10 +134,14 @@ It is often called **Gaussian distribution**, in honor of Carl Friedrich Gauss (
 mathematician who gave important contributions towards a better understanding of the normal distribution.
 
 ### Definition
-A continuous random variable X has the normal distribution with parameters $\mu$ and $\sigma^2$
+A continuous random variable $X \sim N(\mu,\sigma^2)$ has the normal distribution with parameters $\mu$ and $\sigma^2$
 if its density is given by
 
-Notation: $X \sim N(\mu,\sigma^2)$
+$$
+
+\large f(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^2 / 2 \sigma^2} \text { for }-\infty<x<\infty
+
+$$
 
 - **Mu** is a location parameter. If you change the value of Mu, the entire bell curve is going to slide around.
 - If you increase **Sigma squared**, it's going to get fatter and therefore shorter because the total area is one, So if it gets fatter, it has to come down. If Sigma squared gets smaller, it's going to get really tall and thin.
