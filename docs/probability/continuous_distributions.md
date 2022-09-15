@@ -173,8 +173,8 @@ sample = torch.normal(mean = 2, std = 4, size=(1,1000))
 
 print("Mean :", torch.mean(sample[0]))
 
-sns.displot(sample[0], kde=True, label='samples')
-plt.axvline(torch.mean(sample[0]), color='green')
+sns.displot(sample[0], kde=True, label='samples', stat = 'density')
+plt.axvline(torch.mean(sample[0]), color='red', label='mean')
 plt.show()
 ```
 
