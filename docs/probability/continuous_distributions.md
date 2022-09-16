@@ -407,10 +407,24 @@ actual quantiles of our variable.
 
 The QQ Plot allows us to see deviation of a normal distribution much better than in a Histogram or Box Plot.
 
-## Standard Normal rv
+## Standard Normal Distribution
 
 The normal distribution with parameter values $\mu$ = 0 and $\sigma^2$ = 1 is called the standard normal
-distribution. A rv with the standard normal distribution is customarily denoted by $Z \sim N(0, 1)$
+distribution.
+
+A rv with the standard normal distribution is customarily denoted by $Z \sim N(0, 1)$
+
+If $X \sim N\left(\mu, \sigma^2\right)$ then
+
+$$
+f_X(x)=\frac{1}{\sqrt{2 \pi} \sigma} e^{-(x-\mu)^2 / 2 \sigma^2} \text { for }-\infty<x<\infty
+$$
+
+If $Z \sim N(0,1)$ then
+
+$$
+f_Z(x)=\frac{1}{\sqrt{2 \pi}} e^{-x^2 / 2} \text { for }-\infty<x<\infty
+$$
 
 ### PDF
 
