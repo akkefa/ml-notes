@@ -483,7 +483,37 @@ SO $= \int_{-\infty}^{a} \frac{1}{\sqrt{2 \pi}} e^{-u^{2} / 2} d u$  This is den
 
 ### Examples
 
-#### 1. P(Z > 1.25) ?
+####  Find P(X<2) when N(3, 2)?
+In norm.cdf, the location (loc) keyword specifies the mean and the scale (scale) keyword specifies the 
+standard deviation.
+
+```{code-cell}
+from scipy.stats import norm
+
+lessthan2=norm.cdf(x=2, loc=3, scale=2)
+
+print(lessthan2)
+
+
+fig, ax = plt.subplots()
+# for distribution curve
+x= torch.arange(-4,10,0.001)
+ax.plot(x, norm.pdf(x,loc=3,scale=2))
+ax.set_title("N(3,$2^2$)")
+ax.set_xlabel('x')
+ax.set_ylabel('pdf(x)')
+ax.grid(True)
+# for fill_between
+px=torch.arange(-4,2,0.01)
+ax.set_ylim(0,0.25)
+ax.fill_between(px,norm.pdf(px,loc=3,scale=2),alpha=0.5, color='g')
+# for text
+ax.text(-0.5,0.02,round(lessthan2,2), fontsize=20)
+plt.show()
+
+```
+
+####  P(Z > 1.25) ?
 
 
 If X = N(1, 4), find P(0 \< X \< 3.2)
