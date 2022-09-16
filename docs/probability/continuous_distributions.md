@@ -513,6 +513,43 @@ plt.show()
 
 ```
 
+#### Interval between variables
+To find the probability of an interval between certain variables, you need to subtract cdf from another cdf.
+
+Let's find 𝑃(0.5<𝑋<2) with a mean of 1 and a standard deviation of 2.
+
+```{code-cell}
+print(norm(1, 2).cdf(2) - norm(1,2).cdf(0.5))
+```
+
+$$
+X \sim N\left(1,2^2\right), P(0.5<X<2)
+$$
+
+```{code-cell}
+
+fig, ax = plt.subplots()
+
+# for distribution curve
+x= torch.arange(-6,8,0.001)
+ax.plot(x, norm.pdf(x,loc=1,scale=2))
+ax.set_title("N(1,$2^2$)")
+ax.set_xlabel('x')
+ax.set_ylabel('pdf(x)')
+ax.grid(True)
+px=torch.arange(0.5,2,0.01)
+ax.set_ylim(0,0.25)
+ax.fill_between(px,norm.pdf(px,loc=1,scale=2),alpha=0.5, color='g')
+pro=norm(1, 2).cdf(2) - norm(1,2).cdf(0.5)
+ax.text(0.2,0.02,round(pro,2), fontsize=20)
+plt.show()
+
+```
+
+
+
+
+
 ####  P(Z > 1.25) ?
 
 
