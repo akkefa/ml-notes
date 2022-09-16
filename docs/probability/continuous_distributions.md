@@ -490,13 +490,13 @@ standard deviation.
 ```{code-cell}
 from scipy.stats import norm
 
-lessthan2=norm.cdf(x=2, loc=3, scale=2)
+val = norm.cdf(x=2, loc=3, scale=2)
 
-print(lessthan2)
+print(f"P(X<2) = {val}")
 
 
 fig, ax = plt.subplots()
-# for distribution curve
+
 x= torch.arange(-4,10,0.001)
 ax.plot(x, norm.pdf(x,loc=3,scale=2))
 ax.set_title("N(3,$2^2$)")
@@ -508,7 +508,7 @@ px=torch.arange(-4,2,0.01)
 ax.set_ylim(0,0.25)
 ax.fill_between(px,norm.pdf(px,loc=3,scale=2),alpha=0.5, color='g')
 # for text
-ax.text(-0.5,0.02,round(lessthan2,2), fontsize=20)
+ax.text(-0.5,0.02,round(val,2), fontsize=20)
 plt.show()
 
 ```
