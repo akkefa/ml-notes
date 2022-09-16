@@ -483,6 +483,9 @@ SO $= \int_{-\infty}^{a} \frac{1}{\sqrt{2 \pi}} e^{-u^{2} / 2} d u$  This is den
 
 ### Examples
 
+#### 1. P(Z > 1.25) ?
+
+
 If X = N(1, 4), find P(0 \< X \< 3.2)
 
 $P(0 \leq X \leq 3.2)=\int_{0}^{3.2} f_{X}(x) d x$
