@@ -556,6 +556,7 @@ Let’s plot a graph.
 fig, ax = plt.subplots()
 x= torch.arange(-4,4,0.01)
 gr4sf=norm.sf(x=1.25, loc=0, scale=1)
+print(gr4sf)
 
 ax.plot(x, norm.pdf(x,loc=0,scale=1))
 ax.set_title("N(0,$1^2$)")
@@ -572,17 +573,18 @@ plt.show()
 
 ```
 
+we can use sf which is called the survival function and it returns 1-cdf.
 
-If X = N(1, 4), find P(0 \< X \< 3.2)
+#### If X = N(1, 4), find P(0 \< X \< 3.2)?
 
-$P(0 \leq X \leq 3.2)=\int_{0}^{3.2} f_{X}(x) d x$
 
-$=P\left(\frac{0-1}{2} \leqslant \frac{x-1}{2} \leqslant \frac{3.2-1}{2}\right)$
+$$
+P(0 \leq X \leq 3.2)&=\int_{0}^{3.2} f_{X}(x) d x \\
+&=P\left(\frac{0-1}{2} \leqslant \frac{x-1}{2} \leqslant \frac{3.2-1}{2}\right) \\
+&=P\left(-\frac{1}{2} \leq Z \leq 1.1\right)\\
+&=P(z \leq 1.1)-P\left(z<-\frac{1}{2}\right)\\
+&=\Phi(1.1)-\Phi\left(-\frac{1}{2}\right)\\
+&= .558
+$$
 
-$=P\left(-\frac{1}{2} \leq Z \leq 1.1\right)$
 
-$=P(z \leq 1.1)-P\left(z<-\frac{1}{2}\right)$
-
-$=\Phi(1.1)-\Phi\left(-\frac{1}{2}\right)$
-
-$.558$
