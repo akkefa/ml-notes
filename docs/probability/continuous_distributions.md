@@ -547,10 +547,30 @@ plt.show()
 ```
 
 
-
-
-
 ####  P(Z > 1.25) ?
+
+Let’s plot a graph.
+
+```{code-cell}
+
+fig, ax = plt.subplots()
+x= torch.arange(-4,4,0.01)
+gr4sf=norm.sf(x=1.25, loc=0, scale=1)
+
+ax.plot(x, norm.pdf(x,loc=0,scale=1))
+ax.set_title("N(0,$1^2$)")
+
+ax.set_xlabel('x')
+ax.set_ylabel('pdf(x)')
+
+ax.grid(True)
+px=torch.arange(1.25,4,0.01)
+#ax.set_ylim(0,0.15)
+ax.fill_between(px,norm.pdf(px,loc=0,scale=1),alpha=0.5, color='g')
+ax.text(1.25,0.02,"sf(x) %.2f" %(gr4sf), fontsize=20)
+plt.show()
+
+```
 
 
 If X = N(1, 4), find P(0 \< X \< 3.2)
