@@ -8,3 +8,5 @@ kernelspec:
 ```
 
 # Hypothesis Testing
+
+## What is Hypothesis Testing?
