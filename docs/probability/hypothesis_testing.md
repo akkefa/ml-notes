@@ -26,7 +26,7 @@ There are 5 main steps in hypothesis testing:
 5. Present the findings in your results and discussion section.
 
 #### State your null and alternate hypothesis
-After developing your initial research hypothesis it is important to restate it as a null (Ho) and alternate (Ha)
+After developing your initial research hypothesis it is important to restate it as a null ($H_0$) and alternate ($H_1$)
 hypothesis so that you can test it mathematically.
 
 - The alternate hypothesis is usually your initial hypothesis that predicts a relationship between variables.
