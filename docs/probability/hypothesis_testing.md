@@ -37,3 +37,21 @@ you formulate a hypothesis that men are, on average, taller than women. To test 
 
 Ho: Men are, on average, not taller than women.
 Ha: Men are, on average, taller than women.
+
+##### Example
+Let $X_1, X_2, \ldots, X_n$ be a random sample from the normal distribution with mean $\mu$ and variance $\sigma^2$
+
+Example of random sample after it is observed:
+
+$$
+2.73,1.14,3.98,2.15,5,85,1.97,2.54,2.03
+$$
+
+Based on what you are seeing, do you believe that the true population mean $\mu$ is
+
+$$
+\mu<=3 \\
+or \\
+\mu>3 \\
+\text { The sample is } \overline{\mathrm{x}}=2.799
+$$
