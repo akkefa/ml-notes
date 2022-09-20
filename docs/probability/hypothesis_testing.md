@@ -31,7 +31,7 @@ hypothesis so that you can test it mathematically.
 
 - The alternate hypothesis is usually your initial hypothesis that predicts a relationship between variables.
 - The null hypothesis is a prediction of no relationship between the variables you are interested in.
-- 
+
 You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology,
 you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
 
