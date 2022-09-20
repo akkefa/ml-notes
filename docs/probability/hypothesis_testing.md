@@ -24,3 +24,16 @@ There are 5 main steps in hypothesis testing:
 3. Perform an appropriate statistical test.
 4. Decide whether to reject or fail to reject your null hypothesis.
 5. Present the findings in your results and discussion section.
+
+#### State your null and alternate hypothesis
+After developing your initial research hypothesis it is important to restate it as a null (Ho) and alternate (Ha)
+hypothesis so that you can test it mathematically.
+
+- The alternate hypothesis is usually your initial hypothesis that predicts a relationship between variables.
+- The null hypothesis is a prediction of no relationship between the variables you are interested in.
+- 
+You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology,
+you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
+
+Ho: Men are, on average, not taller than women.
+Ha: Men are, on average, taller than women.
