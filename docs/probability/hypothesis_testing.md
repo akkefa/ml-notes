@@ -50,8 +50,23 @@ $$
 Based on what you are seeing, do you believe that the true population mean $\mu$ is
 
 $$
+
+\begin{align}
 \mu<=3 \\
 or \\
 \mu>3 \\
 \text { The sample is } \overline{\mathrm{x}}=2.799
+\end{align}
+
 $$
+
+
+The Sample mean is 
+
+$$
+\bar{x}=\frac{1}{n} \sum_{i=11}^n X_i
+$$
+
+- We're going to tend to think that $\mu<3$ when $\bar{X}$ is "significantly" smaller than 3.
+- We're going to tend to think that $\mu>3$ when $\bar{X}$ is "significantly" larger than 3.
+- We're never going to observe $\bar{X}=3$, but we may be able to be convinced that $\mu=3$ if $\bar{X}$ is not too far away.
