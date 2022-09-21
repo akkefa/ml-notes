@@ -70,3 +70,15 @@ $$
 - We're going to tend to think that $\mu<3$ when $\bar{X}$ is "significantly" smaller than 3.
 - We're going to tend to think that $\mu>3$ when $\bar{X}$ is "significantly" larger than 3.
 - We're never going to observe $\bar{X}=3$, but we may be able to be convinced that $\mu=3$ if $\bar{X}$ is not too far away.
+
+Hypotheses:
+
+$\mathrm{H}_0: \mu \leq 3$
+$\mathrm{H}_1: \mu>3 \quad$ alternate
+
+hypothesis
+- The null hypothesis is assumed to be true.
+- The alternate hypothesis is what we are out to show.
+
+Conclusion is either:
+Reject $\mathrm{H}_0 \quad$ OR $\quad$ Fail to Reject $\mathrm{H}_0$
