@@ -83,4 +83,6 @@ hypothesis
 Conclusion is either:
 Reject $\mathrm{H}_0 \quad$ OR $\quad$ Fail to Reject $\mathrm{H}_0$
 
-#### Errors in Hypothesis Testing 
+#### Errors in Hypothesis Testing
+
+##### Type I Error
