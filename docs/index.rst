@@ -23,7 +23,6 @@ Contents
    probability/random_variable
    probability/discrete_distributions
    probability/continuous_distributions
-   probability/continuous_random_variables
    probability/joint_distributions
    probability/covariance_and_correlation
    probability/estimators_and_sampling_distributions

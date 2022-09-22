@@ -475,3 +475,38 @@ The indicator function of a subset A of a set X is a function.
 $\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { if } A \cap X \neq \emptyset \\ 0, & \text { otherwise }\end{cases}$
 
 Notation= $\mathbb{1} _{A}(x)$
+
+## Random Sample
+
+A collection of random variables is independent and identically distributed if each random variable has the same
+probability distribution as the others and all are mutually independent.
+
+$$
+\large \text{Random Sample} = $X_1, X_2, X_3, ..., X_n
+$$
+
+Suppose that $X_1, X_2, X_3, ..., X_n$ is a random sample from the Normal distribution with parameters
+$\mu$ and $sigma^2$. **Mu and sigma are same for all random variables**
+
+$$
+X_{1},X_{2}, \ldots, X_{n} \stackrel{\mathrm{iid}}{\sim} N(\mu, \sigma^{2})
+$$
+
+Suppose that $X_1, X_2, X_3, ..., X_n$ is a random sample from the gamma distribution with parameters
+$alpha$ and $\beta$.
+
+$$
+X_{1},X_{2}, \ldots, X_{n} \stackrel{\mathrm{iid}}{\sim} \Gamma(\alpha, \beta)
+$$
+
+### Example
+
+A good example is a succession of throws of a fair coin: The coin has no memory, so all the throws are **independent**.
+And every throw is 50:50 (heads:tails), so the coin is and stays fair - the distribution from which every throw is
+drawn, so to speak, is and stays the same: **identically distributed**.
+
+### Independent and identically distributed random variables (IID)
+
+```{centered} Random Sample == IID
+```
+

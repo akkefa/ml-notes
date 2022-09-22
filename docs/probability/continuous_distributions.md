@@ -207,7 +207,7 @@ samples then the mean of the samples will end up being very close to normality.
 
 :::
 
-### PDF
+### Probability Density Function
 If we plot the normal distribution density function, it’s curve has the following characteristics:
 
 ```{image} https://miro.medium.com/max/1400/0*8ZymFK4ust4AgKyc.png
