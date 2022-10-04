@@ -75,6 +75,24 @@ $$
 X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8
 $$
 
+The Sample mean is 
+
+$$
+\bar{x}=\frac{1}{n} \sum_{i=11}^n X_i
+$$
+
+- We're going to tend to think that $\mu<3$ when $\bar{X}$ is "significantly" smaller than 3.
+- We're going to tend to think that $\mu>3$ when $\bar{X}$ is "significantly" larger than 3.
+- We're never going to observe $\bar{X}=3$, but we may be able to be convinced that $\mu=3$ if $\bar{X}$ is not too far away.
+
+
+**How do we formalize this stuff, We use hypothesis testing**
+
+Hypotheses:
+
+$\mathrm{H}_0: \mu \leq 3$ <- Null hypothesis \
+$\mathrm{H}_1: \mu>3 \quad$ Alternate hypothesis
+
 
 State your null and alternate hypothesis
 After developing your initial research hypothesis it is important to restate it as a null ($H_0$) and alternate ($H_1$)
@@ -90,21 +108,6 @@ Ho: Men are, on average, not taller than women.
 Ha: Men are, on average, taller than women.
 
 ##### Example
-
-The Sample mean is 
-
-$$
-\bar{x}=\frac{1}{n} \sum_{i=11}^n X_i
-$$
-
-- We're going to tend to think that $\mu<3$ when $\bar{X}$ is "significantly" smaller than 3.
-- We're going to tend to think that $\mu>3$ when $\bar{X}$ is "significantly" larger than 3.
-- We're never going to observe $\bar{X}=3$, but we may be able to be convinced that $\mu=3$ if $\bar{X}$ is not too far away.
-
-Hypotheses:
-
-$\mathrm{H}_0: \mu \leq 3$
-$\mathrm{H}_1: \mu>3 \quad$ alternate
 
 hypothesis
 - The null hypothesis is assumed to be true.
