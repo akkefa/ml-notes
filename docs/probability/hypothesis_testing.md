@@ -14,6 +14,10 @@ kernelspec:
 - Hypothesis testing is a formal procedure for investigating our ideas about the world using statistics. It is most
   often used by scientists to test specific predictions, called hypotheses, that arise from theories.
 
+:::{note}
+Due to random samples and randomness in the problem, we can different errors in our hypothesis testing. These errors are
+  called Type I and Type II errors.
+:::
 
 ### Steps
 
