@@ -66,6 +66,15 @@ or \\
 
 $$
 
+This is below 3 , but can we say that $\mu<3$ ?
+
+This seems awfully dependent on the random sample we happened to get!
+Let's try to work with the most generic random sample of size 8:
+
+$$
+X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8
+$$
+
 
 State your null and alternate hypothesis
 After developing your initial research hypothesis it is important to restate it as a null ($H_0$) and alternate ($H_1$)
