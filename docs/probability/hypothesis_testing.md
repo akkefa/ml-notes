@@ -93,28 +93,24 @@ Hypotheses:
 $\mathrm{H}_0: \mu \leq 3$ <- Null hypothesis \
 $\mathrm{H}_1: \mu>3 \quad$ Alternate hypothesis
 
+#### Null hypothesis
+The null hypothesis is assumed to be true. 
 
-State your null and alternate hypothesis
-After developing your initial research hypothesis it is important to restate it as a null ($H_0$) and alternate ($H_1$)
-hypothesis so that you can test it mathematically.
-
-- The alternate hypothesis is usually your initial hypothesis that predicts a relationship between variables.
-- The null hypothesis is a prediction of no relationship between the variables you are interested in.
-
-You want to test whether there is a relationship between gender and height. Based on your knowledge of human physiology,
-you formulate a hypothesis that men are, on average, taller than women. To test this hypothesis, you restate it as:
-
-Ho: Men are, on average, not taller than women.
-Ha: Men are, on average, taller than women.
-
-##### Example
-
-hypothesis
-- The null hypothesis is assumed to be true.
-- The alternate hypothesis is what we are out to show.
+#### Alternate hypothesis
+The alternate hypothesis is what we are out to show.
 
 Conclusion is either:
 Reject $\mathrm{H}_0 \quad$ OR $\quad$ Fail to Reject $\mathrm{H}_0$
+
+
+#### simple hypothesis
+Do you know the exact distribution
+
+#### composite hypothesis
+You dont know the exact distribution.
+
+Means you know the distribution is normal but you dont know the mean and variance.
+
 
 #### Errors in Hypothesis Testing
 
