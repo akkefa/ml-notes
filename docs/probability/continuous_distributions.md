@@ -412,7 +412,7 @@ The QQ Plot allows us to see deviation of a normal distribution much better than
 The normal distribution with parameter values $\mu$ = 0 and $\sigma^2$ = 1 is called the standard normal
 distribution.
 
-A rv with the standard normal distribution is customarily denoted by $Z \sim N(0, 1)$
+A rv with the standard normal distribution is denoted by $Z \sim N(0, 1)$
 
 If $X \sim N\left(\mu, \sigma^2\right)$ then
 
