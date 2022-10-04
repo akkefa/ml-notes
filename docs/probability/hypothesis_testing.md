@@ -29,7 +29,28 @@ There are 5 main steps in hypothesis testing:
 4. Decide whether to reject or fail to reject your null hypothesis.
 5. Present the findings in your results and discussion section.
 
-#### State your null and alternate hypothesis
+### Type of hypothesis testing
+Let $X_1, X_2, \ldots, X_n$ be a [random sample](random-sample)  from the normal distribution with mean $\mu$ and variance $\sigma^2$
+
+```{code-cell}
+import torch
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import norm
+
+
+sns.set_theme(style="darkgrid")
+sample = torch.normal(mean = 8, std = 16, size=(1,1000))
+
+sns.displot(sample[0], kde=True, stat = 'density',)
+plt.axvline(torch.mean(sample[0]), color='red', label='mean')
+
+plt.show()
+```
+
+
+
+State your null and alternate hypothesis
 After developing your initial research hypothesis it is important to restate it as a null ($H_0$) and alternate ($H_1$)
 hypothesis so that you can test it mathematically.
 

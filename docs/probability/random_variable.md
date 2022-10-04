@@ -476,6 +476,7 @@ $\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { 
 
 Notation= $\mathbb{1} _{A}(x)$
 
+(random-sample)=
 ## Random Sample
 
 A collection of random variables is independent and identically distributed if each random variable has the same
