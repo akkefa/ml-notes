@@ -430,8 +430,7 @@ $$
 
 $f_{Z}(x)=\frac{1}{\sqrt{2 \pi}} e^{-x^{2} / 2} \text { for }-\infty<x<\infty$
 
-### CDF
-
+### Cumulative distribution function
 We use special notation to denote the cdf of the standard normal curve
 
 $F(z)=\Phi(z)=P(Z \leq z)=\int_{-\infty}^{z} \frac{1}{\sqrt{2 \pi}} e^{-x^{2} / 2} d x$
