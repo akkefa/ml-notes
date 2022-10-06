@@ -63,6 +63,7 @@ Tossing a coin, Sample Space = {H,T}.
 :alt: Sample space
 :width: 60%
 ```
+<p style="text-align: center;">Image from byjus.com</p>
 
 ### Experiment or Trial
 Experiment is any action or process that generates observations or outcomes. \ 
