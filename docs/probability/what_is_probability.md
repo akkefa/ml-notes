@@ -22,21 +22,30 @@ philosophy.
 
 Some of the applications of probability are predicting results of the following events:
 
-1. that a customer will buy milk if they are also buying bread.
-2. Of getting at least 2 heads in 5 coin flips.
-3. Getting 3 and 5 on throwing a die.
-4. Choosing a card from the deck.
-5. Pulling a green candy from a bag of red candies.
-6. Winning a lottery 1 in many millions.
-7. \# of vehicles crossing a bridge in one day
-8. \# of customers arriving at a bank in a week
+::::{grid}
 
-### Major Applications of Probability
+:::{grid-item-card}
+Minor
+^^^^^^
+- that a customer will buy milk if they are also buying bread.
+- Of getting at least 2 heads in 5 coin flips. 
+- Getting 3 and 5 on throwing a die.
+- Pulling a green candy from a bag of red candies.
+- Winning a lottery 1 in many millions.
+- \# of customers arriving at a bank in a week
+:::
 
+:::{grid-item-card}
+Major
+^^^^^^
 - It is used for risk assessment and modelling in various industries
 - Weather forecasting or prediction of weather changes
 - Probability of a team winning in a sport based on players and strength of team
 - In the share market, chances of getting the hike of share prices
+:::
+
+::::
+
 
 ## Probability Terms
 The first thing we do when we start thinking about the probability list a number of things that could possibly happen.\
