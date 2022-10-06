@@ -114,4 +114,20 @@ Means you know the distribution is normal but you dont know the mean and varianc
 
 #### Errors in Hypothesis Testing
 
+
+```{image} https://cdn.mathpix.com/snip/images/nGNkAn14UVMFjDdb3zl7FbpNn4ld5OZMS89G4GshecU.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
+
+You are a potato chip manufacturer and you want to ensure that the mean amount in 15 ounce bags is at least 15 ounces.
+$\mathrm{H}_0: \mu \leq 15 \quad \mathrm{H}_1: \mu>15$
+
 ##### Type I Error
+The true mean is $\leq 15$ but you concluded i was $>15$. You are going to save some money because you won't be adding
+chips but you are risking a lawsuit!
+
+##### Type II Error
+The true mean is $> 15$ but you concluded it was $\leq 15$ . You are going to be spending money increasing the amount
+of chips when you didn’t have to. 
