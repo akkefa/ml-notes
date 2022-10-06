@@ -316,6 +316,7 @@ $\text { Let } x=g^{-1}(y) \text {. Then } d x=\frac{d}{d y} g^{-1}(y) d y$
 
 $E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x$
 
+(variance-link)=
 ## Variance
 
 - Measures how far we expect our random variable to be from the mean.

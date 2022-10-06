@@ -6,19 +6,19 @@
 ## Probability and Statistics
 
 ```{list-table}
-:widths: 20 20 60
+:widths: 20 70 10
 :header-rows: 1
 :align: "center"
 
 * - Symbol
   - Formula
-  - Meaning
+  - Article
 * - $\mu$
-  - $\sum_{x} k P(X=x)$
-  - Mean | Expected Value | Waited Average | First Moment Generating Function
+  - $\sum_{x} k P(X=x) = \int_{-\infty}^{\infty} x f(x) d x$
+  - [🔗](expected-value)
 * - $V(X)$ or $\sigma^2$ 
-  - $E[(X - \mu)^2]$
-  - Variance of X
+  - $E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2$
+  - [🔗](variance-link)
 * - $\sigma$
   - $\sqrt{V(X)}$
   - Standard deviation
@@ -30,21 +30,3 @@
   - The sample mean is an average value
 
 ```
-
-
-## Linear Algebra
-
-| Symbol        | Meaning                            |
-|---------------|------------------------------------|
-| x             | A single number, lowercase, italic |
-| $x$           | A vector, bold, lowercase, italic  |
-| $X$           | A matrix, bold, uppercase, italic  |
-| $\textbf{X}$  | A tensor, bold, uppercase          |
-| $X^T$         | Transpose of matrix X              |
-| $X^{-1}$      | Inverse of X                       |
-| $I$           | Identity matrix                    |
-| $X*Y$         | Element-wise product of X and Y    |
-| $X \otimes Y$ | Kronecker product of X and Y       |
-| $x \cdot y$   | Dot product of x and y             |
-| $tr(X)$       | Trace of X                         |
-| $det(X)$      | Determinant of X                   |
