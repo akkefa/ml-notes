@@ -8,6 +8,18 @@ kernelspec:
 ```
 
 # Random Variables
+The first step to understand random variable is to do a fun experiment. Go outside in front of your house with a pen
+and paper. Take note of every person you pass and their hair color, height in centimeters. Spend about 10 minutes doing
+this.
+
+Congratulations! You have conducted your first experiment! Now you will be able to answer some questions such as:
+
+- How many people walked past you?
+- Did many people who walked past you have blue hair?
+- How tall were the people who walked past you on average?
+
+You pass 10 people in this experiment, 3 of whom have blue hair, and their average height may be 165.32 cm.
+In each of these questions, there was a number; a measurable quantity was attached.
 
 ## Definition
 
