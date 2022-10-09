@@ -9,7 +9,7 @@ kernelspec:
 
 # Random Variables
 The first step to understand random variable is to do a fun experiment. Go outside in front of your house with a pen
-and paper. Take note of every person you pass and their hair color, height in centimeters. Spend about 10 minutes doing
+and paper. Take note of every person you pass and their hair color & height in centimeters. Spend about 10 minutes doing
 this.
 
 Congratulations! You have conducted your first experiment! Now you will be able to answer some questions such as:
