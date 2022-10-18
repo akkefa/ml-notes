@@ -27,7 +27,8 @@ Due to random samples and randomness in the problem, we can different errors in 
 :::
 
 ### Type of hypothesis testing
-Let $X_1, X_2, \ldots, X_n$ be a [random sample](random-sample)  from the normal distribution with mean $\mu$ and variance $\sigma^2$
+Let $X_1, X_2, \ldots, X_n$ be a [random sample](random-sample) from the normal distribution with mean $\mu$ and
+variance $\sigma^2$
 
 ```{code-cell}
 import torch
