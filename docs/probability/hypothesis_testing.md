@@ -26,16 +26,6 @@ Due to random samples and randomness in the problem, we can different errors in 
   called Type I and Type II errors.
 :::
 
-### Steps
-
-There are 5 main steps in hypothesis testing:
-
-1. State your research hypothesis as a null hypothesis and alternate hypothesis (Ho) and (Ha or H1).
-2. Collect data in a way designed to test the hypothesis.
-3. Perform an appropriate statistical test.
-4. Decide whether to reject or fail to reject your null hypothesis.
-5. Present the findings in your results and discussion section.
-
 ### Type of hypothesis testing
 Let $X_1, X_2, \ldots, X_n$ be a [random sample](random-sample)  from the normal distribution with mean $\mu$ and variance $\sigma^2$
 
