@@ -8,6 +8,13 @@ kernelspec:
 ```
 
 # Hypothesis Testing
+Statistical inference is the process of learning about characteristics of a population based
+on what is observed in a relatively small sample from that population. A sample will never give us the
+entire picture though, and we are bound to make incorrect decisions from time to time. We
+will learn how to derive and interpret appropriate tests to manage this error and how to
+evaluate when one test is better than another. we
+will learn how to construct and perform principled hypothesis tests for a wide range of
+problems and applications when they are not.
 
 ## What is Hypothesis Testing?
 - Hypothesis testing is an act in statistics whereby an analyst tests an assumption regarding a population parameter.
@@ -131,3 +138,5 @@ chips but you are risking a lawsuit!
 ##### Type II Error
 The true mean is $> 15$ but you concluded it was $\leq 15$ . You are going to be spending money increasing the amount
 of chips when you didn’t have to. 
+
+
