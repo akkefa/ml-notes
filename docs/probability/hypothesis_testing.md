@@ -16,7 +16,7 @@ evaluate when one test is better than another. we
 will learn how to construct and perform principled hypothesis tests for a wide range of
 problems and applications when they are not.
 
-## What is Hypothesis Testing?
+## What is Hypothesis
 - Hypothesis testing is an act in statistics whereby an analyst tests an assumption regarding a population parameter.
 - Hypothesis testing is a formal procedure for investigating our ideas about the world using statistics. It is most
   often used by scientists to test specific predictions, called hypotheses, that arise from theories.
