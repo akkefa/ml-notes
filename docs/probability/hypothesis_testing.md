@@ -128,7 +128,7 @@ Means you know the distribution is normal but you don't know the mean and varian
 :width: 80%
 ```
 
-### Errors in Hypothesis Testing
+## Errors in Hypothesis Testing
 
 
 ```{image} https://cdn.mathpix.com/snip/images/nGNkAn14UVMFjDdb3zl7FbpNn4ld5OZMS89G4GshecU.original.fullsize.png
