@@ -97,10 +97,10 @@ Hypotheses:
 $\mathrm{H}_0: \mu \leq 3$ <- Null hypothesis \
 $\mathrm{H}_1: \mu>3 \quad$ Alternate hypothesis
 
-#### Null hypothesis
+### Null hypothesis
 The null hypothesis is assumed to be true. 
 
-#### Alternate hypothesis
+### Alternate hypothesis
 The alternate hypothesis is what we are out to show.
 
 Conclusion is either:
