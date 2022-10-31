@@ -114,7 +114,21 @@ A simple hypothesis is one that completely specifies the distribution. Do you kn
 You don't know the exact distribution.\
 Means you know the distribution is normal but you don't know the mean and variance.
 
-#### Errors in Hypothesis Testing
+#### Critical values
+
+```{image} https://cdn.mathpix.com/snip/images/VhPT2BPUY6gNGGTSOLvZuK6iXJSLNFeOwMU3aI8Droc.original.fullsize.png
+:align: center
+:alt: Critical values in Hypothesis Testing
+:width: 80%
+```
+
+```{image} https://cdn.mathpix.com/snip/images/M8w97dpXZ9nyvOgbPEuDObaVI9gS7Qmrt9gW7GHZeYs.original.fullsize.png
+:align: center
+:alt: Critical values example
+:width: 80%
+```
+
+### Errors in Hypothesis Testing
 
 
 ```{image} https://cdn.mathpix.com/snip/images/nGNkAn14UVMFjDdb3zl7FbpNn4ld5OZMS89G4GshecU.original.fullsize.png
