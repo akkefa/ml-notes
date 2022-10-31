@@ -435,6 +435,12 @@ We use special notation to denote the cdf of the standard normal curve
 
 $F(z)=\Phi(z)=P(Z \leq z)=\int_{-\infty}^{z} \frac{1}{\sqrt{2 \pi}} e^{-x^{2} / 2} d x$
 
+```{image} https://cdn.mathpix.com/snip/images/0pNOOMfnNhB8v3JJyGL6KB4SuVh3NhdSqz2oQJsiQTA.original.fullsize.png
+:align: center
+:alt: Cumulative distribution function for Normal distribution
+:width: 80%
+```
+
 ### Properties
 
 1. The standard normal density function is symmetric about the y axis.
