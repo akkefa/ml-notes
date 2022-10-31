@@ -456,6 +456,9 @@ $\text { If } X \sim N\left(\mu, \sigma^{2}\right), \text { then } \frac{X-\mu}{
 $\frac{X-\mu}{\sigma}$ Shifted by $\mu$ or (Centered at zero) and scaled by $\frac{1}{\sigma}$ that
 will give us variance of 1.
 
+
+$\mathrm{Z} \sim \mathrm{N}(0,1) \Rightarrow \sigma \mathrm{Z}+\mu \sim \mathrm{N}\left(\mu, \sigma^2\right)$
+
 ### Proving this proposition
 
 For any continuous random variable. Suppose we have Y rv, with Desnity function $f_{Y}(y)$
