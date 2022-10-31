@@ -73,6 +73,12 @@ $$
 X_1, X_2, X_3, X_4, X_5, X_6, X_7, X_8
 $$
 
+Let $\mathrm{X}_1, \mathrm{X}_2, \ldots, \mathrm{X}_{\mathrm{n}}$ be a random sample of size $\mathrm{n}$ from the $\mathrm{N}\left(\mu, \sigma^2\right)$ distribution.
+
+$$
+\mathrm{X}_1, \mathrm{X}_2, \ldots, \mathrm{X}_{\mathrm{n}} \stackrel{\text { iid }}{\sim} \mathrm{N}\left(\mu, \sigma^2\right)
+$$
+
 The Sample mean is 
 
 $$
