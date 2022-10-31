@@ -521,6 +521,14 @@ plt.show()
 
 ```
 
+$$
+\begin{aligned} \mathrm{P}(\mathrm{X} \leq 2) &=\mathrm{P}\left(\frac{\mathrm{X}-\mu}{\sigma} \leq \frac{2-3}{\sqrt{2}}\right) \\
+&=\mathrm{P}(\mathrm{Z} \leq 1.21) \\
+& \approx 0.30 \end{aligned}
+$$
+
+R code: pnorm(1.2)
+
 #### Interval between variables
 To find the probability of an interval between certain variables, you need to subtract cdf from another cdf.
 
