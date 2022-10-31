@@ -103,18 +103,16 @@ The null hypothesis is assumed to be true.
 ### Alternate hypothesis
 The alternate hypothesis is what we are out to show.
 
-Conclusion is either:
+**Conclusion is either**:\
 Reject $\mathrm{H}_0 \quad$ OR $\quad$ Fail to Reject $\mathrm{H}_0$
 
 
 #### simple hypothesis
-Do you know the exact distribution
+A simple hypothesis is one that completely specifies the distribution. Do you know the exact distribution.
 
 #### composite hypothesis
-You dont know the exact distribution.
-
-Means you know the distribution is normal but you dont know the mean and variance.
-
+You don't know the exact distribution.\
+Means you know the distribution is normal but you don't know the mean and variance.
 
 #### Errors in Hypothesis Testing
 
