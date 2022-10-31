@@ -130,6 +130,21 @@ Means you know the distribution is normal but you don't know the mean and varian
 
 ## Errors in Hypothesis Testing
 
+Let $X_1, X_2, \ldots, X_n$ be a random sample from the normal distribution with mean $\mu$ and variance $\sigma^2=2$
+
+$$
+H _0: \mu \leq 3 \quad H _1: \mu>3
+$$
+
+**Idea**: Look at $\bar{X}$ and reject $H_0$ in favor of $H _1$ if $\overline{ X }$ is "large".\
+i.e. Look at $\bar{X}$ and reject $H_0$ in favor of $H _1$ if $\overline{ X }> c$ for some value $c$.
+
+
+```{image} https://cdn.mathpix.com/snip/images/JeCsNYRlM6qG5RBLyuckje_opt6MoxGFvrmOe5QyfT0.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
 
 ```{image} https://cdn.mathpix.com/snip/images/nGNkAn14UVMFjDdb3zl7FbpNn4ld5OZMS89G4GshecU.original.fullsize.png
 :align: center
