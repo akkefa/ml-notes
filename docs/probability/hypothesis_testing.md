@@ -155,12 +155,96 @@ i.e. Look at $\bar{X}$ and reject $H_0$ in favor of $H _1$ if $\overline{ X }> c
 You are a potato chip manufacturer and you want to ensure that the mean amount in 15 ounce bags is at least 15 ounces.
 $\mathrm{H}_0: \mu \leq 15 \quad \mathrm{H}_1: \mu>15$
 
-##### Type I Error
+### Type I Error
 The true mean is $\leq 15$ but you concluded i was $>15$. You are going to save some money because you won't be adding
 chips but you are risking a lawsuit!
 
-##### Type II Error
+### Type II Error
 The true mean is $> 15$ but you concluded it was $\leq 15$ . You are going to be spending money increasing the amount
-of chips when you didn’t have to. 
+of chips when you didn’t have to.
+
+## Developing a Test
+Let $X_1, X_2, \ldots, X_n$ be a random sample from the normal distribution with mean $\mu$ and known variance $\sigma^2$.
+
+Consider testing the simple versus simple hypotheses
+
+$$
+\begin{aligned}
+& H _0: \mu=5 \\
+& H _1: \mu=3
+\end{aligned}
+$$
+
+### level of significance
+
+Let $\alpha= P$ (Type I Error) \
+$= P \left(\right.$ Reject $H _0$ when it's true $)$ \
+$= P \left(\right.$ Reject $H _0$ when $\left.\mu=5\right)$
+
+$\alpha$ is called the level of significance of the test. It is also sometimes referred to as the size of the test.
+
+### Step One
+Choose an estimator for μ.
+
+$$ 
+\widehat{\mu}=\bar{X}
+$$
+
+### Step Two
+
+Choose a test statistic or Give the “form” of the test.
+
+- We are looking for evidence that $H _1$ is true.
+- The $N \left(3, \sigma^2\right)$ distribution takes on values from $-\infty$ to $\infty$.
+- $\overline{ X } \sim N \left(\mu, \sigma^2 / n \right) \Rightarrow \overline{ X }$ also takes on values from $-\infty$ to $\infty$.
+- It is entirely possible that $\bar{X}$ is very large even if the mean of its distribution is 3.
+- However, if $\bar{X}$ is very large, it will start to seem more likely that $\mu$ is larger than 3.
+- Eventually, a population mean of 5 will seem more likely than a population mean of 3.
+
+Reject $H _0$, in favor of $H _1$, if $\overline{ X }< c$ for some c to be determined.
+
+### Step Three
+
+Find c.
+
+- If $c$ is too large, we are making it difficult to reject $H _0$. We are more likely to fail to reject when it should be rejected.
+- If $c$ is too small, we are making it to easy to reject $H _0$.  We are more likely reject when it should not be rejected.
+
+This is where $\alpha$ comes in.
+
+$$
+\alpha&= P(Type I Error) \\
+&=P( \text{Reject } H_0 \text{ when true}) \\
+&=P (\overline{ X }< c \text{ when } \mu=3)
+$$
+
+### Step Four
+
+Give a conclusion!
+
+$0.05= P ($ Type I Error) \
+$= P \left(\right.$ Reject $H _0$ when true $)$ \
+$= P (\overline{ X }< c$ when $\mu=5)$
 
 
+$ = P \left(\frac{\overline{ X }-\mu_0}{\sigma / \sqrt{ n }}<\frac{ c -5}{2 / \sqrt{10}}\right.$ when $\left.\mu=5\right)
+
+
+```{image} https://cdn.mathpix.com/snip/images/A2zQa5iD99VnS5sLbiZ947KpZWH7i7xSbnJ6IZ88j2w.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
+
+
+```{image} https://cdn.mathpix.com/snip/images/Q5ADdylsMg5__QGyDBeVgUtKCf5dpp5b24ur5L0phO4.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
+
+```{image} https://cdn.mathpix.com/snip/images/T3f91rQbmLPwPT_cU3z8y51z-xQ8jdb9PtGskQ2pa3c.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
