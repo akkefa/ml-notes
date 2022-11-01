@@ -412,7 +412,7 @@ The QQ Plot allows us to see deviation of a normal distribution much better than
 The normal distribution with parameter values $\mu$ = 0 and $\sigma^2$ = 1 is called the standard normal
 distribution.
 
-A rv with the standard normal distribution is customarily denoted by $Z \sim N(0, 1)$
+A rv with the standard normal distribution is denoted by $Z \sim N(0, 1)$
 
 If $X \sim N\left(\mu, \sigma^2\right)$ then
 
@@ -430,11 +430,16 @@ $$
 
 $f_{Z}(x)=\frac{1}{\sqrt{2 \pi}} e^{-x^{2} / 2} \text { for }-\infty<x<\infty$
 
-### CDF
-
+### Cumulative distribution function
 We use special notation to denote the cdf of the standard normal curve
 
 $F(z)=\Phi(z)=P(Z \leq z)=\int_{-\infty}^{z} \frac{1}{\sqrt{2 \pi}} e^{-x^{2} / 2} d x$
+
+```{image} https://cdn.mathpix.com/snip/images/0pNOOMfnNhB8v3JJyGL6KB4SuVh3NhdSqz2oQJsiQTA.original.fullsize.png
+:align: center
+:alt: Cumulative distribution function for Normal distribution
+:width: 80%
+```
 
 ### Properties
 
@@ -450,6 +455,9 @@ $\text { If } X \sim N\left(\mu, \sigma^{2}\right), \text { then } \frac{X-\mu}{
 
 $\frac{X-\mu}{\sigma}$ Shifted by $\mu$ or (Centered at zero) and scaled by $\frac{1}{\sigma}$ that
 will give us variance of 1.
+
+
+$\mathrm{Z} \sim \mathrm{N}(0,1) \Rightarrow \sigma \mathrm{Z}+\mu \sim \mathrm{N}\left(\mu, \sigma^2\right)$
 
 ### Proving this proposition
 
@@ -512,6 +520,14 @@ ax.text(-0.5,0.02,round(val,2), fontsize=20)
 plt.show()
 
 ```
+
+$$
+\begin{aligned} \mathrm{P}(\mathrm{X} \leq 2) &=\mathrm{P}\left(\frac{\mathrm{X}-\mu}{\sigma} \leq \frac{2-3}{\sqrt{2}}\right) \\
+&=\mathrm{P}(\mathrm{Z} \leq 1.21) \\
+& \approx 0.30 \end{aligned}
+$$
+
+R code: pnorm(1.2)
 
 #### Interval between variables
 To find the probability of an interval between certain variables, you need to subtract cdf from another cdf.

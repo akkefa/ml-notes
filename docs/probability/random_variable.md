@@ -8,6 +8,18 @@ kernelspec:
 ```
 
 # Random Variables
+The first step to understand random variable is to do a fun experiment. Go outside in front of your house with a pen
+and paper. Take note of every person you pass and their hair color & height in centimeters. Spend about 10 minutes doing
+this.
+
+Congratulations! You have conducted your first experiment! Now you will be able to answer some questions such as:
+
+- How many people walked past you?
+- Did many people who walked past you have blue hair?
+- How tall were the people who walked past you on average?
+
+You pass 10 people in this experiment, 3 of whom have blue hair, and their average height may be 165.32 cm.
+In each of these questions, there was a number; a measurable quantity was attached.
 
 ## Definition
 
@@ -316,6 +328,7 @@ $\text { Let } x=g^{-1}(y) \text {. Then } d x=\frac{d}{d y} g^{-1}(y) d y$
 
 $E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x$
 
+(variance-link)=
 ## Variance
 
 - Measures how far we expect our random variable to be from the mean.
@@ -476,6 +489,7 @@ $\text{Indicator function}_{A}(X) = \mathbf{1}_A(x) =\begin{cases} 1, & \text { 
 
 Notation= $\mathbb{1} _{A}(x)$
 
+(random-sample)=
 ## Random Sample
 
 A collection of random variables is independent and identically distributed if each random variable has the same

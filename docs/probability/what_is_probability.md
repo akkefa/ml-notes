@@ -14,7 +14,7 @@ kernelspec:
 - Probability is the branch of mathematics that deals with the occurrence of a random event.
 - Probability is the measure of the likelihood of an event to happen.
 
-probability is the study of randomness and uncertainty. Probability theory is widely used in the area of studies such
+Probability is the study of randomness and uncertainty. Probability theory is widely used in the area of studies such
 as statistics, finance, gambling, artificial intelligence, machine learning, computer science, game theory, and
 philosophy.
 
@@ -22,21 +22,30 @@ philosophy.
 
 Some of the applications of probability are predicting results of the following events:
 
-1. that a customer will buy milk if they are also buying bread.
-2. Of getting at least 2 heads in 5 coin flips.
-3. Getting 3 and 5 on throwing a die.
-4. Choosing a card from the deck.
-5. Pulling a green candy from a bag of red candies.
-6. Winning a lottery 1 in many millions.
-7. \# of vehicles crossing a bridge in one day
-8. \# of customers arriving at a bank in a week
+::::{grid}
 
-### Major Applications of Probability
+:::{grid-item-card}
+Minor
+^^^^^^
+- that a customer will buy milk if they are also buying bread.
+- Of getting at least 2 heads in 5 coin flips. 
+- Getting 3 and 5 on throwing a die.
+- Pulling a green candy from a bag of red candies.
+- Winning a lottery 1 in many millions.
+- \# of customers arriving at a bank in a week
+:::
 
+:::{grid-item-card}
+Major
+^^^^^^
 - It is used for risk assessment and modelling in various industries
 - Weather forecasting or prediction of weather changes
 - Probability of a team winning in a sport based on players and strength of team
 - In the share market, chances of getting the hike of share prices
+:::
+
+::::
+
 
 ## Probability Terms
 The first thing we do when we start thinking about the probability list a number of things that could possibly happen.\
@@ -49,11 +58,12 @@ Suppose that we toss a die. Six numbers, from 1 to 6, can appear face up, but we
 will appear. The sample space is S = {1,2,3,4,5,6}.\
 Tossing a coin, Sample Space = {H,T}.
 
-```{image} https://cdn.mathpix.com/snip/images/NIgpfDh_vIIrB4C6KWs6SlZbyH4xSHzIPYolo_FcY-U.original.fullsize.png
+```{image} https://cdn.mathpix.com/snip/images/0nY3sA4gdcKRJqiIpDf5RvXHDTessQ-cDgjFFMMhuuE.original.fullsize.png
 :align: center
 :alt: Sample space
-:width: 60%
+:width: 80%
 ```
+<p style="text-align: center;">Image from byjus.com</p>
 
 ### Experiment or Trial
 Experiment is any action or process that generates observations or outcomes. \ 
