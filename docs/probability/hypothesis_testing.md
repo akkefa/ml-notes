@@ -146,7 +146,7 @@ i.e. Look at $\bar{X}$ and reject $H_0$ in favor of $H _1$ if $\overline{ X }> c
 :width: 80%
 ```
 
-```{image} https://cdn.mathpix.com/snip/images/nGNkAn14UVMFjDdb3zl7FbpNn4ld5OZMS89G4GshecU.original.fullsize.png
+```{image} https://cdn.mathpix.com/snip/images/CQje4JfzfdpSnlrWFvGHbbIsWFMq67TI7pIRUiyzTF4.original.fullsize.png
 :align: center
 :alt: Errors in Hypothesis Testing
 :width: 80%
