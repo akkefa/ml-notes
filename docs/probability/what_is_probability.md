@@ -66,7 +66,7 @@ Tossing a coin, Sample Space = {H,T}.
 <p style="text-align: center;">Image from byjus.com</p>
 
 ### Experiment or Trial
-Experiment is any action or process that generates observations or outcomes. \ 
+Experiment is any action or process that generates observations or outcomes.\ 
 E.g. The tossing of a coin, selecting a card from a deck of cards, throwing a dice etc.
 
 ### Outcome or Sample Point
