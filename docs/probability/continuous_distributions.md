@@ -133,6 +133,22 @@ $$
 
 λ is called the distribution rate.
 
+```{code-cell}
+import torch
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import expon
+
+sns.set_theme(style="darkgrid")
+
+data_expon = expon.rvs(scale=1,loc=0,size=1000)
+ax = sns.displot(data_expon,
+                  kde=True,
+                  bins=100)
+ax.set(xlabel='Exponential Distribution', ylabel='Frequency')
+plt.show()
+```
+
 ### Expected Value
 The mean of the exponential distribution is calculated using the integration by parts.
 
