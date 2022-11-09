@@ -121,6 +121,7 @@ disciplines to describe **time-to-event** data.
 - Length of service time
 - Time between customer arrivals
 - the amount of money spent by the customer
+- Calculating the time until the radioactive particle decays
 
 ### PDF
 The continuous random variable, say X is said to have an exponential distribution, if it has the following probability
@@ -158,6 +159,10 @@ V(X) &= E(X^2) - E(X)^2 \\
 &= \frac{2}{\lambda^2} - (\frac{1}{\lambda})^2 \\
 &= \frac{1}{\lambda^2}
 $$
+
+### Properties
+The most important property of the exponential distribution is the memoryless property. This property is also
+applicable to the geometric distribution.
 
 ## Normal (Gaussian) Distribution
 
