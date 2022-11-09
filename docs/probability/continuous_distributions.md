@@ -107,7 +107,9 @@ $P(2 < X < 18) = (18-2)\cdot \frac 1 {23-0} = \frac {16}{23}$
 
 ## Exponential Distribution
 The exponential distribution is a continuous probability distribution that often concerns the amount of time until some
-specific event happens.
+specific event happens. 
+It is a process in which events happen continuously and independently at a constant average rate. The exponential
+distribution has the key property of being memoryless.
 
 The family of exponential distributions provides probability models that are widely used in engineering and science
 disciplines to describe **time-to-event** data.
@@ -117,6 +119,7 @@ disciplines to describe **time-to-event** data.
 - Waiting time in a queue
 - Length of service time
 - Time between customer arrivals
+- the amount of money spent by the customer
 
 ### PDF
 
