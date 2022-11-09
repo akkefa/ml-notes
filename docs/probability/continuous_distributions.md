@@ -111,6 +111,7 @@ specific event happens.
 It is a process in which events happen continuously and independently at a constant average rate. The exponential
 distribution has the key property of being memoryless.
 
+### Applications
 The family of exponential distributions provides probability models that are widely used in engineering and science
 disciplines to describe **time-to-event** data.
 
@@ -122,20 +123,41 @@ disciplines to describe **time-to-event** data.
 - the amount of money spent by the customer
 
 ### PDF
+The continuous random variable, say X is said to have an exponential distribution, if it has the following probability
+density function:
 
 $$
-f(x;\lambda) = \begin{cases} \lambda  e^{ - \lambda x} & x \ge 0, \\ 0 & x < 0. \end{cases} =\lambda e^{-\lambda x} I_{(0, \infty)}(x)
+\large f(x;\lambda) = \begin{cases} \lambda  e^{ - \lambda x} & x \ge 0, \\ 0 & x < 0. \end{cases} =\lambda e^{-\lambda x} I_{(0, \infty)}(x)
 $$
+
+λ is called the distribution rate.
 
 ### Expected Value
+The mean of the exponential distribution is calculated using the integration by parts.
 
-$E(X) = \int_{0}^{\infty} x f(x) d x = \int_{0}^{\infty} x \lambda  e^{ - \lambda x} d x = \frac{1}{\lambda}$
+$$
+\begin{aligned}
+&E[X]=\int_{0}^{\infty} x f(x) d x=\int_0^{\infty} x \lambda e^{-\lambda x} d x \\
+&=\lambda\left[\left|\frac{-x e^{-\lambda x}}{\lambda}\right|_0^{\infty}+\frac{1}{\lambda} \int_0^{\infty} e^{-\lambda x} d x\right] \\
+&=\lambda\left[0+\frac{1}{\lambda} \frac{-e^{-\lambda x}}{\lambda}\right]_0^{\infty} \\
+&=\lambda \frac{1}{\lambda^2} \\
+&=\frac{1}{\lambda}
+\end{aligned}
 
-$E(X^2) = \int_{0}^{\infty} x^2 f(x) d x = \int_{0}^{\infty} x^2 \lambda  e^{ - \lambda x} d x = \frac{2}{\lambda^2}$
+E[X^2]&= \int_{0}^{\infty} x^2 f(x) d x \\ 
+&= \int_{0}^{\infty} x^2 \lambda  e^{ - \lambda x} d x \\
+&= \frac{2}{\lambda^2}
+$$
+
 
 ### Variance
+To find the variance of the exponential distribution, we need to find the second moment of the exponential distribution
 
-$V(X) = E(X^2) - E(X)^2 = \frac{2}{\lambda^2} - (\frac{1}{\lambda})^2 = \frac{1}{\lambda^2}$
+$$
+V(X) &= E(X^2) - E(X)^2 \\
+&= \frac{2}{\lambda^2} - (\frac{1}{\lambda})^2 \\
+&= \frac{1}{\lambda^2}
+$$
 
 ## Normal (Gaussian) Distribution
 
