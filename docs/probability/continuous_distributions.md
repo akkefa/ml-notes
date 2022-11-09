@@ -690,3 +690,16 @@ ax.text(0.2,0.02,round(pro,2), fontsize=20)
 plt.show()
 
 ```
+
+## Gamma Distribution
+The gamma distribution term is mostly used as a distribution which is defined as two parameters – shape parameter and
+inverse scale parameter, having continuous probability distributions.
+
+Gamma distributions have two free parameters, named as alpha (α) and beta (β), where;
+
+- α = Shape parameter
+- β = Rate parameter (the reciprocal of the scale parameter)
+
+The scale parameter β is used only to scale the distribution. This can be understood by remarking that wherever the
+random variable x appears in the probability density, then it is divided by β. Since the scale parameter provides the
+dimensional data, it is seldom useful to work with the “standard” gamma distribution, i.e., with β = 1.
