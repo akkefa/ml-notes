@@ -111,7 +111,7 @@ specific event happens.
 It is a process in which events happen continuously and independently at a constant average rate. The exponential
 distribution has the key property of being memoryless.
 
-### Exponential Distribution Applications
+### Applications
 The family of exponential distributions provides probability models that are widely used in engineering and science
 disciplines to describe **time-to-event** data.
 
@@ -122,7 +122,7 @@ disciplines to describe **time-to-event** data.
 - Time between customer arrivals
 - the amount of money spent by the customer
 
-### Exponential Distribution PDF
+### PDF
 The continuous random variable, say X is said to have an exponential distribution, if it has the following probability
 density function:
 
@@ -132,7 +132,7 @@ $$
 
 λ is called the distribution rate.
 
-### Exponential Distribution Expected Value
+### Expected Value
 The mean of the exponential distribution is calculated using the integration by parts.
 
 $$
@@ -150,7 +150,7 @@ E[X^2]&= \int_{0}^{\infty} x^2 f(x) d x \\
 $$
 
 
-### Exponential Distribution Variance
+### Variance
 To find the variance of the exponential distribution, we need to find the second moment of the exponential distribution
 
 $$
