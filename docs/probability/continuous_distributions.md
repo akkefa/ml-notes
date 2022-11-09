@@ -105,7 +105,9 @@ For random variable $X \sim U(0,23)$. Find P(2 \< X \< 18)
 
 $P(2 < X < 18) = (18-2)\cdot \frac 1 {23-0} = \frac {16}{23}$
 
-## Exponential rv
+## Exponential Distribution
+The exponential distribution is a continuous probability distribution that often concerns the amount of time until some
+specific event happens.
 
 The family of exponential distributions provides probability models that are widely used in engineering and science
 disciplines to describe **time-to-event** data.
