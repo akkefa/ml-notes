@@ -54,8 +54,24 @@ $P(X=a)=\int_{a}^{a} f(x) d x=0 \text { for all real numbers } a$
 
 Random variable $X \sim U[a,b]$ has the uniform distribution on the interval \[a, b\] if its density function is
 
-```{image} https://cdn.mathpix.com/snip/images/C3YIEOiPSsTEyCokT28x7xwBtWiAMEuJgXY7ljXUKpM.original.fullsize.png
-:width: 600
+```{code-cell}
+import torch
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import uniform
+
+sns.set_theme(style="darkgrid")
+
+# random numbers from uniform distribution
+n = 10000
+start = 10
+width = 20
+data_uniform = uniform.rvs(size=n, loc = start, scale=width)
+ax = sns.displot(data_uniform,
+                  bins=100,
+                  kde=True)
+ax.set(xlabel='Uniform Distribution ', ylabel='Frequency')
+plt.show()
 ```
 
 $$
