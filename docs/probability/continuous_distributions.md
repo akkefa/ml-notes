@@ -693,7 +693,8 @@ plt.show()
 
 ## Gamma Distribution
 The gamma distribution term is mostly used as a distribution which is defined as two parameters – shape parameter and
-inverse scale parameter, having continuous probability distributions.
+inverse scale parameter, having continuous probability distributions. Its importance is largely due to its relation to
+exponential and normal distributions.
 
 Gamma distributions have two free parameters, named as alpha (α) and beta (β), where;
 
@@ -703,3 +704,13 @@ Gamma distributions have two free parameters, named as alpha (α) and beta (β),
 The scale parameter β is used only to scale the distribution. This can be understood by remarking that wherever the
 random variable x appears in the probability density, then it is divided by β. Since the scale parameter provides the
 dimensional data, it is seldom useful to work with the “standard” gamma distribution, i.e., with β = 1.
+
+### Gamma function:
+
+The gamma function $[10]$, shown by $\Gamma( x )$, is an extension of the factorial function to real (and complex)
+numbers. Specifically, if $n \in\{1,2,3, \ldots\}$, then
+
+$$
+\Gamma( n )=( n -1) !
+$$
+
