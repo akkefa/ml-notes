@@ -114,6 +114,9 @@ You don't know the exact distribution.\
 Means you know the distribution is normal but you don't know the mean and variance.
 
 #### Critical values
+Critical values for distributions are numbers that cut off specified areas under pdfs. For the
+N(0, 1) distribution, we will use the notation $z_\alpha$ to denote the value that cuts off area $\alpha$ to
+the right as depicted here. 
 
 ```{image} https://cdn.mathpix.com/snip/images/VhPT2BPUY6gNGGTSOLvZuK6iXJSLNFeOwMU3aI8Droc.original.fullsize.png
 :align: center
