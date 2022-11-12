@@ -608,6 +608,12 @@ $$
 
 R Code: pnorm(1.21)
 
+```R
+z_score <- (4.1 - 2) / sqrt(3)
+pnorm(z_score)
+```
+
+
 #### Interval between variables
 To find the probability of an interval between certain variables, you need to subtract cdf from another cdf.
 
