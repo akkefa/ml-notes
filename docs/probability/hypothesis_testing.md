@@ -53,14 +53,8 @@ $$
 Based on what you are seeing, do you believe that the true population mean $\mu$ is
 
 $$
-
-\begin{align}
-\mu<=3 \\
-or \\
-\mu>3 \\
-\text { The sample is } \overline{\mathrm{x}}=2.799
-\end{align}
-
+ \mu<=3 \text{ or } \mu>3 \\
+\text { The sample mean is } \overline{\mathrm{x}}=2.799
 $$
 
 This is below 3 , but can we say that $\mu<3$ ?
