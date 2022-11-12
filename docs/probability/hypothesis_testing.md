@@ -226,10 +226,10 @@ Give a conclusion!
 
 $0.05= P ($ Type I Error) \
 $= P \left(\right.$ Reject $H _0$ when true $)$ \
-$= P (\overline{ X }< c$ when $\mu=5)$
+$= P (\overline{ X }< \text{ c when } \mu=5)$
 
 
-$ = P \left(\frac{\overline{ X }-\mu_0}{\sigma / \sqrt{ n }}<\frac{ c -5}{2 / \sqrt{10}}\right.$ when $\left.\mu=5\right)
+$ = P \left(\frac{\overline{ X }-\mu_0}{\sigma / \sqrt{ n }}<\frac{ c -5}{2 / \sqrt{10}}\right.$ when $\left.\mu=5\right)$
 
 
 ```{image} https://cdn.mathpix.com/snip/images/A2zQa5iD99VnS5sLbiZ947KpZWH7i7xSbnJ6IZ88j2w.original.fullsize.png
