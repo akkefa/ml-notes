@@ -85,16 +85,22 @@ $$
 
 **How do we formalize this stuff, We use hypothesis testing**
 
-Hypotheses:
+### Notation
 
 $\mathrm{H}_0: \mu \leq 3$ <- Null hypothesis \
 $\mathrm{H}_1: \mu>3 \quad$ Alternate hypothesis
 
-### Null hypothesis
-The null hypothesis is assumed to be true. 
+#### Null hypothesis
+The null hypothesis is a hypothesis that is assumed to be true. We denote it with an $H_0$.
 
-### Alternate hypothesis
+#### Alternate hypothesis
 The alternate hypothesis is what we are out to show.
+The alternative hypothesis is a hypothesis that we are looking for evidence for or **out to show**.
+We denote it with an $H_1$. 
+
+:::{note}
+Some people use the notation $H_a$ here
+:::
 
 **Conclusion is either**:\
 Reject $\mathrm{H}_0 \quad$ OR $\quad$ Fail to Reject $\mathrm{H}_0$
