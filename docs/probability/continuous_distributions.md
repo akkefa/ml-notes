@@ -613,6 +613,18 @@ z_score <- (4.1 - 2) / sqrt(3)
 pnorm(z_score)
 ```
 
+$$
+\begin{aligned}
+& X _1, X _2, \ldots, X _{10} \stackrel{ id }{\sim} N (2,3) \\
+&\overline{ X } \sim N \left(\mu, \sigma^2 / n \right)= N (2,3 / 10) \\
+& P (\overline{ X } \leq 2.3)= P \left(\frac{\overline{ X }-\mu_{\overline{ X }}}{\sigma_{\overline{ X }}} \leq \frac{2.3-2}{\sqrt{3 / 10}}\right) \\
+&\frac{\overline{ X -\mu}}{\sigma / \sqrt{ n }}=\begin{aligned}
+&= P ( Z \leq 0.5477) \\
+& \approx 0.7081
+\end{aligned}
+\end{aligned}
+$$
+
 #### Interval between variables
 To find the probability of an interval between certain variables, you need to subtract cdf from another cdf.
 
