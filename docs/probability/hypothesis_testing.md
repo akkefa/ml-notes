@@ -250,3 +250,35 @@ $ = P \left(\frac{\overline{ X }-\mu_0}{\sigma / \sqrt{ n }}<\frac{ c -5}{2 / \s
 :alt: Errors in Hypothesis Testing
 :width: 80%
 ```
+
+### Formula
+
+Let $X_1, X_2, \ldots, X_n$ be a random sample from the normal distribution with mean $\mu$ and known variance $\sigma^2$.
+
+Consider testing the simple versus simple hypotheses
+
+$$
+H _0: \mu=\mu_0 \quad H _1: \mu=\mu_1
+$$
+
+where $\mu_0$ and $\mu_1$ are fixed and known.
+
+
+$$
+H_0: \mu=\mu_0 \\
+H _1: \mu=\mu_1 \\
+\mu_0<\mu_1 \\
+\text{ Reject H0, in favor of H1 if } \\
+
+\large \overline{ X }>\mu_0+ z _\alpha \frac{\sigma}{\sqrt{ n }}
+$$
+
+
+$$
+H_0: \mu=\mu_0 \\
+H _1: \mu=\mu_1 \\
+\mu_0>\mu_1 \\
+\text{ Reject H0, in favor of H1 if } \\
+
+\large \overline{ X }<\mu_0+ z_{1-\alpha} \frac{\sigma}{\sqrt{ n }}
+$$
