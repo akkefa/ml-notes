@@ -593,6 +593,21 @@ $$
 
 R code: pnorm(1.2)
 
+####  Find P(X<4.1) when N(2, 3)?
+
+Let $X \sim N(2,3)$.
+Then
+
+$$
+\begin{aligned}
+P ( X \leq 4.1) &= P \left(\frac{ X -\mu}{\sigma} \leq \frac{4.1-2}{\sqrt{3}}\right) \\
+&= P (Z \leq 1.21) \\
+& \approx 0.8868
+\end{aligned}
+$$
+
+R Code: pnorm(1.21)
+
 #### Interval between variables
 To find the probability of an interval between certain variables, you need to subtract cdf from another cdf.
 
