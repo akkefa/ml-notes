@@ -38,11 +38,10 @@ from scipy.stats import norm
 
 
 sns.set_theme(style="darkgrid")
-sample = torch.normal(mean = 8, std = 16, size=(1,1000))
+sample = torch.normal(mean = 0, std = 1, size=(1,1000))
 
 sns.displot(sample[0], kde=True, stat = 'density',)
 plt.axvline(torch.mean(sample[0]), color='red', label='mean')
-
 plt.show()
 ```
 Example of random sample after it is observed:
