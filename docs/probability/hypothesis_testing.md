@@ -406,3 +406,10 @@ Reject $H _0$, in favor of $H _1$, if
 $$
 \overline{ X }<\mu_0+ z _{1-\alpha} \frac{\sigma}{\sqrt{ n }}
 $$
+
+### Example
+
+In 2019, the average health care annual premium for a family of 4 in the United States, was reported to be $\$ 6,015$.
+
+In a more recent survey, 100 randomly sampled families of 4 reported an average annual health care premium of $\$ 6,537$.
+Can we say that the true average is currently greater than $\$ 6,015$ for all families of 4 ?
