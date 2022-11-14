@@ -345,3 +345,38 @@ $$
 - Step One Choose an estimator for μ
 - Step Two Choose a test statistic: Reject $H_0$ , in favor of $H_1$ if $\bar{𝖷}$ > c, where c is to be determined.
 - Step Three Find c.
+
+## One-Tailed Tests
+
+Let $X_1, X_2, \ldots, X_n$ be a random sample from the normal distribution with mean $\mu$ and known variance $\sigma^2$.
+Consider testing the hypotheses
+
+$$
+H _0: \mu \geq \mu_0 \quad H _1: \mu<\mu_0
+$$
+
+where $\mu_0$ is fixed and known.
+
+
+### Step One
+Choose an estimator for μ.
+
+$$ 
+\widehat{\mu}=\bar{X}
+$$
+
+### Step Two
+
+Choose a test statistic or Give the “form” of the test.
+
+Reject $H _0$, in favor of $H _1$, if $\overline{ X }< c$ for some c to be determined.
+
+### Step Three
+
+Find c.
+
+$$
+\alpha&= P(Type I Error) \\
+&=P( \text{Reject } H_0 \text{ when true}) \\
+&=P (\overline{ X }< c \text{ when } \mu=3)
+$$
