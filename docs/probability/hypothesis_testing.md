@@ -185,6 +185,30 @@ $= P \left(\right.$ Reject $H _0$ when $\left.\mu=5\right)$
 
 $\alpha$ is called the level of significance of the test. It is also sometimes referred to as the size of the test.
 
+$$
+\begin{aligned}
+\alpha &=\max P (\text { Type I Error }) \\
+&=\max _{\mu \in H _0} P \left(\text { Reject } H _0 ; \mu\right) \\
+\beta &=\max P (\text { Type II Error }) \\
+&=\max _{\mu \in H _1} P \left(\text { Fail to Reject } H _0 ; \mu\right)
+\end{aligned}
+$$
+
+### Power of the test
+
+$1-\beta$ is known as the
+power of the test
+$$
+\begin{gathered}
+1-\beta=1-\max _{\mu \in H _1} P \left(\text { Fail to Reject } H _0 ; \mu\right) \\
+=\min _{\mu \in H _1}\left(1- P \left(\text { Fail to Reject } H _0 ; \mu\right)\right) \\
+=\min _{\mu \in H _1} P \left(\text { Reject } H _0 ; \mu\right) \quad \begin{array}{c}
+\text { High power } \\
+\text { is good! }
+\end{array}
+\end{gathered}
+$$
+
 ### Step One
 Choose an estimator for μ.
 
@@ -308,3 +332,16 @@ $$
 &= P \left( Z \leq \frac{\mu_0+ z _\alpha \frac{\sigma}{\sqrt{ n }}-\mu_1}{\sigma / \sqrt{ n }}\right)
 \end{aligned}
 $$
+
+## Composite vs Composite Hypothesis
+
+$$
+\begin{aligned}
+& X _1, X _2, \ldots, X _{ n } \sim N \left(\mu, \sigma^2\right), \sigma^2 \text { known } \\
+& H _0: \mu \leq \mu_0 \quad \text { vs } \quad H _1: \mu>\mu_0
+\end{aligned}
+$$
+
+- Step One Choose an estimator for μ
+- Step Two Choose a test statistic: Reject $H_0$ , in favor of $H_1$ if $\bar{𝖷}$ > c, where c is to be determined.
+- Step Three Find c.
