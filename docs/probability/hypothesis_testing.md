@@ -282,3 +282,29 @@ H _1: \mu=\mu_1 \\
 
 \large \overline{ X }<\mu_0+ z_{1-\alpha} \frac{\sigma}{\sqrt{ n }}
 $$
+
+### Type II Error
+
+$$
+H_0: \mu=\mu_0 \\
+H _1: \mu=\mu_1 \\
+\mu_0<\mu_1
+$$
+
+$$
+\begin{aligned}
+& \beta= P (\text { Type II Error }) \\
+=& P \left(\text { Fail to Reject } H _0 \text { when false }\right) \\
+=& P \left(\overline{ X } \leq \mu_0+ z _\alpha \frac{\sigma}{\sqrt{ n }} \text { when } \mu=\mu_1\right) \\
+=& P \left(\overline{ X } \leq \mu_0+ z _\alpha \frac{\sigma}{\sqrt{ n }} ; \mu_1\right)
+\end{aligned}
+
+
+$$
+
+$$
+\begin{aligned}
+\beta &= P \left(\left(\frac{\overline{X} -\mu_1}{\sigma / \sqrt{ n }}\right) \leq \frac{\mu_0+ z _\alpha \frac{\sigma}{\sqrt{ n }}-\mu_1}{\sigma / \sqrt{ n }} ; \mu_1\right) \\
+&= P \left( Z \leq \frac{\mu_0+ z _\alpha \frac{\sigma}{\sqrt{ n }}-\mu_1}{\sigma / \sqrt{ n }}\right)
+\end{aligned}
+$$
