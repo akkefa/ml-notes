@@ -376,7 +376,33 @@ Reject $H _0$, in favor of $H _1$, if $\overline{ X }< c$ for some c to be deter
 Find c.
 
 $$
-\alpha&= P(Type I Error) \\
-&=P( \text{Reject } H_0 \text{ when true}) \\
-&=P (\overline{ X }< c \text{ when } \mu=3)
+\begin{aligned}
+\alpha &=\max _{\mu \geq \mu_0} P (\text { Type I Error }) \\
+&=\max _{\mu \geq \mu_0} P \left(\text { Reject } H _0 ; \mu\right) \\
+&=\max _{\mu \geq \mu_0} P (\overline{ X }< c ; \mu)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\alpha &=\max _{\mu \geq \mu_0} P (\overline{ X }< c ; \mu) \\
+&=\max _{\mu \geq \mu_0} P \left( Z <\frac{ c -\mu}{\sigma / \sqrt{ n }}\right) \\
+&=\max _{\mu \geq \mu_0} \Phi\left(\frac{ c -\mu}{\sigma / \sqrt{ n }}\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\alpha &=\max _{\mu \geq \mu_0} P (\overline{ X }< c ; \mu) \\
+&=\max _{\mu \geq \mu_0} P \left( Z <\frac{ c -\mu}{\sigma / \sqrt{ n }}\right) \\
+&=\max _{\mu \geq \mu_0} \Phi\left(\frac{ c -\mu}{\sigma / \sqrt{ n }}\right) \\
+\text { decreasing in } \mu
+\end{aligned}
+$$
+
+### Step four
+
+Reject $H _0$, in favor of $H _1$, if
+$$
+\overline{ X }<\mu_0+ z _{1-\alpha} \frac{\sigma}{\sqrt{ n }}
 $$
