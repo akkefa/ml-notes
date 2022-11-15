@@ -497,3 +497,26 @@ whether lambda was between 0 and 2, the complement of that is not the rest of th
 only non-negative values. So the complement of the interval from 0 to 2 in that space is 2 to infinity.
 
 
+$\gamma(\theta)= P \left(\right.$ Reject $H _0$ when the parameter is $\left.\theta\right)$
+$$
+\gamma(\theta)= P \left(\text { Reject } H _0 ; \theta\right)
+$$
+$\theta$ is an argument that can be anywhere in the parameter space $\Theta$.
+it could be a $\theta$ from $H _0$
+it could be a $\theta$ from $H _1$
+
+
+$$
+\begin{aligned}
+&\alpha=\max P \left(\text { Reject } H _0 \text { when true }\right) \\
+&=\max _{\theta \in \Theta_0} P \left(\text { Reject } H _0 ; \theta\right) \\
+&=\max _{\theta \in \Theta_0} \gamma(\theta) \longleftrightarrow \begin{array}{l}
+\text { Other notation } \\
+\text { is } \max _{\theta \in H _0} \\
+\hline
+\end{array} \\
+&
+\end{aligned}
+$$
+
+
