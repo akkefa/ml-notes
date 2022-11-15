@@ -476,3 +476,20 @@ $$
 From the data, where $\bar{x}=6537$, we reject $H _0$ in favor of $H _1$.\
 The data suggests that the true mean annual health care premium is greater than $\$ 6015$.
 
+
+## Power Tests
+Let $X_1, X_2, \ldots, X_n$ be a random sample from any distribution with unknown parameter $\theta$ which takes values
+in a parameter space $\Theta$
+
+We ultimately want to test
+
+$$
+\begin{aligned}
+& H _0: \theta \in \Theta_0 \\
+& H _1: \theta \in \Theta \backslash \Theta_0
+\end{aligned}
+$$
+
+where $\Theta_0$ is some subset of $\Theta$.
+
+
