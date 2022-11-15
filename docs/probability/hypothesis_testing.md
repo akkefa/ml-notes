@@ -412,4 +412,67 @@ $$
 In 2019, the average health care annual premium for a family of 4 in the United States, was reported to be $\$ 6,015$.
 
 In a more recent survey, 100 randomly sampled families of 4 reported an average annual health care premium of $\$ 6,537$.
-Can we say that the true average is currently greater than $\$ 6,015$ for all families of 4 ?
+Can we say that the true average is currently greater than $\$ 6,015$ for all families of 4?
+
+Assume that annual health care premiums are normally distributed with a standard deviation of $\$ 814$.
+Let $\mu$ be the true average for all families of 4.
+
+#### Step Zero
+Set up the hypotheses.
+
+$$
+H _0: \mu=6015 \quad H _1: \mu>6015
+$$
+
+Decide on a level of significance. $ \alpha=0.10$
+
+#### Step One
+Choose an estimator for $\mu$.
+
+$$
+\hat{\mu}=\bar{X}
+$$
+
+#### Step Two
+Give the form of the test.
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\bar{X}>c
+$$
+
+for some $c$ to be determined.
+
+#### Step Three
+Find c.
+
+$$
+\begin{aligned}
+\alpha &=\max _{\mu=\mu_0} P (\text { Type I Error; } \mu) \\
+&= P \left(\text { Type I Error; } \mu_0\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&\alpha= P \left(\text { Reject } H _0 ; \mu_0\right) \text { when }\\
+&= P \left(\overline{ X }> c ; \mu_0\right) \quad \text { it true!, }\\
+&= P \left(\frac{\overline{ X }-\mu_0}{\sigma / \sqrt{ n }}>\frac{ c -6015}{814 / \sqrt{100}} ; \mu_0\right)\\
+&=P\left(Z>\frac{c-6015}{814 / \sqrt{100}}\right)
+\end{aligned}
+$$
+
+$$
+\frac{c-6015}{814 / \sqrt{100}}=1.28
+$$
+
+#### Step Four
+Conclusion. Reject $H _0$, in favor of $H _1$, if
+
+$$
+\bar{X}>6119.19
+$$
+
+From the data, where $\bar{x}=6537$, we reject $H _0$ in favor of $H _1$.\
+The data suggests that the true mean annual health care premium is greater than $\$ 6015$.
+
