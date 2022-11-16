@@ -625,3 +625,42 @@ $$
 &\overline{ X }<\mu_0- z _{\alpha / 2} \frac{\sigma}{\sqrt{ n }}
 \end{aligned}
 $$
+
+
+### Example
+In 2019, the average health care annual premium for a family of 4 in the United States, was reported to be $\$ 6,015$.
+
+In a more recent survey, 100 randomly sampled families of 4 reported an average annual health care premium of $\$ 6,177$.
+Can we say that the true average, for all families of 4 , is currently different than the sample mean from 2019?
+$$
+\sigma=814 \quad \text { Use } \alpha=0.05
+$$
+
+Assume that annual health care premiums are normally distributed with a standard deviation of $\$ 814$.
+Let $\mu$ be the true average for all families of 4.
+Hypotheses:
+
+$$
+\begin{aligned}
+& H _0: \mu=6015 \\
+& H _1: \mu \neq 6015
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&\bar{x}=6177 \quad \sigma=814 \quad n=100 \\
+&z_{\alpha / 2}=z_{0.025}=1.96 \\
+&\text { In R: qnorm(0.975) } \\
+&6015+1.96 \frac{814}{\sqrt{100}}=6174.5 \\
+&6015-1.96 \frac{814}{\sqrt{100}}=5855.5
+\end{aligned}
+$$
+
+We reject $H _0$, in favor of $H _1$. The data suggests that the true current average, for all families of 4 , is different than it was in 2019.
+
+```{image} https://cdn.mathpix.com/snip/images/_oA87qNHdN5Ozd0kgQL7PxguB7Yc7zoi__lLKXJGuZU.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
