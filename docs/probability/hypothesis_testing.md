@@ -542,3 +542,86 @@ By looking at the data and asking "how likely was the data to occur, assuming th
 
 What do "low" and "high" mean? That is where your significance level $\alpha$ comes back into play. We consider a p-value low if the p-value is less than $\alpha$, and high if it is greater than $\alpha$.
 
+## Two Tailed Tests
+
+Let $X_1, X_2, \ldots, X_n$ be a random sample from the normal distribution with mean $\mu$ and known variance $\sigma^2$.
+
+Derive a hypothesis test of size $\alpha$ for testing
+
+$$
+\begin{aligned}
+& H _0: \mu=\mu_0 \\
+& H _1: \mu \neq \mu_0
+\end{aligned}
+$$
+
+We will look at the sample mean $\bar{X} \ldots$ $\ldots$ and reject if it is either too high or too low.
+
+### Step One
+Choose an estimator for μ.
+
+$$ 
+\widehat{\mu}=\bar{X}
+$$
+
+### Step Two
+Choose a test statistic or Give the “form” of the test.
+
+
+Reject $H _0$, in favor of $H _1$ if either $\overline{ X }< c$ or $\bar{X}>d$ for some $c$ and $d$ to be determined.
+
+Easier to make it symmetric!
+Reject $H _0$, in favor of $H _1$ if either
+
+$$
+\begin{aligned}
+&\overline{ X }>\mu_0+ c \\
+&\overline{ X }<\mu_0- c
+\end{aligned}
+$$
+for some $c$ to be determined.
+
+### Step Three
+Find c.
+
+$$
+\begin{aligned}
+\alpha &=\max _{\mu=\mu_0} P (\text { Type I Error }) \\
+&=\max _{\mu=\mu_0} P \left(\text { Reject } H _0 ; \mu\right) \\
+&= P \left(\text { Reject } H _0 ; \mu_0\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&\alpha= P \left(\overline{ X }<\mu_0- c \text { or } \overline{ X }>\mu_0+ c ; \mu_0\right) \\
+&=1- P \left(\mu_0- c \leq \overline{ X } \leq \mu_0+ c ; \mu_0\right)
+\end{aligned}
+$$
+
+$$
+\begin{gathered}
+\alpha=1- P \left(\frac{- c }{\sigma / \sqrt{ n }} \leq Z \leq \frac{ c }{\sigma / \sqrt{ n }}\right) \\
+1-\alpha= P \left(\frac{- c }{\sigma / \sqrt{ n }} \leq Z \leq \frac{ c }{\sigma / \sqrt{ n }}\right)
+\end{gathered}
+$$
+
+
+$$
+\frac{c}{\sigma / \sqrt{n}}=z_{\alpha / 2}
+
+
+c=z_{\alpha / 2} \frac{\sigma}{\sqrt{n}}
+$$
+
+### Step Four
+Conclusion
+
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\begin{aligned}
+&\overline{ X }>\mu_0+ z _{\alpha / 2} \frac{\sigma}{\sqrt{n}} \\
+&\overline{ X }<\mu_0- z _{\alpha / 2} \frac{\sigma}{\sqrt{ n }}
+\end{aligned}
+$$
