@@ -54,8 +54,24 @@ $P(X=a)=\int_{a}^{a} f(x) d x=0 \text { for all real numbers } a$
 
 Random variable $X \sim U[a,b]$ has the uniform distribution on the interval \[a, b\] if its density function is
 
-```{image} https://cdn.mathpix.com/snip/images/C3YIEOiPSsTEyCokT28x7xwBtWiAMEuJgXY7ljXUKpM.original.fullsize.png
-:width: 600
+```{code-cell}
+import torch
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import uniform
+
+sns.set_theme(style="darkgrid")
+
+# random numbers from uniform distribution
+n = 10000
+start = 10
+width = 20
+data_uniform = uniform.rvs(size=n, loc = start, scale=width)
+ax = sns.displot(data_uniform,
+                  bins=100,
+                  kde=True)
+ax.set(xlabel='Uniform Distribution ', ylabel='Frequency')
+plt.show()
 ```
 
 $$
@@ -105,8 +121,13 @@ For random variable $X \sim U(0,23)$. Find P(2 \< X \< 18)
 
 $P(2 < X < 18) = (18-2)\cdot \frac 1 {23-0} = \frac {16}{23}$
 
-## Exponential rv
+## Exponential Distribution
+The exponential distribution is a continuous probability distribution that often concerns the amount of time until some
+specific event happens. 
+It is a process in which events happen continuously and independently at a constant average rate. The exponential
+distribution has the key property of being memoryless.
 
+### Applications
 The family of exponential distributions provides probability models that are widely used in engineering and science
 disciplines to describe **time-to-event** data.
 
@@ -115,22 +136,65 @@ disciplines to describe **time-to-event** data.
 - Waiting time in a queue
 - Length of service time
 - Time between customer arrivals
+- the amount of money spent by the customer
+- Calculating the time until the radioactive particle decays
 
 ### PDF
+The continuous random variable, say X is said to have an exponential distribution, if it has the following probability
+density function:
 
 $$
-f(x;\lambda) = \begin{cases} \lambda  e^{ - \lambda x} & x \ge 0, \\ 0 & x < 0. \end{cases} =\lambda e^{-\lambda x} I_{(0, \infty)}(x)
+\large f(x;\lambda) = \begin{cases} \lambda  e^{ - \lambda x} & x \ge 0, \\ 0 & x < 0. \end{cases} =\lambda e^{-\lambda x} I_{(0, \infty)}(x)
 $$
+
+λ is called the distribution rate.
+
+```{code-cell}
+import torch
+import matplotlib.pyplot as plt
+import seaborn as sns
+from scipy.stats import expon
+
+sns.set_theme(style="darkgrid")
+
+data_expon = expon.rvs(scale=1,loc=0,size=1000)
+ax = sns.displot(data_expon,
+                  kde=True,
+                  bins=100)
+ax.set(xlabel='Exponential Distribution', ylabel='Frequency')
+plt.show()
+```
 
 ### Expected Value
+The mean of the exponential distribution is calculated using the integration by parts.
 
-$E(X) = \int_{0}^{\infty} x f(x) d x = \int_{0}^{\infty} x \lambda  e^{ - \lambda x} d x = \frac{1}{\lambda}$
+$$
+\begin{aligned}
+&E[X]=\int_{0}^{\infty} x f(x) d x=\int_0^{\infty} x \lambda e^{-\lambda x} d x \\
+&=\lambda\left[\left|\frac{-x e^{-\lambda x}}{\lambda}\right|_0^{\infty}+\frac{1}{\lambda} \int_0^{\infty} e^{-\lambda x} d x\right] \\
+&=\lambda\left[0+\frac{1}{\lambda} \frac{-e^{-\lambda x}}{\lambda}\right]_0^{\infty} \\
+&=\lambda \frac{1}{\lambda^2} \\
+&=\frac{1}{\lambda}
+\end{aligned}
 
-$E(X^2) = \int_{0}^{\infty} x^2 f(x) d x = \int_{0}^{\infty} x^2 \lambda  e^{ - \lambda x} d x = \frac{2}{\lambda^2}$
+E[X^2]&= \int_{0}^{\infty} x^2 f(x) d x \\ 
+&= \int_{0}^{\infty} x^2 \lambda  e^{ - \lambda x} d x \\
+&= \frac{2}{\lambda^2}
+$$
+
 
 ### Variance
+To find the variance of the exponential distribution, we need to find the second moment of the exponential distribution
 
-$V(X) = E(X^2) - E(X)^2 = \frac{2}{\lambda^2} - (\frac{1}{\lambda})^2 = \frac{1}{\lambda^2}$
+$$
+V(X) &= E(X^2) - E(X)^2 \\
+&= \frac{2}{\lambda^2} - (\frac{1}{\lambda})^2 \\
+&= \frac{1}{\lambda^2}
+$$
+
+### Properties
+The most important property of the exponential distribution is the memoryless property. This property is also
+applicable to the geometric distribution.
 
 ## Normal (Gaussian) Distribution
 
@@ -529,6 +593,38 @@ $$
 
 R code: pnorm(1.2)
 
+####  Find P(X<4.1) when N(2, 3)?
+
+Let $X \sim N(2,3)$.
+Then
+
+$$
+\begin{aligned}
+P ( X \leq 4.1) &= P \left(\frac{ X -\mu}{\sigma} \leq \frac{4.1-2}{\sqrt{3}}\right) \\
+&= P (Z \leq 1.21) \\
+& \approx 0.8868
+\end{aligned}
+$$
+
+R Code: pnorm(1.21)
+
+```R
+z_score <- (4.1 - 2) / sqrt(3)
+pnorm(z_score)
+```
+
+$$
+\begin{aligned}
+& X _1, X _2, \ldots, X _{10} \stackrel{ id }{\sim} N (2,3) \\
+&\overline{ X } \sim N \left(\mu, \sigma^2 / n \right)= N (2,3 / 10) \\
+& P (\overline{ X } \leq 2.3)= P \left(\frac{\overline{ X }-\mu_{\overline{ X }}}{\sigma_{\overline{ X }}} \leq \frac{2.3-2}{\sqrt{3 / 10}}\right) \\
+&\frac{\overline{ X -\mu}}{\sigma / \sqrt{ n }}=\begin{aligned}
+&= P ( Z \leq 0.5477) \\
+& \approx 0.7081
+\end{aligned}
+\end{aligned}
+$$
+
 #### Interval between variables
 To find the probability of an interval between certain variables, you need to subtract cdf from another cdf.
 
@@ -626,3 +722,27 @@ ax.text(0.2,0.02,round(pro,2), fontsize=20)
 plt.show()
 
 ```
+
+## Gamma Distribution
+The gamma distribution term is mostly used as a distribution which is defined as two parameters – shape parameter and
+inverse scale parameter, having continuous probability distributions. Its importance is largely due to its relation to
+exponential and normal distributions.
+
+Gamma distributions have two free parameters, named as alpha (α) and beta (β), where;
+
+- α = Shape parameter
+- β = Rate parameter (the reciprocal of the scale parameter)
+
+The scale parameter β is used only to scale the distribution. This can be understood by remarking that wherever the
+random variable x appears in the probability density, then it is divided by β. Since the scale parameter provides the
+dimensional data, it is seldom useful to work with the “standard” gamma distribution, i.e., with β = 1.
+
+### Gamma function:
+
+The gamma function $[10]$, shown by $\Gamma( x )$, is an extension of the factorial function to real (and complex)
+numbers. Specifically, if $n \in\{1,2,3, \ldots\}$, then
+
+$$
+\Gamma( n )=( n -1) !
+$$
+

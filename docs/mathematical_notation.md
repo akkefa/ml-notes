@@ -12,7 +12,7 @@
 
 * - Symbol
   - Formula
-  - Article
+  - Explained
 * - $\mu$
   - $\sum_{x} k P(X=x) = \int_{-\infty}^{\infty} x f(x) d x$
   - [🔗](expected-value)

@@ -335,7 +335,11 @@ $E[g(X)]=\int_{-\infty}^{\infty} g(x) f_{X}(x)) d x$
 - Measures of **spread** of a distribution.
 - Variance is a measure of dispersion.
 
-Defined as $\sigma^2$ or V(X).
+### Denoted by
+
+$$
+\large \sigma^2 \text{ or } V(X).
+$$
 
 $$
 V(X) = E[(X - E[X])^2] = E[(X - \mu)^2]  = E[X^2] - E[X]^2
