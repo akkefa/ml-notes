@@ -781,8 +781,15 @@ $$
 $$
 
 Reject $H _0$ if
+
 $$
 \hat{p}>0.65+z_{0.10} \sqrt{\frac{0.65(1-0.65)}{n}}
 $$
+Formula
+
+$$
+\hat{p}> p +z_{0.10} \sqrt{\frac{p(1-p)}{n}}
+$$
+
 
 
