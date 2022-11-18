@@ -664,3 +664,125 @@ We reject $H _0$, in favor of $H _1$. The data suggests that the true current av
 :alt: Errors in Hypothesis Testing
 :width: 80%
 ```
+
+## Hypothesis Tests for Proportions
+
+A random sample of 500 people in a certain country which is about to have a national election were asked whether they preferred "Candidate A" or "Candidate B".
+From this sample, 320 people responded that they preferred Candidate A.
+
+Let $p$ be the true proportion of the people in the country who prefer Candidate A.
+
+Test the hypotheses
+$H _0: p \leq 0.65$ versus
+$H _1: p>0.65$
+Use level of significance $0.10$.
+We have an estimate
+
+$$
+\hat{p}=\frac{320}{500}=\frac{16}{25}
+$$
+
+
+### The Model
+
+Take a random sample of size $n$.
+Record $X_1, X_2, \ldots, X_n$ where
+$X_i= \begin{cases}1 & \text { person i likes Candidate A } \\ 0 & \text { person i likes Candidate B }\end{cases}$
+Then $X_1, X_2, \ldots, X_n$ is a random sample from the Bernoulli distribution with parameter $p$.
+
+Note that, with these 1's and 0's,
+$$
+\begin{aligned}
+\hat{p} &=\frac{\# \text { in the sample who like A }}{\# \text { in the sample }} \\
+&=\frac{\sum_{ i =1}^{ n } X _{ i }}{ n }=\overline{ X }
+\end{aligned}
+$$
+By the Central Limit Theorem, $\hat{p}=\overline{ X }$ has, for large samples, an approximately normal distribution.
+
+$$
+\begin{aligned}
+E[\hat{p}] &=E\left[X_1\right]=p \\
+\operatorname{Var}[\hat{p}] &=\frac{\operatorname{Var}\left[X_1\right]}{n}=\frac{p(1-p)}{n}
+\end{aligned}
+$$
+So, $\quad \hat{p} \stackrel{\text { approx }}{\sim} N\left(p, \frac{p(1-p)}{n}\right)$
+
+$$
+\hat{p} \stackrel{\text { approx }}{\sim} N\left(p, \frac{p(1-p)}{n}\right)
+$$
+In particular,
+$$
+\frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}}
+$$
+behaves roughly like a $N(0,1)$ as $n$ gets large.
+
+$n >30$ is a rule of thumb to apply to all distributions, but we can (and should!) do better with specific
+distributions.
+
+- $\hat{p}$ lives between 0 and 1.
+- The normal distribution lives between $-\infty$ and $\infty$.
+- However, $99.7 \%$ of the area under a $N(0,1)$ curve lies between $-3$ and 3 ,
+
+
+$$
+\begin{aligned}
+&\hat{p} \stackrel{\text { approx }}{\sim} N\left(p, \frac{p(1-p)}{n}\right) \\
+&\Rightarrow \sigma_{\hat{p}}=\sqrt{\frac{p(1-p)}{n}}
+\end{aligned}
+$$
+
+Go forward using normality if the interval
+$$
+\left(\hat{p}-3 \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}, \hat{p}+3 \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right)
+$$
+is completely contained within $[0,1]$.
+
+### Step One
+
+Choose a statistic.
+$\widehat{p}=$ sample proportion for Candidate $A$
+
+### Step Two
+
+Form of the test.
+Reject $H _0$, in favor of $H _1$, if $\hat{ p }> c$.
+
+### Step Three
+Use $\alpha$ to find $c$
+Assume normality of $\hat{p}$ ?
+It is a sample mean and $n>30$.
+- The interval
+$$
+\left(\hat{p}-3 \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}, \hat{p}+3 \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\right)
+$$
+is $(0.5756,0.7044)$
+
+$$
+\begin{aligned}
+\alpha &=\max _{p \in H_0} P (\text { Type I Error }) \\
+&=\max _{p \leq 0.65} P \left(\text { Reject } H _0 ; p \right) \\
+&=\max _{ p \leq 0.65} P (\hat{ p }> c ; p )
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+\alpha &=\max _{p \leq 0.65} P\left(\frac{\hat{p}-p}{\sqrt{\frac{p(1-p)}{n}}}>\frac{c-p}{\sqrt{\frac{p(1-p)}{n}}} ; p\right) \\
+& \approx \max _{p \leq 0.65} P\left(Z>\frac{c-p}{\sqrt{\frac{p(1-p)}{n}}}\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+0.10 &=\max _{p \leq 0.65} P \left(Z>\frac{c-p}{\sqrt{\frac{p(1-p)}{n}}}\right) \\
+&=P\left(Z>\frac{c-0.65}{\sqrt{\frac{0.65(1-0.65)}{n}}}\right) \\
+& \Rightarrow \frac{c-0.65}{\sqrt{\frac{0.65(1-0.65)}{n}}}=z_{0.10}
+\end{aligned}
+$$
+
+Reject $H _0$ if
+$$
+\hat{p}>0.65+z_{0.10} \sqrt{\frac{0.65(1-0.65)}{n}}
+$$
+
+
