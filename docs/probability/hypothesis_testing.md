@@ -791,5 +791,75 @@ $$
 \hat{p}> p +z_{0.10} \sqrt{\frac{p(1-p)}{n}}
 $$
 
+## T-Tests
+
+Let $X_1, X_2, \ldots, X_n$ be a random sample from the normal distribution with mean $\mu$ and unknown variance $\sigma^2$.
+
+Consider testing the simple versus simple hypotheses
+$$
+H _0: \mu=\mu_0 \quad H _1: \mu<\mu_0
+$$
+where $\mu_0$ is fixed and known.
+
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\overline{ X }<\mu_0+ z _{1-\alpha} \frac{\sigma}{\sqrt{ n }}
+$$
+
+unknown!This is a useless test!
+
+It was based on the fact that
+
+$$
+\overline{ X } \sim N \left(\mu, \sigma^2 / n \right)
+
+\\
+
+\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} \sim N (0,1)
+$$
+What is we use the sample standard deviation $S =\sqrt{ S ^2}$ in place of $\sigma$ ?
+
+$$
+\begin{aligned}
+\frac{\overline{ X }-\mu}{ S / \sqrt{ n }} &=\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} \cdot \frac{\sigma}{ S }=\frac{\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }}}{\frac{ S }{\sigma}} \\
+&=\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} / \sqrt{\frac{ S ^2}{\sigma^2}}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&\frac{\overline{ X }-\mu}{ S / \sqrt{ n }}=\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} / \sqrt{\frac{ S ^2}{\sigma^2}} \\
+&=\left(\frac{ X -\mu}{\sigma / \sqrt{ n }}\right) / \sqrt{\frac{\left(\frac{( n -1) S ^2}{\sigma^2}\right.}{ n -1}} \chi^2( n -1) \\
+& N (0,1) \\
+&
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&\frac{\overline{ X }-\mu}{ S / \sqrt{ n }}=\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} / \sqrt{\frac{ S ^2}{\sigma^2}} \\
+&=\left(\frac{ X -\mu}{\sigma / \sqrt{ n }}\right) / \sqrt{\frac{\left(\frac{( n -1) S ^2}{\sigma^2}\right.}{ n -1}} \chi^2( n -1) \\
+& N (0,1) \\
+&
+\end{aligned}
+$$
+
+Thus,
+
+$$
+\frac{\bar{X}-\mu}{S / \sqrt{n}} \sim t(n-1)
+$$
+
+
+### Step four
+
+Conclusion!
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\overline{ X }<\mu_0+ t _{1-\alpha, n -1} \frac{ S }{\sqrt{ n }}
+$$
+
 
 
