@@ -862,4 +862,93 @@ $$
 $$
 
 
+### Example
+In 2019, the average health care annual premium for a family of 4 in the United States, was reported to be $\$ 6,015$.
 
+In a more recent survey, 15 randomly sampled families of 4 reported an average annual health care premium of $\$ 6,033$ and a sample variance of $\$ 825$.
+
+Can we say that the true average is currently greater than $\$ 6,015$ for all families of 4 ?
+
+Use $\alpha=0.10$
+
+Assume that annual health care premiums are normally distributed.
+Let $\mu$ be the true average for all families of 4.
+
+### Step Zero
+Set up the hypotheses.
+
+$$
+H _0: \mu=6015 \quad H _1: \mu>6015
+$$
+
+### Step One
+Choose a test statistic
+
+$$
+\bar{X}
+$$
+
+### Step Two
+Give the form of the test. Reject 𝖧0 , in favor of h1, if 𝟢 𝖧𝟣 𝖷 > 𝖼 where c is to be determined.
+
+
+### Step Three
+
+Find c
+
+$$
+\begin{aligned}
+\alpha &=\max _{\mu=\mu_0} P (\text { Type I Error }) \\
+&=\max _{\mu=6015} P \left(\text { Reject } H _0 ; \mu\right) \\
+&= P \left(\text { Reject } H _0 ; \mu=6015\right) \\
+&= P (\overline{ X }> c ; \mu=6015)
+\end{aligned}
+$$
+
+$$
+\begin{gathered}
+\alpha= P (\overline{ X }> c ; \mu=6015) \\
+= P \left(\frac{\overline{ X }-\mu_0}{ S / \sqrt{ n }}>\frac{ c -6015}{\sqrt{825} / \sqrt{15}} ; \mu=6015\right) \\
+= P \left( T >\frac{ c -6015}{\sqrt{825} / \sqrt{15}}\right)
+\end{gathered}
+$$
+
+
+
+
+```{image} https://cdn.mathpix.com/snip/images/MxwjcPGtEs_CkoavDoGOjr940y8KV-iKVEYxA0QsdbQ.original.fullsize.png
+:align: center
+:alt: T test
+:width: 80%
+```
+
+$$
+\begin{aligned}
+&\Rightarrow \frac{c-6015}{\sqrt{825} / \sqrt{15}}=1.345 \\
+&\Rightarrow c=6024.98
+\end{aligned}
+$$
+
+### Step Four
+Conclusion.
+Rejection Rule: Reject $H _0$, in favor of $H _1$ if
+
+$$
+\bar{X}>6024.98
+$$
+
+We had $\bar{x}=6033$ so we reject $H_0$.
+
+There is sufficient evidence (at level $0.10$ ) in the data to suggest that the true mean annual healthcare premium cost for a family of 4 is greater than $\$ 6,015$.
+
+### P value
+
+$$
+\begin{aligned}
+&\text { P-Value }= P (\overline{ X }>6033 ; \mu=6015) \\
+&= P \left(\frac{\overline{ X }-\mu}{ S / \sqrt{ n }}>\frac{6033-6015}{\sqrt{825} / \sqrt{15}} ; \mu=6015\right) \\
+&= P ( T >2.43) \approx 0.015 \\
+&\quad \text { where } T \sim t (14) \\
+&(\operatorname{In~R}: 1- pt (2.43,14)
+\end{aligned}
+$$
