@@ -793,6 +793,13 @@ $$
 
 ## T-Tests
 
+What is a t-test, and when do we use it? A t-test is used to compare the means of one or two samples, when the underlying population parameters of those samples (mean and standard deviation) are unknown. Like a z-test, the t-test assumes that the sample follows a normal distribution. In particular, this test is useful for when we have a small sample size, as we can not use the Central Limit Theorem to use a z-test.
+
+There are two kinds of t-tests:
+
+1. One Sample t-tests
+2. Two Sample t-tests
+
 Let $X_1, X_2, \ldots, X_n$ be a random sample from the normal distribution with mean $\mu$ and unknown variance $\sigma^2$.
 
 Consider testing the simple versus simple hypotheses
