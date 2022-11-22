@@ -1166,7 +1166,123 @@ we fail to reject $H _0$, in favor of $H _1$ at $0.01$ level of significance.
 
 The data do not indicate that there is a significant difference between the true mean scores for counties $A$ and $B$.
 
+##  Welch's Test and Paired Data
+Two Populations:
+Test
 
+$$
+\begin{aligned}
+& H _0: \mu_1=\mu_2 \\
+& H _1: \mu_1 \neq \mu_2
+\end{aligned}
+$$
+
+- Suppose that $X_{1,1}, X_{1,2}, \ldots, X_{1, n_1}$ is a random sample of size $n_1$ from the normal  
+distribution with mean $\mu_1$ and variance $\sigma_1^2$.
+- Suppose that $X_{2,1}, X_{2,2}, \ldots, X_{2, n}$ is a random sample of size $n_2$ from the normal distribution with mean $\mu_2$ and variance $\sigma_2^2$.
+- Suppose that $\sigma_1^2$ and $\sigma_2^2$ are unknown and that the samples are independent.
+Don't assume that $\sigma_1^2$ and $\sigma_2^2$ are equal!
+
+Welch says that:
+
+$$
+\frac{\bar{X}_1-\bar{X}_2-\left(\mu_1-\mu_2\right)}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
+$$
+has an approximate t-distribution with $r$ degrees of freedom where
+
+$$
+r=\frac{S_1^2 / n_1+S_2^2 / n_2}{\frac{\left(S_1^2 / n_1\right)^2}{n_1-1}+\frac{\left(S_2^2 / n_2\right)^2}{n_2-1}}
+$$
+rounded down.
+
+
+
+```{image} https://cdn.mathpix.com/snip/images/D1HO_KGr1xwhjzr1q0aJ9cxH1SGPsCw9rPFPITlybBU.original.fullsize.png
+:align: center
+:alt: Critical values in Hypothesis Testing
+:width: 80%
+```
+
+### Example
+
+A random sample of 6 students’
+grades were recorded for Midterm 1
+and Midterm 2.
+Assuming exam scores are normally
+distributed, test whether the true (total
+population of students) average grade
+on Midterm 2 is greater than Midterm 1.
+α = 0.05
+
+| Student | Midterm 1 Grade | Midterm 2 Grade |
+| :---: | :---: | :---: |
+| 1 | 72 | 81 |
+| 2 | 93 | 89 |
+| 3 | 85 | 87 |
+| 4 | 77 | 84 |
+| 5 | 91 | 100 |
+| 6 | 84 | 82 |
+
+
+| Student | Midterm 1 Grade | Midterm 2 Grade | Differences: minus 2 Midterm 1 |
+| :---: | :---: | :---: | :---: |
+| 1 | 72 | 81 | 9 |
+| 2 | 93 | 89 | -4 |
+| 3 | 85 | 87 | 2 |
+| 4 | 77 | 84 | 7 |
+| 5 | 91 | 100. | 9 |
+| 6 | 84 | 82 | -2 |
+
+The Hypotheses:
+Let $\mu$ be the true average difference for all students.
+
+$$
+\begin{aligned}
+& H _0: \mu=0 \\
+& H _1: \mu>0
+\end{aligned}
+$$
+This is simply a one sample t-test on the differences.
+
+Data:
+
+$$
+9,-4,2,7,9,-2
+$$
+
+$$
+\sum x_i=23 \quad \sum x_i^2=267 \quad n=6
+$$
+This is simply a one sample t-test on the differences.
+
+This is simply a one sample t-test on the differences.
+
+$$
+\begin{aligned}
+&\bar{x}=3.5 \\
+&s^2=\frac{\sum x_i^2-\left(\sum x_i\right)^2 / n}{n-1}=32.3
+\end{aligned}
+$$
+
+$$
+t _{\alpha, n -1}= t _{0.05,5}=2.01
+$$
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\overline{ X }>\mu_0+ t _{\alpha, n -1} \frac{ S }{\sqrt{ n }}
+$$
+
+3.5 > 4.6
+
+Conclusion:
+We fail to reject h0 , in favor of h1 , at
+0.05 level of significance.
+
+
+These data do not indicate that
+Midterm 2 scores are higher than
+Midterm 1 scores
 
 
 
