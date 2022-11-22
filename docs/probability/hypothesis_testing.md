@@ -952,3 +952,183 @@ $$
 &(\operatorname{In~R}: 1- pt (2.43,14)
 \end{aligned}
 $$
+
+## Two Sample Tests for Means
+
+Fifth grade students from two neighboring counties took a placement exam.
+
+Group 1, from County 1, consisted of 57 students. The sample mean score for these students was $7 7 . 2$ and the true variance is known to be 15.3.
+Group 2, from County 2, consisted of 63 students and had a sample mean score of $75.3$ and the true variance is known to be 19.7.
+
+From previous years of data, it is believed that the scores for both counties are normally distributed.
+
+Derive a test to determine whether or not the two population means are the same.
+
+$$
+\begin{aligned}
+& H _0: \mu_1=\mu_2 \\
+& H _1: \mu_1 \neq \mu_2
+\end{aligned}
+$$
+
+Suppose that $X _{1,1}, X _{1,2}, \ldots, X _{1, n _1}$ is a random sample of size $n_1$ from the normal distribution with mean $\mu_1$ and variance $\sigma_1^2$.
+Suppose that $X_{2,1}, X_{2,2}, \ldots, X_{2, n_2}$ is a random sample of size $n_2$ from the normal distribution with mean $\mu_2$ and variance $\sigma_2^2$.
+- Suppose that $\sigma_1^2$ and $\sigma_2^2$ are known and that the samples are independent.
+
+$$
+\begin{aligned}
+& H _0: \mu_1=\mu_2 \quad H _1: \mu_1 \neq \mu_2 \\
+& H _0: \mu_1-\mu_2=0 \\
+& H _1: \mu_1-\mu_2 \neq 0 \\
+&
+\end{aligned}
+$$
+Think of this as
+$$
+\begin{gathered}
+\theta=0 \text { versus } \theta \neq 0 \\
+\text { for } \\
+\theta=\mu_1-\mu_2
+\end{gathered}
+$$
+
+### Step one
+Choose an estimator for $\theta=\mu_1-\mu_2$
+
+$$
+\hat{\theta}=\bar{X}_1-\bar{X}_2
+$$
+
+### Step Two
+Give the "form" of the test.
+Reject $H _0$, in favor of $H _1$ if either
+$\hat{\theta}>c$ or $\hat{\theta}<-c$
+for some c to be determined.
+
+
+### Step Three
+Find $c$ using $\alpha$
+Will be working with the random variable
+
+$$
+\bar{X}_1-\bar{x}_2
+$$
+We need to know its distribution...
+
+$$
+\bar{X}_1-\bar{x}_2 \text{ is normally distributed.}
+$$
+
+### Step Three
+
+Find c using $\alpha$.
+
+$\bar{X}_1-\bar{X}_2$ is normally distributed
+
+$$
+\begin{aligned}
+&\overline{ X }_1-\overline{ X }_2 \sim N \left(\mu_1-\mu_2, \frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _1}\right) \\
+& Z =\frac{\overline{ X }_1-\overline{ X }_2-\left(\mu_1-\mu_2\right)}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}} \sim N (0,1)
+\end{aligned}
+$$
+
+
+$$
+\begin{aligned}
+&\alpha= P (\text { Type I Error }) \\
+&\quad= P \left(\text { Reject } H _0 ; \theta=0\right) \\
+&= P \left(\overline{ X }_1-\overline{ X }_2> c \text { or } \overline{ X }_1-\overline{ X }_2<- c ; \theta=0\right) \\
+&=1- P \left(- c \leq \overline{ X }_1-\overline{ X }_2 \leq c ; \theta=0\right)
+\end{aligned}
+$$
+
+$$
+=1- P \left(- c \leq \overline{ X }_1-\overline{ X }_2 \leq c ; \theta=0\right)
+$$
+
+$$
+\begin{aligned}
+&\alpha=1- P \left(\frac{- c }{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}} \leq Z \leq \frac{ c }{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\right) \\
+&1-\alpha= P \left(\frac{- c }{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}} \leq Z \leq \frac{ c }{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\right)
+\end{aligned}
+$$
+
+
+```{image} https://cdn.mathpix.com/snip/images/q34fGh8VtAgIsP6Wo-SYszFVC3seo2YjMJmZAwA4wvM.original.fullsize.png
+:align: center
+:alt: T test
+:width: 80%
+```
+
+### Step Four
+
+Conclusion
+
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\overline{ X }_1-\overline{ X }_2> z _{\alpha / 2} \sqrt{\frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _2}}
+$$
+or
+
+$$
+\overline{ X }_1-\overline{ X }_2<- z _{\alpha / 2} \sqrt{\frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _2}}
+$$
+
+
+### Example
+
+$$
+\begin{array}{ll} 
+n _1=57 & n _2=63 \\
+\overline{ x }_1=77.2 & \overline{ x }_2=75.3 \\
+\sigma_1^2=15.3 & \sigma_2^2=19.7
+\end{array}
+$$
+Suppose that $\alpha=0.05$.
+$$
+\begin{aligned}
+& z _{\alpha / 2}= z _{0.025}=1.96 \\
+& z _{\alpha / 2} \sqrt{\frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _2}}=1.49
+\end{aligned}
+$$
+
+
+$$
+\begin{aligned}
+& z _{\alpha / 2} \sqrt{\frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _2}}=1.49 \\
+&\overline{ x }_1-\overline{ x }_2=77.2-75.3=1.9
+\end{aligned}
+$$
+So,
+
+$$
+\bar{x}_1-\bar{x}_2>z_{\alpha / 2} \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}
+$$
+and we reject $H _0$. The data suggests that the true mean scores for the counties are different!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
