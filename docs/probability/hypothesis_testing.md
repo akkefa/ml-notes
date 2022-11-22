@@ -1108,6 +1108,57 @@ $$
 and we reject $H _0$. The data suggests that the true mean scores for the counties are different!
 
 
+## Two Sample t-Tests for a Difference of Means
+Fifth grade students from two neighboring counties took a placement exam.
+- Group 1, from County A, consisted of 8 students. The sample mean score for these students was $77.2$ and the sample variance is $15.3$.
+- Group 2, from County B, consisted of 10 students and had a sample mean score of $75.3$ and the sample variance is 19.7.
+
+### Pooled Variance
+
+$$
+S_p^2=\frac{\left(n_1-1\right) S_1^2+\left(n_2-1\right) S_2^2}{n_1+n_2-2}
+$$
+
+### Step Four
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\bar{X}_1-\bar{X}_2>t_{\alpha / 2, n_1+n_2-2} \sqrt{\left(\frac{1}{n_1}+\frac{1}{n_2}\right) S_P^2}
+$$
+or
+
+$$
+\bar{X}_1-\bar{X}_2<-t_{\alpha / 2, n_1+n_2-2} \sqrt{\left(\frac{1}{n_1}+\frac{1}{n_2}\right) s_P^2}
+$$
+
+
+$$
+\begin{array}{rlr} 
+n _1=8 & n _1=10 \\
+\overline{ x }_1=77.2 & \overline{ x }_1=75.3 \\
+s _1^2=15.3 & s _2^2=19.7 \\
+\alpha=0.01 & t _{0.005,16}=2.92 \\
+s _{ p }^2 & =\frac{\left( n _1-1\right) S _1^2+\left( n _2-1\right) S _2^2}{ n _1+ n _2-2} \\
+& =17.775
+\end{array}
+$$
+
+$$
+\begin{aligned}
+&\overline{ x }_1-\overline{ x }_2=77.2-75.3=1.9 \\
+& t _{\alpha / 2, n _1+ n _2-2} \sqrt{\left(\frac{1}{ n _1}+\frac{1}{ n _2}\right) S _{ P }^2} \\
+&\quad=2.92 \sqrt{\left(\frac{1}{8}+\frac{1}{10}\right)(17.775)} \\
+&=5.840
+\end{aligned}
+$$
+
+Since $\bar{x}_1-\bar{x}_2=1.9$ is not
+above $5.840$, or
+below $-5.840$
+we fail to reject $H _0$, in favor of $H _1$ at $0.01$ level of significance.
+
+The data do not indicate that there is a significant difference between the true mean scores for counties $A$ and $B$.
+
 
 
 
