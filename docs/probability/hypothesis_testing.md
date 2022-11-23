@@ -1284,10 +1284,102 @@ These data do not indicate that
 Midterm 2 scores are higher than
 Midterm 1 scores
 
+## Comparing Two Population Proportions
+A random sample of 500 people in a certain county which is about to have a national election were asked whether they preferred "Candidate A" or "Candidate B".
+From this sample, 320 people responded that they preferred Candidate A.
+
+A random sample of 400 people in a second county which is about to have a national election were asked whether they preferred "Candidate A" or "Candidate B".
 
 
+From this second county sample, 268 people responded that they preferred Candidate $A$.
+
+$$
+\begin{aligned}
+&\hat{p}_1=\frac{320}{500}=0.64 \\
+&\hat{p}_2=\frac{268}{400}=0.67
+\end{aligned}
+$$
+
+Test
+
+$$
+H _0: p _1= p _2 \quad H _1: p _1 \neq p _2
+$$
+Change to:
+
+$$
+\begin{aligned}
+& H _0: p _1- p _2=0 \\
+& H _1: p _1- p _2 \neq 0
+\end{aligned}
+$$
 
 
+Estimate $p_1-p_2$ with $\hat{p}_1-\hat{p}_2$
+For large enough samples,
+
+$$
+\widehat{p}_1^{\text {approx }} N \left( p _1, \frac{ p _1\left(1- p _1\right)}{ n _1}\right)
+$$
+and
+
+$$
+\hat{ p }_2^{\text {approx }} N \left( p _2, \frac{ p _2\left(1- p _2\right)}{ n _1}\right)
+$$
+
+
+$$
+\begin{gathered}
+\hat{p}_1-\hat{p}_2 \sim N(?, ?) \\
+E \left[\hat{p}_1-\hat{p}_2\right]=E\left[\hat{p}_1\right]- E \left[\hat{p}_2\right]=p_1-p_2 \\
+\operatorname{Var}\left[\hat{p}_1-\hat{p}_2\right] \stackrel{\text { indep }}{=} \operatorname{Var}\left[\hat{p}_1\right]+\operatorname{Var}\left[\hat{p}_2\right] \\
+=\frac{p_1\left(1-p_1\right)}{n_1}+\frac{p_2\left(1-p_2\right)}{n_2}
+\end{gathered}
+$$
+
+Use estimators for p1 and p2 assuming
+they are the same.
+
+- Call the common value p.
+- Estimate by putting both groups together.
+
+$$
+\hat{p}_1=\frac{320}{500}=0.64 \quad \hat{p}_2=\frac{268}{400}=0.67
+$$
+
+we have
+
+$$
+\begin{aligned}
+\hat{p}=\frac{320+268}{500+400}=& \frac{588}{900}=\frac{49}{75} \\
+& \approx 0.6533
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+Z &:=\frac{\hat{p}_1-\hat{p}_2-\left(p_1-p_2\right)}{\sqrt{\frac{\hat{p}(1-\hat{p})}{n_1}+\frac{\hat{p}(1-\hat{p})}{n_2}} \sim N(0,1)} \\
+=& \frac{\hat{p}_1-\hat{p}_2-\left(p_1-p_2\right)}{\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+\end{aligned}
+$$
+
+Two-tailed test with z-critical values…
+
+$$
+\begin{aligned}
+&\hat{p}=\frac{320+268}{500+400}=\frac{588}{900}=\frac{49}{75} \\
+&Z=\frac{0.64-0.67-0}{\sqrt{0.6533(1-0.6533)\left(\frac{1}{500}+\frac{1}{400}\right)}}
+\end{aligned}
+$$
+
+= 0.9397
+
+$$
+z _{0.025}=1.96
+$$
+qnorm(1-0.05/2)
+
+$Z=-0.9397$ does not fall in the rejection region!
 
 
 
