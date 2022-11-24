@@ -1381,20 +1381,71 @@ qnorm(1-0.05/2)
 
 $Z=-0.9397$ does not fall in the rejection region!
 
+## Hypothesis Tests for the Exponential 
+
+Suppose that $X_1, X_2, \ldots, X_n$ is a random sample from the exponential distribution with rate $\lambda>0$.
+Derive a hypothesis test of size $\alpha$ for
+
+$$
+H _0: \lambda=\lambda_0 \text { vs. } H _1: \lambda>\lambda_0
+$$
+
+What statistic should we use?
+
+### Test 1: Using the Sample Mean
+
+#### Step One
+Choose a statistic.
+
+$$
+\bar{x}
+$$
+
+#### Step Two
+Give the form of the test
+Reject 𝖧0 , in favor of h1 , if 𝖷_bar < 𝖼
+
+for some c to be determined.
+
+```{image} https://cdn.mathpix.com/snip/images/7iFoe8bkSt7siPASVtrFjExUkf6jG0AdtNfLJE-PY44.original.fullsize.png
+:align: center
+:alt: Critical values in Hypothesis Testing
+:width: 80%
+```
+
+#### Step Three
+
+$$
+\begin{aligned}
+\alpha &= P (\text { Type I Error }) \\
+&= P \left(\text { Reject } H _0 ; \lambda_0\right) \\
+&= P \left(\overline{ X }< c ; \lambda_0\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&= P \left(2 n \lambda_0 \overline{ x }<2 n \lambda_0 c ; \lambda_0\right) \\
+&= P \left( W <2 n \lambda_0 c ; \lambda_0\right) \\
+\text { where } W \sim \chi^2(2 n )
+\end{aligned}
+$$
 
 
+```{image} https://cdn.mathpix.com/snip/images/izrzy6xVTrnur8JMuChmHTltOPiyrRIh6DnHYe4ak7Q.original.fullsize.png
+:align: center
+:alt: Critical values in Hypothesis Testing
+:width: 80%
+```
 
+#### Step Four
+Reject $H _0$, in favor of $H _1$, if
 
+$$
+\bar{x}<\frac{\chi_{1-\alpha, 2 n}^2}{2 n \lambda_0}
+$$
 
+$\chi_{\alpha, n }^2$
+In R, get $\chi_{0.10,6}^2$
 
-
-
-
-
-
-
-
-
-
-
-
+by typing qchisq(0.90,6)
