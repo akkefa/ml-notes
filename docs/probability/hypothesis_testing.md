@@ -1452,3 +1452,62 @@ by typing qchisq(0.90,6)
 
 ## Best Test
 
+## UMP Tests
+
+Suppose that $X_1, X_2, \ldots, X_n$ is a random sample from the exponential distribution with rate $\lambda>0$.
+
+Derive a uniformly most powerful hypothesis test of size $\alpha$ for
+
+$$
+\begin{array}{r} 
+H _0: \lambda=\lambda_0 \quad \text { vs. } \quad H _1: \lambda>\lambda_0 \\
+\left(\text { Was } H _1: \lambda=\lambda_1 \text { for } \lambda_1>\lambda_0\right)
+\end{array}
+$$
+
+### Step One
+Consider the simple versus simple hypotheses
+
+$$
+H _0: \lambda=\lambda_0 \quad \text { vs. } H _1: \lambda=\lambda_1
+$$
+for some fixed $\lambda_1>\lambda_0$.
+
+###Steps Two, Three, and Four
+
+Find the best test of size $\alpha$ for
+
+$$
+H _0: \lambda=\lambda_0 \text { vs. } H _1: \lambda=\lambda_1
+$$
+for some fixed $\lambda_1>\lambda_0$.
+This test is to reject $H _0$, in favor of $H _1$ if
+
+$$
+\overline{ x }<\frac{\chi_{1-\alpha, 2 n }^2}{2 n \lambda_0}
+$$
+
+Note that this test does not depend on the particular value of $\lambda_1$.
+-It does, however, depend on the fact that $\lambda_1>\lambda_0$
+
+The "UMP" test for
+
+$$
+H _0: \lambda=\lambda_0 \text { vs. } H _1: \lambda>\lambda_0
+$$
+
+is to reject $H_0$, in favor of $H_1$ if
+
+$$
+\overline{ x }<\frac{\chi_{1-\alpha, 2 n }^2}{2 n \lambda_0}
+$$
+The "UMP" test for
+
+$$
+H _0: \lambda=\lambda_0 \text { vs. } H _1: \lambda<\lambda_0
+$$
+is to reject $H_0$, in favor of $H_1$ if
+
+$$
+\overline{ x }>\frac{\chi_{, 2 n }^2}{2 n \lambda_0}
+$$
