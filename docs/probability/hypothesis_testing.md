@@ -1511,3 +1511,146 @@ is to reject $H_0$, in favor of $H_1$ if
 $$
 \overline{ x }>\frac{\chi_{, 2 n }^2}{2 n \lambda_0}
 $$
+
+## Test for the Variance of the Normal Distribution
+Suppose that $X_1, X_2, \ldots, X_n$ is a random sample from the normal distribution with mean $\mu$ and variance $\sigma^2$.
+Derive a test of size/level $\alpha$ for
+
+$$
+H _0: \sigma^2 \geq \sigma_0^2 \quad \text { vs. } H_1: \sigma^2<\sigma_0^2
+$$
+
+### step 1
+Choose a statistic/estimator for $\sigma^2$
+
+$$
+s^2=\frac{\sum_{i=1}^n\left(X_i-\bar{X}\right)^2}{n-1}
+$$
+
+### step 2
+Give the form of the test.
+Reject $H_0$, in favor of $H_1$, if
+
+$$
+S ^2< C
+$$
+for some $c$ to be determined.
+
+### step 3
+find c using alpha
+
+$$
+\begin{aligned}
+\alpha &=\max P (\text { Type I Error }) \\
+&=\max _{\sigma^2 \geq \sigma_0^2} P \left(\text { Reject } H _0 ; \sigma^2\right) \\
+&=\max _{\sigma^2 \geq \sigma_0^2} P \left( S ^2< c ; \sigma^2\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&= P \left(\left(\frac{( n -1) S ^2}{\sigma^2}\right) \frac{( n -1) c }{\sigma^2} ; \sigma^2\right) \\
+&= P \left( W <\frac{( n -1) c }{\sigma^2}\right) \\
+&\text { where } W \sim \chi^2( n -1)
+\end{aligned}
+$$
+
+
+```{image} https://cdn.mathpix.com/snip/images/uPZys_QbRPt4sgR0hpgUiXL3Tt7m6GzMRZ4j09T842E.original.fullsize.png
+:align: center
+:alt: Critical values in Hypothesis Testing
+:width: 80%
+```
+
+### Step 4
+
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+S^2<\frac{\sigma_0^2 \chi_{1-\alpha, n-1}^2}{n-1}
+$$
+
+### Example
+A lawn care company has developed
+and wants to patent a new herbicide
+applicator spray nozzle.
+Example:
+For safety reasons, they need to
+ensure that the application is
+consistent and not highly variable.
+The company selected a random sample
+of 10 nozzles and measured the
+application rate of the herbicide in
+gallons per acre
+
+The measurements were recorded as
+
+$0.213,0.185,0.207,0.163,0.179$ \
+$0.161,0.208,0.210,0.188,0.195$
+
+Assuming that the application rates are normally distributed, test the following hypotheses at level $0.04$.
+
+$$
+H _0: \sigma^2=0.01 \quad H _1: \sigma^2>0.01
+$$
+
+
+Get sample variance in $R$.
+
+$$
+\begin{array}{r}
+x<-c(0.213,0.185,0.207,0.163,0.179 \\
+0.161,0.208,0.210,0.188,0.195)
+\end{array}
+$$
+or
+
+$$
+x<-\operatorname{scan} 0
+$$
+Hit <Enter> and then input numbers, one by one, hitting <Enter> in between and <Enter $>$ at the end.
+
+Compute variance by typing
+
+$$
+\operatorname{var}( x )
+$$
+or $\left(\left(\operatorname{sum}\left(x^{\wedge} 2\right)-\left(\operatorname{sum}(x)^{\wedge} 2\right) / 10\right) / 9\right.$
+Result: $0.000364$
+
+Reject $H_0$, in favor of $H_1$, if $S^2>c$.
+
+$$
+\begin{aligned}
+&\alpha= P \left( S ^2> c ; \sigma^2=0.01\right) \\
+&= P \left(\frac{( n -1) S ^2}{\sigma^2}>\frac{9 c }{0.01} ; \sigma^2=0.01\right) \\
+&= P \left( W >\frac{9 c }{0.01}\right)
+\end{aligned}
+$$
+
+
+Reject $H _0$, in favor of $H _1$, if $S ^2> c$
+
+$$
+\begin{gathered}
+0.04= P \left( W >\frac{9 c}{0.01}\right) \\
+\frac{9 c}{0.01}=\chi_{0.04,9}^2=17.61 \\
+\text { qchisq(1-0.04,9) }
+\end{gathered}
+$$
+
+Reject $H_0$, in favor of $H_1$, if $S^2>c$
+
+$$
+\begin{aligned}
+&c=(17.61)(0.01) / 9 \approx 0.0196 \\
+&s^2=0.000364
+\end{aligned}
+$$
+
+Fail to reject $H _0$, in favor of $H _1$, at level 0.04. There is not sufficient evidence in the data to suggest that $\sigma^2>0.01$.
+
+
+
+
+
