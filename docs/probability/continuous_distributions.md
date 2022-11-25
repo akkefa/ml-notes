@@ -746,3 +746,70 @@ $$
 \Gamma( n )=( n -1) !
 $$
 
+### Probability Density Function
+
+$$
+f(x)=\frac{1}{\Gamma(\alpha)} \beta^\alpha x^{\alpha-1} e^{-\beta x }
+$$
+
+
+
+### Mean
+
+$$
+\begin{aligned}
+\mu &= E [ X ]=\int_{-\infty}^{\infty} xf ( x ) dx \\
+&=\int_0^{\infty} x \frac{1}{\Gamma(\alpha)} \beta^\alpha x ^{\alpha-1} e ^{-\beta x } dx \\
+&=\frac{\alpha}{\beta}
+\end{aligned}
+$$
+
+
+### Variance
+
+$$
+\begin{aligned}
+\sigma^2=\operatorname{Var}[ X ] &= E \left[( X -\mu)^2\right] \\
+&= E \left[ X ^2\right]-( E [ X ])^2 \\
+&=\cdots=\frac{\alpha}{\beta^2}
+\end{aligned}
+$$
+
+## Chi-squared Distribution
+
+One Parameter:
+- degrees of freedom: $n \geq 1$
+( $n$ is an integer)
+$X \sim \chi^2(n)$
+is defined as $\Gamma\left(\frac{n}{2}, \frac{1}{2}\right)$
+
+### mean
+$$
+\mu= E [ X ]= n
+$$
+
+### variance
+$$
+\sigma^2=\operatorname{Var}[ X ]=2 n
+$$
+
+## T-distribution
+Let $Z \sim N(0,1)$ and $W \sim \chi^2(n)$ be independent random variables.
+Define
+
+$$
+T =\frac{ Z }{\sqrt{ W / n }}
+$$
+
+the t-distribution Write $X \sim t ( n )$
+One Parameter:
+degrees of freedom: $n \geq 1$
+( $n$ is an integer)
+The pdf:
+
+$$
+\begin{array}{r}
+f(x)=\frac{\Gamma\left(\frac{n+1}{2}\right)}{\sqrt{\pi n} \Gamma\left(\frac{n}{2}\right)}\left(1+\frac{x^2}{n}\right)^{-(n+1) / 2} \\
+-\infty<x<\infty
+\end{array}
+$$

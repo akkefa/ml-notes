@@ -791,5 +791,866 @@ $$
 \hat{p}> p +z_{0.10} \sqrt{\frac{p(1-p)}{n}}
 $$
 
+## T-Tests
+
+What is a t-test, and when do we use it? A t-test is used to compare the means of one or two samples, when the underlying population parameters of those samples (mean and standard deviation) are unknown. Like a z-test, the t-test assumes that the sample follows a normal distribution. In particular, this test is useful for when we have a small sample size, as we can not use the Central Limit Theorem to use a z-test.
+
+There are two kinds of t-tests:
+
+1. One Sample t-tests
+2. Two Sample t-tests
+
+Let $X_1, X_2, \ldots, X_n$ be a random sample from the normal distribution with mean $\mu$ and unknown variance $\sigma^2$.
+
+Consider testing the simple versus simple hypotheses
+$$
+H _0: \mu=\mu_0 \quad H _1: \mu<\mu_0
+$$
+where $\mu_0$ is fixed and known.
+
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\overline{ X }<\mu_0+ z _{1-\alpha} \frac{\sigma}{\sqrt{ n }}
+$$
+
+unknown!This is a useless test!
+
+It was based on the fact that
+
+$$
+\overline{ X } \sim N \left(\mu, \sigma^2 / n \right)
+
+\\
+
+\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} \sim N (0,1)
+$$
+What is we use the sample standard deviation $S =\sqrt{ S ^2}$ in place of $\sigma$ ?
+
+$$
+\begin{aligned}
+\frac{\overline{ X }-\mu}{ S / \sqrt{ n }} &=\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} \cdot \frac{\sigma}{ S }=\frac{\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }}}{\frac{ S }{\sigma}} \\
+&=\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} / \sqrt{\frac{ S ^2}{\sigma^2}}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&\frac{\overline{ X }-\mu}{ S / \sqrt{ n }}=\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} / \sqrt{\frac{ S ^2}{\sigma^2}} \\
+&=\left(\frac{ X -\mu}{\sigma / \sqrt{ n }}\right) / \sqrt{\frac{\left(\frac{( n -1) S ^2}{\sigma^2}\right.}{ n -1}} \chi^2( n -1) \\
+& N (0,1) \\
+&
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&\frac{\overline{ X }-\mu}{ S / \sqrt{ n }}=\frac{\overline{ X }-\mu}{\sigma / \sqrt{ n }} / \sqrt{\frac{ S ^2}{\sigma^2}} \\
+&=\left(\frac{ X -\mu}{\sigma / \sqrt{ n }}\right) / \sqrt{\frac{\left(\frac{( n -1) S ^2}{\sigma^2}\right.}{ n -1}} \chi^2( n -1) \\
+& N (0,1) \\
+&
+\end{aligned}
+$$
+
+Thus,
+
+$$
+\frac{\bar{X}-\mu}{S / \sqrt{n}} \sim t(n-1)
+$$
+
+
+### Step four
+
+Conclusion!
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\overline{ X }<\mu_0+ t _{1-\alpha, n -1} \frac{ S }{\sqrt{ n }}
+$$
+
+
+### Example
+In 2019, the average health care annual premium for a family of 4 in the United States, was reported to be $\$ 6,015$.
+
+In a more recent survey, 15 randomly sampled families of 4 reported an average annual health care premium of $\$ 6,033$ and a sample variance of $\$ 825$.
+
+Can we say that the true average is currently greater than $\$ 6,015$ for all families of 4 ?
+
+Use $\alpha=0.10$
+
+Assume that annual health care premiums are normally distributed.
+Let $\mu$ be the true average for all families of 4.
+
+### Step Zero
+Set up the hypotheses.
+
+$$
+H _0: \mu=6015 \quad H _1: \mu>6015
+$$
+
+### Step One
+Choose a test statistic
+
+$$
+\bar{X}
+$$
+
+### Step Two
+Give the form of the test. Reject 𝖧0 , in favor of h1, if 𝟢 𝖧𝟣 𝖷 > 𝖼 where c is to be determined.
+
+
+### Step Three
+
+Find c
+
+$$
+\begin{aligned}
+\alpha &=\max _{\mu=\mu_0} P (\text { Type I Error }) \\
+&=\max _{\mu=6015} P \left(\text { Reject } H _0 ; \mu\right) \\
+&= P \left(\text { Reject } H _0 ; \mu=6015\right) \\
+&= P (\overline{ X }> c ; \mu=6015)
+\end{aligned}
+$$
+
+$$
+\begin{gathered}
+\alpha= P (\overline{ X }> c ; \mu=6015) \\
+= P \left(\frac{\overline{ X }-\mu_0}{ S / \sqrt{ n }}>\frac{ c -6015}{\sqrt{825} / \sqrt{15}} ; \mu=6015\right) \\
+= P \left( T >\frac{ c -6015}{\sqrt{825} / \sqrt{15}}\right)
+\end{gathered}
+$$
+
+
+
+
+```{image} https://cdn.mathpix.com/snip/images/MxwjcPGtEs_CkoavDoGOjr940y8KV-iKVEYxA0QsdbQ.original.fullsize.png
+:align: center
+:alt: T test
+:width: 80%
+```
+
+$$
+\begin{aligned}
+&\Rightarrow \frac{c-6015}{\sqrt{825} / \sqrt{15}}=1.345 \\
+&\Rightarrow c=6024.98
+\end{aligned}
+$$
+
+### Step Four
+Conclusion.
+Rejection Rule: Reject $H _0$, in favor of $H _1$ if
+
+$$
+\bar{X}>6024.98
+$$
+
+We had $\bar{x}=6033$ so we reject $H_0$.
+
+There is sufficient evidence (at level $0.10$ ) in the data to suggest that the true mean annual healthcare premium cost for a family of 4 is greater than $\$ 6,015$.
+
+### P value
+
+$$
+\begin{aligned}
+&\text { P-Value }= P (\overline{ X }>6033 ; \mu=6015) \\
+&= P \left(\frac{\overline{ X }-\mu}{ S / \sqrt{ n }}>\frac{6033-6015}{\sqrt{825} / \sqrt{15}} ; \mu=6015\right) \\
+&= P ( T >2.43) \approx 0.015 \\
+&\quad \text { where } T \sim t (14) \\
+&(\operatorname{In~R}: 1- pt (2.43,14)
+\end{aligned}
+$$
+
+## Two Sample Tests for Means
+
+Fifth grade students from two neighboring counties took a placement exam.
+
+Group 1, from County 1, consisted of 57 students. The sample mean score for these students was $7 7 . 2$ and the true variance is known to be 15.3.
+Group 2, from County 2, consisted of 63 students and had a sample mean score of $75.3$ and the true variance is known to be 19.7.
+
+From previous years of data, it is believed that the scores for both counties are normally distributed.
+
+Derive a test to determine whether or not the two population means are the same.
+
+$$
+\begin{aligned}
+& H _0: \mu_1=\mu_2 \\
+& H _1: \mu_1 \neq \mu_2
+\end{aligned}
+$$
+
+Suppose that $X _{1,1}, X _{1,2}, \ldots, X _{1, n _1}$ is a random sample of size $n_1$ from the normal distribution with mean $\mu_1$ and variance $\sigma_1^2$.
+Suppose that $X_{2,1}, X_{2,2}, \ldots, X_{2, n_2}$ is a random sample of size $n_2$ from the normal distribution with mean $\mu_2$ and variance $\sigma_2^2$.
+- Suppose that $\sigma_1^2$ and $\sigma_2^2$ are known and that the samples are independent.
+
+$$
+\begin{aligned}
+& H _0: \mu_1=\mu_2 \quad H _1: \mu_1 \neq \mu_2 \\
+& H _0: \mu_1-\mu_2=0 \\
+& H _1: \mu_1-\mu_2 \neq 0 \\
+&
+\end{aligned}
+$$
+Think of this as
+$$
+\begin{gathered}
+\theta=0 \text { versus } \theta \neq 0 \\
+\text { for } \\
+\theta=\mu_1-\mu_2
+\end{gathered}
+$$
+
+### Step one
+Choose an estimator for $\theta=\mu_1-\mu_2$
+
+$$
+\hat{\theta}=\bar{X}_1-\bar{X}_2
+$$
+
+### Step Two
+Give the "form" of the test.
+Reject $H _0$, in favor of $H _1$ if either
+$\hat{\theta}>c$ or $\hat{\theta}<-c$
+for some c to be determined.
+
+
+### Step Three
+Find $c$ using $\alpha$
+Will be working with the random variable
+
+$$
+\bar{X}_1-\bar{x}_2
+$$
+We need to know its distribution...
+
+$$
+\bar{X}_1-\bar{x}_2 \text{ is normally distributed.}
+$$
+
+### Step Three
+
+Find c using $\alpha$.
+
+$\bar{X}_1-\bar{X}_2$ is normally distributed
+
+$$
+\begin{aligned}
+&\overline{ X }_1-\overline{ X }_2 \sim N \left(\mu_1-\mu_2, \frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _1}\right) \\
+& Z =\frac{\overline{ X }_1-\overline{ X }_2-\left(\mu_1-\mu_2\right)}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}} \sim N (0,1)
+\end{aligned}
+$$
+
+
+$$
+\begin{aligned}
+&\alpha= P (\text { Type I Error }) \\
+&\quad= P \left(\text { Reject } H _0 ; \theta=0\right) \\
+&= P \left(\overline{ X }_1-\overline{ X }_2> c \text { or } \overline{ X }_1-\overline{ X }_2<- c ; \theta=0\right) \\
+&=1- P \left(- c \leq \overline{ X }_1-\overline{ X }_2 \leq c ; \theta=0\right)
+\end{aligned}
+$$
+
+$$
+=1- P \left(- c \leq \overline{ X }_1-\overline{ X }_2 \leq c ; \theta=0\right)
+$$
+
+$$
+\begin{aligned}
+&\alpha=1- P \left(\frac{- c }{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}} \leq Z \leq \frac{ c }{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\right) \\
+&1-\alpha= P \left(\frac{- c }{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}} \leq Z \leq \frac{ c }{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\right)
+\end{aligned}
+$$
+
+
+```{image} https://cdn.mathpix.com/snip/images/q34fGh8VtAgIsP6Wo-SYszFVC3seo2YjMJmZAwA4wvM.original.fullsize.png
+:align: center
+:alt: T test
+:width: 80%
+```
+
+### Step Four
+
+Conclusion
+
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\overline{ X }_1-\overline{ X }_2> z _{\alpha / 2} \sqrt{\frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _2}}
+$$
+or
+
+$$
+\overline{ X }_1-\overline{ X }_2<- z _{\alpha / 2} \sqrt{\frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _2}}
+$$
+
+
+### Example
+
+$$
+\begin{array}{ll} 
+n _1=57 & n _2=63 \\
+\overline{ x }_1=77.2 & \overline{ x }_2=75.3 \\
+\sigma_1^2=15.3 & \sigma_2^2=19.7
+\end{array}
+$$
+Suppose that $\alpha=0.05$.
+$$
+\begin{aligned}
+& z _{\alpha / 2}= z _{0.025}=1.96 \\
+& z _{\alpha / 2} \sqrt{\frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _2}}=1.49
+\end{aligned}
+$$
+
+
+$$
+\begin{aligned}
+& z _{\alpha / 2} \sqrt{\frac{\sigma_1^2}{ n _1}+\frac{\sigma_2^2}{ n _2}}=1.49 \\
+&\overline{ x }_1-\overline{ x }_2=77.2-75.3=1.9
+\end{aligned}
+$$
+So,
+
+$$
+\bar{x}_1-\bar{x}_2>z_{\alpha / 2} \sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}
+$$
+and we reject $H _0$. The data suggests that the true mean scores for the counties are different!
+
+
+## Two Sample t-Tests for a Difference of Means
+Fifth grade students from two neighboring counties took a placement exam.
+- Group 1, from County A, consisted of 8 students. The sample mean score for these students was $77.2$ and the sample variance is $15.3$.
+- Group 2, from County B, consisted of 10 students and had a sample mean score of $75.3$ and the sample variance is 19.7.
+
+### Pooled Variance
+
+$$
+S_p^2=\frac{\left(n_1-1\right) S_1^2+\left(n_2-1\right) S_2^2}{n_1+n_2-2}
+$$
+
+### Step Four
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\bar{X}_1-\bar{X}_2>t_{\alpha / 2, n_1+n_2-2} \sqrt{\left(\frac{1}{n_1}+\frac{1}{n_2}\right) S_P^2}
+$$
+or
+
+$$
+\bar{X}_1-\bar{X}_2<-t_{\alpha / 2, n_1+n_2-2} \sqrt{\left(\frac{1}{n_1}+\frac{1}{n_2}\right) s_P^2}
+$$
+
+
+$$
+\begin{array}{rlr} 
+n _1=8 & n _1=10 \\
+\overline{ x }_1=77.2 & \overline{ x }_1=75.3 \\
+s _1^2=15.3 & s _2^2=19.7 \\
+\alpha=0.01 & t _{0.005,16}=2.92 \\
+s _{ p }^2 & =\frac{\left( n _1-1\right) S _1^2+\left( n _2-1\right) S _2^2}{ n _1+ n _2-2} \\
+& =17.775
+\end{array}
+$$
+
+$$
+\begin{aligned}
+&\overline{ x }_1-\overline{ x }_2=77.2-75.3=1.9 \\
+& t _{\alpha / 2, n _1+ n _2-2} \sqrt{\left(\frac{1}{ n _1}+\frac{1}{ n _2}\right) S _{ P }^2} \\
+&\quad=2.92 \sqrt{\left(\frac{1}{8}+\frac{1}{10}\right)(17.775)} \\
+&=5.840
+\end{aligned}
+$$
+
+Since $\bar{x}_1-\bar{x}_2=1.9$ is not
+above $5.840$, or
+below $-5.840$
+we fail to reject $H _0$, in favor of $H _1$ at $0.01$ level of significance.
+
+The data do not indicate that there is a significant difference between the true mean scores for counties $A$ and $B$.
+
+##  Welch's Test and Paired Data
+Two Populations:
+Test
+
+$$
+\begin{aligned}
+& H _0: \mu_1=\mu_2 \\
+& H _1: \mu_1 \neq \mu_2
+\end{aligned}
+$$
+
+- Suppose that $X_{1,1}, X_{1,2}, \ldots, X_{1, n_1}$ is a random sample of size $n_1$ from the normal  
+distribution with mean $\mu_1$ and variance $\sigma_1^2$.
+- Suppose that $X_{2,1}, X_{2,2}, \ldots, X_{2, n}$ is a random sample of size $n_2$ from the normal distribution with mean $\mu_2$ and variance $\sigma_2^2$.
+- Suppose that $\sigma_1^2$ and $\sigma_2^2$ are unknown and that the samples are independent.
+Don't assume that $\sigma_1^2$ and $\sigma_2^2$ are equal!
+
+Welch says that:
+
+$$
+\frac{\bar{X}_1-\bar{X}_2-\left(\mu_1-\mu_2\right)}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}
+$$
+has an approximate t-distribution with $r$ degrees of freedom where
+
+$$
+r=\frac{S_1^2 / n_1+S_2^2 / n_2}{\frac{\left(S_1^2 / n_1\right)^2}{n_1-1}+\frac{\left(S_2^2 / n_2\right)^2}{n_2-1}}
+$$
+rounded down.
+
+
+
+```{image} https://cdn.mathpix.com/snip/images/D1HO_KGr1xwhjzr1q0aJ9cxH1SGPsCw9rPFPITlybBU.original.fullsize.png
+:align: center
+:alt: Critical values in Hypothesis Testing
+:width: 80%
+```
+
+### Example
+
+A random sample of 6 students’
+grades were recorded for Midterm 1
+and Midterm 2.
+Assuming exam scores are normally
+distributed, test whether the true (total
+population of students) average grade
+on Midterm 2 is greater than Midterm 1.
+α = 0.05
+
+| Student | Midterm 1 Grade | Midterm 2 Grade |
+| :---: | :---: | :---: |
+| 1 | 72 | 81 |
+| 2 | 93 | 89 |
+| 3 | 85 | 87 |
+| 4 | 77 | 84 |
+| 5 | 91 | 100 |
+| 6 | 84 | 82 |
+
+
+| Student | Midterm 1 Grade | Midterm 2 Grade | Differences: minus 2 Midterm 1 |
+| :---: | :---: | :---: | :---: |
+| 1 | 72 | 81 | 9 |
+| 2 | 93 | 89 | -4 |
+| 3 | 85 | 87 | 2 |
+| 4 | 77 | 84 | 7 |
+| 5 | 91 | 100. | 9 |
+| 6 | 84 | 82 | -2 |
+
+The Hypotheses:
+Let $\mu$ be the true average difference for all students.
+
+$$
+\begin{aligned}
+& H _0: \mu=0 \\
+& H _1: \mu>0
+\end{aligned}
+$$
+This is simply a one sample t-test on the differences.
+
+Data:
+
+$$
+9,-4,2,7,9,-2
+$$
+
+$$
+\sum x_i=23 \quad \sum x_i^2=267 \quad n=6
+$$
+This is simply a one sample t-test on the differences.
+
+This is simply a one sample t-test on the differences.
+
+$$
+\begin{aligned}
+&\bar{x}=3.5 \\
+&s^2=\frac{\sum x_i^2-\left(\sum x_i\right)^2 / n}{n-1}=32.3
+\end{aligned}
+$$
+
+$$
+t _{\alpha, n -1}= t _{0.05,5}=2.01
+$$
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\overline{ X }>\mu_0+ t _{\alpha, n -1} \frac{ S }{\sqrt{ n }}
+$$
+
+3.5 > 4.6
+
+Conclusion:
+We fail to reject h0 , in favor of h1 , at
+0.05 level of significance.
+
+
+These data do not indicate that
+Midterm 2 scores are higher than
+Midterm 1 scores
+
+## Comparing Two Population Proportions
+A random sample of 500 people in a certain county which is about to have a national election were asked whether they preferred "Candidate A" or "Candidate B".
+From this sample, 320 people responded that they preferred Candidate A.
+
+A random sample of 400 people in a second county which is about to have a national election were asked whether they preferred "Candidate A" or "Candidate B".
+
+
+From this second county sample, 268 people responded that they preferred Candidate $A$.
+
+$$
+\begin{aligned}
+&\hat{p}_1=\frac{320}{500}=0.64 \\
+&\hat{p}_2=\frac{268}{400}=0.67
+\end{aligned}
+$$
+
+Test
+
+$$
+H _0: p _1= p _2 \quad H _1: p _1 \neq p _2
+$$
+Change to:
+
+$$
+\begin{aligned}
+& H _0: p _1- p _2=0 \\
+& H _1: p _1- p _2 \neq 0
+\end{aligned}
+$$
+
+
+Estimate $p_1-p_2$ with $\hat{p}_1-\hat{p}_2$
+For large enough samples,
+
+$$
+\widehat{p}_1^{\text {approx }} N \left( p _1, \frac{ p _1\left(1- p _1\right)}{ n _1}\right)
+$$
+and
+
+$$
+\hat{ p }_2^{\text {approx }} N \left( p _2, \frac{ p _2\left(1- p _2\right)}{ n _1}\right)
+$$
+
+
+$$
+\begin{gathered}
+\hat{p}_1-\hat{p}_2 \sim N(?, ?) \\
+E \left[\hat{p}_1-\hat{p}_2\right]=E\left[\hat{p}_1\right]- E \left[\hat{p}_2\right]=p_1-p_2 \\
+\operatorname{Var}\left[\hat{p}_1-\hat{p}_2\right] \stackrel{\text { indep }}{=} \operatorname{Var}\left[\hat{p}_1\right]+\operatorname{Var}\left[\hat{p}_2\right] \\
+=\frac{p_1\left(1-p_1\right)}{n_1}+\frac{p_2\left(1-p_2\right)}{n_2}
+\end{gathered}
+$$
+
+Use estimators for p1 and p2 assuming
+they are the same.
+
+- Call the common value p.
+- Estimate by putting both groups together.
+
+$$
+\hat{p}_1=\frac{320}{500}=0.64 \quad \hat{p}_2=\frac{268}{400}=0.67
+$$
+
+we have
+
+$$
+\begin{aligned}
+\hat{p}=\frac{320+268}{500+400}=& \frac{588}{900}=\frac{49}{75} \\
+& \approx 0.6533
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+Z &:=\frac{\hat{p}_1-\hat{p}_2-\left(p_1-p_2\right)}{\sqrt{\frac{\hat{p}(1-\hat{p})}{n_1}+\frac{\hat{p}(1-\hat{p})}{n_2}} \sim N(0,1)} \\
+=& \frac{\hat{p}_1-\hat{p}_2-\left(p_1-p_2\right)}{\sqrt{\hat{p}(1-\hat{p})\left(\frac{1}{n_1}+\frac{1}{n_2}\right)}}
+\end{aligned}
+$$
+
+Two-tailed test with z-critical values…
+
+$$
+\begin{aligned}
+&\hat{p}=\frac{320+268}{500+400}=\frac{588}{900}=\frac{49}{75} \\
+&Z=\frac{0.64-0.67-0}{\sqrt{0.6533(1-0.6533)\left(\frac{1}{500}+\frac{1}{400}\right)}}
+\end{aligned}
+$$
+
+= 0.9397
+
+$$
+z _{0.025}=1.96
+$$
+qnorm(1-0.05/2)
+
+$Z=-0.9397$ does not fall in the rejection region!
+
+## Hypothesis Tests for the Exponential 
+
+Suppose that $X_1, X_2, \ldots, X_n$ is a random sample from the exponential distribution with rate $\lambda>0$.
+Derive a hypothesis test of size $\alpha$ for
+
+$$
+H _0: \lambda=\lambda_0 \text { vs. } H _1: \lambda>\lambda_0
+$$
+
+What statistic should we use?
+
+### Test 1: Using the Sample Mean
+
+#### Step One
+Choose a statistic.
+
+$$
+\bar{x}
+$$
+
+#### Step Two
+Give the form of the test
+Reject 𝖧0 , in favor of h1 , if 𝖷_bar < 𝖼
+
+for some c to be determined.
+
+```{image} https://cdn.mathpix.com/snip/images/7iFoe8bkSt7siPASVtrFjExUkf6jG0AdtNfLJE-PY44.original.fullsize.png
+:align: center
+:alt: Critical values in Hypothesis Testing
+:width: 80%
+```
+
+#### Step Three
+
+$$
+\begin{aligned}
+\alpha &= P (\text { Type I Error }) \\
+&= P \left(\text { Reject } H _0 ; \lambda_0\right) \\
+&= P \left(\overline{ X }< c ; \lambda_0\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&= P \left(2 n \lambda_0 \overline{ x }<2 n \lambda_0 c ; \lambda_0\right) \\
+&= P \left( W <2 n \lambda_0 c ; \lambda_0\right) \\
+\text { where } W \sim \chi^2(2 n )
+\end{aligned}
+$$
+
+
+```{image} https://cdn.mathpix.com/snip/images/izrzy6xVTrnur8JMuChmHTltOPiyrRIh6DnHYe4ak7Q.original.fullsize.png
+:align: center
+:alt: Critical values in Hypothesis Testing
+:width: 80%
+```
+
+#### Step Four
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+\bar{x}<\frac{\chi_{1-\alpha, 2 n}^2}{2 n \lambda_0}
+$$
+
+$\chi_{\alpha, n }^2$
+In R, get $\chi_{0.10,6}^2$
+
+by typing qchisq(0.90,6)
+
+## Best Test
+
+## UMP Tests
+
+Suppose that $X_1, X_2, \ldots, X_n$ is a random sample from the exponential distribution with rate $\lambda>0$.
+
+Derive a uniformly most powerful hypothesis test of size $\alpha$ for
+
+$$
+\begin{array}{r} 
+H _0: \lambda=\lambda_0 \quad \text { vs. } \quad H _1: \lambda>\lambda_0 \\
+\left(\text { Was } H _1: \lambda=\lambda_1 \text { for } \lambda_1>\lambda_0\right)
+\end{array}
+$$
+
+### Step One
+Consider the simple versus simple hypotheses
+
+$$
+H _0: \lambda=\lambda_0 \quad \text { vs. } H _1: \lambda=\lambda_1
+$$
+for some fixed $\lambda_1>\lambda_0$.
+
+###Steps Two, Three, and Four
+
+Find the best test of size $\alpha$ for
+
+$$
+H _0: \lambda=\lambda_0 \text { vs. } H _1: \lambda=\lambda_1
+$$
+for some fixed $\lambda_1>\lambda_0$.
+This test is to reject $H _0$, in favor of $H _1$ if
+
+$$
+\overline{ x }<\frac{\chi_{1-\alpha, 2 n }^2}{2 n \lambda_0}
+$$
+
+Note that this test does not depend on the particular value of $\lambda_1$.
+-It does, however, depend on the fact that $\lambda_1>\lambda_0$
+
+The "UMP" test for
+
+$$
+H _0: \lambda=\lambda_0 \text { vs. } H _1: \lambda>\lambda_0
+$$
+
+is to reject $H_0$, in favor of $H_1$ if
+
+$$
+\overline{ x }<\frac{\chi_{1-\alpha, 2 n }^2}{2 n \lambda_0}
+$$
+The "UMP" test for
+
+$$
+H _0: \lambda=\lambda_0 \text { vs. } H _1: \lambda<\lambda_0
+$$
+is to reject $H_0$, in favor of $H_1$ if
+
+$$
+\overline{ x }>\frac{\chi_{, 2 n }^2}{2 n \lambda_0}
+$$
+
+## Test for the Variance of the Normal Distribution
+Suppose that $X_1, X_2, \ldots, X_n$ is a random sample from the normal distribution with mean $\mu$ and variance $\sigma^2$.
+Derive a test of size/level $\alpha$ for
+
+$$
+H _0: \sigma^2 \geq \sigma_0^2 \quad \text { vs. } H_1: \sigma^2<\sigma_0^2
+$$
+
+### step 1
+Choose a statistic/estimator for $\sigma^2$
+
+$$
+s^2=\frac{\sum_{i=1}^n\left(X_i-\bar{X}\right)^2}{n-1}
+$$
+
+### step 2
+Give the form of the test.
+Reject $H_0$, in favor of $H_1$, if
+
+$$
+S ^2< C
+$$
+for some $c$ to be determined.
+
+### step 3
+find c using alpha
+
+$$
+\begin{aligned}
+\alpha &=\max P (\text { Type I Error }) \\
+&=\max _{\sigma^2 \geq \sigma_0^2} P \left(\text { Reject } H _0 ; \sigma^2\right) \\
+&=\max _{\sigma^2 \geq \sigma_0^2} P \left( S ^2< c ; \sigma^2\right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+&= P \left(\left(\frac{( n -1) S ^2}{\sigma^2}\right) \frac{( n -1) c }{\sigma^2} ; \sigma^2\right) \\
+&= P \left( W <\frac{( n -1) c }{\sigma^2}\right) \\
+&\text { where } W \sim \chi^2( n -1)
+\end{aligned}
+$$
+
+
+```{image} https://cdn.mathpix.com/snip/images/uPZys_QbRPt4sgR0hpgUiXL3Tt7m6GzMRZ4j09T842E.original.fullsize.png
+:align: center
+:alt: Critical values in Hypothesis Testing
+:width: 80%
+```
+
+### Step 4
+
+Reject $H _0$, in favor of $H _1$, if
+
+$$
+S^2<\frac{\sigma_0^2 \chi_{1-\alpha, n-1}^2}{n-1}
+$$
+
+### Example
+A lawn care company has developed
+and wants to patent a new herbicide
+applicator spray nozzle.
+Example:
+For safety reasons, they need to
+ensure that the application is
+consistent and not highly variable.
+The company selected a random sample
+of 10 nozzles and measured the
+application rate of the herbicide in
+gallons per acre
+
+The measurements were recorded as
+
+$0.213,0.185,0.207,0.163,0.179$ \
+$0.161,0.208,0.210,0.188,0.195$
+
+Assuming that the application rates are normally distributed, test the following hypotheses at level $0.04$.
+
+$$
+H _0: \sigma^2=0.01 \quad H _1: \sigma^2>0.01
+$$
+
+
+Get sample variance in $R$.
+
+$$
+\begin{array}{r}
+x<-c(0.213,0.185,0.207,0.163,0.179 \\
+0.161,0.208,0.210,0.188,0.195)
+\end{array}
+$$
+or
+
+$$
+x<-\operatorname{scan} 0
+$$
+Hit <Enter> and then input numbers, one by one, hitting <Enter> in between and <Enter $>$ at the end.
+
+Compute variance by typing
+
+$$
+\operatorname{var}( x )
+$$
+or $\left(\left(\operatorname{sum}\left(x^{\wedge} 2\right)-\left(\operatorname{sum}(x)^{\wedge} 2\right) / 10\right) / 9\right.$
+Result: $0.000364$
+
+Reject $H_0$, in favor of $H_1$, if $S^2>c$.
+
+$$
+\begin{aligned}
+&\alpha= P \left( S ^2> c ; \sigma^2=0.01\right) \\
+&= P \left(\frac{( n -1) S ^2}{\sigma^2}>\frac{9 c }{0.01} ; \sigma^2=0.01\right) \\
+&= P \left( W >\frac{9 c }{0.01}\right)
+\end{aligned}
+$$
+
+
+Reject $H _0$, in favor of $H _1$, if $S ^2> c$
+
+$$
+\begin{gathered}
+0.04= P \left( W >\frac{9 c}{0.01}\right) \\
+\frac{9 c}{0.01}=\chi_{0.04,9}^2=17.61 \\
+\text { qchisq(1-0.04,9) }
+\end{gathered}
+$$
+
+Reject $H_0$, in favor of $H_1$, if $S^2>c$
+
+$$
+\begin{aligned}
+&c=(17.61)(0.01) / 9 \approx 0.0196 \\
+&s^2=0.000364
+\end{aligned}
+$$
+
+Fail to reject $H _0$, in favor of $H _1$, at level 0.04. There is not sufficient evidence in the data to suggest that $\sigma^2>0.01$.
+
+
+
 
 
