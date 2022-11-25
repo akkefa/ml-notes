@@ -1449,3 +1449,6 @@ $\chi_{\alpha, n }^2$
 In R, get $\chi_{0.10,6}^2$
 
 by typing qchisq(0.90,6)
+
+## Best Test
+
