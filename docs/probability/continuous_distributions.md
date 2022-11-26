@@ -523,6 +523,15 @@ will give us variance of 1.
 
 $\mathrm{Z} \sim \mathrm{N}(0,1) \Rightarrow \sigma \mathrm{Z}+\mu \sim \mathrm{N}\left(\mu, \sigma^2\right)$
 
+Let  $X \sim N(2,3)$
+
+$$
+\begin{aligned}
+P ( X \leq 4.1) &= P \left(\frac{ X -\mu}{\sigma} \leq \frac{4.1-2}{\sqrt{3}}\right) \\
+&= P ( Z \leq 1.21)
+\end{aligned}
+$$
+
 ### Proving this proposition
 
 For any continuous random variable. Suppose we have Y rv, with Desnity function $f_{Y}(y)$
