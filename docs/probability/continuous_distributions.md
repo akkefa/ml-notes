@@ -523,6 +523,7 @@ will give us variance of 1.
 
 $\mathrm{Z} \sim \mathrm{N}(0,1) \Rightarrow \sigma \mathrm{Z}+\mu \sim \mathrm{N}\left(\mu, \sigma^2\right)$
 
+#### Example
 Let  $X \sim N(2,3)$
 
 $$
