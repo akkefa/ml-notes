@@ -198,6 +198,7 @@ $$
 
 $1-\beta$ is known as the
 power of the test
+
 $$
 \begin{gathered}
 1-\beta=1-\max _{\mu \in H _1} P \left(\text { Fail to Reject } H _0 ; \mu\right) \\
@@ -477,7 +478,7 @@ From the data, where $\bar{x}=6537$, we reject $H _0$ in favor of $H _1$.\
 The data suggests that the true mean annual health care premium is greater than $\$ 6015$.
 
 
-## Power Tests
+## Power Functions
 Let $X_1, X_2, \ldots, X_n$ be a random sample from any distribution with unknown parameter $\theta$ which takes values
 in a parameter space $\Theta$
 
@@ -498,9 +499,11 @@ only non-negative values. So the complement of the interval from 0 to 2 in that 
 
 
 $\gamma(\theta)= P \left(\right.$ Reject $H _0$ when the parameter is $\left.\theta\right)$
+
 $$
 \gamma(\theta)= P \left(\text { Reject } H _0 ; \theta\right)
 $$
+
 $\theta$ is an argument that can be anywhere in the parameter space $\Theta$.
 it could be a $\theta$ from $H _0$
 it could be a $\theta$ from $H _1$
