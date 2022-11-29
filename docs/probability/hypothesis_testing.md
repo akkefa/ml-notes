@@ -658,6 +658,14 @@ $$
 c=z_{\alpha / 2} \frac{\sigma}{\sqrt{n}}
 $$
 
+
+```{image} https://cdn.mathpix.com/snip/images/7BHR3yGF4057F0hJ5VfKQEvPM2kWSyG6xxs8JYVc8W0.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
+
+
 ### Step Four
 Conclusion
 
