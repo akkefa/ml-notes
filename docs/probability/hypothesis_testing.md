@@ -499,6 +499,46 @@ By looking at the data and asking "how likely was the data to occur, assuming th
 
 What do "low" and "high" mean? That is where your significance level $\alpha$ comes back into play. We consider a p-value low if the p-value is less than $\alpha$, and high if it is greater than $\alpha$.
 
+### Example
+
+From the above example.
+
+
+```{image} https://cdn.mathpix.com/snip/images/CQIJMfqV6hNPC5xEniQoK0Mht-U2cDzUX3gDYkKCE3A.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
+
+```{image} https://cdn.mathpix.com/snip/images/7mm91pEApHO7bfXWrFXycSoqatUqyVFPaGtdc24Nvks.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
+
+- This is the $N\left(6015,814^2 / 100\right)$ pdf.
+- The red area is $P (\overline{ X }>6537)$.
+
+
+$$
+\begin{aligned}
+& P (\overline{ X }>6537) \\
+&\quad= P \left(\frac{\overline{ X }-\mu_0}{\sigma / \sqrt{ n }}>\frac{6537-6015}{814 / \sqrt{100}}\right) \\
+&= P ( Z >6.4127) \\
+&\approx 0.00000001 \quad \begin{array}{l}
+\text { Super small } \\
+\text { and way out } \\
+\text { "in the tail". }
+\end{array}
+\end{aligned}
+$$
+
+
+- The P-Value is the area to the right (in this case) of the test statistic $\bar{X}$.
+- The P-value being less than $0.10$ puts $\bar{X}$ in the rejection region.
+- The P-value is also less than $0.05$ and $0.01$.
+- It looks like we will reject $H _0$ for the most typical values of $\alpha$.
+
 
 ## Power Functions
 Let $X_1, X_2, \ldots, X_n$ be a random sample from any distribution with unknown parameter $\theta$ which takes values
