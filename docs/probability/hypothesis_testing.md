@@ -477,6 +477,28 @@ $$
 From the data, where $\bar{x}=6537$, we reject $H _0$ in favor of $H _1$.\
 The data suggests that the true mean annual health care premium is greater than $\$ 6015$.
 
+## Hypothesis Testing with P-Values
+
+Recall that p-values are defined as the following:
+A p-value is the probability that we observe a test statistic at least as extreme as the one we calculated, assuming the null hypothesis is true.
+It isn't immediately obvious what that definition means, so let's look at some examples to really get an idea of what p-values are, and how they work.
+
+Let's start very simple and say we have 5 data points: x = <1, 2, 3, 4, 5>. Let's also assume the data were generated
+from some normal distribution with a known variance $\sigma$ but an unknown mean $\mu_0$. What would be a good guess
+for the true mean?
+We know that this data could come from *any* normal distribution, so let's make two wild guesses:
+
+1. The true mean is 100.
+2. The true mean is 3.
+
+Intuitively, we know that 3 is the better guess. But how do we actually determine which of these guesses is more likely?
+By looking at the data and asking "how likely was the data to occur, assuming the guess is true?" 
+
+1. What is the probability that we observed x=<1,2,3,4,5> assuming the mean is 100? Probabiliy pretty low. And because the p-value is low, we "reject the null hypothesis" that $\mu_0 = 100$.
+2. What is the probability that we observed x=<1,2,3,4,5> assuming the mean is 3? Seems reasonable. However, something to be careful of is that p-values do not **prove** anything. Just because it is probable for the true mean to be 3, does not mean we know the true mean is 3. If we have a high p-value, we "fail to reject the null hypothesis" that $\mu_0 = 3$.
+
+What do "low" and "high" mean? That is where your significance level $\alpha$ comes back into play. We consider a p-value low if the p-value is less than $\alpha$, and high if it is greater than $\alpha$.
+
 
 ## Power Functions
 Let $X_1, X_2, \ldots, X_n$ be a random sample from any distribution with unknown parameter $\theta$ which takes values
@@ -523,27 +545,6 @@ $$
 $$
 
 
-## Hypothesis Testing with P-Values
-
-Recall that p-values are defined as the following:
-A p-value is the probability that we observe a test statistic at least as extreme as the one we calculated, assuming the null hypothesis is true.
-It isn't immediately obvious what that definition means, so let's look at some examples to really get an idea of what p-values are, and how they work.
-
-Let's start very simple and say we have 5 data points: x = <1, 2, 3, 4, 5>. Let's also assume the data were generated
-from some normal distribution with a known variance $\sigma$ but an unknown mean $\mu_0$. What would be a good guess
-for the true mean?
-We know that this data could come from *any* normal distribution, so let's make two wild guesses:
-
-1. The true mean is 100.
-2. The true mean is 3.
-
-Intuitively, we know that 3 is the better guess. But how do we actually determine which of these guesses is more likely?
-By looking at the data and asking "how likely was the data to occur, assuming the guess is true?" 
-
-1. What is the probability that we observed x=<1,2,3,4,5> assuming the mean is 100? Probabiliy pretty low. And because the p-value is low, we "reject the null hypothesis" that $\mu_0 = 100$.
-2. What is the probability that we observed x=<1,2,3,4,5> assuming the mean is 3? Seems reasonable. However, something to be careful of is that p-values do not **prove** anything. Just because it is probable for the true mean to be 3, does not mean we know the true mean is 3. If we have a high p-value, we "fail to reject the null hypothesis" that $\mu_0 = 3$.
-
-What do "low" and "high" mean? That is where your significance level $\alpha$ comes back into play. We consider a p-value low if the p-value is less than $\alpha$, and high if it is greater than $\alpha$.
 
 ## Two Tailed Tests
 
