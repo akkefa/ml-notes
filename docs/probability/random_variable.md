@@ -42,7 +42,8 @@ which performs the mapping of the outcomes of a random process to a numeric valu
 The domain of a random variable is a sample space, which is represented as the collection of possible outcomes of a
 random event. For instance, when a coin is tossed, only two possible outcomes are acknowledged such as heads or tails.
 
-Random variables **Denote by a capital letters** near the end of the alphabet `(e.g. X, Y ).`
+### Denoted by
+Random variables Denote by a capital letters near the end of the alphabet `(e.g. X, Y ).`
 
 ```{note}
 Why is it called a random variable?\
