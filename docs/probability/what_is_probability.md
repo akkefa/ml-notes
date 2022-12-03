@@ -53,10 +53,18 @@ Some of the important probability terms are discussed here.
 
 (sample-space)=
 ### Sample Space 
-Sample space of an experiment, denoted $S$, is the set of all possible outcomes of an experiment or trial. \
-Suppose that we toss a die. Six numbers, from 1 to 6, can appear face up, but we do not yet know which one of them
-will appear. The sample space is S = {1,2,3,4,5,6}.\
-Tossing a coin, Sample Space = {H,T}.
+Sample space of an experiment, denoted $S$, is the set of all possible outcomes of an experiment or trial.
+
+- Suppose that we toss a die. Six numbers, from 1 to 6, can appear face up, but we do not yet know which one of them will appear. The sample space is S = {1,2,3,4,5,6}.
+- For tossing is a fair coin, the sample space is S = {H, T}
+
+
+
+```{image} https://miro.medium.com/max/1298/1*tTaEDIcL0ElfSnQe4xr2QA.webp
+:align: center
+:alt: Sample space
+:width: 80%
+```
 
 ```{image} https://cdn.mathpix.com/snip/images/0nY3sA4gdcKRJqiIpDf5RvXHDTessQ-cDgjFFMMhuuE.original.fullsize.png
 :align: center
