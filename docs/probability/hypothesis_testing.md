@@ -10,10 +10,10 @@ kernelspec:
 # Hypothesis Testing
 Statistical inference is the process of learning about characteristics of a population based
 on what is observed in a relatively small sample from that population. A sample will never give us the
-entire picture though, and we are bound to make incorrect decisions from time to time. We
-will learn how to derive and interpret appropriate tests to manage this error and how to
-evaluate when one test is better than another. we
-will learn how to construct and perform principled hypothesis tests for a wide range of
+entire picture though, and we are bound to make incorrect decisions from time to time.
+
+We will learn how to derive and interpret appropriate tests to manage this error and how to
+evaluate when one test is better than another. we will learn how to construct and perform principled hypothesis tests for a wide range of
 problems and applications when they are not.
 
 ## What is Hypothesis
@@ -198,6 +198,7 @@ $$
 
 $1-\beta$ is known as the
 power of the test
+
 $$
 \begin{gathered}
 1-\beta=1-\max _{\mu \in H _1} P \left(\text { Fail to Reject } H _0 ; \mu\right) \\
@@ -476,50 +477,6 @@ $$
 From the data, where $\bar{x}=6537$, we reject $H _0$ in favor of $H _1$.\
 The data suggests that the true mean annual health care premium is greater than $\$ 6015$.
 
-
-## Power Tests
-Let $X_1, X_2, \ldots, X_n$ be a random sample from any distribution with unknown parameter $\theta$ which takes values
-in a parameter space $\Theta$
-
-We ultimately want to test
-
-$$
-\begin{aligned}
-& H _0: \theta \in \Theta_0 \\
-& H _1: \theta \in \Theta \backslash \Theta_0
-\end{aligned}
-$$
-
-where $\Theta_0$ is some subset of $\Theta$.
-
-So in other words, if the null hypothesis was for you to test for an exponential distribution,
-whether lambda was between 0 and 2, the complement of that is not the rest of the real number line because the space is
-only non-negative values. So the complement of the interval from 0 to 2 in that space is 2 to infinity.
-
-
-$\gamma(\theta)= P \left(\right.$ Reject $H _0$ when the parameter is $\left.\theta\right)$
-$$
-\gamma(\theta)= P \left(\text { Reject } H _0 ; \theta\right)
-$$
-$\theta$ is an argument that can be anywhere in the parameter space $\Theta$.
-it could be a $\theta$ from $H _0$
-it could be a $\theta$ from $H _1$
-
-
-$$
-\begin{aligned}
-&\alpha=\max P \left(\text { Reject } H _0 \text { when true }\right) \\
-&=\max _{\theta \in \Theta_0} P \left(\text { Reject } H _0 ; \theta\right) \\
-&=\max _{\theta \in \Theta_0} \gamma(\theta) \longleftrightarrow \begin{array}{l}
-\text { Other notation } \\
-\text { is } \max _{\theta \in H _0} \\
-\hline
-\end{array} \\
-&
-\end{aligned}
-$$
-
-
 ## Hypothesis Testing with P-Values
 
 Recall that p-values are defined as the following:
@@ -541,6 +498,93 @@ By looking at the data and asking "how likely was the data to occur, assuming th
 2. What is the probability that we observed x=<1,2,3,4,5> assuming the mean is 3? Seems reasonable. However, something to be careful of is that p-values do not **prove** anything. Just because it is probable for the true mean to be 3, does not mean we know the true mean is 3. If we have a high p-value, we "fail to reject the null hypothesis" that $\mu_0 = 3$.
 
 What do "low" and "high" mean? That is where your significance level $\alpha$ comes back into play. We consider a p-value low if the p-value is less than $\alpha$, and high if it is greater than $\alpha$.
+
+### Example
+
+From the above example.
+
+
+```{image} https://cdn.mathpix.com/snip/images/CQIJMfqV6hNPC5xEniQoK0Mht-U2cDzUX3gDYkKCE3A.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
+
+```{image} https://cdn.mathpix.com/snip/images/7mm91pEApHO7bfXWrFXycSoqatUqyVFPaGtdc24Nvks.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
+
+- This is the $N\left(6015,814^2 / 100\right)$ pdf.
+- The red area is $P (\overline{ X }>6537)$.
+
+
+$$
+\begin{aligned}
+& P (\overline{ X }>6537) \\
+&\quad= P \left(\frac{\overline{ X }-\mu_0}{\sigma / \sqrt{ n }}>\frac{6537-6015}{814 / \sqrt{100}}\right) \\
+&= P ( Z >6.4127) \\
+&\approx 0.00000001 \quad \begin{array}{l}
+\text { Super small } \\
+\text { and way out } \\
+\text { "in the tail". }
+\end{array}
+\end{aligned}
+$$
+
+
+- The P-Value is the area to the right (in this case) of the test statistic $\bar{X}$.
+- The P-value being less than $0.10$ puts $\bar{X}$ in the rejection region.
+- The P-value is also less than $0.05$ and $0.01$.
+- It looks like we will reject $H _0$ for the most typical values of $\alpha$.
+
+
+## Power Functions
+Let $X_1, X_2, \ldots, X_n$ be a random sample from any distribution with unknown parameter $\theta$ which takes values
+in a parameter space $\Theta$
+
+We ultimately want to test
+
+$$
+\begin{aligned}
+& H _0: \theta \in \Theta_0 \\
+& H _1: \theta \in \Theta \backslash \Theta_0
+\end{aligned}
+$$
+
+where $\Theta_0$ is some subset of $\Theta$.
+
+So in other words, if the null hypothesis was for you to test for an exponential distribution,
+whether lambda was between 0 and 2, the complement of that is not the rest of the real number line because the space is
+only non-negative values. So the complement of the interval from 0 to 2 in that space is 2 to infinity.
+
+
+$\gamma(\theta)= P \left(\right.$ Reject $H _0$ when the parameter is $\left.\theta\right)$
+
+$$
+\gamma(\theta)= P \left(\text { Reject } H _0 ; \theta\right)
+$$
+
+$\theta$ is an argument that can be anywhere in the parameter space $\Theta$.
+it could be a $\theta$ from $H _0$
+it could be a $\theta$ from $H _1$
+
+
+$$
+\begin{aligned}
+&\alpha=\max P \left(\text { Reject } H _0 \text { when true }\right) \\
+&=\max _{\theta \in \Theta_0} P \left(\text { Reject } H _0 ; \theta\right) \\
+&=\max _{\theta \in \Theta_0} \gamma(\theta) \longleftrightarrow \begin{array}{l}
+\text { Other notation } \\
+\text { is } \max _{\theta \in H _0} \\
+\hline
+\end{array} \\
+&
+\end{aligned}
+$$
+
+
 
 ## Two Tailed Tests
 
@@ -613,6 +657,14 @@ $$
 
 c=z_{\alpha / 2} \frac{\sigma}{\sqrt{n}}
 $$
+
+
+```{image} https://cdn.mathpix.com/snip/images/7BHR3yGF4057F0hJ5VfKQEvPM2kWSyG6xxs8JYVc8W0.original.fullsize.png
+:align: center
+:alt: Errors in Hypothesis Testing
+:width: 80%
+```
+
 
 ### Step Four
 Conclusion
