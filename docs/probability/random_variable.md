@@ -50,6 +50,15 @@ Why is it called a random variable?\
 Because we think of it as a variable that take random value intuitively. Formally they are function.
 ```
 
+## Probability Distribution
+A Probability Distribution is a graph, table, or function that gives the probability for each value of the random variable.
+
+### Requirments
+
+1. The sum of the probabilities is 1. $\sum f(x)=1 $.
+2. Every probability $p_i$ is a number between 0 and 1. $ 0 \leq f(x) \leq 1$
+
+
 ### Difference between random variables and probability distributions
 A random variable is a numerical description of the outcome of a statistical experiment.
 The probability distribution for a random variable describes how the probabilities are distributed over the
