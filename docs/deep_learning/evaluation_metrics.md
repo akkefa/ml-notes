@@ -2,6 +2,40 @@
 
 ## Classification
 
+In machine learning, classification is a supervised learning problem in which the model is trained to predict the class or category of an input data point. In a classification problem, the input data consists of a set of features or attributes, and the output is a class label. The goal of the model is to accurately predict the class label of new data points based on their features.
+
+### Confusion Matrix
+Confusion matrix is a performance measurement for machine learning classification problem where output can be two or more classes.
+
+ In a confusion matrix, the rows represent the actual class labels, and the columns represent the predicted class labels.
+```bash
+               Predicted
+               Positive  Negative
+Actual
+Positive        TP       FP
+Negative        FN       TN
+```
+
+Here, TP (true positive) is the number of times the classifier predicted "positive" and the actual label was "positive". FP (false positive) is the number of times the classifier predicted "positive" and the actual label was "negative". FN (false negative) is the number of times the classifier predicted "negative" and the actual label was "positive". TN (true negative) is the number of times the classifier predicted "negative" and the actual label was "negative".
+
+Here is an example of how to compute the values in a confusion matrix:
+
+```bash
+               Predicted
+               Positive  Negative
+Actual
+Positive        10       5
+Negative         3       2
+```
+The values in the confusion matrix can be used to compute various performance metrics, such as precision, recall, and accuracy.
+
+
+```{image} https://miro.medium.com/max/924/1*7EYylA6XlXSGBCF77j_rOA.webp
+:align: center
+:alt: Confusion Matrix
+```
+### Accuracy
+
 ### Precision and Recall
 
 $$
