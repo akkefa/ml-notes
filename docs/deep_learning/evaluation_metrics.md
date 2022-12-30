@@ -8,6 +8,9 @@ kernelspec:
 ```
 
 # Evaluation Metrics
+Evaluation metrics are used to evaluate the performance of a machine learning model. They provide a way to quantitatively measure how well the model is performing on a given task.
+
+It is important to choose an appropriate evaluation metric for your problem, as different metrics may emphasize different aspects of model performance. For example, in a binary classification problem, you may be more interested in minimizing false negatives than false positives, in which case you would want to use a metric like recall rather than precision.
 
 ## Classification
 
