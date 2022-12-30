@@ -38,7 +38,7 @@ Contents
    deep_learning/what_is_deep_learning
    deep_learning/tensor
    deep_learning/loss_functions
-   evaluation_metrics
+   deep_learning/evaluation_metrics
 
 .. toctree::
    :caption: Mathematics
