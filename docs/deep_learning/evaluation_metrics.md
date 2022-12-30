@@ -1,8 +1,17 @@
+---
+file_format: mystnb
+kernelspec:
+  name: python3
+---
+
+```{title} Evaluation Metrics Explained
+```
+
 # Evaluation Metrics
 
 ## Classification
 
-In machine learning, classification is a supervised learning problem in which the model is trained to predict the class or category of an input data point. In a classification problem, the input data consists of a set of features or attributes, and the output is a class label. The goal of the model is to accurately predict the class label of new data points based on their features.
+In machine learning, classification is a supervised learning problem in which the model is trained to predict the class or category of an input data point.
 
 ### Confusion Matrix
 Confusion matrix is a performance measurement for machine learning classification problem where output can be two or more classes.
@@ -42,8 +51,41 @@ The values in the confusion matrix can be used to compute various performance me
 :alt: Confusion Matrix
 :width: 60%
 ```
+---
 
-### Precision and Recall
+| Individual Number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Actual Classification | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Predicted Classification | 0 | 0 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 0 | 0 | 0 |
+| Result | FN | FN | TP | TP | TP | TP | TP | TP | FP | TN | TN | TN |
+
+
+<p style="text-align: center;">Example from <a href="https://en.wikipedia.org/wiki/Confusion_matrix">wikipedia.com</a></p>
+
+```{code-cell}
+import torch
+from sklearn import metrics
+import matplotlib.pyplot as plt
+
+# simulate a classification problem
+y_true = torch.randint(0,2, (7,))
+y_pred = torch.randint(0,2, (7,))
+
+print(f"{y_true=}")
+print(f"{y_pred=}")
+print(f"confusion_matrix {metrics.confusion_matrix(y_true, y_pred)} ")
+
+tn, fp, fn, tp = metrics.confusion_matrix(y_true, y_pred).ravel()
+print(tn, fp, fn, tp)
+
+disp = metrics.ConfusionMatrixDisplay(confusion_matrix=metrics.confusion_matrix(y_true, y_pred) )
+disp.plot()
+plt.show()
+
+```
+
+
+#### Precision and Recall
 
 ```{image} https://miro.medium.com/max/830/1*uR09zTlPgIj5PvMYJZScVg.webp
 :align: center
@@ -66,7 +108,17 @@ $$
 The above equation can be explained by saying, from all the positive classes, how many we predicted correctly.
 Recall should be high as possible.
 
-### F1-score
+```{code-cell}
+
+print(f"{metrics.precision_score(y_true, y_pred)=}")
+print(f"{metrics.recall_score(y_true, y_pred)=}")
+print(f"{metrics.accuracy_score(y_true, y_pred)=}")
+print(f"{metrics.f1_score(y_true, y_pred)=}")
+print(f"{metrics.fbeta_score(y_true, y_pred, beta=0.5)=}")
+
+```
+
+#### F1-score
 
 The F1-score is the harmonic mean of the precision and the recall.
 Using the harmonic mean has the effect that a good F1-score requires both a good precision and a good recall.
