@@ -33,18 +33,38 @@ The values in the confusion matrix can be used to compute various performance me
 ```{image} https://miro.medium.com/max/924/1*7EYylA6XlXSGBCF77j_rOA.webp
 :align: center
 :alt: Confusion Matrix
+:width: 60%
 ```
-### Accuracy
+
+#### Calculate Confusion Matrix for a 2 classes problem
+```{image} https://miro.medium.com/max/1172/1*OpSYGh2-XE6aE3sVAJAHrw.webp
+:align: center
+:alt: Confusion Matrix
+:width: 60%
+```
 
 ### Precision and Recall
 
+```{image} https://miro.medium.com/max/830/1*uR09zTlPgIj5PvMYJZScVg.webp
+:align: center
+:alt: Confusion Matrix
+:width: 60%
+```
+
 $$
 \text{precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}
+$$
 
+The above equation can be explained by saying, from all the classes we have predicted as positive, how many are actually positive.
+Precision should be high as possible.
+
+
+$$
 \text{recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}
 $$
 
-TP is the number of true positives, FP is the number of false positives and FN is the number of false negatives.
+The above equation can be explained by saying, from all the positive classes, how many we predicted correctly.
+Recall should be high as possible.
 
 ### F1-score
 
@@ -54,6 +74,8 @@ Using the harmonic mean has the effect that a good F1-score requires both a good
 $$
 F_1 = 2 \cdot \frac{\text{precision} \cdot \text{recall}}{\text{precision} + \text{recall}}
 $$
+
+It is difficult to compare two models with low precision and high recall or vice versa. So to make them comparable, we use F-Score. F-score helps to measure Recall and Precision at the same time. It uses Harmonic Mean in place of Arithmetic Mean by punishing the extreme values more.
 
 ## Ranking | Recommendation | Information Retrieval
 
