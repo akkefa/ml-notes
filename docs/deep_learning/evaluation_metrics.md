@@ -69,6 +69,7 @@ The values in the confusion matrix can be used to compute various performance me
 import torch
 from sklearn import metrics
 import matplotlib.pyplot as plt
+import torchmetrics
 
 # simulate a classification problem
 y_true = torch.randint(0,2, (7,))
@@ -84,6 +85,8 @@ print(tn, fp, fn, tp)
 disp = metrics.ConfusionMatrixDisplay(confusion_matrix=metrics.confusion_matrix(y_true, y_pred) )
 disp.plot()
 plt.show()
+
+print(f"{torchmetrics.functional.confusion_matrix(y_true, y_pred,task='binary')=}")
 
 ```
 
