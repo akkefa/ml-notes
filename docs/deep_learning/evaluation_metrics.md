@@ -193,6 +193,7 @@ For example, consider a binary classification problem where the positive class i
 
 - https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/
 - https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc
+- https://stephenallwright.com/metric-choice/
   
 ## Ranking | Recommendation | Information Retrieval
 
