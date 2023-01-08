@@ -11,9 +11,11 @@ kernelspec:
 Evaluation metrics are used to evaluate the performance of a machine learning model. They provide a way to quantitatively measure how well the model is performing on a given task.
 
 ## Classification
-In machine learning, classification is a supervised learning problem in which the model is trained to predict the class or category of an input data point.
+In machine learning, classification is a supervised learning problem in which the model is trained to predict the class of an input data point.
 
+```{note}
 It is important to choose an appropriate evaluation metric for your problem. For example, in a binary classification problem, you may be more interested in minimizing false negatives than false positives, in which case you would want to use a metric like recall rather than precision.
+```
 
 ### Confusion Matrix
 Confusion matrix is a performance measurement for machine learning classification problem where output can be two or more classes.
