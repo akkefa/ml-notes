@@ -4,12 +4,12 @@ kernelspec:
     name: python3
 ---
 
-```{title} Deep learning loss functions
+```{title} Loss Functions Explained
 ```
 
-# Loss functions
+# Loss Functions
 
-## Introduction to Loss function
+## Introduction
 Imagine the scenario, Once you developed your machine learning model that you believe, successfully identifying the
 cats and dogs but how do you know this is the best result?
 

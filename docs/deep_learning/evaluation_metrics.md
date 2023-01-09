@@ -28,14 +28,6 @@ Confusion matrix is a performance measurement for machine learning classificatio
 :width: 30%
 ```
 
-```bash
-               Predicted
-               Positive  Negative
-Actual
-Positive        TP       FP
-Negative        FN       TN
-```
-
 Here, TP (true positive) is the number of times the classifier predicted "positive" and the actual label was "positive". FP (false positive) is the number of times the classifier predicted "positive" and the actual label was "negative". FN (false negative) is the number of times the classifier predicted "negative" and the actual label was "positive". TN (true negative) is the number of times the classifier predicted "negative" and the actual label was "negative".
 
 Here is an example of how to compute the values in a confusion matrix:
