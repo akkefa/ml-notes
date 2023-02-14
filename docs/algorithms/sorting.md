@@ -81,3 +81,69 @@ for i in range(len(arr)):
  
 # This code is contributed by Mohit Kumra
 ```
+
+## Binary Search
+
+Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n). 
+
+
+```{image} https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif
+:align: center
+:alt: Binary Search
+:width: 80%
+```
+
+### Implmentation
+
+
+```{code-cell}
+
+def binarySearchHelper(lst, elt, left, right):
+    n = len(lst)
+    if (left > right):
+        return None # Search region is empty -- let us bail since we cannot find the element elt in the list.
+    else: 
+        # If elt exists in the list, it must be between left and right indices.
+        mid = (left + right)//2 # Note that // is integer division 
+        if lst[mid] == elt: 
+            return mid # BINGO -- we found it. Return its index signalling that we found it.
+        elif lst[mid] < elt: 
+            # We search in the right part of the list
+            return binarySearchHelper(lst, elt, mid+1, right)
+        else: # lst[mid] > elt
+            # We search in the left part of the list.
+            return binarySearchHelper(lst, elt, left, mid-1)
+
+def binarySearch(lst, elt):
+    n = len(lst)
+    if (elt < lst[0] or elt > lst[n-1]):
+        return None
+    else: # Note: we will only get here if
+          # lst[0] <= elt <= lst[n-1]
+        return binarySearchHelper(lst, elt, 0, n-1)
+
+print("Searching for 9 in list [0,2,3,4,6,9,12]")
+print(binarySearch([0,2,3,4,6,9,12], 9))
+
+print("Searching for 8 in list [1, 3, 4, 6, 8, 9,10, 11, 12, 15]")
+print(binarySearch([1, 3, 4, 6, 8, 9,10, 11, 12, 15], 8))
+
+print("Searching for 5 in list [1, 3, 4, 6, 8, 9,10, 11, 12, 15]")
+print(binarySearch([1, 3, 4, 6, 8, 9,10, 11, 12, 15], 5))
+
+print("Searching for 0 in list [0,2]")
+print(binarySearch([0,2], 0))
+
+print("Searching for 1 in list [0,2]")
+print(binarySearch([0,2], 1))
+
+print("Searching for 2 in list [0,2]")
+print(binarySearch([0,2], 2))
+
+print("Searching for 1 in list [1]")
+print(binarySearch([1], 1))
+
+print("Searching for 2 in list [1]")
+print(binarySearch([1], 2))
+
+```
