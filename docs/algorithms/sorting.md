@@ -12,7 +12,7 @@ kernelspec:
 
 ```{image} https://zaxrosenberg.com/wp-content/uploads/2017/12/sort_complexity.png
 :align: center
-:alt: Sort Complexity
+:alt: Insertion Sort
 :width: 80%
 ```
 
@@ -30,6 +30,14 @@ Insertion sort is a simple sorting algorithm that works similar to the way you s
 :alt: Insertion Sort
 :width: 50%
 ```
+---
+
+```{image} https://www.swtestacademy.com/wp-content/uploads/2021/11/insertion-sort.gif
+:align: center
+:alt: Insertion Sort
+:width: 80%
+```
+
 ### Implmentation
 
 ```bash
