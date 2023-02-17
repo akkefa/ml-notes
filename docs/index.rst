@@ -49,7 +49,7 @@ Contents
    statistics
 
 .. toctree::
-   :caption: Algorithms & DS
+   :caption: Algorithms
    :maxdepth: 1
 
    algorithms/sorting.md
