@@ -56,25 +56,38 @@ end procedure
 ```{code-cell}
 
 def insertion_sort(data: list):
- 
+    
+    print(f"Unsorted List: {data}")
+
     for i in range(1, len(data)):
+        print("===" * 10)
+        print(f"Iteration: {i} & Current Element: {data[i]}")
+        
         key = data[i]
         # Move elements of arr[0..i-1], that are
         # greater than key, to one position ahead
         # of their current position
         j = i-1
+
         while j >= 0 and key < data[j] :
+                print(f"j = {j}")
+                print(f"Swapping {data[j]} with {data[j + 1]}")
                 data[j + 1] = data[j]
                 j -= 1
+                print(f"Swapped List: {data}")
+        
+        print(f"Inserting {key} at position {j + 1}")
         data[j + 1] = key
+        print(f"New List: {data}")
+        print("===" * 10)
     
     return data
  
- 
-# Driver code to test above
-arr = [12, 11, 13, 5, 6]
-for i in insertion_sort(arr):
-    print (i, end=" ")
+insertion_sort([12, 11, 13, 5, 6])
+
+print("####" * 10)
+
+insertion_sort([6, 11, 6, 44, 6,7,9,22,0])
  
 # This code is contributed by Mohit Kumra
 ```
