@@ -91,7 +91,7 @@ insertion_sort([6, 11, 6, 44, 6,7,9,22,0])
  
 # This code is contributed by Mohit Kumra
 ```
-## Mergesort
+## Merge sort
 
 Merge sort is a sorting algorithm that works by dividing an array into smaller subarrays, sorting each subarray, and then merging the sorted subarrays back together to form the final sorted array.
 
@@ -105,7 +105,18 @@ In simple terms, we can say that the process of merge sort is to divide the arra
 
 The “Merge Sort”  uses a recursive algorithm to achieve its results.
 
+### Advantages of the Merge Sort
 
+- Merge sort can efficiently sort a list in O(n*log(n)) time.
+- Merge sort can be used with linked lists without taking up any more space.
+- A merge sort algorithm is used to count the number of inversions in the list.
+- Merge sort is employed in external sorting.
+
+### Drawbacks of the Merge Sort
+
+- For small datasets, merge sort is slower than other sorting algorithms.
+- For the temporary array, mergesort requires an additional space of O(n).
+- Even if the array is sorted, the merge sort goes through the entire process.
 
 ## Binary Search
 
