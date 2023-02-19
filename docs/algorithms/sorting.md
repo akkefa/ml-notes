@@ -181,7 +181,6 @@ Binary Search is a searching algorithm used in a sorted array by repeatedly divi
 
 ### python Implmentation of Binary Search
 
-
 ```{code-cell}
 
 def binarySearchHelper(lst, elt, left, right):
