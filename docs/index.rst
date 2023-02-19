@@ -1,8 +1,15 @@
 .. title::
-   Mathematics for Machine learning and Data Science
+   Welcome to my Machine Learning notes
 
-Welcome to Mathematics for Machine learning
-============================================
+Welcome to my Machine Learning notes
+======================================
+
+My name is Ikram Ali and I’m a Lead Data Scientist.
+
+- https://www.linkedin.com/in/akkefa/
+- https://www.github.com/akkefa
+
+
 Quick definitions and intuitive explanations around machine learning and Deep learning.
 
 """""""""
