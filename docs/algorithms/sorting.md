@@ -118,6 +118,56 @@ The “Merge Sort”  uses a recursive algorithm to achieve its results.
 - For the temporary array, mergesort requires an additional space of O(n).
 - Even if the array is sorted, the merge sort goes through the entire process.
 
+### Python implementation of MergeSort
+
+```{code-cell}
+def mergeSort(arr):
+	if len(arr) > 1:
+
+		# Finding the mid of the array
+		mid = len(arr)//2
+
+		# Dividing the array elements
+		L = arr[:mid]
+
+		# into 2 halves
+		R = arr[mid:]
+
+		# Sorting the first half
+		mergeSort(L)
+
+		# Sorting the second half
+		mergeSort(R)
+
+		i = j = k = 0
+
+		# Copy data to temp arrays L[] and R[]
+		while i < len(L) and j < len(R):
+			if L[i] <= R[j]:
+				arr[k] = L[i]
+				i += 1
+			else:
+				arr[k] = R[j]
+				j += 1
+			k += 1
+
+		# Checking if any element was left
+		while i < len(L):
+			arr[k] = L[i]
+			i += 1
+			k += 1
+
+		while j < len(R):
+			arr[k] = R[j]
+			j += 1
+			k += 1
+
+arr = [12, 11, 13, 5, 6, 7]
+print(arr)
+mergeSort(arr)
+print(arr)
+```
+
 ## Binary Search
 
 Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n). 
@@ -129,7 +179,7 @@ Binary Search is a searching algorithm used in a sorted array by repeatedly divi
 :width: 80%
 ```
 
-### Implmentation
+### python Implmentation of Binary Search
 
 
 ```{code-cell}
