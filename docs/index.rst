@@ -60,6 +60,7 @@ Contents
    :maxdepth: 1
 
    algorithms/sorting.md
+   algorithms/graphs.md
 
 .. toctree::
    :caption: Practice
