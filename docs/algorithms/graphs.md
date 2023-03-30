@@ -26,3 +26,9 @@ The height of a Binary Tree is defined as the maximum depth of any leaf node fro
 :alt: Binary Search Tree
 :width: 50%
 ```
+### Find in BST
+
+Complexity: O(log n) and O(n) in worst case
+
+
+### Insertion and Deleteion in BST
