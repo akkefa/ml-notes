@@ -49,7 +49,7 @@ Contents
 
 .. toctree::
    :caption: Mathematics
-   :maxdepth: 2
+   :maxdepth: 1
 
    calculus
    linear_algebra
@@ -61,6 +61,13 @@ Contents
 
    algorithms/sorting.md
    algorithms/graphs.md
+
+.. toctree::
+   :caption: Learn Pytorch
+   :maxdepth: 1
+
+   torch/pytorch_fundamental.ipynb
+
 
 .. toctree::
    :caption: Practice
