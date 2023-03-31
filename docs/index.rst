@@ -67,6 +67,7 @@ Contents
    :maxdepth: 1
 
    torch/pytorch_fundamental.ipynb
+   torch/pytorch_workflow.ipynb
 
 
 .. toctree::
