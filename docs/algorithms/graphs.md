@@ -388,3 +388,24 @@ if __name__ == "__main__":
 
 
 ```
+
+## Red-Black Tree
+When it comes to searching and sorting data, one of the most fundamental data structures is the binary search tree. However, the performance of a binary search tree is highly dependent on its shape, and in the worst case, it can degenerate into a linear structure with a time complexity of O(n). This is where Red Black Trees come in, they are a type of balanced binary search tree that use a specific set of rules to ensure that the tree is always balanced. This balance guarantees that the time complexity for operations such as insertion, deletion, and searching is always O(log n), regardless of the initial shape of the tree.
+
+Red Black Trees are self-balancing, meaning that the tree adjusts itself automatically after each insertion or deletion operation. It uses a simple but powerful mechanism to maintain balance, by coloring each node in the tree either red or black. 
+
+### Properties of Red Black Tree
+
+The Red-Black tree satisfies all the properties of binary search tree in addition to that it satisfies following additional properties –
+
+1. Root property: The root is black.
+
+2. External property: Every leaf (Leaf is a NULL child of a node) is black in Red-Black tree.
+
+3. Internal property: The children of a red node are black. Hence possible parent of red node is a black node.
+
+4. Depth property: All the leaves have the same black depth.
+
+5. Path property: Every simple path from root to descendant leaf node contains same number of black nodes. 
+
+The result of all these above-mentioned properties is that the Red-Black tree is roughly balanced.
