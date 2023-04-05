@@ -409,3 +409,5 @@ The Red-Black tree satisfies all the properties of binary search tree in additio
 5. Path property: Every simple path from root to descendant leaf node contains same number of black nodes. 
 
 The result of all these above-mentioned properties is that the Red-Black tree is roughly balanced.
+
+
