@@ -721,8 +721,24 @@ In an adjacency list, each vertex stores a list of adjacent vertices. The follow
 ### Graph Traversal
 Graph traversal is the process of visiting (checking and/or updating) each vertex in a graph, exactly once. Such traversals are classified by the order in which the vertices are visited. The order may be defined by a specific rule, for example, depth-first search and breadth-first search.
 
+Link: https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9
+
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*VM84VPcCQe0gSy44l9S5yA.jpeg
+:alt: graph traversal
+:width: 70%
+:align: center
+```
+
+While DFS uses a stack data structure, BFS leans on the queue data structure.
+
 #### Depth First Search
-Depth First Search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
+We know that depth-first search is the process of traversing down through one branch of a tree until we get to a leaf, and then working our way back to the “trunk” of the tree. In other words, implementing a DFS means traversing down through the subtrees of a binary search tree.
+
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YIX0wriN5SemynPCQ26LIA.jpeg
+:alt: depth first search
+:width: 70%
+:align: center
+```
 
 #### Breadth First Search
 Breadth First Search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]), and explores the neighbor nodes first, before moving to the next level neighbors.
