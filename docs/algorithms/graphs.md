@@ -635,3 +635,65 @@ The Red-Black tree satisfies all the properties of binary search tree in additio
 The result of all these above-mentioned properties is that the Red-Black tree is roughly balanced.
 
 
+## Graph Data Structure
+A graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph can be defined as, a Graph consists of a finite set of vertices(or nodes) and set of Edges which connect a pair of nodes.
+
+```{image} https://media.geeksforgeeks.org/wp-content/cdn-uploads/undirectedgraph.png
+:alt: graph
+:width: 80%
+:align: center
+```
+
+### Terminology
+The following are the most commonly used terms in graph theory with respect to graphs:
+
+1. Vertex - A vertex, also called a "node", is a fundamental part of a graph. In the context of graphs, a vertex is an object which may contain zero or more items called attributes.
+2. Edge - An edge is a connection between two vertices. An edge may contain a weight/value/cost.
+3. Path - A path is a sequence of edges connecting a sequence of vertices.
+4. Cycle - A cycle is a path of edges that starts and ends on the same vertex.
+5. Weighted Graph/Network - A weighted graph is a graph with numbers assigned to its edges. These numbers are called weights.
+6. Unweighted Graph/Network - An unweighted graph is a graph in which all edges have equal weight.
+7. Directed Graph/Network - A directed graph is a graph where all the edges are directed.
+8. Undirected Graph/Network - An undirected graph is a graph where all the edges are not directed.
+9. Adjacent Vertices - Two vertices in a graph are said to be adjacent if there is an edge connecting them.
+
+
+### Types of Graphs
+There are two types of graphs:
+
+1. Directed Graphs
+2. Undirected Graphs
+
+#### Directed Graphs
+In a directed graph, all the edges are directed. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
+
+#### Undirected Graphs
+In an undirected graph, all the edges are undirected. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
+
+### Graph Representation
+There are two ways to represent a graph:
+
+1. Adjacency Matrix
+2. Adjacency List
+
+#### Adjacency Matrix
+In an adjacency matrix, each row represents a vertex and each column represents another vertex. If there is an edge between the two vertices, then the corresponding entry in the matrix is 1, otherwise it is 0. The following figure shows an adjacency matrix for a graph with 4 vertices.
+
+#### Adjacency List
+In an adjacency list, each vertex stores a list of adjacent vertices. The following figure shows an adjacency list for a graph with 4 vertices.
+
+### Graph Traversal
+Graph traversal is the process of visiting (checking and/or updating) each vertex in a graph, exactly once. Such traversals are classified by the order in which the vertices are visited. The order may be defined by a specific rule, for example, depth-first search and breadth-first search.
+
+#### Depth First Search
+Depth First Search (DFS) is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
+
+#### Breadth First Search
+Breadth First Search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]), and explores the neighbor nodes first, before moving to the next level neighbors.
+
+### Graph Algorithms
+Graph algorithms are used to solve problems that involve graphs. Graph algorithms are used to find the shortest path between two nodes, find the minimum spanning tree, find the strongly connected components, find the shortest path from a single node to all other nodes, find the bridges and articulation points, find the Eulerian path and circuit, find the maximum flow, find the maximum matching, find the biconnected components, find the Hamiltonian path and circuit, find the dominating set, find the shortest path from a single node to all other nodes, find the bridges and articulation points, find the Eulerian path and circuit, find the maximum flow, find the maximum matching, find the biconnected components, find the Hamiltonian path and circuit, find the dominating set, etc.
+
+## Conclusion
+In this article, we have discussed the basics of data structures and
+algorithms.
