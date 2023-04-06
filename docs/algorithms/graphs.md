@@ -667,8 +667,20 @@ There are two types of graphs:
 #### Directed Graphs
 In a directed graph, all the edges are directed. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
 
+```{image} https://upload.wikimedia.org/wikipedia/commons/2/23/Directed_graph_no_background.svg
+:alt: directed graph
+:width: 60%
+:align: center
+```
+
 #### Undirected Graphs
 In an undirected graph, all the edges are undirected. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
+
+```{image} https://sites.google.com/a/cs.christuniversity.in/discrete-mathematics-lectures/_/rsrc/1409480658489/graphs/directed-and-undirected-graph/dir.png
+:alt: undirected graph
+:width: 60%
+:align: center
+```
 
 ### Graph Representation
 There are two ways to represent a graph:
@@ -679,8 +691,32 @@ There are two ways to represent a graph:
 #### Adjacency Matrix
 In an adjacency matrix, each row represents a vertex and each column represents another vertex. If there is an edge between the two vertices, then the corresponding entry in the matrix is 1, otherwise it is 0. The following figure shows an adjacency matrix for a graph with 4 vertices.
 
+```{image} https://static.javatpoint.com/tutorial/graph-theory/images/graph-representations2.png
+:alt: adjacency matrix
+:width: 60%
+:align: center
+```
+
+```{image} https://static.javatpoint.com/tutorial/graph-theory/images/graph-representations1.png
+:alt: adjacency matrix
+:width: 60%
+:align: center
+```
+
+```{image} https://static.javatpoint.com/tutorial/graph-theory/images/graph-representations3.png
+:alt: adjacency matrix
+:width: 60%
+:align: center
+```
+
 #### Adjacency List
 In an adjacency list, each vertex stores a list of adjacent vertices. The following figure shows an adjacency list for a graph with 4 vertices.
+
+```{image} https://notes.shichao.io/clrs/figure_22.1.png
+:alt: adjacency list
+:width: 60%
+:align: center
+```
 
 ### Graph Traversal
 Graph traversal is the process of visiting (checking and/or updating) each vertex in a graph, exactly once. Such traversals are classified by the order in which the vertices are visited. The order may be defined by a specific rule, for example, depth-first search and breadth-first search.
