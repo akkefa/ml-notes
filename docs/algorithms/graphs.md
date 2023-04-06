@@ -731,6 +731,13 @@ Link: https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9
 
 While DFS uses a stack data structure, BFS leans on the queue data structure.
 
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*WjNB8eZNiOLl3tnb1h0X2A.jpeg
+:alt: depth first search
+:width: 70%
+:align: center
+```
+
+
 #### Depth First Search
 We know that depth-first search is the process of traversing down through one branch of a tree until we get to a leaf, and then working our way back to the “trunk” of the tree. In other words, implementing a DFS means traversing down through the subtrees of a binary search tree.
 
@@ -740,12 +747,27 @@ We know that depth-first search is the process of traversing down through one br
 :align: center
 ```
 
+In depth-first search, once we start down a path, we don’t stop until we get to the end. In other words, we traverse through one branch of a tree until we get to a leaf, and then we work our way back to the trunk of the tree.
+
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*iHf2wqSyra1kqOKvVBsbtA.jpeg
+:alt: depth first search
+:width: 70%
+:align: center
+```
+
 #### Breadth First Search
 Breadth First Search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]), and explores the neighbor nodes first, before moving to the next level neighbors.
+
+### Topological Sort
+Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge uv, vertex u comes before v in the ordering. Topological Sorting for a graph is not possible if the graph is not a DAG.
+
+```{image} https://assets.leetcode.com/users/images/63bd7ad6-403c-42f1-b8bb-2ea41e42af9a_1613794080.8115625.png
+:alt: topological sort
+:width: 70%
+:align: center
+```
 
 ### Graph Algorithms
 Graph algorithms are used to solve problems that involve graphs. Graph algorithms are used to find the shortest path between two nodes, find the minimum spanning tree, find the strongly connected components, find the shortest path from a single node to all other nodes, find the bridges and articulation points, find the Eulerian path and circuit, find the maximum flow, find the maximum matching, find the biconnected components, find the Hamiltonian path and circuit, find the dominating set, find the shortest path from a single node to all other nodes, find the bridges and articulation points, find the Eulerian path and circuit, find the maximum flow, find the maximum matching, find the biconnected components, find the Hamiltonian path and circuit, find the dominating set, etc.
 
-## Conclusion
-In this article, we have discussed the basics of data structures and
-algorithms.
+
