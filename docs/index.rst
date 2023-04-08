@@ -61,6 +61,7 @@ Contents
 
    algorithms/sorting.md
    algorithms/graphs.md
+   algorithms/trees.md
 
 .. toctree::
    :caption: Learn Pytorch
