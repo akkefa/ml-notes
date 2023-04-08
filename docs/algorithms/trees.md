@@ -49,6 +49,14 @@ Algorithm Steps:
 :align: center
 ```
 
+### Union Find Data Structure
+
+Union Find is a data structure that keeps track of a set of elements partitioned into a number of disjoint (non-overlapping) subsets. It supports two operations:
+
+* Find: Determine which subset a particular element is in. This can be used for determining if two elements are in the same subset.
+* Union: Join two subsets into a single subset.
+
+
 ## Amortized Analysis
 
 Amortized analysis is a method of analyzing the costs associated with a data structure that averages the worst operations out over time.
