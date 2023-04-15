@@ -12,11 +12,20 @@ kernelspec:
 ## Binary Search Tree
 A Binary Search Tree (BST) is a special type of binary tree in which the left child of a node has a value less than the node’s value and the right child has a value greater than the node’s value. This property is called the BST property and it makes it possible to efficiently search, insert, and delete elements in the tree.
 
+In a Binary search tree, the value of left node must be smaller than the parent node, and the value of right node must be greater than the parent node. This rule is applied recursively to the left and right subtrees of the root.
+
+**Left node > Parent node > Right node**
+
 ```{image} https://media.geeksforgeeks.org/wp-content/cdn-uploads/20221215114732/bst-21.png
 :align: center
 :alt: Binary Search Tree
 :width: 80%
 ```
+
+### Advantages of Binary search tree
+Searching an element in the Binary search tree is easy as we always have a hint that which subtree has the desired element.
+
+As compared to array and linked lists, insertion and deletion operations are faster in BST.
 
 ```{code-cell}
 
