@@ -647,7 +647,7 @@ The result of all these above-mentioned properties is that the Red-Black tree is
 ## Graph Data Structure
 A graph is a non-linear data structure consisting of nodes and edges. The nodes are sometimes also referred to as vertices and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph can be defined as, a Graph consists of a finite set of vertices(or nodes) and set of Edges which connect a pair of nodes.
 
-```{image} https://media.geeksforgeeks.org/wp-content/cdn-uploads/undirectedgraph.png
+```{image} https://www.simplilearn.com/ice9/free_resources_article_thumb/Graph%20Data%20Structure%20-%20Soni/what-is-graphs-in-data-structure.png
 :alt: graph
 :width: 80%
 :align: center
@@ -672,6 +672,11 @@ There are two types of graphs:
 
 1. Directed Graphs
 2. Undirected Graphs
+3. Weighted Graph
+4. Cyclic Graph
+5. Acyclic Graph
+6. Directed Acyclic Graph
+
 
 #### Directed Graphs
 In a directed graph, all the edges are directed. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
@@ -688,6 +693,41 @@ In an undirected graph, all the edges are undirected. That means, each edge is a
 ```{image} https://sites.google.com/a/cs.christuniversity.in/discrete-mathematics-lectures/_/rsrc/1409480658489/graphs/directed-and-undirected-graph/dir.png
 :alt: undirected graph
 :width: 60%
+:align: center
+```
+
+#### Weighted Graph
+In a weighted graph, each edge is assigned a weight or a cost. The weight can be positive, negative or zero. The weight of an edge is represented by a number. A graph G= (V, E) is called a labeled or weighted graph because each edge has a value or weight representing the cost of traversing that edge.
+
+```{image} https://www.simplilearn.com/ice9/free_resources_article_thumb/Graph%20Data%20Structure%20-%20Soni/weighted-graph-in-data-structure.png
+:alt: weighted graph
+:width: 60%
+:align: center
+```
+
+#### Cyclic Graph
+A graph is said to be cyclic if it contains a cycle. A cycle is a path of edges that starts and ends on the same vertex. A graph that contains a cycle is called a cyclic graph.
+
+```{image} https://www.simplilearn.com/ice9/free_resources_article_thumb/Graph%20Data%20Structure%20-%20Soni/cyclic-graph-in-data-structure.png
+:alt: cyclic graph
+:width: 70%
+:align: center
+```
+#### Acyclic Graph
+When there are no cycles in a graph, it is called an acyclic graph.
+
+```{image} https://www.simplilearn.com/ice9/free_resources_article_thumb/Graph%20Data%20Structure%20-%20Soni/acyclic-graph-in-data-structure.png
+:alt: cyclic graph
+:width: 70%
+:align: center
+```
+
+#### Directed Acyclic Graph
+It's also known as a directed acyclic graph (DAG), and it's a graph with directed edges but no cycle. It represents the edges using an ordered pair of vertices since it directs the vertices and stores some data.
+
+```{image} https://www.simplilearn.com/ice9/free_resources_article_thumb/Graph%20Data%20Structure%20-%20Soni/directed-acyclic-graph-in-data-structure.png
+:alt: Directed Acyclic Graph
+:width: 70%
 :align: center
 ```
 
