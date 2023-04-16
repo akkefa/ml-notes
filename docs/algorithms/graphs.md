@@ -790,6 +790,15 @@ While DFS uses a stack data structure, BFS leans on the queue data structure.
 #### Depth First Search
 We know that depth-first search is the process of traversing down through one branch of a tree until we get to a leaf, and then working our way back to the “trunk” of the tree. In other words, implementing a DFS means traversing down through the subtrees of a binary search tree.
 
+**DFS Algorithm goes ‘deep’ instead of ‘wide’**
+
+
+```{image} https://miro.medium.com/v2/resize:fit:1400/1*LUL63FWqneOfsLKqMtHKFw.gif
+:alt: depth first search
+:width: 70%
+:align: center
+```
+
 ```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YIX0wriN5SemynPCQ26LIA.jpeg
 :alt: depth first search
 :width: 70%
@@ -801,6 +810,14 @@ In depth-first search, once we start down a path, we don’t stop until we get t
 ```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*iHf2wqSyra1kqOKvVBsbtA.jpeg
 :alt: depth first search
 :width: 70%
+:align: center
+```
+
+Stack data structure is used to implement DFS. The algorithm starts with a particular node of a graph, then goes to any of its adjacent nodes and repeats this process until it finds the goal. If it reaches a node from which there is no unexplored edge leading to an unvisited node, then it backtracks to the last visited node and repeats the process.
+
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*pgszTOcQK5tDFATEpdPJUQ.jpeg
+:alt: depth first search
+:width: 90%
 :align: center
 ```
 
