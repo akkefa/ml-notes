@@ -1,16 +1,15 @@
 .. title::
    Welcome to my Machine Learning notes
 
-Welcome to my Machine Learning notes
-======================================
+Greetings and welcome to my collection of notes on Machine Learning.
+=====================================================================
+I am Ikram Ali, a proficient Lead Data Scientist with substantial experience in the field.
+For further information regarding my credentials, please refer to my LinkedIn and Github profiles
 
-My name is Ikram Ali and I’m a Lead Data Scientist.
+* https://www.linkedin.com/in/akkefa/
+* https://www.github.com/akkefa
 
-- https://www.linkedin.com/in/akkefa/
-- https://www.github.com/akkefa
-
-
-Quick definitions and intuitive explanations around machine learning and Deep learning.
+I would like to offer concise definitions and comprehensible explanations of Machine Learning and Deep Learning.
 
 """""""""
 Contents
