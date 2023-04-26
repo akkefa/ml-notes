@@ -18,6 +18,12 @@ Probability is the study of randomness and uncertainty. Probability theory is wi
 as statistics, finance, gambling, artificial intelligence, machine learning, computer science, game theory, and
 philosophy.
 
+```{image} https://www.poshpooch.ca/what-are-statistics-and-probability.html?showimage_xoztyg=what+are+statistics+and+probability.png
+:align: center
+:alt: Sample space
+:width: 60%
+```
+
 ### Applications of probability
 
 Some of the applications of probability are predicting results of the following events:
