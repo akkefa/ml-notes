@@ -61,7 +61,7 @@ Contents
    algorithms/sorting.md
    .. algorithms/graphs.md
    .. algorithms/trees.md
-   .. algorithms/shortest_path.md
+   algorithms/shortest_path.md
 
 .. toctree::
    :caption: Learn Pytorch
