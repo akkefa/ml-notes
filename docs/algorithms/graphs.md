@@ -792,12 +792,8 @@ We know that depth-first search is the process of traversing down through one br
 
 **DFS Algorithm goes ‘deep’ instead of ‘wide’**
 
+https://miro.medium.com/v2/resize:fit:1400/1*LUL63FWqneOfsLKqMtHKFw.gif
 
-```{image} https://miro.medium.com/v2/resize:fit:1400/1*LUL63FWqneOfsLKqMtHKFw.gif
-:alt: depth first search
-:width: 70%
-:align: center
-```
 
 ```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YIX0wriN5SemynPCQ26LIA.jpeg
 :alt: depth first search
