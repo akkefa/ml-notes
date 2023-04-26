@@ -12,6 +12,7 @@ kernelspec:
 ## Spanning Trees
 A spanning tree is a sub-graph of an undirected connected graph, which includes all the vertices of the graph with a minimum possible number of edges. If a vertex is missed, then it is not a spanning tree. The edges may or may not have weights assigned to them.
 
+
 ```{image} https://he-s3.s3.amazonaws.com/media/uploads/146b47a.jpg
 :alt: Spanning Tree
 :width: 70%
