@@ -681,7 +681,7 @@ There are two types of graphs:
 #### Directed Graphs
 In a directed graph, all the edges are directed. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
 
-```{image} https://upload.wikimedia.org/wikipedia/commons/2/23/Directed_graph_no_background.svg
+```{image} https://media.geeksforgeeks.org/wp-content/cdn-uploads/SCC1.png
 :alt: directed graph
 :width: 60%
 :align: center
