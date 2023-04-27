@@ -59,7 +59,7 @@ Contents
    :maxdepth: 1
 
    algorithms/sorting.md
-   .. algorithms/graphs.md
+   algorithms/graphs.md
    algorithms/trees.md
    algorithms/shortest_path.md
 
