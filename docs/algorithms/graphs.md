@@ -772,7 +772,7 @@ Graph traversal is the process of visiting (checking and/or updating) each verte
 
 Link: https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9
 
-```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*VM84VPcCQe0gSy44l9S5yA.jpeg
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:jpeg/1*VM84VPcCQe0gSy44l9S5yA.jpeg
 :alt: graph traversal
 :width: 70%
 :align: center
@@ -780,7 +780,7 @@ Link: https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9
 
 While DFS uses a stack data structure, BFS leans on the queue data structure.
 
-```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*WjNB8eZNiOLl3tnb1h0X2A.jpeg
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:jpeg/1*WjNB8eZNiOLl3tnb1h0X2A.jpeg
 :alt: depth first search
 :width: 70%
 :align: center
@@ -795,7 +795,7 @@ We know that depth-first search is the process of traversing down through one br
 https://miro.medium.com/v2/resize:fit:1400/1*LUL63FWqneOfsLKqMtHKFw.gif
 
 
-```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*YIX0wriN5SemynPCQ26LIA.jpeg
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:jpeg/1*YIX0wriN5SemynPCQ26LIA.jpeg
 :alt: depth first search
 :width: 70%
 :align: center
@@ -803,7 +803,7 @@ https://miro.medium.com/v2/resize:fit:1400/1*LUL63FWqneOfsLKqMtHKFw.gif
 
 In depth-first search, once we start down a path, we don’t stop until we get to the end. In other words, we traverse through one branch of a tree until we get to a leaf, and then we work our way back to the trunk of the tree.
 
-```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*iHf2wqSyra1kqOKvVBsbtA.jpeg
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:jpeg/1*iHf2wqSyra1kqOKvVBsbtA.jpeg
 :alt: depth first search
 :width: 70%
 :align: center
@@ -811,7 +811,7 @@ In depth-first search, once we start down a path, we don’t stop until we get t
 
 Stack data structure is used to implement DFS. The algorithm starts with a particular node of a graph, then goes to any of its adjacent nodes and repeats this process until it finds the goal. If it reaches a node from which there is no unexplored edge leading to an unvisited node, then it backtracks to the last visited node and repeats the process.
 
-```{image} https://miro.medium.com/v2/resize:fit:1400/format:webp/1*pgszTOcQK5tDFATEpdPJUQ.jpeg
+```{image} https://miro.medium.com/v2/resize:fit:1400/format:jpeg/1*pgszTOcQK5tDFATEpdPJUQ.jpeg
 :alt: depth first search
 :width: 90%
 :align: center
