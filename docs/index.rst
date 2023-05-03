@@ -76,6 +76,7 @@ Contents
    :maxdepth: 1
 
    recommend/introduction.ipynb
+   recommend/matrix_factorization.ipynb
 
 .. toctree::
    :caption: Practice
