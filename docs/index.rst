@@ -62,6 +62,7 @@ Contents
    algorithms/graphs.md
    algorithms/trees.md
    algorithms/shortest_path.md
+   algorithms/greedy_algorithms.md
 
 .. toctree::
    :caption: Learn Pytorch
