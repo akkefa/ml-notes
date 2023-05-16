@@ -244,22 +244,4 @@ def max_subarray(arr):
 max_subarray(arr)
 ```
 
-```{code-cell} ipython3
-def max_subarray(arr):
-    max_sum = -np.inf
-    for i in range(len(arr)):
-        sum = 0
-        for j in range(i, len(arr)):
-            sum += arr[j]
-            if sum > max_sum:
-                max_sum = sum
-                max_left = i
-                max_right = j
-    return max_sum
-```
-
-```{code-cell} ipython3
-max_subarray(arr)
-```
-
 
