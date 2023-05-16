@@ -99,7 +99,7 @@ Given an array of integers, find the contiguous subarray that has the largest su
 :align: center
 ```
 
-** Brute force solution **
+**Brute force solution**
 
 Draw graph which show as stock values.
 
@@ -123,9 +123,9 @@ plt.show()
 
 max_contiguous_sum = 0
 
-for i in numbers:
-    for j in numbers:
-        max_contiguous_sum = max(max_contiguous_sum, i ,j)
+for index,v in enumerate(numbers):
+    for j in range(index ,len(numbers)):
+        max_contiguous_sum = max(max_contiguous_sum, sum(numbers[index:j]))
         
 print(max_contiguous_sum)
 
