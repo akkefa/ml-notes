@@ -133,7 +133,7 @@ print(max_contiguous_sum)
 
 ```
 
-**Best Solution recursive**
+**Divide and Conquer solution**
 
 ```{code-cell} ipython3
 import sys
@@ -243,5 +243,7 @@ def max_subarray(arr):
 ```{code-cell} ipython3
 max_subarray(arr)
 ```
+
+### Fast Fourier Transform Algorithm
 
 
