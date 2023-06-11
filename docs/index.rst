@@ -62,6 +62,7 @@ Contents
    algorithms/graphs.md
    algorithms/trees.md
    algorithms/shortest_path.md
+   algorithms/greedy_algorithms.md
 
 .. toctree::
    :caption: Learn Pytorch
@@ -71,6 +72,12 @@ Contents
    torch/pytorch_workflow.ipynb
    torch/pytorch_neural_network_classification.ipynb
 
+.. toctree::
+   :caption: Recommendation System
+   :maxdepth: 1
+
+   recommend/introduction.ipynb
+   recommend/matrix_factorization.ipynb
 
 .. toctree::
    :caption: Practice
