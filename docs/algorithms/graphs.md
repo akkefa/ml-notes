@@ -653,6 +653,36 @@ A graph is a non-linear data structure consisting of nodes and edges. The nodes 
 :align: center
 ```
 
+In graph theory, a graph is a mathematical structure consisting of a set of objects, called vertices or nodes, and a set of connections, called edges, which link pairs of vertices.
+The notation:
+
+$$
+G = (V, E)
+$$
+
+
+is used to represent a graph, where $G$ is the graph, $V$ is the set of vertices, and $\bigvee$ is the set of edges.
+
+The nodes of a graph can represent any objects, such as cities, people, web pages, or molecules, and the edges represent the relationships or connections between them.
+
+```{code-cell}
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+
+plt.axis('off')
+nx.draw_networkx(G,
+                 pos=nx.spring_layout(G, seed=0),
+                 node_size=600,
+                 cmap='coolwarm',
+                 font_size=14,
+                 font_color='white'
+                 )
+
+```
+
 ### Terminology
 The following are the most commonly used terms in graph theory with respect to graphs:
 
@@ -681,11 +711,22 @@ There are two types of graphs:
 #### Directed Graphs
 In a directed graph, all the edges are directed. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
 
+Directed graph, also called a digraph.
+
 ```{image} https://media.geeksforgeeks.org/wp-content/cdn-uploads/SCC1.png
 :alt: directed graph
 :width: 60%
 :align: center
 ```
+
+```{code-cell}
+
+DG = nx.DiGraph()
+DG.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'),  
+('B', 'E'), ('C', 'F'), ('C', 'G')])
+nx.draw_networkx(DG, pos=nx.spring_layout(DG, seed=0), node_size=600, cmap='coolwarm', font_size=14, font_color='white')
+```
+
 
 #### Undirected Graphs
 In an undirected graph, all the edges are undirected. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
@@ -695,6 +736,16 @@ In an undirected graph, all the edges are undirected. That means, each edge is a
 :width: 60%
 :align: center
 ```
+
+```{code-cell}
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'),  
+('B', 'E'), ('C', 'F'), ('C', 'G')])
+
+nx.draw_networkx(G, pos=nx.spring_layout(G, seed=0), node_size=600, cmap='coolwarm', font_size=14, font_color='white')
+
+```
+
 
 #### Weighted Graph
 In a weighted graph, each edge is assigned a weight or a cost. The weight can be positive, negative or zero. The weight of an edge is represented by a number. A graph G= (V, E) is called a labeled or weighted graph because each edge has a value or weight representing the cost of traversing that edge.

@@ -8,3 +8,4 @@ sphinx-design~=0.3
 sphinx-copybutton
 xlrd~=2.0
 scikit-surprise~=1.1
+networkx~=3.1
