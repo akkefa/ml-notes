@@ -932,6 +932,8 @@ In an adjacency list, each vertex stores a list of adjacent vertices. The follow
 However, checking whether two vertices are connected can be slower than with an adjacency matrix. This is because it requires iterating through the adjacency list of one of the vertices, which can be time-consuming for large graphs.
 
 ### Graph Traversal
+Graph algorithms are critical in solving problems related to graphs, such as finding the shortest path between two nodes or detecting cycles. This section will discuss two graph traversal algorithms: BFS and DFS.
+
 Graph traversal is the process of visiting (checking and/or updating) each vertex in a graph, exactly once. Such traversals are classified by the order in which the vertices are visited. The order may be defined by a specific rule, for example, depth-first search and breadth-first search.
 
 Link: https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9
