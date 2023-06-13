@@ -756,6 +756,15 @@ In a weighted graph, each edge is assigned a weight or a cost. The weight can be
 :align: center
 ```
 
+```{code-cell}
+
+WG = nx.Graph()
+WG.add_edges_from([('A', 'B', {"weight": 10}), ('A', 'C', {"weight": 20}), ('B', 'D', {"weight": 30}), ('B', 'E', {"weight": 40}), ('C', 'F', {"weight": 50}), ('C', 'G', {"weight": 60})])
+labels = nx.get_edge_attributes(WG, "weight")
+
+
+```
+
 #### Cyclic Graph
 A graph is said to be cyclic if it contains a cycle. A cycle is a path of edges that starts and ends on the same vertex. A graph that contains a cycle is called a cyclic graph.
 
@@ -781,6 +790,10 @@ It's also known as a directed acyclic graph (DAG), and it's a graph with directe
 :width: 70%
 :align: center
 ```
+
+##### Trees
+A tree is a special type of graph that has a root node, and every node in the graph is connected by edges. It's a directed acyclic graph with a single root node and no cycles. A tree is a special type of graph that has a root node, and every node in the graph is connected by edges. It's a directed acyclic graph with a single root node and no cycles.
+
 
 ### Graph Representation
 There are two ways to represent a graph:
