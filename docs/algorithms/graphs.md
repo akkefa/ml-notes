@@ -794,12 +794,93 @@ It's also known as a directed acyclic graph (DAG), and it's a graph with directe
 ##### Trees
 A tree is a special type of graph that has a root node, and every node in the graph is connected by edges. It's a directed acyclic graph with a single root node and no cycles. A tree is a special type of graph that has a root node, and every node in the graph is connected by edges. It's a directed acyclic graph with a single root node and no cycles.
 
+#### degree of a vertex
+
+The degree of a vertex is the number of edges incident to it. In the following figure, the degree of vertex A is 3, the degree of vertex B is 4, and the degree of vertex C is 2.
+
+```{image} https://static.javatpoint.com/tutorial/graph-theory/images/graph-representations4.png
+:alt: degree of a vertex
+:width: 60%
+:align: center
+```
+
+##### In-Degree and Out-Degree of a Vertex
+
+In a directed graph, the in-degree of a vertex is the number of edges that are incident to the vertex. The out-degree of a vertex is the number of edges that are incident to the vertex.
+
+```{image} https://github.com/akkefa/ml-notes/releases/download/v0.1.0/indegree-outdegree.jpg
+:alt: In-Degree and Out-Degree of a Vertex
+:width: 60%
+:align: center
+```
+
+
+```{code-cell}
+
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+print(f"deg(A) = {G.degree['A']}")
+DG = nx.DiGraph()
+DG.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+
+print(f"deg^-(A) = {DG.in_degree['A']}")
+print(f"deg^+(A) = {DG.out_degree['A']}")
+
+```
+
+#### Path
+A path is a sequence of edges that allows you to go from one vertex to another. The length of a path is the number of edges in it.
+
+#### Cycle
+A cycle is a path that starts and ends at the same vertex. 
+
+### Graph measures
+Degrees and paths can be used to determine the importance of a node in a network. This measure is referred to as **centrality**
+
+Centrality quantifies the importance of a vertex or node in a network. It helps us to identify key nodes in a graph based on their connectivity and influence on the flow of information or interactions within the network.
+
+#### Degree centrality
+Degree centrality is one of the simplest and most commonly used measures of centrality. It is simply defined as the degree of the node. A high degree centrality indicates that a vertex is highly connected to other vertices in the graph, and thus significantly influences the network.
+
+#### Closeness centrality
+Closeness centrality measures how close a node is to all other nodes in the graph. It corresponds to the average length of the shortest path between the target node and all other nodes in the graph. A node with high closeness centrality can quickly reach all other vertices in the network.
+
+#### Betweenness centrality
+Betweenness centrality measures the number of times a node lies on the shortest path between pairs of other nodes in the graph. A node with high betweenness centrality acts as a bottleneck or bridge between different parts of the graph.
+
+```{code-cell}
+
+print(f"Degree centrality      = {nx.degree_centrality(G)}")
+print(f"Closeness centrality   = {nx.closeness_centrality(G)}")
+print(f"Betweenness centrality = {nx.betweenness_centrality(G)}")
+
+```
+
+The importance of nodes A, B and C  in a graph depends on the type of centrality used. Degree centrality considers nodes B and C  to be more important because they have more neighbors than node A . However, in closeness centrality, node A is the most important as it can reach any other node in the graph in the shortest possible path. On the other hand, nodes  A,B  and C  have equal betweenness centrality, as they all lie on a large number of shortest paths between other nodes.
+
+#### Density
+
+The density of a graph is the ratio of the number of edges to the number of possible edges.
+A graph with high density is considered more connected and has more information flow compared to a graph with low density.
+A dense graph has a density closer to 1, while a sparse graph has a density closer to 0. 
+
+```{code-cell}
+
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+print(f"Density of G = {nx.density(G)}")
+
+```
+
 
 ### Graph Representation
 There are two ways to represent a graph:
 
 1. Adjacency Matrix
-2. Adjacency List
+2. Edge List
+3. Adjacency List
+
+Each data structure has its own advantages and disadvantages that depend on the specific application and requirements.
 
 #### Adjacency Matrix
 In an adjacency matrix, each row represents a vertex and each column represents another vertex. If there is an edge between the two vertices, then the corresponding entry in the matrix is 1, otherwise it is 0. The following figure shows an adjacency matrix for a graph with 4 vertices.
@@ -822,6 +903,23 @@ In an adjacency matrix, each row represents a vertex and each column represents 
 :align: center
 ```
 
+##### drawbacks of adjacency matrix
+
+1. The adjacency matrix representation of a graph is not suitable for a graph with a large number of vertices. This is because the number of entries in the matrix is proportional to the square of the number of vertices in the graph.
+2. The adjacency matrix representation of a graph is not suitable for a graph with parallel edges. This is because the matrix can only store a single value for each pair of vertices.
+3. One of the main drawbacks of using an adjacency matrix is its space complexity: as the number of nodes in the graph grows, the space required to store the adjacency matrix increases exponentially. adjacency matrix has a space complexity of
+$O\left(|V|^2\right)_{\text {, where }}|V|_{\text{repre- }}$ sents the number of nodes in the graph.
+
+Overall, while the adjacency matrix is a useful data structure for representing small graphs, it may not be practical for larger ones due to its space complexity. Additionally, the overhead of adding or removing nodes can make it inefficient for dynamically changing graphs.
+
+#### Edge list
+An edge list is a list of all the edges in a graph. Each edge is represented by a tuple or a pair of vertices. The edge list can also include the weight or cost of each edge. This is the data structure we used to create our graphs with networkx:
+
+```{code-cell}
+edge_list = [(0, 1), (0, 2), (1, 3), (1, 4), (2, 5), (2, 6)]
+```
+checking whether two vertices are connected in an edge list requires iterating through the entire list, which can be time-consuming for large graphs with many edges. Therefore, edge lists are more commonly used in applications where space is a concern.
+
 #### Adjacency List
 In an adjacency list, each vertex stores a list of adjacent vertices. The following figure shows an adjacency list for a graph with 4 vertices.
 
@@ -830,6 +928,8 @@ In an adjacency list, each vertex stores a list of adjacent vertices. The follow
 :width: 60%
 :align: center
 ```
+
+However, checking whether two vertices are connected can be slower than with an adjacency matrix. This is because it requires iterating through the adjacency list of one of the vertices, which can be time-consuming for large graphs.
 
 ### Graph Traversal
 Graph traversal is the process of visiting (checking and/or updating) each vertex in a graph, exactly once. Such traversals are classified by the order in which the vertices are visited. The order may be defined by a specific rule, for example, depth-first search and breadth-first search.
