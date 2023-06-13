@@ -956,6 +956,11 @@ While DFS uses a stack data structure, BFS leans on the queue data structure.
 #### Depth First Search
 We know that depth-first search is the process of traversing down through one branch of a tree until we get to a leaf, and then working our way back to the “trunk” of the tree. In other words, implementing a DFS means traversing down through the subtrees of a binary search tree.
 
+DFS is a recursive algorithm that starts at the root node and explores as far as possible along each branch before backtracking.
+
+It chooses a node and explores all of its unvisited neighbors, visiting the first neighbor that has not been explored and backtracking only when all the neighbors have been visited. By doing so, it explores the graph by following as deep a path from the starting node as possible before backtracking to explore other branches. This continues until all nodes have been explored.
+
+
 **DFS Algorithm goes ‘deep’ instead of ‘wide’**
 
 https://miro.medium.com/v2/resize:fit:1400/1*LUL63FWqneOfsLKqMtHKFw.gif
@@ -983,8 +988,81 @@ Stack data structure is used to implement DFS. The algorithm starts with a parti
 :align: center
 ```
 
+```{code-cell}
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+
+visited = []
+
+def dfs(visited, graph, node):
+    if node not in visited:
+        visited.append(node)
+    # We then iterate through each neighbor of the current node. For each neighbor, we recursively call the dfs() function
+    # passing in visited, graph, and the neighbor as arguments:
+        for neighbor in graph[node]:
+            visited = dfs(visited, graph, neighbor)
+    # The dfs() function continues to explore the graph depth-first, visiting all the neighbors of each node until there
+    # are no more unvisited neighbors. Finally, the visited list is returned
+    return visited
+
+dfs(visited, G, 'A')
+
+```
+
+```{image} https://github.com/akkefa/ml-notes/releases/download/v0.1.0/depth_first_search.jpeg
+:alt: depth first search
+:width: 70%
+:align: center
+```
+
+Once again, the order we obtained is the one we anticipated in Figure.
+DFS is useful in solving various problems, such as finding connected components, topological sorting, and solving maze problems. It is particularly useful in finding cycles in a graph since it traverses the graph in a depth-first order, and a cycle exists if, and only if, a node is visited twice during the traversal.
+
+Additionally, many other algorithms in graph theory build upon BFS and DFS, such as Dijkstra’s shortest path algorithm, Kruskal’s minimum spanning tree algorithm, and Tarjan’s strongly connected components algorithm. Therefore, a solid understanding of BFS and DFS is essential for anyone who wants to work with graphs and develop more advanced graph algorithms.
+
+
 #### Breadth First Search
 Breadth First Search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]), and explores the neighbor nodes first, before moving to the next level neighbors.
+
+ It works by maintaining a queue of nodes to visit and marking each visited node as it is added to the queue. The algorithm then dequeues the next node in the queue and explores all its neighbors, adding them to the queue if they haven’t been visited yet.
+
+ Let’s now see how we can implement it in Python
+
+ ```{code-cell}
+
+
+def bfs(graph, node):
+    # We initialize two lists (visited and queue) and add the starting node. The visited list keeps track of the nodes that have been
+    # visited #during the search, while the queue list stores the nodes that need to be visited:
+
+    visited, queue = [node], [node]
+
+    while queue:
+    # When We enter a while loop that continues until the queue list is empty.
+    # Inside the loop, we remove the first node in the queue list using the pop(0) method and store the result in the node variable
+
+        node = queue.pop(0)
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                visited.append(neighbor)
+                queue.append(neighbor)
+    # We iterate through the neighbors of the node using a for loop. For each neighbor that has not been visited yet,
+    # we add it to the visited list and to the end of the queue list using the append() method. When it’s complete,
+    # we return the visited list:
+    return visited
+
+bfs(G, 'A')
+```
+
+```{image} https://github.com/akkefa/ml-notes/releases/download/v0.1.0/breath_first_search.jpeg
+:alt: breadth first search
+:width: 70%
+:align: center
+```
+
+The order we obtained is the one we anticipated in Figure.
+
+BFS is particularly useful in finding the shortest path between two nodes in an unweighted graph. This is because the algorithm visits nodes in order of their distance from the starting node, so the first time the target node is visited, it must be along the shortest path from the starting node.
 
 ### Topological Sort
 Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge uv, vertex u comes before v in the ordering. Topological Sorting for a graph is not possible if the graph is not a DAG.
