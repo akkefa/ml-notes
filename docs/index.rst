@@ -37,6 +37,13 @@ Contents
    probability/confidence_interval
    probability/hypothesis_testing
 
+
+.. toctree::
+   :caption: Algebra
+   :maxdepth: 1
+
+   algebra/intro
+
 .. toctree::
    :caption: Deep learning
    :maxdepth: 1
@@ -45,6 +52,7 @@ Contents
    deep_learning/tensor
    deep_learning/loss_functions
    deep_learning/evaluation_metrics
+   deep_learning/graph
 
 .. toctree::
    :caption: Mathematics

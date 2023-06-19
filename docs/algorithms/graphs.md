@@ -653,6 +653,36 @@ A graph is a non-linear data structure consisting of nodes and edges. The nodes 
 :align: center
 ```
 
+In graph theory, a graph is a mathematical structure consisting of a set of objects, called vertices or nodes, and a set of connections, called edges, which link pairs of vertices.
+The notation:
+
+$$
+G = (V, E)
+$$
+
+
+is used to represent a graph, where $G$ is the graph, $V$ is the set of vertices, and $\bigvee$ is the set of edges.
+
+The nodes of a graph can represent any objects, such as cities, people, web pages, or molecules, and the edges represent the relationships or connections between them.
+
+```{code-cell}
+import networkx as nx
+import matplotlib.pyplot as plt
+
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+
+plt.axis('off')
+nx.draw_networkx(G,
+                 pos=nx.spring_layout(G, seed=0),
+                 node_size=600,
+                 cmap='coolwarm',
+                 font_size=14,
+                 font_color='white'
+                 )
+
+```
+
 ### Terminology
 The following are the most commonly used terms in graph theory with respect to graphs:
 
@@ -681,11 +711,22 @@ There are two types of graphs:
 #### Directed Graphs
 In a directed graph, all the edges are directed. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
 
+Directed graph, also called a digraph.
+
 ```{image} https://media.geeksforgeeks.org/wp-content/cdn-uploads/SCC1.png
 :alt: directed graph
 :width: 60%
 :align: center
 ```
+
+```{code-cell}
+
+DG = nx.DiGraph()
+DG.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'),  
+('B', 'E'), ('C', 'F'), ('C', 'G')])
+nx.draw_networkx(DG, pos=nx.spring_layout(DG, seed=0), node_size=600, cmap='coolwarm', font_size=14, font_color='white')
+```
+
 
 #### Undirected Graphs
 In an undirected graph, all the edges are undirected. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
@@ -696,6 +737,16 @@ In an undirected graph, all the edges are undirected. That means, each edge is a
 :align: center
 ```
 
+```{code-cell}
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'),  
+('B', 'E'), ('C', 'F'), ('C', 'G')])
+
+nx.draw_networkx(G, pos=nx.spring_layout(G, seed=0), node_size=600, cmap='coolwarm', font_size=14, font_color='white')
+
+```
+
+
 #### Weighted Graph
 In a weighted graph, each edge is assigned a weight or a cost. The weight can be positive, negative or zero. The weight of an edge is represented by a number. A graph G= (V, E) is called a labeled or weighted graph because each edge has a value or weight representing the cost of traversing that edge.
 
@@ -703,6 +754,15 @@ In a weighted graph, each edge is assigned a weight or a cost. The weight can be
 :alt: weighted graph
 :width: 60%
 :align: center
+```
+
+```{code-cell}
+
+WG = nx.Graph()
+WG.add_edges_from([('A', 'B', {"weight": 10}), ('A', 'C', {"weight": 20}), ('B', 'D', {"weight": 30}), ('B', 'E', {"weight": 40}), ('C', 'F', {"weight": 50}), ('C', 'G', {"weight": 60})])
+labels = nx.get_edge_attributes(WG, "weight")
+
+
 ```
 
 #### Cyclic Graph
@@ -731,11 +791,96 @@ It's also known as a directed acyclic graph (DAG), and it's a graph with directe
 :align: center
 ```
 
+##### Trees
+A tree is a special type of graph that has a root node, and every node in the graph is connected by edges. It's a directed acyclic graph with a single root node and no cycles. A tree is a special type of graph that has a root node, and every node in the graph is connected by edges. It's a directed acyclic graph with a single root node and no cycles.
+
+#### degree of a vertex
+
+The degree of a vertex is the number of edges incident to it. In the following figure, the degree of vertex A is 3, the degree of vertex B is 4, and the degree of vertex C is 2.
+
+```{image} https://static.javatpoint.com/tutorial/graph-theory/images/graph-representations4.png
+:alt: degree of a vertex
+:width: 60%
+:align: center
+```
+
+##### In-Degree and Out-Degree of a Vertex
+
+In a directed graph, the in-degree of a vertex is the number of edges that are incident to the vertex. The out-degree of a vertex is the number of edges that are incident to the vertex.
+
+```{image} https://github.com/akkefa/ml-notes/releases/download/v0.1.0/indegree-outdegree.jpg
+:alt: In-Degree and Out-Degree of a Vertex
+:width: 60%
+:align: center
+```
+
+
+```{code-cell}
+
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+print(f"deg(A) = {G.degree['A']}")
+DG = nx.DiGraph()
+DG.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+
+print(f"deg^-(A) = {DG.in_degree['A']}")
+print(f"deg^+(A) = {DG.out_degree['A']}")
+
+```
+
+#### Path
+A path is a sequence of edges that allows you to go from one vertex to another. The length of a path is the number of edges in it.
+
+#### Cycle
+A cycle is a path that starts and ends at the same vertex. 
+
+### Graph measures
+Degrees and paths can be used to determine the importance of a node in a network. This measure is referred to as **centrality**
+
+Centrality quantifies the importance of a vertex or node in a network. It helps us to identify key nodes in a graph based on their connectivity and influence on the flow of information or interactions within the network.
+
+#### Degree centrality
+Degree centrality is one of the simplest and most commonly used measures of centrality. It is simply defined as the degree of the node. A high degree centrality indicates that a vertex is highly connected to other vertices in the graph, and thus significantly influences the network.
+
+#### Closeness centrality
+Closeness centrality measures how close a node is to all other nodes in the graph. It corresponds to the average length of the shortest path between the target node and all other nodes in the graph. A node with high closeness centrality can quickly reach all other vertices in the network.
+
+#### Betweenness centrality
+Betweenness centrality measures the number of times a node lies on the shortest path between pairs of other nodes in the graph. A node with high betweenness centrality acts as a bottleneck or bridge between different parts of the graph.
+
+```{code-cell}
+
+print(f"Degree centrality      = {nx.degree_centrality(G)}")
+print(f"Closeness centrality   = {nx.closeness_centrality(G)}")
+print(f"Betweenness centrality = {nx.betweenness_centrality(G)}")
+
+```
+
+The importance of nodes A, B and C  in a graph depends on the type of centrality used. Degree centrality considers nodes B and C  to be more important because they have more neighbors than node A . However, in closeness centrality, node A is the most important as it can reach any other node in the graph in the shortest possible path. On the other hand, nodes  A,B  and C  have equal betweenness centrality, as they all lie on a large number of shortest paths between other nodes.
+
+#### Density
+
+The density of a graph is the ratio of the number of edges to the number of possible edges.
+A graph with high density is considered more connected and has more information flow compared to a graph with low density.
+A dense graph has a density closer to 1, while a sparse graph has a density closer to 0. 
+
+```{code-cell}
+
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+print(f"Density of G = {nx.density(G)}")
+
+```
+
+
 ### Graph Representation
 There are two ways to represent a graph:
 
 1. Adjacency Matrix
-2. Adjacency List
+2. Edge List
+3. Adjacency List
+
+Each data structure has its own advantages and disadvantages that depend on the specific application and requirements.
 
 #### Adjacency Matrix
 In an adjacency matrix, each row represents a vertex and each column represents another vertex. If there is an edge between the two vertices, then the corresponding entry in the matrix is 1, otherwise it is 0. The following figure shows an adjacency matrix for a graph with 4 vertices.
@@ -758,6 +903,23 @@ In an adjacency matrix, each row represents a vertex and each column represents 
 :align: center
 ```
 
+##### drawbacks of adjacency matrix
+
+1. The adjacency matrix representation of a graph is not suitable for a graph with a large number of vertices. This is because the number of entries in the matrix is proportional to the square of the number of vertices in the graph.
+2. The adjacency matrix representation of a graph is not suitable for a graph with parallel edges. This is because the matrix can only store a single value for each pair of vertices.
+3. One of the main drawbacks of using an adjacency matrix is its space complexity: as the number of nodes in the graph grows, the space required to store the adjacency matrix increases exponentially. adjacency matrix has a space complexity of
+$O\left(|V|^2\right)_{\text {, where }}|V|_{\text{repre- }}$ sents the number of nodes in the graph.
+
+Overall, while the adjacency matrix is a useful data structure for representing small graphs, it may not be practical for larger ones due to its space complexity. Additionally, the overhead of adding or removing nodes can make it inefficient for dynamically changing graphs.
+
+#### Edge list
+An edge list is a list of all the edges in a graph. Each edge is represented by a tuple or a pair of vertices. The edge list can also include the weight or cost of each edge. This is the data structure we used to create our graphs with networkx:
+
+```{code-cell}
+edge_list = [(0, 1), (0, 2), (1, 3), (1, 4), (2, 5), (2, 6)]
+```
+checking whether two vertices are connected in an edge list requires iterating through the entire list, which can be time-consuming for large graphs with many edges. Therefore, edge lists are more commonly used in applications where space is a concern.
+
 #### Adjacency List
 In an adjacency list, each vertex stores a list of adjacent vertices. The following figure shows an adjacency list for a graph with 4 vertices.
 
@@ -767,7 +929,11 @@ In an adjacency list, each vertex stores a list of adjacent vertices. The follow
 :align: center
 ```
 
+However, checking whether two vertices are connected can be slower than with an adjacency matrix. This is because it requires iterating through the adjacency list of one of the vertices, which can be time-consuming for large graphs.
+
 ### Graph Traversal
+Graph algorithms are critical in solving problems related to graphs, such as finding the shortest path between two nodes or detecting cycles. This section will discuss two graph traversal algorithms: BFS and DFS.
+
 Graph traversal is the process of visiting (checking and/or updating) each vertex in a graph, exactly once. Such traversals are classified by the order in which the vertices are visited. The order may be defined by a specific rule, for example, depth-first search and breadth-first search.
 
 Link: https://medium.com/basecs/breaking-down-breadth-first-search-cebe696709d9
@@ -789,6 +955,11 @@ While DFS uses a stack data structure, BFS leans on the queue data structure.
 
 #### Depth First Search
 We know that depth-first search is the process of traversing down through one branch of a tree until we get to a leaf, and then working our way back to the “trunk” of the tree. In other words, implementing a DFS means traversing down through the subtrees of a binary search tree.
+
+DFS is a recursive algorithm that starts at the root node and explores as far as possible along each branch before backtracking.
+
+It chooses a node and explores all of its unvisited neighbors, visiting the first neighbor that has not been explored and backtracking only when all the neighbors have been visited. By doing so, it explores the graph by following as deep a path from the starting node as possible before backtracking to explore other branches. This continues until all nodes have been explored.
+
 
 **DFS Algorithm goes ‘deep’ instead of ‘wide’**
 
@@ -817,8 +988,81 @@ Stack data structure is used to implement DFS. The algorithm starts with a parti
 :align: center
 ```
 
+```{code-cell}
+G = nx.Graph()
+G.add_edges_from([('A', 'B'), ('A', 'C'), ('B', 'D'), ('B', 'E'), ('C', 'F'), ('C', 'G')])
+
+visited = []
+
+def dfs(visited, graph, node):
+    if node not in visited:
+        visited.append(node)
+    # We then iterate through each neighbor of the current node. For each neighbor, we recursively call the dfs() function
+    # passing in visited, graph, and the neighbor as arguments:
+        for neighbor in graph[node]:
+            visited = dfs(visited, graph, neighbor)
+    # The dfs() function continues to explore the graph depth-first, visiting all the neighbors of each node until there
+    # are no more unvisited neighbors. Finally, the visited list is returned
+    return visited
+
+dfs(visited, G, 'A')
+
+```
+
+```{image} https://github.com/akkefa/ml-notes/releases/download/v0.1.0/depth_first_search.jpeg
+:alt: depth first search
+:width: 70%
+:align: center
+```
+
+Once again, the order we obtained is the one we anticipated in Figure.
+DFS is useful in solving various problems, such as finding connected components, topological sorting, and solving maze problems. It is particularly useful in finding cycles in a graph since it traverses the graph in a depth-first order, and a cycle exists if, and only if, a node is visited twice during the traversal.
+
+Additionally, many other algorithms in graph theory build upon BFS and DFS, such as Dijkstra’s shortest path algorithm, Kruskal’s minimum spanning tree algorithm, and Tarjan’s strongly connected components algorithm. Therefore, a solid understanding of BFS and DFS is essential for anyone who wants to work with graphs and develop more advanced graph algorithms.
+
+
 #### Breadth First Search
 Breadth First Search (BFS) is an algorithm for traversing or searching tree or graph data structures. It starts at the tree root (or some arbitrary node of a graph, sometimes referred to as a 'search key'[1]), and explores the neighbor nodes first, before moving to the next level neighbors.
+
+ It works by maintaining a queue of nodes to visit and marking each visited node as it is added to the queue. The algorithm then dequeues the next node in the queue and explores all its neighbors, adding them to the queue if they haven’t been visited yet.
+
+ Let’s now see how we can implement it in Python
+
+ ```{code-cell}
+
+
+def bfs(graph, node):
+    # We initialize two lists (visited and queue) and add the starting node. The visited list keeps track of the nodes that have been
+    # visited #during the search, while the queue list stores the nodes that need to be visited:
+
+    visited, queue = [node], [node]
+
+    while queue:
+    # When We enter a while loop that continues until the queue list is empty.
+    # Inside the loop, we remove the first node in the queue list using the pop(0) method and store the result in the node variable
+
+        node = queue.pop(0)
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                visited.append(neighbor)
+                queue.append(neighbor)
+    # We iterate through the neighbors of the node using a for loop. For each neighbor that has not been visited yet,
+    # we add it to the visited list and to the end of the queue list using the append() method. When it’s complete,
+    # we return the visited list:
+    return visited
+
+bfs(G, 'A')
+```
+
+```{image} https://github.com/akkefa/ml-notes/releases/download/v0.1.0/breath_first_search.jpeg
+:alt: breadth first search
+:width: 70%
+:align: center
+```
+
+The order we obtained is the one we anticipated in Figure.
+
+BFS is particularly useful in finding the shortest path between two nodes in an unweighted graph. This is because the algorithm visits nodes in order of their distance from the starting node, so the first time the target node is visited, it must be along the shortest path from the starting node.
 
 ### Topological Sort
 Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge uv, vertex u comes before v in the ordering. Topological Sorting for a graph is not possible if the graph is not a DAG.
