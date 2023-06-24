@@ -3,7 +3,7 @@
 
 Greetings and welcome to my collection of notes on Machine Learning.
 =====================================================================
-I am Ikram Ali, a proficient Lead Data Scientist with substantial experience in the field.
+I am Ikram Ali, a proficient Lead Machine Learning with substantial experience in the field.
 For further information regarding my credentials, please refer to my LinkedIn and Github profiles
 
 * https://www.linkedin.com/in/akkefa/
