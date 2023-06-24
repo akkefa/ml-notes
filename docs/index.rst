@@ -73,6 +73,12 @@ Contents
    algorithms/greedy_algorithms.md
 
 .. toctree::
+   :caption: Graph Theory
+   :maxdepth: 1
+
+   graph/introduction
+
+.. toctree::
    :caption: Learn Pytorch
    :maxdepth: 1
 
