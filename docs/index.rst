@@ -77,6 +77,7 @@ Contents
    :maxdepth: 1
 
    graph/introduction
+   graph/graph_neural_networks
 
 .. toctree::
    :caption: Learn Pytorch
