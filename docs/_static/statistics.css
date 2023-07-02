@@ -24,6 +24,9 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 38px;
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 h2 {
