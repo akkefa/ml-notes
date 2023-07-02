@@ -2,6 +2,10 @@ body {
     color: #292929;
 }
 
+.rst-content .toctree-wrapper>p.caption, h1, h2, h3, h4, h5, h6, legend {
+    font-family: Lato,proxima-nova,Helvetica Neue,Arial,sans-serif !important;
+}
+
 .wy-nav-content {
     max-width: 1060px;
     background: #fff;
@@ -15,12 +19,15 @@ body {
     color: #404040;
 }
 
-h2 {
-    border-bottom: 1px solid #aaaaaa;
+.rst-content h1 {
+    background: linear-gradient(92deg,#36b2c5 0%,#9b3794 32%,#512dab 52%,#2980b9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 38px;
 }
 
-h3 {
-    text-decoration: underline;
+h2 {
+    border-bottom: 1px solid #aaaaaa;
 }
 
 strong {

@@ -1,8 +1,8 @@
 .. title::
    Welcome to my Machine Learning notes
 
-Greetings and welcome to my collection of notes on Machine Learning.
-=====================================================================
+Welcome to my Machine Learning notes
+=====================================
 I am Ikram Ali, a proficient Lead Machine Learning with substantial experience in the field.
 For further information regarding my credentials, please refer to my LinkedIn and Github profiles
 
