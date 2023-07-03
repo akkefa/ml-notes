@@ -1,9 +1,9 @@
 .. title::
    Welcome to my Machine Learning notes
 
-Greetings and welcome to my collection of notes on Machine Learning.
-=====================================================================
-I am Ikram Ali, a proficient Lead Data Scientist with substantial experience in the field.
+Welcome to my Machine Learning notes
+=====================================
+I am Ikram Ali, a proficient Lead Machine Learning with substantial experience in the field.
 For further information regarding my credentials, please refer to my LinkedIn and Github profiles
 
 * https://www.linkedin.com/in/akkefa/
@@ -71,6 +71,13 @@ Contents
    algorithms/trees.md
    algorithms/shortest_path.md
    algorithms/greedy_algorithms.md
+
+.. toctree::
+   :caption: Graph Theory
+   :maxdepth: 1
+
+   graph/introduction
+   graph/graph_neural_networks
 
 .. toctree::
    :caption: Learn Pytorch

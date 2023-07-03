@@ -53,7 +53,7 @@ Major
 ::::
 
 
-## Probability Terms
+## Probability Terminology
 The first thing we do when we start thinking about the probability list a number of things that could possibly happen.\
 Some of the important probability terms are discussed here.
 
