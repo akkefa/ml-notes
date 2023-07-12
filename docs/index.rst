@@ -52,7 +52,6 @@ Contents
    deep_learning/tensor
    deep_learning/loss_functions
    deep_learning/evaluation_metrics
-   deep_learning/graph
 
 .. toctree::
    :caption: Mathematics
