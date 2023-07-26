@@ -35,7 +35,7 @@
 ## ML Notation
 
 ```{list-table}
-:widths: 20 40 40
+:widths: 20 30 50
 :header-rows: 1
 :align: "center"
 
@@ -45,5 +45,8 @@
 * - $\delta$
   - $\delta(v)$
   - Activation fucntions, sigmoid, relu, etc.
+* - $\cos(\theta)$
+  - $\frac{\mathbf{A} \cdot \mathbf{B}}{\|\mathbf{A}\|\|\mathbf{B}\|}$ $\frac{\sum_{i=1}^n A_i B_i}{\sqrt{\sum_{i=1}^n A_i^2} \sqrt{\sum_{i=1}^n B_i^2}}$
+  - Cosine similarity.
 
 ```
