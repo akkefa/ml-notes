@@ -30,3 +30,20 @@
   - The sample mean is an average value
 
 ```
+
+
+## ML Notation
+
+```{list-table}
+:widths: 20 40 40
+:header-rows: 1
+:align: "center"
+
+* - Symbol
+  - Formula
+  - Explained
+* - $\delta$
+  - $\delta(v)$
+  - Activation fucntions, sigmoid, relu, etc.
+
+```
