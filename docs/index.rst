@@ -18,7 +18,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   mathematical_notation.md
+   ml_notation.ipynb
 
 .. toctree::
    :caption: Probability
