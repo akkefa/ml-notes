@@ -77,6 +77,7 @@ Contents
 
    graph/introduction
    graph/graph_neural_networks
+   graph/graph_equations
 
 .. toctree::
    :caption: Learn Pytorch
