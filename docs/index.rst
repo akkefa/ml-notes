@@ -37,6 +37,11 @@ Contents
    probability/confidence_interval
    probability/hypothesis_testing
 
+.. toctree::
+   :caption: Calculus
+   :maxdepth: 1
+
+   calculus/intro
 
 .. toctree::
    :caption: Algebra
@@ -57,7 +62,6 @@ Contents
    :caption: Mathematics
    :maxdepth: 1
 
-   calculus
    linear_algebra
    statistics
 
