@@ -12,7 +12,6 @@
 
 [ml-notes.akkefa.com](ml-notes.akkefa.com)
 
-
 #### Docs build
 
 ```bash

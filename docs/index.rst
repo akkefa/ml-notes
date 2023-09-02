@@ -18,7 +18,7 @@ Contents
 .. toctree::
    :maxdepth: 1
 
-   mathematical_notation.md
+   ml_notation.ipynb
 
 .. toctree::
    :caption: Probability
@@ -37,6 +37,11 @@ Contents
    probability/confidence_interval
    probability/hypothesis_testing
 
+.. toctree::
+   :caption: Calculus
+   :maxdepth: 1
+
+   calculus/intro
 
 .. toctree::
    :caption: Algebra
@@ -52,13 +57,11 @@ Contents
    deep_learning/tensor
    deep_learning/loss_functions
    deep_learning/evaluation_metrics
-   deep_learning/graph
 
 .. toctree::
    :caption: Mathematics
    :maxdepth: 1
 
-   calculus
    linear_algebra
    statistics
 
@@ -78,6 +81,7 @@ Contents
 
    graph/introduction
    graph/graph_neural_networks
+   graph/graph_equations
 
 .. toctree::
    :caption: Learn Pytorch
