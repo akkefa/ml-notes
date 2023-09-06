@@ -42,6 +42,7 @@ Contents
    :maxdepth: 1
 
    calculus/intro
+   calculus/derivatives
 
 .. toctree::
    :caption: Algebra
