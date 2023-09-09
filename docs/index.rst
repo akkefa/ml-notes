@@ -3,7 +3,9 @@
 
 Welcome to my Machine Learning notes
 =====================================
-I am Ikram Ali, a proficient Lead Machine Learning with substantial experience in the field.
+I am Ikram Ali, I specialize in building ML engineering and data science teams from the ground up. My current passion is **NLP** and **MLOps**
+
+I approach my career by purposefully building domain knowledge in all the cross-functional disciplines required to deliver successful Data Science projects. This includes Research, Data Engineering, Machine Learning Engineering, Management, as well as dabbling in Agile Program Management and Product Management within other roles. This allows me to lead cross-functional teams and know the pain points of bringing a model from ideation to production.
 For further information regarding my credentials, please refer to my LinkedIn and Github profiles
 
 * https://www.linkedin.com/in/akkefa/
@@ -42,6 +44,7 @@ Contents
    :maxdepth: 1
 
    calculus/intro
+   calculus/derivatives
 
 .. toctree::
    :caption: Algebra
