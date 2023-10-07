@@ -115,6 +115,14 @@ $$
 \text{recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}
 $$
 
+```{note}
+Precision is about your prediction.
+Recall is about reality.
+
+If your job is to identify thieves.
+```
+
+
 #### False Negative Rate
 False Negative Rate (FNR) tells us what proportion of the positive class got incorrectly classified by the classifier.
 
