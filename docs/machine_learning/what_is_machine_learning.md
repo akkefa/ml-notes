@@ -10,13 +10,6 @@ kernelspec:
 # What is Machine Learning?
 
 
-
-```{image} https://media.geeksforgeeks.org/wp-content/uploads/20230413160822/Maachine-Learning.webp
-:align: center
-:alt: What is machine learning and deep learning
-:width: 40%
-```
-
 ## Overview
 
 ::::{grid}
