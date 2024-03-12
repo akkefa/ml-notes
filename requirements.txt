@@ -1,4 +1,4 @@
-Sphinx~=5.3
+Sphinx~=7.2
 -r docs/requirements.txt
 sphinx_rtd_theme
 sphinx-autobuild
