@@ -53,6 +53,12 @@ Contents
    algebra/intro
 
 .. toctree::
+   :caption: Machine Learning
+   :maxdepth: 1
+
+   machine_learning/what_is_machine_learning
+
+.. toctree::
    :caption: Deep learning
    :maxdepth: 1
 
