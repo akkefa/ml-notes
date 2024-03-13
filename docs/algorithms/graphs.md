@@ -713,11 +713,8 @@ In a directed graph, all the edges are directed. That means, each edge is associ
 
 Directed graph, also called a digraph.
 
-```{image} https://media.geeksforgeeks.org/wp-content/cdn-uploads/SCC1.png
-:alt: directed graph
-:width: 60%
-:align: center
-```
+https://media.geeksforgeeks.org/wp-content/cdn-uploads/SCC1.png
+
 
 ```{code-cell}
 
