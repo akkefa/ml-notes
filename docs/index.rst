@@ -46,26 +46,26 @@ Contents
    calculus/intro
    calculus/derivatives
 
-.. .. toctree::
-..    :caption: Algebra
-..    :maxdepth: 1
+.. toctree::
+   :caption: Algebra
+   :maxdepth: 1
 
-..    algebra/intro
+   algebra/intro
 
-.. .. toctree::
-..    :caption: Machine Learning
-..    :maxdepth: 1
+.. toctree::
+   :caption: Machine Learning
+   :maxdepth: 1
 
-..    machine_learning/introduction
+   machine_learning/introduction
 
-.. .. toctree::
-..    :caption: Deep learning
-..    :maxdepth: 1
+.. toctree::
+   :caption: Deep learning
+   :maxdepth: 1
 
-..    deep_learning/what_is_deep_learning
-..    deep_learning/tensor
-..    deep_learning/loss_functions
-..    deep_learning/evaluation_metrics
+   deep_learning/what_is_deep_learning
+   deep_learning/tensor
+   deep_learning/loss_functions
+   deep_learning/evaluation_metrics
 
 .. .. toctree::
 ..    :caption: Mathematics
