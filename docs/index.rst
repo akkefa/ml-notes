@@ -92,14 +92,14 @@ Contents
    graph/graph_neural_networks
    graph/graph_equations
 
-.. toctree::
-   :caption: Learn Pytorch
-   :maxdepth: 1
+.. .. toctree::
+..    :caption: Learn Pytorch
+..    :maxdepth: 1
 
-   torch/pytorch_fundamental.ipynb
-   torch/pytorch_workflow.ipynb
-   torch/pytorch_neural_network_classification.ipynb
-   torch/pytorch_transformers.ipynb
+..    torch/pytorch_fundamental.ipynb
+..    torch/pytorch_workflow.ipynb
+..    torch/pytorch_neural_network_classification.ipynb
+..    torch/pytorch_transformers.ipynb
 
 .. .. toctree::
 ..    :caption: Recommendation System
