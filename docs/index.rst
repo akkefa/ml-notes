@@ -74,15 +74,15 @@ Contents
    linear_algebra
    statistics
 
-.. toctree::
-   :caption: Algorithms
-   :maxdepth: 1
+.. .. toctree::
+..    :caption: Algorithms
+..    :maxdepth: 1
 
-   algorithms/sorting.md
-   algorithms/graphs.md
-   algorithms/trees.md
-   algorithms/shortest_path.md
-   algorithms/greedy_algorithms.md
+..    algorithms/sorting.md
+..    algorithms/graphs.md
+..    algorithms/trees.md
+..    algorithms/shortest_path.md
+..    algorithms/greedy_algorithms.md
 
 .. .. toctree::
 ..    :caption: Graph Theory
