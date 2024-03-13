@@ -101,19 +101,19 @@ Contents
    torch/pytorch_neural_network_classification.ipynb
    torch/pytorch_transformers.ipynb
 
-.. toctree::
-   :caption: Recommendation System
-   :maxdepth: 1
+.. .. toctree::
+..    :caption: Recommendation System
+..    :maxdepth: 1
 
-   recommend/introduction.ipynb
-   recommend/matrix_factorization.ipynb
+..    recommend/introduction.ipynb
+..    recommend/matrix_factorization.ipynb
 
-.. toctree::
-   :caption: Practice
-   :maxdepth: 1
+.. .. toctree::
+..    :caption: Practice
+..    :maxdepth: 1
 
-   practise/probability_solutions.rst
-   practise/R_solutions.rst
+..    practise/probability_solutions.rst
+..    practise/R_solutions.rst
 
 
 Indices and tables
