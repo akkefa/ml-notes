@@ -89,8 +89,8 @@ Contents
    :maxdepth: 1
 
    graph/introduction
-   graph/graph_neural_networks
-   graph/graph_equations
+   .. graph/graph_neural_networks
+   .. graph/graph_equations
 
 .. .. toctree::
 ..    :caption: Learn Pytorch
