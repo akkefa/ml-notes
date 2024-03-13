@@ -84,11 +84,11 @@ Contents
 ..    algorithms/shortest_path.md
 ..    algorithms/greedy_algorithms.md
 
-.. toctree::
-   :caption: Graph Theory
-   :maxdepth: 1
+.. .. toctree::
+..    :caption: Graph Theory
+..    :maxdepth: 1
 
-   graph/introduction
+   .. graph/introduction
    .. graph/graph_neural_networks
    .. graph/graph_equations
 
