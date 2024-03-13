@@ -32,11 +32,8 @@ Insertion sort is a simple sorting algorithm that works similar to the way you s
 ```
 ---
 
-```{image} https://www.swtestacademy.com/wp-content/uploads/2021/11/insertion-sort.gif
-:align: center
-:alt: Insertion Sort
-:width: 80%
-```
+https://www.swtestacademy.com/wp-content/uploads/2021/11/insertion-sort.gif
+
 
 ### Implmentation
 
@@ -173,11 +170,9 @@ print(arr)
 Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n). 
 
 
-```{image} https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif
-:align: center
-:alt: Binary Search
-:width: 80%
-```
+https://blog.penjee.com/wp-content/uploads/2015/04/binary-and-linear-search-animations.gif
+
+
 
 ### python Implmentation of Binary Search
 
