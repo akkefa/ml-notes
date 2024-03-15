@@ -728,11 +728,7 @@ nx.draw_networkx(DG, pos=nx.spring_layout(DG, seed=0), node_size=600, cmap='cool
 #### Undirected Graphs
 In an undirected graph, all the edges are undirected. That means, each edge is associated with a direction. For example, if there is an edge from node A to node B, then the edge is directed from A to B and not the other way around.
 
-```{image} https://sites.google.com/a/cs.christuniversity.in/discrete-mathematics-lectures/_/rsrc/1409480658489/graphs/directed-and-undirected-graph/dir.png
-:alt: undirected graph
-:width: 60%
-:align: center
-```
+
 
 ```{code-cell}
 G = nx.Graph()
