@@ -57,6 +57,7 @@ Contents
    :maxdepth: 1
 
    machine_learning/introduction
+   machine_learning/logistic_regression
 
 .. toctree::
    :caption: Deep learning
