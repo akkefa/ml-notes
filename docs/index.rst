@@ -57,6 +57,7 @@ Contents
    :maxdepth: 1
 
    machine_learning/introduction
+   machine_learning/logistic_regression
 
 .. toctree::
    :caption: Deep learning
@@ -74,46 +75,46 @@ Contents
    linear_algebra
    statistics
 
-.. .. toctree::
-..    :caption: Algorithms
-..    :maxdepth: 1
+.. toctree::
+   :caption: Algorithms
+   :maxdepth: 1
 
-..    algorithms/sorting.md
-..    algorithms/graphs.md
-..    algorithms/trees.md
-..    algorithms/shortest_path.md
-..    algorithms/greedy_algorithms.md
+   algorithms/sorting.md
+   algorithms/graphs.md
+   algorithms/trees.md
+   algorithms/shortest_path.md
+   algorithms/greedy_algorithms.md
 
-.. .. toctree::
-..    :caption: Graph Theory
-..    :maxdepth: 1
+.. toctree::
+   :caption: Graph Theory
+   :maxdepth: 1
 
-   .. graph/introduction
-   .. graph/graph_neural_networks
-   .. graph/graph_equations
+   graph/introduction
+   graph/graph_neural_networks
+   graph/graph_equations
 
-.. .. toctree::
-..    :caption: Learn Pytorch
-..    :maxdepth: 1
+.. toctree::
+   :caption: Learn Pytorch
+   :maxdepth: 1
 
-..    torch/pytorch_fundamental.ipynb
-..    torch/pytorch_workflow.ipynb
-..    torch/pytorch_neural_network_classification.ipynb
-..    torch/pytorch_transformers.ipynb
+   torch/pytorch_fundamental.ipynb
+   torch/pytorch_workflow.ipynb
+   torch/pytorch_neural_network_classification.ipynb
+   torch/pytorch_transformers.ipynb
 
-.. .. toctree::
-..    :caption: Recommendation System
-..    :maxdepth: 1
+.. toctree::
+   :caption: Recommendation System
+   :maxdepth: 1
 
-..    recommend/introduction.ipynb
-..    recommend/matrix_factorization.ipynb
+   recommend/introduction.ipynb
+   recommend/matrix_factorization.ipynb
 
-.. .. toctree::
-..    :caption: Practice
-..    :maxdepth: 1
+.. toctree::
+   :caption: Practice
+   :maxdepth: 1
 
-..    practise/probability_solutions.rst
-..    practise/R_solutions.rst
+   practise/probability_solutions.rst
+   practise/R_solutions.rst
 
 
 Indices and tables

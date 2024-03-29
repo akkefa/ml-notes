@@ -42,14 +42,14 @@ Negative         3       2
 The values in the confusion matrix can be used to compute various performance metrics, such as precision, recall, and accuracy.
 
 
-```{image} https://miro.medium.com/max/924/1*7EYylA6XlXSGBCF77j_rOA.webp
+```{image} https://cdn.mathpix.com/snip/images/iM4NeB_0fz2Ij5vf4dklV0q4IiChxTeVvwll3kuW-zI.original.fullsize.png
 :align: center
 :alt: Confusion Matrix
 :width: 60%
 ```
 
 #### Calculate Confusion Matrix for a 2 classes problem
-```{image} https://miro.medium.com/max/1172/1*OpSYGh2-XE6aE3sVAJAHrw.webp
+```{image} https://cdn.mathpix.com/snip/images/6mW4b34o5-ZAClFRWvmQ_wxjGIz3rTe2WGI7BJzXFS4.original.fullsize.png
 :align: center
 :alt: Confusion Matrix
 :width: 60%
@@ -90,7 +90,7 @@ print(f"{torchmetrics.functional.confusion_matrix(y_true, y_pred,task='binary')=
 
 ```
 
-```{image} https://miro.medium.com/max/830/1*uR09zTlPgIj5PvMYJZScVg.webp
+```{image} https://cdn.mathpix.com/snip/images/O4KZ6gTEhxMdY-YpnrJHC2czAokzXUEyb7M4a_c9oug.original.fullsize.png
 :align: center
 :alt: Confusion Matrix
 :width: 60%
