@@ -58,6 +58,7 @@ Contents
 
    machine_learning/introduction
    machine_learning/logistic_regression
+   machine_learning/kkn
 
 .. toctree::
    :caption: Deep learning
