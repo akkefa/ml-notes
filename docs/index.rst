@@ -59,6 +59,7 @@ Contents
    machine_learning/introduction
    machine_learning/logistic_regression
    machine_learning/non-parametric
+   machine_learning/decision_tree
 
 .. toctree::
    :caption: Deep learning
