@@ -6,7 +6,7 @@ Machine Learning Notes by Ikram Ali
 
 .. image:: https://akkefa.com/Ikram_Ali.jpg
    :width: 26%
-   :alt: alternate text
+   :alt: ikram ali
    :align: left
 
 Greetings! I am Ikram Ali, and I excel at founding and developing machine learning engineering and data science teams.
