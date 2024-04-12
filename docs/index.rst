@@ -3,8 +3,15 @@
 
 Machine Learning Notes by Ikram Ali
 =====================================
+
+.. image:: https://akkefa.com/Ikram_Ali.jpg
+   :width: 26%
+   :alt: alternate text
+   :align: left
+
 Greetings! I am Ikram Ali, and I excel at founding and developing machine learning engineering and data science teams.
 My current focus areas are **NLP (Natural Language Processing) and MLOps**, where I am passionate about advancing these technologies.
+
 
 My career strategy involves a deep commitment to mastering the multidisciplinary skills essential for leading data science initiatives.
 This includes not only Research and Data Engineering but also Machine Learning Engineering and comprehensive Project Management,
