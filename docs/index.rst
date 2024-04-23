@@ -1,12 +1,22 @@
 .. title::
-   Welcome to my Machine Learning notes
+   Machine Learning Notes by Ikram Ali
 
-Welcome to my Machine Learning notes
+Machine Learning Notes by Ikram Ali
 =====================================
-I am Ikram Ali, I specialize in building ML engineering and data science teams from the ground up. My current passion is **NLP** and **MLOps**
 
-I approach my career by purposefully building domain knowledge in all the cross-functional disciplines required to deliver successful Data Science projects. This includes Research, Data Engineering, Machine Learning Engineering, Management, as well as dabbling in Agile Program Management and Product Management within other roles. This allows me to lead cross-functional teams and know the pain points of bringing a model from ideation to production.
-For further information regarding my credentials, please refer to my LinkedIn and Github profiles
+.. image:: https://akkefa.com/Ikram_Ali.jpg
+   :width: 26%
+   :alt: ikram ali
+   :align: left
+
+Greetings! I am Ikram Ali, and I excel at founding and developing machine learning engineering and data science teams.
+My current focus areas are **NLP (Natural Language Processing) and MLOps**, where I am passionate about advancing these technologies.
+
+
+My career strategy involves a deep commitment to mastering the multidisciplinary skills essential for leading data science initiatives.
+This includes not only Research and Data Engineering but also Machine Learning Engineering and comprehensive Project Management,
+spanning Agile and Product Management techniques. My broad skill set allows me to efficiently lead cross-functional teams and effectively tackle
+the challenges of transitioning a model from its initial ideation through to full-scale production.
 
 * https://www.linkedin.com/in/akkefa/
 * https://www.github.com/akkefa
@@ -58,6 +68,8 @@ Contents
 
    machine_learning/introduction
    machine_learning/logistic_regression
+   machine_learning/non-parametric
+   machine_learning/decision_tree
 
 .. toctree::
    :caption: Deep learning
