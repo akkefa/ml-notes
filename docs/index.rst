@@ -4,7 +4,7 @@
 Machine Learning Notes by Ikram Ali
 =====================================
 
-.. image:: https://akkefa.com/ikram_ali_2024.jpg
+.. image:: https://akkefa.com/ikram_ali_dp_2024.png
    :width: 26%
    :alt: ikram ali
    :align: left
