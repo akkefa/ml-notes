@@ -1,13 +1,13 @@
-torch~=2.2
+torch~=2.3
 seaborn~=0.13
-scipy~=1.12
+scipy~=1.13
 scikit-learn~=1.4
 torchmetrics~=1.3
-myst-nb~=1.0
+myst-nb~=1.1
 sphinx-design~=0.5
 sphinx-copybutton
 xlrd~=2.0
 scikit-surprise~=1.1
-networkx~=3.2
+networkx~=3.3
 gensim~=4.3
 sphinx_rtd_theme
