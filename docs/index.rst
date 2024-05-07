@@ -70,6 +70,7 @@ Contents
    machine_learning/logistic_regression
    machine_learning/non-parametric
    machine_learning/decision_tree
+   machine_learning/pca
 
 .. toctree::
    :caption: Deep learning
