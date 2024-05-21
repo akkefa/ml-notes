@@ -15,6 +15,7 @@ Variance
 ^^^^^^^^^
 The variance is the mean of the squared differences to the mean.
 
+
 .. math::
 
     var(x) = \frac{1}{n}\sum_{i=1}^n (x_i - \bar{x})^2
