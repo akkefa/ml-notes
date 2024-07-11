@@ -7,6 +7,10 @@ Covariance and Correlation
 
 Covariance
 ===========
+
+Covariance measures the extent to which two random variables change together. If the variables tend to increase and decrease together, they have a positive covariance.
+If one variable tends to increase when the other decreases, they have a negative covariance.
+
 The covariance between two rv’s, X and Y, is defined as
 
 :math:`\operatorname{Cov}(X, Y)=E[(X-E(X))(Y-E(Y))] = E[(X- \mu_x))(Y- \mu_y)]`
