@@ -71,6 +71,7 @@ Contents
    machine_learning/non-parametric
    machine_learning/decision_tree
    machine_learning/pca
+   machine_learning/clustering
 
 .. toctree::
    :caption: Deep learning
