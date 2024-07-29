@@ -72,6 +72,7 @@ Contents
    machine_learning/decision_tree
    machine_learning/pca
    machine_learning/clustering
+   machine_learning/matrix_factorization
 
 .. toctree::
    :caption: Deep learning
