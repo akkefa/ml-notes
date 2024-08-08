@@ -70,6 +70,9 @@ Contents
    machine_learning/logistic_regression
    machine_learning/non-parametric
    machine_learning/decision_tree
+   machine_learning/pca
+   machine_learning/clustering
+   machine_learning/matrix_factorization
 
 .. toctree::
    :caption: Deep learning
@@ -112,7 +115,7 @@ Contents
    torch/pytorch_fundamental.ipynb
    torch/pytorch_workflow.ipynb
    torch/pytorch_neural_network_classification.ipynb
-   torch/pytorch_transformers.ipynb
+   torch/basic_neural_network
 
 .. toctree::
    :caption: Recommendation System
