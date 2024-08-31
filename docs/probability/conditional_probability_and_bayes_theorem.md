@@ -26,6 +26,13 @@ Conditional Probability is $P(A \mid B)=\frac{P(A \cap B)}{P(B)}, \quad P(B)>0$
 This leads to the multiplication rule  $P(A \cap B) = P(B) P(A \mid B) = P(A) P(B \mid A)$
 
 ## Bayes Theorem
+
+```{image} https://github.com/akkefa/ml-notes/releases/download/v0.1.0/bayes_theorem.jpeg
+:align: center
+:alt: Bayes Theorem
+:width: 80%
+```
+
 **Bayes Theorem** $P(A \mid B) = \frac{P(B \mid A)P(A)} {P(B)}$
 
 ### Example
