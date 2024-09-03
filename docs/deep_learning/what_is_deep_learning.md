@@ -64,14 +64,6 @@ following explicit instructions, by using algorithms and statistical models to d
 * Credit card fraud
 * Stock predictions
 
-## Broad categories of Deep learning
-
-```{image} https://cdn.mathpix.com/snip/images/ZSZJML5ESQiAMAUzLgqHwc5qrVdog0doEIgv7E6yOP0.original.fullsize.png
-:align: center
-:alt: Combination
-:width: 80%
-```
-
 ## Perceptron
 
 ### Definition
@@ -87,9 +79,14 @@ generates a binary output.
 ```{image} https://miro.medium.com/max/1400/1*hkYlTODpjJgo32DoCOWN5w.png
 :align: center
 :alt: Combination
-:width: 60%
+:width: 80%
 ```
-- connect them in a network to create an artificial brain(let)
+
+```{image} https://cdn.mathpix.com/snip/images/i0YSiTfxAzH_gRIx88b4FHpDFWhY72eKcTb4_EyafNA.original.fullsize.png
+:align: center
+:alt: Combination
+:width: 80%
+```
 
 ### History of the Perceptron
 - Invented in 1957 by Frank Rosenblatt to binary classify an input data.
