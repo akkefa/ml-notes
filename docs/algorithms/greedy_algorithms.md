@@ -178,13 +178,7 @@ print(maxSubArraySum(numbers))
 
 ```
 
-```{code-cell} ipython3
-:tags: [greedy, divide-and-conquer]
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-sns.set()
-```
+
 
 ```{code-cell} ipython3
 def max_subarray(arr):
