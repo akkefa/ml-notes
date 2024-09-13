@@ -82,6 +82,7 @@ Contents
    deep_learning/tensor
    deep_learning/loss_functions
    deep_learning/back_propagation
+   deep_learning/optimization
    deep_learning/evaluation_metrics
 
 .. toctree::
