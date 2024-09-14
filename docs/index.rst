@@ -92,6 +92,14 @@ Contents
    linear_algebra
    statistics
 
+
+.. toctree::
+   :caption: Data Structures
+   :maxdepth: 1
+
+   data_structure/hashmap
+
+
 .. toctree::
    :caption: Algorithms
    :maxdepth: 1
