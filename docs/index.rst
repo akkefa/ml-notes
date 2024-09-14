@@ -127,11 +127,10 @@ Contents
    recommend/matrix_factorization.ipynb
 
 .. toctree::
-   :caption: Practice
+   :caption: Cheat Sheet
    :maxdepth: 1
 
-   practise/probability_solutions.rst
-   practise/R_solutions.rst
+   cheatsheet/python_list
 
 
 Indices and tables
