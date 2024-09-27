@@ -81,6 +81,8 @@ Contents
    deep_learning/what_is_deep_learning
    deep_learning/tensor
    deep_learning/loss_functions
+   deep_learning/back_propagation
+   deep_learning/optimization
    deep_learning/evaluation_metrics
 
 .. toctree::
@@ -89,6 +91,14 @@ Contents
 
    linear_algebra
    statistics
+
+
+.. toctree::
+   :caption: Data Structures
+   :maxdepth: 1
+
+   data_structure/hashmap
+
 
 .. toctree::
    :caption: Algorithms
@@ -125,11 +135,10 @@ Contents
    recommend/matrix_factorization.ipynb
 
 .. toctree::
-   :caption: Practice
+   :caption: Cheat Sheet
    :maxdepth: 1
 
-   practise/probability_solutions.rst
-   practise/R_solutions.rst
+   cheatsheet/python_list
 
 
 Indices and tables
