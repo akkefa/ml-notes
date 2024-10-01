@@ -33,6 +33,23 @@ Contents
    ml_notation.ipynb
 
 .. toctree::
+   :caption: Data Structures
+   :maxdepth: 1
+
+   data_structure/hashmap
+   data_structure/tree
+
+.. toctree::
+   :caption: Algorithms
+   :maxdepth: 1
+
+   algorithms/sorting.md
+   algorithms/graphs.md
+   algorithms/trees.md
+   algorithms/shortest_path.md
+   algorithms/greedy_algorithms.md
+
+.. toctree::
    :caption: Probability
    :maxdepth: 1
 
@@ -92,23 +109,6 @@ Contents
    linear_algebra
    statistics
 
-
-.. toctree::
-   :caption: Data Structures
-   :maxdepth: 1
-
-   data_structure/hashmap
-
-
-.. toctree::
-   :caption: Algorithms
-   :maxdepth: 1
-
-   algorithms/sorting.md
-   algorithms/graphs.md
-   algorithms/trees.md
-   algorithms/shortest_path.md
-   algorithms/greedy_algorithms.md
 
 .. toctree::
    :caption: Graph Theory
