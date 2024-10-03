@@ -38,13 +38,13 @@ Contents
 
    data_structure/hashmap
    data_structure/tree
+   data_structure/graph
 
 .. toctree::
    :caption: Algorithms
    :maxdepth: 1
 
    algorithms/sorting.md
-   algorithms/graphs.md
    algorithms/shortest_path.md
    algorithms/greedy_algorithms.md
 
