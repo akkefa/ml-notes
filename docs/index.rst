@@ -38,6 +38,7 @@ Contents
 
    data_structure/hashmap
    data_structure/tree
+   data_structure/heap
    data_structure/graph
 
 .. toctree::
