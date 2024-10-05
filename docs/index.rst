@@ -102,14 +102,6 @@ Contents
    deep_learning/evaluation_metrics
 
 .. toctree::
-   :caption: Mathematics
-   :maxdepth: 1
-
-   linear_algebra
-   statistics
-
-
-.. toctree::
    :caption: Graph Theory
    :maxdepth: 1
 
