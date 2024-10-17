@@ -7,7 +7,6 @@
 
 [ml-notes.akkefa.com](ml-notes.akkefa.com)
 
-
 Welcome! I am **Ikram Ali**, an expert in establishing and leading machine learning engineering and data science teams. My current focus areas are **Natural Language Processing (NLP)** and **MLOps**, where I am dedicated to advancing the frontiers of these technologies.
 
 ## Connect with Me
