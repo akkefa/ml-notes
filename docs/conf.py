@@ -1,3 +1,5 @@
+import datetime
+
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -18,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'ml_notes.akkefa.com'
-copyright = '2024, Ikram Ali - mrikram1989@gmail.com'
+copyright = f'{datetime.datetime.now().year}, Ikram Ali - mrikram1989@gmail.com'
 author = 'Ikram Ali'
 __version__ = "0.0.1"
 
