@@ -118,6 +118,7 @@ Contents
    torch/pytorch_workflow.ipynb
    torch/pytorch_neural_network_classification.ipynb
    torch/basic_neural_network
+   torch/pytorch_internals.ipynb
 
 .. toctree::
    :caption: Recommendation System

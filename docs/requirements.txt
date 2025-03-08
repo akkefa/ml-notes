@@ -1,8 +1,8 @@
-torch~=2.4
+torch~=2.6
 seaborn~=0.13
 gensim~=4.3.3
-scikit-learn~=1.5
-torchmetrics~=1.4
+scikit-learn~=1.6
+torchmetrics~=1.6
 myst-nb~=1.1
 sphinx-design~=0.6
 sphinx-copybutton
