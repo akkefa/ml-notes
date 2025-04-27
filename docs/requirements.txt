@@ -1,9 +1,10 @@
-torch~=2.6
+--index-url https://download.pytorch.org/whl/cpu
+torch~=2.7
 seaborn~=0.13
 gensim~=4.3.3
 scikit-learn~=1.6
-torchmetrics~=1.6
-myst-nb~=1.1
+torchmetrics~=1.7
+myst-nb~=1.2
 sphinx-design~=0.6
 sphinx-copybutton
 xlrd~=2.0
