@@ -9,17 +9,13 @@ Machine Learning Notes by Ikram Ali
    :alt: ikram ali
    :align: left
 
-Greetings! I am Ikram Ali, and I excel at founding and developing machine learning engineering and data science teams.
-My current focus areas are **NLP (Natural Language Processing) and MLOps**, where I am passionate about advancing these technologies.
+Greetings! I am Ikram Ali and Technical Leader with 10+ years of experience architecting large-scale distributed systems and driving industry-wide impact.
+My background in applied ML, distributed systems engineering, and MLOps tooling has empowered me to build and mentor dynamic teams of Data Scientists, ML Engineers, and MLOps experts.
+I thrive on end-to-end challenges from designing robust data pipelines and optimizing model serving to fine-tuning, evaluation, and implementing strong governance frameworks.
 
 
-My career strategy involves a deep commitment to mastering the multidisciplinary skills essential for leading data science initiatives.
-This includes not only Research and Data Engineering but also Machine Learning Engineering and comprehensive Project Management,
-spanning Agile and Product Management techniques. My broad skill set allows me to efficiently lead cross-functional teams and effectively tackle
-the challenges of transitioning a model from its initial ideation through to full-scale production.
-
-* https://www.linkedin.com/in/akkefa/
-* https://www.github.com/akkefa
+- https://www.linkedin.com/in/akkefa/
+- https://www.github.com/akkefa
 
 I would like to offer concise definitions and comprehensible explanations of Machine Learning and Deep Learning.
 
