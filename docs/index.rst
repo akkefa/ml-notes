@@ -9,7 +9,7 @@ Machine Learning Notes by Ikram Ali
    :alt: ikram ali
    :align: left
 
-Greetings! I am Ikram Ali and Technical Leader with 10+ years of experience architecting large-scale distributed systems and driving industry-wide impact.
+Greetings! I am Ikram Ali, technical Leader with 10+ years of experience architecting large-scale distributed systems and driving industry-wide impact.
 My background in applied ML, distributed systems engineering, and MLOps tooling has empowered me to build and mentor dynamic teams of Data Scientists, ML Engineers, and MLOps experts.
 I thrive on end-to-end challenges from designing robust data pipelines and optimizing model serving to fine-tuning, evaluation, and implementing strong governance frameworks.
 
