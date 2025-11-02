@@ -1,6 +1,6 @@
 --index-url https://download.pytorch.org/whl/cpu
 --extra-index-url https://pypi.org/simple
-torch~=2.7
+torch~=2.9
 seaborn~=0.13
 gensim~=4.3.3
 scikit-learn~=1.6
