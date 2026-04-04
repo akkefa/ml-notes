@@ -46,6 +46,12 @@ Contents
    algorithms/greedy_algorithms.md
 
 .. toctree::
+   :caption: Linear Algebra
+   :maxdepth: 1
+
+   linear_algebra/intro
+
+.. toctree::
    :caption: Probability
    :maxdepth: 1
 
