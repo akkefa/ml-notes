@@ -62,6 +62,8 @@ source_suffix = ['.rst', '.md', '.ipynb']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", "**.ipynb_checkpoints"]
+nb_execution_excludepatterns = ["recommend/*.ipynb"]
+
 nitpicky = True
 
 # -- Options for HTML output -------------------------------------------------
