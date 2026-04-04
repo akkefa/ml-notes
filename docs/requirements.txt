@@ -1,15 +1,14 @@
 --index-url https://download.pytorch.org/whl/cpu
 --extra-index-url https://pypi.org/simple
 torch~=2.11
-seaborn~=0.13
-gensim~=4.3.3
-scikit-learn~=1.6
-torchmetrics~=1.9
 myst-nb~=1.4
-sphinx-design~=0.6
+seaborn
+gensim
+torchmetrics
+sphinx-design
 sphinx-copybutton
 xlrd~=2.0
-scikit-surprise~=1.1
-networkx~=3.3
+# scikit-surprise
+networkx
 sphinx_rtd_theme
 pytest
