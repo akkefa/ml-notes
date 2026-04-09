@@ -50,6 +50,7 @@ Contents
    :maxdepth: 1
 
    linear_algebra/intro
+   linear_algebra/Linearity
 
 .. toctree::
    :caption: Probability
