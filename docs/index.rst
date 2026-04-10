@@ -51,6 +51,7 @@ Contents
 
    linear_algebra/intro
    linear_algebra/Linearity
+   linear_algebra/linear_combinations
 
 .. toctree::
    :caption: Probability
