@@ -50,8 +50,9 @@ Contents
    :maxdepth: 1
 
    linear_algebra/intro
-   linear_algebra/Linearity
+   linear_algebra/linearity
    linear_algebra/linear_combinations
+   linear_algebra/convex_combinations
 
 .. toctree::
    :caption: Probability
