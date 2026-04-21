@@ -54,6 +54,8 @@ Contents
    linear_algebra/linear_combinations
    linear_algebra/convex_combinations
    linear_algebra/linear_independence
+   linear_algebra/linear_systems
+   
 
 .. toctree::
    :caption: Probability
