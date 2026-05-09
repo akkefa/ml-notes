@@ -55,6 +55,7 @@ Contents
    linear_algebra/convex_combinations
    linear_algebra/linear_independence
    linear_algebra/linear_systems
+   linear_algebra/matrix
    
 
 .. toctree::
