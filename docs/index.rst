@@ -57,6 +57,7 @@ Contents
    linear_algebra/linear_systems
    linear_algebra/matrix
    linear_algebra/solving_linear_system
+   linear_algebra/solution_set_of_linear_system
    
 
 .. toctree::
