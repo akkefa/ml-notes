@@ -133,3 +133,8 @@ dmypy.json
 .DS_Store
 coursera/
 
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
