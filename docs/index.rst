@@ -58,6 +58,7 @@ Contents
    linear_algebra/matrix
    linear_algebra/solving_linear_system
    linear_algebra/solution_set_of_linear_system
+   linear_algebra/geometric_interpretation
    
 
 .. toctree::
