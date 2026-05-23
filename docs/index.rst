@@ -59,7 +59,7 @@ Contents
    linear_algebra/solving_linear_system
    linear_algebra/solution_set_of_linear_system
    linear_algebra/geometric_interpretation
-   
+   linear_algebra/rank
 
 .. toctree::
    :caption: Probability
