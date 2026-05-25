@@ -61,6 +61,7 @@ Contents
    linear_algebra/geometric_interpretation
    linear_algebra/rank
    linear_algebra/solution_set_and_rank
+   linear_algebra/elementary_matrices
 
 .. toctree::
    :caption: Probability
