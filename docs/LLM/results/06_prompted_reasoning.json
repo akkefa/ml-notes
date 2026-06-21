@@ -1,0 +1,28 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "n_tasks": 14,
+  "strategies": {
+    "direct": {
+      "accuracy": 0.214,
+      "avg_new_tokens": 3.2,
+      "avg_latency_s": 0.12
+    },
+    "CoT": {
+      "accuracy": 0.929,
+      "avg_new_tokens": 184.5,
+      "avg_latency_s": 6.72
+    },
+    "few-shot CoT": {
+      "accuracy": 0.786,
+      "avg_new_tokens": 40.6,
+      "avg_latency_s": 1.69
+    }
+  },
+  "self_consistency_subset": {
+    "n": 6,
+    "k": 5,
+    "accuracy": 0.833,
+    "greedy_cot_subset_accuracy": 0.833
+  }
+}

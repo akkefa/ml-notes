@@ -1,0 +1,117 @@
+{
+  "device": "mps",
+  "config": {
+    "n_sessions": 5,
+    "n_facts": 8,
+    "window_turns": 12,
+    "capacity_facts": 6
+  },
+  "recall_by_distance": {
+    "no-memory": {
+      "3": 1.0,
+      "6": 1.0,
+      "9": 1.0,
+      "12": 1.0,
+      "15": 0.0,
+      "18": 0.0,
+      "21": 0.0,
+      "24": 0.0
+    },
+    "memory": {
+      "3": 1.0,
+      "6": 1.0,
+      "9": 1.0,
+      "12": 1.0,
+      "15": 1.0,
+      "18": 1.0,
+      "21": 1.0,
+      "24": 1.0
+    },
+    "memory (cap=6)": {
+      "3": 1.0,
+      "6": 1.0,
+      "9": 1.0,
+      "12": 1.0,
+      "15": 1.0,
+      "18": 1.0,
+      "21": 0.0,
+      "24": 0.0
+    }
+  },
+  "summary": {
+    "no-memory": {
+      "overall": 0.5,
+      "in_window": 1.0,
+      "out_of_window": 0.0
+    },
+    "memory": {
+      "overall": 1.0,
+      "in_window": 1.0,
+      "out_of_window": 1.0
+    },
+    "memory (cap=6)": {
+      "overall": 0.75,
+      "in_window": 1.0,
+      "out_of_window": 0.5
+    }
+  },
+  "dedup_trap": {
+    "cosine": {
+      "min": 0.878,
+      "mean": 0.905,
+      "max": 0.936
+    },
+    "sweep": [
+      {
+        "threshold": null,
+        "stored": 5,
+        "recall_at_1": 5
+      },
+      {
+        "threshold": 0.97,
+        "stored": 5,
+        "recall_at_1": 5
+      },
+      {
+        "threshold": 0.95,
+        "stored": 5,
+        "recall_at_1": 5
+      },
+      {
+        "threshold": 0.94,
+        "stored": 5,
+        "recall_at_1": 5
+      },
+      {
+        "threshold": 0.93,
+        "stored": 4,
+        "recall_at_1": 4
+      },
+      {
+        "threshold": 0.92,
+        "stored": 3,
+        "recall_at_1": 3
+      },
+      {
+        "threshold": 0.91,
+        "stored": 3,
+        "recall_at_1": 3
+      },
+      {
+        "threshold": 0.9,
+        "stored": 2,
+        "recall_at_1": 2
+      },
+      {
+        "threshold": 0.88,
+        "stored": 1,
+        "recall_at_1": 1
+      },
+      {
+        "threshold": 0.86,
+        "stored": 1,
+        "recall_at_1": 1
+      }
+    ]
+  }
+}

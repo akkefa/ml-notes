@@ -1,0 +1,68 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "kv_formula_exact": true,
+  "scaling": [
+    {
+      "seq_len": 128,
+      "prefill_ms": 52.849,
+      "decode_ms_per_tok": 22.689,
+      "kv_mib": 3.0
+    },
+    {
+      "seq_len": 256,
+      "prefill_ms": 87.264,
+      "decode_ms_per_tok": 23.665,
+      "kv_mib": 6.0
+    },
+    {
+      "seq_len": 512,
+      "prefill_ms": 173.477,
+      "decode_ms_per_tok": 37.488,
+      "kv_mib": 12.0
+    },
+    {
+      "seq_len": 1024,
+      "prefill_ms": 371.712,
+      "decode_ms_per_tok": 30.716,
+      "kv_mib": 24.0
+    },
+    {
+      "seq_len": 2048,
+      "prefill_ms": 894.803,
+      "decode_ms_per_tok": 39.283,
+      "kv_mib": 48.0
+    },
+    {
+      "seq_len": 4096,
+      "prefill_ms": 2551.559,
+      "decode_ms_per_tok": 57.241,
+      "kv_mib": 96.0
+    }
+  ],
+  "max_head_sink": 1.0,
+  "single_needle_recall": 1.0,
+  "multikey_recall": 0.75,
+  "multikey_recall_by_depth": {
+    "0.0": 0.333,
+    "0.053": 0.0,
+    "0.105": 1.0,
+    "0.158": 1.0,
+    "0.211": 0.333,
+    "0.263": 0.667,
+    "0.316": 1.0,
+    "0.368": 0.667,
+    "0.421": 0.333,
+    "0.474": 0.667,
+    "0.526": 1.0,
+    "0.579": 0.667,
+    "0.632": 1.0,
+    "0.684": 1.0,
+    "0.737": 0.667,
+    "0.789": 0.667,
+    "0.842": 1.0,
+    "0.895": 1.0,
+    "0.947": 1.0,
+    "1.0": 1.0
+  }
+}

@@ -141,3 +141,17 @@ coursera/
 
 .hf_cache/
 .mpl_cache/
+
+# Local LLM research lab (docs/LLM) — ignore generated artifacts, keep dir structure
+.venv-llm/
+docs/LLM/data/**
+docs/LLM/stores/**
+docs/LLM/models/**
+docs/LLM/runs/**
+!docs/LLM/data/.gitkeep
+!docs/LLM/stores/.gitkeep
+!docs/LLM/models/.gitkeep
+!docs/LLM/runs/.gitkeep
+*.gguf
+*.safetensors
+*.npz

@@ -1,1 +1,26 @@
 -r docs/requirements.txt
+jupyterlab
+ipykernel
+ipywidgets
+rich
+psutil
+tqdm
+
+# Hugging Face — the "observable" runtime for studying internals
+transformers>=4.44
+tokenizers>=0.19
+datasets>=2.20
+accelerate>=0.33
+safetensors
+huggingface_hub
+sentencepiece
+
+# Apple-Silicon native runtime — fast inference + LoRA
+mlx>=0.18
+mlx-lm>=0.18
+
+# Retrieval & memory
+sentence-transformers>=3.0
+faiss-cpu>=1.8
+rank-bm25
+pytest

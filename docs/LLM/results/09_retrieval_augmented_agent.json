@@ -1,0 +1,33 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "device": "mps",
+  "n_tasks": 16,
+  "n_answerable": 8,
+  "conditions": {
+    "closed-book": {
+      "answerable_acc": 0.0,
+      "answerable_wrong": 0.625,
+      "unanswerable_abstain": 0.75,
+      "hallucination": 0.25,
+      "avg_tokens": 10.562,
+      "avg_steps": 1.0
+    },
+    "static-rag": {
+      "answerable_acc": 1.0,
+      "answerable_wrong": 0.0,
+      "unanswerable_abstain": 0.125,
+      "hallucination": 0.875,
+      "avg_tokens": 14.5,
+      "avg_steps": 1.0
+    },
+    "gated-rag": {
+      "answerable_acc": 1.0,
+      "answerable_wrong": 0.0,
+      "unanswerable_abstain": 0.875,
+      "hallucination": 0.125,
+      "avg_tokens": 8.875,
+      "avg_steps": 1.0
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "families_checked": [
+    "ChatML \u00b7 SmolLM2",
+    "ChatML \u00b7 Qwen2.5",
+    "Llama-3",
+    "Mistral [INST]"
+  ],
+  "all_byte_exact": true,
+  "double_bos_with_default_tokenization": true
+}

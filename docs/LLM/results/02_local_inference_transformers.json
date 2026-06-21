@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "n_params_m": 494,
+  "n_layers": 24,
+  "n_query_heads": 14,
+  "n_kv_heads": 2,
+  "head_dim": 64,
+  "kv_bytes_per_token": 24576,
+  "greedy_matches_generate": true
+}

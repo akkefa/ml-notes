@@ -1,0 +1,38 @@
+{
+  "embedder": "sentence-transformers/all-MiniLM-L6-v2",
+  "llm": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "n_memories": 32,
+  "n_probes": 16,
+  "k": 3,
+  "retrievers": {
+    "dense": {
+      "recall_at_k": 1.0,
+      "mrr": 1.0,
+      "recall_paraphrase": 1.0,
+      "recall_exact_term": 1.0,
+      "recall_mixed": 1.0
+    },
+    "bm25": {
+      "recall_at_k": 0.812,
+      "mrr": 0.812,
+      "recall_paraphrase": 0.5,
+      "recall_exact_term": 1.0,
+      "recall_mixed": 1.0
+    },
+    "hybrid (naive)": {
+      "recall_at_k": 0.875,
+      "mrr": 0.844,
+      "recall_paraphrase": 0.667,
+      "recall_exact_term": 1.0,
+      "recall_mixed": 1.0
+    },
+    "hybrid (gated)": {
+      "recall_at_k": 0.875,
+      "mrr": 0.875,
+      "recall_paraphrase": 0.667,
+      "recall_exact_term": 1.0,
+      "recall_mixed": 1.0
+    }
+  }
+}

@@ -143,6 +143,12 @@ Contents
    recommend/matrix_factorization.ipynb
 
 .. toctree::
+   :caption: Large Language Models
+   :maxdepth: 1
+
+   LLM/index
+
+.. toctree::
    :caption: Cheat Sheet
    :maxdepth: 1
 

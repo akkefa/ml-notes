@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-06-20T13:23:27",
+  "python": "3.11.15",
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "torch": "2.12.1",
+  "device": "mps",
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "new_tokens": 32,
+  "latency_sec": 0.616,
+  "tokens_per_sec": 51.93,
+  "rss_delta_gb": 0.15,
+  "total_ram_gb": 34.4
+}

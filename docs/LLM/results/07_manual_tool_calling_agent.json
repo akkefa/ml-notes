@@ -1,0 +1,33 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "device": "mps",
+  "gsm_14": {
+    "naive_agent": {
+      "accuracy": 0.5,
+      "terminated": 0.857,
+      "avg_steps": 3.357,
+      "avg_tokens": 137.571
+    },
+    "final_agent": {
+      "accuracy": 0.857,
+      "terminated": 0.929,
+      "avg_steps": 2.5,
+      "avg_tokens": 133.214
+    },
+    "cot": {
+      "accuracy": 0.929,
+      "avg_new_tokens": 184.5
+    }
+  },
+  "hard_arithmetic_5": {
+    "cot": {
+      "accuracy": 0.2
+    },
+    "final_agent": {
+      "accuracy": 0.6,
+      "terminated": 0.8,
+      "avg_steps": 3.6,
+      "avg_tokens": 173.8
+    }
+  }
+}
