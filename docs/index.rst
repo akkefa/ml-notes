@@ -63,6 +63,7 @@ Contents
    linear_algebra/solution_set_and_rank
    linear_algebra/elementary_matrices
    linear_algebra/inverse_square_matrix
+   linear_algebra/determinant
 
 .. toctree::
    :caption: Probability
